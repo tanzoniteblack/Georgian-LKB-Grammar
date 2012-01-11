@@ -43,3 +43,21 @@ Phenomena: word order, case, agreement
 წერს წერილს მასწავლებელი.
 წერ-ს წერილ-ს მასწავლებელ-ი
 write-3SG letter-DAT teacher-NOM
+
+#Ex 5
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: word order, case, agreement
+წერილს წერს მასწავლებელი.
+წერილ-ს წერ-ს მასწავლებელ-ი
+letter-DAT write-3SG teacher-NOM
+
+#Ex 6
+Source: author
+Vetted: f
+Judgement: g
+Phenomena: word order, case, agreement
+წერილს მასწავლებელი წერს.
+წერილ-ს მასწავლებელ-ი წერ-ს
+letter-DAT teacher-NOM write-3SG
