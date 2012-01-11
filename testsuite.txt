@@ -1,0 +1,18 @@
+Language: Georgian
+Language code: kat
+Author: Ryan Smith
+Date: January 10, 2012
+Source a: The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery
+Source b: Georgian, A structural reference grammar by B.G. Hewitt
+Source c: Georgian, A Reading Grammar by Howard I. Aronson
+
+#Ex 1 
+Source: c:49
+Vetted: s
+Judgement: g
+Phenomena: word order, case, agreement
+მასწავლებელი წერილს წერს.
+მასწავლებელ-ი წერილ-ს წერ-ს.
+teacher-NOM letter-DAT write-3SG.
+
+#Word order is "quite free" (c:47), the most common word order is SOV, but SVO is also very common depending on emphasis. 
