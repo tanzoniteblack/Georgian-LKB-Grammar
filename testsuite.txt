@@ -9,55 +9,60 @@ Source c: Georgian, A Reading Grammar by Howard I. Aronson
 #Ex 1 
 Source: c:49
 Vetted: s
-Judgement: g
+Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერილს წერს.
 მასწავლებელ-ი წერილ-ს წერ-ს
 teacher-NOM letter-DAT write-3SG
+`The teacher is writing a letter.'
 
 #Word order is "quite free" (c:47), the most common word order is SOV, but SVO is also very common depending on emphasis. However, none of my sources say anything more than this and don't give examples of other word orders.
-
 #Ex 2 
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერს წერილს.
 მასწავლებელ-ი წერ-ს წერილ-ს
 teacher-NOM write-3SG letter-DAT
+`The teacher is writing a letter.'
 
 #Ex 3
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: word order, case, agreement
 წერს მასწავლებელი წერილს.
 წერ-ს მასწავლებელ-ი წერილ-ს
 write-3SG teacher-NOM letter-DAT
+`The teacher is writing a letter.'
 
 #Ex 4
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: word order, case, agreement
 წერს წერილს მასწავლებელი.
 წერ-ს წერილ-ს მასწავლებელ-ი
 write-3SG letter-DAT teacher-NOM
+`The teacher is writing a letter.'
 
 #Ex 5
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: word order, case, agreement
 წერილს წერს მასწავლებელი.
 წერილ-ს წერ-ს მასწავლებელ-ი
 letter-DAT write-3SG teacher-NOM
+`The teacher is writing a letter.'
 
 #Ex 6
 Source: author
 Vetted: f
-Judgement: g
+Judgment: g
 Phenomena: word order, case, agreement
 წერილს მასწავლებელი წერს.
 წერილ-ს მასწავლებელ-ი წერ-ს
 letter-DAT teacher-NOM write-3SG
+`The teacher is writing a letter.'
