@@ -12,19 +12,19 @@ Vetted: s
 Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერილს წერს.
-მასწავლებელ-ი წერილ-ს წერ-ს
-teacher-NOM letter-DAT write-3SG
+მასწავლებელ-ი წერილ-ს PRES-წერ-ს
+teacher-NOM letter-DAT 0-write-3.SG
 `The teacher is writing a letter.'
 
 #Word order is "quite free" (c:47), the most common word order is SOV, but SVO is also very common depending on emphasis. However, none of my sources say anything more than this and don't give examples of other word orders.
-Ex 2 
+#Ex 2 
 Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერს წერილს.
-მასწავლებელ-ი წერ-ს წერილ-ს
-teacher-NOM write-3SG letter-DAT
+მასწავლებელ-ი 0-წერ-ს წერილ-ს
+teacher-NOM PRES-write-3.SG letter-DAT
 `The teacher is writing a letter.'
 
 #Ex 3
@@ -33,8 +33,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერს მასწავლებელი წერილს.
-წერ-ს მასწავლებელ-ი წერილ-ს
-write-3SG teacher-NOM letter-DAT
+0-წერ-ს მასწავლებელ-ი წერილ-ს
+PRES-write-3.SG teacher-NOM letter-DAT
 `The teacher is writing a letter.'
 
 #Ex 4
@@ -43,8 +43,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერს წერილს მასწავლებელი.
-წერ-ს წერილ-ს მასწავლებელ-ი
-write-3SG letter-DAT teacher-NOM
+0-წერ-ს წერილ-ს მასწავლებელ-ი
+PRES-write-3.SG letter-DAT teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 5
@@ -53,8 +53,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერილს წერს მასწავლებელი.
-წერილ-ს წერ-ს მასწავლებელ-ი
-letter-DAT write-3SG teacher-NOM
+წერილ-ს 0-წერ-ს მასწავლებელ-ი
+letter-DAT PRES-write-3.SG teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 6
@@ -63,6 +63,66 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერილს მასწავლებელი წერს.
-წერილ-ს მასწავლებელ-ი წერ-ს
-letter-DAT teacher-NOM write-3SG
+წერილ-ს მასწავლებელ-ი 0-წერ-ს
+letter-DAT teacher-NOM PRES-write-3.SG
 `The teacher is writing a letter.'
+
+#Ex 7 - 3rd person sg pronoun + agreement
+Source: c:52
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement
+ის რადიოგადაცემას ისმენს.
+ის რადიოგადაცემა-ს 0-ისმენ-ს.
+3.SG.NOM radiobroadcast-DAT PRES-listen-3.SG
+`He is listening to the radiobroadcast.'
+
+#Ex 8 - 3rd person pl pronoun + agreement
+Source: c:52
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement
+ისინი რადიოგადაცემას ისმენენ.
+ის რადიოგადაცემა-ს 0-ისმენ-ენ.
+3.PL.NOM radiobroadcast-DAT PRES-listen-3.PL
+`They are listening to the radiobroadcast.'
+
+#Ex 9 - 1st person sg pronoun + agreement
+Source: c:52
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement
+მე რადიოგადაცემას ვისმენ.
+მე რადიოგადაცემა-ს 0-ვ-ისმენ-0.
+1.SG.NOM radiobroadcast-DAT PRES-1-listen-SG
+`I am listening to the radiobroadcast.'
+
+#Ex 10 - 1st person pl pronoun + agreement
+Source: c:52
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement
+ჩვენ რადიოგადაცემას ვისმენთ.
+ჩვენ რადიოგადაცემა-ს 0-ვ-ისმენ-თ.
+1.PL.NOM radiobroadcast-DAT PRES-1-listen-PL
+`I am listening to the radiobroadcast.'
+
+#Ex 11 - 2nd person sg pronoun + agreement
+Source: c:52
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement
+სენ რადიოგადაცემას ისმენ.
+სენ რადიოგადაცემა-ს 0-0-ისმენ-0.
+2.SG.NOM radiobroadcast-DAT PRES-2-listen-SG
+`You are listening to the radiobroadcast.'
+
+#Ex 12 - 2nd person pl pronoun + agreement
+Source: c:52
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement
+თქვენ რადიოგადაცემას ისმენთ.
+თქვენ რადიოგადაცემა-ს 0-0-ისმენ-თ.
+2.PL.NOM radiobroadcast-DAT PRES-2-listen-PL
+`You all are listening to the radiobroadcast.'
