@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Georgian
 ;;; created at:
-;;;     Fri Jan 13 05:39:17 UTC 2012
+;;;     Fri Jan 13 06:33:18 UTC 2012
 ;;; based on Matrix customization system version of:
 ;;;     Mon Jan  9 20:21:21 UTC 2012
 ;;;
@@ -16,12 +16,12 @@
 noun :+ [ CASE case ].
 
 inflected :+ [ NOUN-PC1-FLAG luk,
-    DET-PC1-FLAG luk,
-    1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG luk ].
+    1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG luk,
+    DET-PC1-FLAG luk ].
 
 infl-satisfied :+ [ NOUN-PC1-FLAG na-or-+,
-    DET-PC1-FLAG na-or-+,
-    1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG na-or-+ ].
+    1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG na-or-+,
+    DET-PC1-FLAG na-or-+ ].
 
 png :+ [ PER person,
     NUM number ].
@@ -159,11 +159,11 @@ indeterminate-determiner-lex := determiner-lex.
 
 noun-pc1-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED [ NOUN-PC1-FLAG +,
-                1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
-                DET-PC1-FLAG #det-pc1 ],
+                DET-PC1-FLAG #det-pc1,
+                1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person ],
     DTR noun-lex &
-        [ INFLECTED [ 1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
-                      DET-PC1-FLAG #det-pc1 ] ] ].
+        [ INFLECTED [ DET-PC1-FLAG #det-pc1,
+                      1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person ] ] ].
 
 noun-pc1_lrt1-lex-rule := noun-pc1-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.HEAD.CASE nom ].
@@ -211,7 +211,7 @@ dative-lex-rule := noun-pc1-lex-rule-super &
     SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
                                                                 PER non-3rd ] ].
 
-det-pc1-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+det-pc1-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED [ DET-PC1-FLAG +,
                 1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
                 NOUN-PC1-FLAG #noun-pc1 ],
@@ -219,10 +219,10 @@ det-pc1-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
         [ INFLECTED [ 1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
                       NOUN-PC1-FLAG #noun-pc1 ] ] ].
 
-det-pc1_lrt1-lex-rule := det-pc1-lex-rule-super &
+det-pc1_lrt1-lex-rule := det-pc1-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE nom ].
 
-det-pc1_lrt2-lex-rule := det-pc1-lex-rule-super &
+det-pc1_lrt2-lex-rule := const-lex-rule & det-pc1-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE dat ].
 
 ;;;;;;;;;;;;;;;;;;;

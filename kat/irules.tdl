@@ -22,7 +22,3 @@ dative-lex-rule.
 det-pc1_lrt1-suffix :=
 %suffix (* ი)
 det-pc1_lrt1-lex-rule.
-
-det-pc1_lrt2-suffix :=
-%suffix (* ს)
-det-pc1_lrt2-lex-rule.

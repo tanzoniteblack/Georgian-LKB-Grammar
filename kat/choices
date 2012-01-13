@@ -159,8 +159,7 @@ section=lexicon
       det-pc1_lrt1_lri1_orth=ი
       det-pc1_lrt2_feat1_name=case
       det-pc1_lrt2_feat1_value=acc
-      det-pc1_lrt2_lri1_inflecting=yes
-      det-pc1_lrt2_lri1_orth=ს
+      det-pc1_lrt2_lri1_inflecting=no
 
 section=toolbox-import
 
