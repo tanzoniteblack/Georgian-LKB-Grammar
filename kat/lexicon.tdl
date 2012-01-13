@@ -1,43 +1,43 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-mastavlebel := general-noun-lex &
-  [ STEM < "mastavlebel" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_mastavlebel_n_rel" ].
+masts%27avlebel := general-noun-lex &
+  [ STEM < "masts'avlebel" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_masts'avlebel_n_rel" ].
 
-teril := general-noun-lex &
-  [ STEM < "teril" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_teril_n_rel" ].
+ts%27eril := general-noun-lex &
+  [ STEM < "ts'eril" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ts'eril_n_rel" ].
 
-radiogadatema := general-noun-lex &
-  [ STEM < "radiogadatema" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_radiogadatema_n_rel" ].
+radiogadatsema := general-noun-lex &
+  [ STEM < "radiogadatsema" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_radiogadatsema_n_rel" ].
 
-svil := general-noun-lex &
-  [ STEM < "svil" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_svil_n_rel" ].
+shvil := general-noun-lex &
+  [ STEM < "shvil" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_shvil_n_rel" ].
 
 mama := general-noun-lex &
   [ STEM < "mama" >,
     SYNSEM.LKEYS.KEYREL.PRED "_mama_n_rel" ].
 
-tqal := general-noun-lex &
-  [ STEM < "tqal" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_tqal_n_rel" ].
+ts%27q%27al := general-noun-lex &
+  [ STEM < "ts'q'al" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ts'q'al_n_rel" ].
 
 ;;; Verbs
 
-ter := trans-verb-lex &
-  [ STEM < "ter" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ter_v_rel" ].
+ts%27er := trans-verb-lex &
+  [ STEM < "ts'er" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ts'er_v_rel" ].
 
-dug := intran-verb-lex &
-  [ STEM < "dug" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dug_v_rel" ].
+dugh := intran-verb-lex &
+  [ STEM < "dugh" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dugh_v_rel" ].
 
-musaob := intran-verb-lex &
-  [ STEM < "musaob" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_musaob_v_rel" ].
+mushaob := intran-verb-lex &
+  [ STEM < "mushaob" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_mushaob_v_rel" ].
 
 ;;; Determiners
 
