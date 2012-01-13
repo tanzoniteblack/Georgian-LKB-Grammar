@@ -1,0 +1,49 @@
+Lab 2 : Ryan Smith
+Language: Georgian (kat)
+01/12/12
+
+Word Order:
+Georgian has very free word order.  While most sentences are SOV or SVO, any combination is still considered grammatical.  Which allows for all the word order examples following to be marked as grammatical.
+    
+	Intransitive examples:
+        SV:
+		    	მე ვმუშაობ.
+			მე 0-ვ-მუშაობ-0
+			1.SG.NOM PRES-1-word-SG
+			`I work.'
+		VS:
+			მუშაობთ თქვენ.
+			0-0-მუშაობ-თ თქვენ
+			PRES-2-word-PL 2.PL.NOM
+			`You work.'
+	Transitive examples:
+		SVO:
+			მასწავლებელი წერილს წერს.
+			მასწავლებელ-ი წერილ-ს PRES-წერ-ს
+			teacher-NOM letter-DAT 0-write-3.SG
+			`The teacher is writing a letter.'
+		SVO:
+			მასწავლებელი წერს წერილს.
+			მასწავლებელ-ი 0-წერ-ს წერილ-ს
+			teacher-NOM PRES-write-3.SG letter-DAT
+			`The teacher is writing a letter.'
+		VSO:
+			წერს მასწავლებელი წერილს.
+			0-წერ-ს მასწავლებელ-ი წერილ-ს
+			PRES-write-3.SG teacher-NOM letter-DAT
+			`The teacher is writing a letter.'
+		VOS:
+			წერს წერილს მასწავლებელი.
+			0-წერ-ს წერილ-ს მასწავლებელ-ი
+			PRES-write-3.SG letter-DAT teacher-NOM
+			`The teacher is writing a letter.'
+		OVS:
+			წერილს წერს მასწავლებელი.
+			წერილ-ს 0-წერ-ს მასწავლებელ-ი
+			letter-DAT PRES-write-3.SG teacher-NOM
+			`The teacher is writing a letter.'
+		OSV:
+			წერილს მასწავლებელი წერს.
+			წერილ-ს მასწავლებელ-ი 0-წერ-ს
+			letter-DAT teacher-NOM PRES-write-3.SG
+			`The teacher is writing a letter.'

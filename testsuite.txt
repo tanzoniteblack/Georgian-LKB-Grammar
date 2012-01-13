@@ -5,8 +5,9 @@ Date: January 10, 2012
 Source a: The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery
 Source b: Georgian, A structural reference grammar by B.G. Hewitt
 Source c: Georgian, A Reading Grammar by Howard I. Aronson
+Source d: Beginner's Georgian by ?
 
-#Ex 1 
+#Ex 1 - SOV
 Source: c:49
 Vetted: s
 Judgment: g
@@ -17,7 +18,7 @@ teacher-NOM letter-DAT 0-write-3.SG
 `The teacher is writing a letter.'
 
 #Word order is "quite free" (c:47), the most common word order is SOV, but SVO is also very common depending on emphasis. However, none of my sources say anything more than this and don't give examples of other word orders.
-#Ex 2 
+#Ex 2 - SVO
 Source: author
 Vetted: f
 Judgment: g
@@ -27,7 +28,7 @@ Phenomena: word order, case, agreement
 teacher-NOM PRES-write-3.SG letter-DAT
 `The teacher is writing a letter.'
 
-#Ex 3
+#Ex 3 - VSO
 Source: author
 Vetted: f
 Judgment: g
@@ -37,7 +38,7 @@ Phenomena: word order, case, agreement
 PRES-write-3.SG teacher-NOM letter-DAT
 `The teacher is writing a letter.'
 
-#Ex 4
+#Ex 4 - VOS
 Source: author
 Vetted: f
 Judgment: g
@@ -47,7 +48,7 @@ Phenomena: word order, case, agreement
 PRES-write-3.SG letter-DAT teacher-NOM
 `The teacher is writing a letter.'
 
-#Ex 5
+#Ex 5 - OVS
 Source: author
 Vetted: f
 Judgment: g
@@ -57,7 +58,7 @@ Phenomena: word order, case, agreement
 letter-DAT PRES-write-3.SG teacher-NOM
 `The teacher is writing a letter.'
 
-#Ex 6
+#Ex 6 - OSV
 Source: author
 Vetted: f
 Judgment: g
@@ -126,3 +127,23 @@ Phenomena: pronouns, case, agreement
 თქვენ რადიოგადაცემა-ს 0-0-ისმენ-თ.
 2.PL.NOM radiobroadcast-DAT PRES-2-listen-PL
 `You all are listening to the radiobroadcast.'
+
+#Ex 13 - SV intrans. word order:
+Source: d:40
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement, word order
+მე ვმუშაობ.
+მე 0-ვ-მუშაობ-0
+1.SG.NOM PRES-1-word-SG
+`I work.'
+
+#Ex 14 - VS intrans. word order:
+Source: d:40
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement, word order
+მუშაობთ თქვენ.
+0-0-მუშაობ-თ თქვენ
+PRES-2-word-PL 2.PL.NOM
+`You work.'
