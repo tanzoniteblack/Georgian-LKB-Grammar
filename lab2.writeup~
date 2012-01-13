@@ -128,10 +128,22 @@ Case:
 			child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.PL father-GEN-for
 			`The children have sent a letter to (their) father.'
 	
-The intransitive subject is almost always in the nominative case, except for a small set of verbs (motion, weather, stative) which take the dative for the subject.  For now, I have an example of one with the dative subject, but I have not yet accounted for it in anyway.
+The intransitive subject is almost always in the nominative case, except for a small set of intransitive verbs which act like a transitive verb when put in the aorist tense and switch the case of their subject to ergative.  However, this is rather lexically specific, and I believe non-productive.  For now, I have an example of one with the with the nominative to ergative shift, but I have not yet accounted for it in the grammar.
 	Nominative:
 		მე ვმუშაობ.
 		მე 0-ვ-მუშაობ-0
 		1.SG.NOM PRES-1-word-SG
 		`I work.'
+	Nominative -> Ergative:
+		წყალმა იდუღა.
+		წყალ-მა ი-დუღ-ა
+		water-ERG PERF-boil-AOR.3.SG
+		`The water boiled.'
 
+The rest of the NP:
+	Determiners are not required in Georgian, and are always optional based on the pragmatics.  There exists some determiners that highlight the indeterminacy of nouns if used, and others that act as demonstratives. Determiners are able to be used with both regular NPs as well as pronouns, and they always precede the NP they modify.  Examples of the Det-Noun order are already highlighted above, which also serve to show demonstratives with regular NP.  The following example is one I pulled from the internet of a case where a determiner is being used with a pronoun:
+		ზოგი შენ მოატყუო.
+		ზოგ-ი შენ 0-0-მოატყუო-0
+		some-NOM 2.SG.NOM PRES-2-cheat-SG
+		`Some of you cheat.'
+	

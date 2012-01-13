@@ -249,3 +249,13 @@ Phenomena: case, agreement
 წყალ-მა ი-დუღ-ა
 water-ERG PERF-boil-AOR.3.SG
 `The water boiled.'
+
+#Ex 20 - Det PRO
+Source: http://answers.ge/question/225048
+Vetted: f
+Judgment: g
+Phenomena: pronoun, case, agreement
+ზოგი შენ მოატყუო.
+ზოგ-ი შენ 0-0-მოატყუო-0
+some-NOM 2.SG.NOM PRES-2-cheat-SG
+`Some of you cheat.'
