@@ -48,6 +48,8 @@ Georgian has very free word order.  While most sentences are SOV or SVO, any com
 			letter-DAT teacher-NOM PRES-write-3.SG
 			`The teacher is writing a letter.'
 
+There are also ditransitives in Georgian, which appear to be sensitive to the ordering of the direct object and indirect object in relationship to each other alone, and only in the present tense.  However, I've not yet gathered up good enough examples to have this completely explored and none of my sources really want to talk about it.  What I do have for ditransitives is shown in the section about case at the moment.
+
 Does your language have determiners? Yes. Det-Noun
 	While Georgian does not have articles, it does have a few determiners.  The order for these is Det-Noun.
 		Det-Noun:
@@ -126,8 +128,8 @@ Case:
 			შვილებს წერილი გაუგზავნიათ მამისათვის.
 			შვილ-ებ-ს წერილ-ი გა-უ-გზავნ-ათ მამ-ისა-თვის
 			child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.PL father-GEN-for
-			`The children have sent a letter to (their) father.'
-	
+			`The children have sent a letter to (their) father.'	
+
 The intransitive subject is almost always in the nominative case, except for a small set of intransitive verbs which act like a transitive verb when put in the aorist tense and switch the case of their subject to ergative.  However, this is rather lexically specific, and I believe non-productive.  For now, I have an example of one with the with the nominative to ergative shift, but I have not yet accounted for it in the grammar.
 	Nominative:
 		მე ვმუშაობ.
@@ -147,3 +149,17 @@ The rest of the NP:
 		some-NOM 2.SG.NOM PRES-2-cheat-SG
 		`Some of you cheat.'
 	
+[incr tsdb()] report:
+
+      Coverage: Currently I'm getting a 60.9% coverage.  The break up is 25 total items, 23 of which are positive.  Averaging 3.09 words per string, with 5.29 lexical items a string.  There is only 1 distinct analysis for each of the 14 returns results.
+
+      Overgeneration: I'm getting 50% overall coverage in the overgeneration.  I have only 2 negative items (lack of negative items is because constituent word order doesn't cause incorrect parses in Georgian, only the determiner coming after the noun it modifies will currently give us ungrammatical examples; this number will skyrocket once we start including agreement).  I have on average 4 words per string, with 7.5 lexical items.  I have 1 distinct analysis for the 1 result.
+
+      The one case I have of over generation, is actually not a false parse.  For some reason I had a sentence marked as ungrammatical that was actually grammatical...so I've fixed that now and will also give the [incr tsdb()] report for the fixed testsuite results:
+
+    Coverage: I now have 62.5% coverage.  24 positive items out of 25 total.  3.12 words per string, with 5.4 lexical items.  1 distinct analysis for each of the 15 results.
+
+    Overgeneration: I have 0% coverage.  1 negative item, with 4 words and 8 lexical items which is returning 0 parses.
+
+Other notes:
+      At this point, I'm doing well wtih my example sentences.  Though I must admit, I'm confused as to why [incr tsdb()] is saying that a sentence like "შვიდებმა წერილი გაგზავნიან მამას" when I haven't included the information on how to compose the aorist verb in that sentence.  And I know that LKB refuses to parse it.  The main thing that still needs done are to include the different tenses in the lexicon and specify the cases which are needed for subject and object marking as those change across tenses, but since that's largely reliant on the verb with rich morphological markers, I'll hold off until next week's assignment to do this.

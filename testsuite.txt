@@ -183,7 +183,7 @@ teacher-NOM one-DAT letter-DAT 0-write-3.SG
 #Ex 15 - Det-Noun ordering, dative case
 Source: a
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
 მასწავლებელ-ი წერილ-ს ერთ-0 PRES-წერ-ს

@@ -1,50 +1,110 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-masts%3Favlebel := general-noun-lex &
-  [ STEM < "masts?avlebel" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_masts?avlebel_n_rel" ].
+მასწავლებელ := general-noun-lex &
+  [ STEM < "მასწავლებელ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teacher_n_rel" ].
 
-ts%3Feril := general-noun-lex &
-  [ STEM < "ts?eril" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ts?eril_n_rel" ].
+წერილ := general-noun-lex &
+  [ STEM < "წერილ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_letter_n_rel" ].
 
-radiogadatsema := general-noun-lex &
-  [ STEM < "radiogadatsema" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_radiogadatsema_n_rel" ].
+რადიოგადაცემა := general-noun-lex &
+  [ STEM < "რადიოგადაცემა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_radiobroadcast_n_rel" ].
 
-shvil := general-noun-lex &
-  [ STEM < "shvil" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_shvil_n_rel" ].
+შვილ := general-noun-lex &
+  [ STEM < "შვილ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_child_n_rel" ].
 
-mama := general-noun-lex &
-  [ STEM < "mama" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_mama_n_rel" ].
+მამა := general-noun-lex &
+  [ STEM < "მამა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_father_n_rel" ].
 
-ts%3Fq%3Fal := general-noun-lex &
-  [ STEM < "ts?q?al" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ts?q?al_n_rel" ].
+წყალ := general-noun-lex &
+  [ STEM < "წყალ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_water_n_rel" ].
+
+მე := 1sg-pro-noun-lex &
+  [ STEM < "მე" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+შენ := 2sg-pro-noun-lex &
+  [ STEM < "შენ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+ის := 3sg-pro-nom-noun-lex &
+  [ STEM < "ის" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+იგი := 3sg-pro-nom-noun-lex &
+  [ STEM < "იგი" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+ჩვენ := 1pl-pro-noun-lex &
+  [ STEM < "ჩვენ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+თქვენ := 2pl-pro-noun-lex &
+  [ STEM < "თქვენ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+ისინი := 3pl-pro-nom-noun-lex &
+  [ STEM < "ისინი" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+იგინი := 3pl-pro-nom-noun-lex &
+  [ STEM < "იგინი" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+იმას := 3sg-pro-dat-noun-lex &
+  [ STEM < "იმას" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+მას := 3sg-pro-dat-noun-lex &
+  [ STEM < "მას" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+იმათ := 3pl-pro-dat-noun-lex &
+  [ STEM < "იმათ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+მათ := 3pl-pro-dat-noun-lex &
+  [ STEM < "მათ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
 
 ;;; Verbs
 
-ts%3Fer := trans-verb-lex &
-  [ STEM < "ts?er" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ts?er_v_rel" ].
+წერ := trans-verb-lex &
+  [ STEM < "წერ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
 
-dugh := intran-verb-lex &
-  [ STEM < "dugh" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_dugh_v_rel" ].
+ისმენ := trans-verb-lex &
+  [ STEM < "ისმენ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_listen_v_rel" ].
 
-mushaob := intran-verb-lex &
-  [ STEM < "mushaob" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_mushaob_v_rel" ].
+გზავნ := trans-verb-lex &
+  [ STEM < "გზავნ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_send_v_rel" ].
+
+დუღ := intran-verb-lex &
+  [ STEM < "დუღ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_boil_v_rel" ].
+
+მუშაობ := intran-verb-lex &
+  [ STEM < "მუშაობ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_work_v_rel" ].
+
+მოატყუო := intran-verb-lex &
+  [ STEM < "მოატყუო" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cheat_v_rel" ].
 
 ;;; Determiners
 
-ert := indeterminate-determiner-lex &
-  [ STEM < "ert" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ert_q_rel" ].
+ერთ := indeterminate-determiner-lex &
+  [ STEM < "ერთ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ერთ_q_rel" ].
 
-zog := indeterminate-determiner-lex &
-  [ STEM < "zog" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_zog_q_rel" ].
+ზოგ := indeterminate-determiner-lex &
+  [ STEM < "ზოგ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ზოგ_q_rel" ].

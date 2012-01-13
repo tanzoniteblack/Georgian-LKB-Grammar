@@ -1,24 +1,36 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
-noun-pc1_lrt1-suffix :=
-%suffix (* i)
-noun-pc1_lrt1-lex-rule.
+nominative-noun-suffix :=
+%suffix (* ი)
+nominative-noun-lex-rule.
 
-dative-suffix :=
-%suffix (* s)
-dative-lex-rule.
+dative-noun-suffix :=
+%suffix (* ს)
+dative-noun-lex-rule.
+
+ergative-noun-suffix :=
+%suffix (* მა)
+ergative-noun-lex-rule.
+
+plural-noun-suffix :=
+%suffix (* ებ)
+plural-noun-lex-rule.
 
 3rdsg-suffix :=
-%suffix (* s)
+%suffix (* ს)
 3rdsg-lex-rule.
 
 3rdpl-suffix :=
-%suffix (* en)
+%suffix (* ენ)
 3rdpl-lex-rule.
 
 1st2ndplural-suffix :=
-%suffix (* t)
+%suffix (* თ)
 1st2ndplural-lex-rule.
 
-det-pc1_lrt1-suffix :=
-%suffix (* i)
-det-pc1_lrt1-lex-rule.
+nominative-deter-suffix :=
+%suffix (* ი)
+nominative-deter-lex-rule.
+
+ergative-deter-suffix :=
+%suffix (* მა)
+ergative-deter-lex-rule.

@@ -26,7 +26,7 @@ start-symbols := $root.
 ;;
 ;; word-breaking characters in tokenization --- treated as whitespace
 ;;
-punctuation-characters := "!\"&'()*+,−./\;<>@[]^`{|}~。！？…．　○●◎＊☆★◇◆".
+punctuation-characters := "!\"&'()*+,−./\;<>?@[]^`{|}~。！？…．　○●◎＊☆★◇◆".
 ;;
 ;; suppress results of regular morphology rules if irregular form exists
 ;;
@@ -59,7 +59,7 @@ label-path-tail := "WLINK".
 ;;
 qc-structure := $qc_paths.
 
-;;
+;; 
 ;; the scoring model, either for on-line use in best-first parsing or off-line
 ;; ranking of complete parse results after parsing.
 ;;
@@ -73,7 +73,7 @@ sm := "my_language.mem".
 ;; likely not be used in a grammar to avoid interference):
 ;;
 #|
-rule-keyargs :=
+rule-keyargs := 
   $subj-head-example 2
   $head-complement-example 1.
 |#
@@ -84,7 +84,7 @@ rule-keyargs :=
 ;; only, rather than be considered part of the linguistic analyses.  e.g.
 ;;
 #|
-spanning-only-rules :=
+spanning-only-rules := 
   $runon-s-example.
 |#
 
@@ -106,18 +106,18 @@ generic-lexentry-status-values := generic-lex-entry.
 ;;
 ;; some generic lexical entries require inflectional marking.  this mechanism
 ;; is a filter on which generic entries proposed by other means can survive:
-;; generic entries listed here will only be postulated if the required suffix
+;; generic entries listed here will only be postulated if the required suffix 
 ;; can be matched against the input token.
 ;;
 ;; when using only generic entries licensed by a POS tag, the suffix filter
 ;; really does not make a lot of sense anymore.               (6-jun-03; oe)
 ;;
 #|
-generic-le-suffixes :=
-  $generic_trans_verb_pres3sg "S"
-  $generic_trans_verb_past "ED"
-  $generic_trans_verb_psp "ED"
-  $generic_trans_verb_prp "ING"
+generic-le-suffixes := 
+  $generic_trans_verb_pres3sg "S" 
+  $generic_trans_verb_past "ED" 
+  $generic_trans_verb_psp "ED" 
+  $generic_trans_verb_prp "ING" 
   $generic_pl_noun "S"
 .
 |#
@@ -127,7 +127,7 @@ generic-le-suffixes :=
 ;; ERG and using the Penn Treebank tagset.
 ;;
 #|
-posmapping :=
+posmapping := 
   JJ $generic_adj
   JJR $generic_adj_compar
   JJS $generic_adj_superl
