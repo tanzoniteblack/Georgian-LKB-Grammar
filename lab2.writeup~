@@ -47,3 +47,91 @@ Georgian has very free word order.  While most sentences are SOV or SVO, any com
 			წერილ-ს მასწავლებელ-ი 0-წერ-ს
 			letter-DAT teacher-NOM PRES-write-3.SG
 			`The teacher is writing a letter.'
+
+Does your language have determiners? Yes. Det-Noun
+	While Georgian does not have articles, it does have a few determiners.  The order for these is Det-Noun.
+		Det-Noun:
+			ერთი მასწავლებელი წერილს წერს.
+			ერთ-ი მასწავლებელ-ი წერილ-ს PRES-წერ-ს
+			one-NOM teacher-NOM letter-DAT 0-write-3.SG
+			`A teacher is writing a letter.'
+			
+			მასწავლებელი ერთ წერილს წერს.
+			მასწავლებელ-ი ერთ-0 წერილ-ს PRES-წერ-ს
+			teacher-NOM one-DAT letter-DAT 0-write-3.SG
+			`A teacher is writing a letter.'
+		*Noun-Det:
+			მასწავლებელი ერთი წერილს წერს.
+			მასწავლებელ-ი ერთ-ი წერილ-ს PRES-წერ-ს
+			teacher-NOM one-NOM letter-DAT 0-write-3.SG
+			`A teacher is writing a letter.'
+			
+			მასწავლებელი ერთ წერილს წერს.
+			მასწავლებელ-ი წერილ-ს ერთ-0 PRES-წერ-ს
+			teacher-NOM letter-DAT one-DAT 0-write-3.SG
+			`A teacher is writing a letter.'
+
+Number and person:
+	Georgian distinguishes singular from plural, as well as 1st, 2nd and 3rd person.  There is agreement, but we'll cover that later. The following examples show all 6 pronouns that exist based off of these distinctions:
+		1st Person:
+			Sg:
+				მე რადიოგადაცემას ვისმენ.
+				მე რადიოგადაცემა-ს 0-ვ-ისმენ-0.
+				1.SG.NOM radiobroadcast-DAT PRES-1-listen-SG
+				`I am listening to the radiobroadcast.'
+			Pl:
+				ჩვენ რადიოგადაცემას ვისმენთ.
+				ჩვენ რადიოგადაცემა-ს 0-ვ-ისმენ-თ.
+				1.PL.NOM radiobroadcast-DAT PRES-1-listen-PL
+				`I am listening to the radiobroadcast.'
+		2nd Person:
+			Sg:
+				სენ რადიოგადაცემას ისმენ.
+				სენ რადიოგადაცემა-ს 0-0-ისმენ-0.
+				2.SG.NOM radiobroadcast-DAT PRES-2-listen-SG
+				`You are listening to the radiobroadcast.'
+			Pl:
+				თქვენ რადიოგადაცემას ისმენთ.
+				თქვენ რადიოგადაცემა-ს 0-0-ისმენ-თ.
+				2.PL.NOM radiobroadcast-DAT PRES-2-listen-PL
+				`You all are listening to the radiobroadcast.'
+		3rd Person:
+			Sg:
+				ის რადიოგადაცემას ისმენს.
+				ის რადიოგადაცემა-ს 0-ისმენ-ს.
+				3.SG.NOM radiobroadcast-DAT PRES-listen-3.SG
+				`He is listening to the radiobroadcast.'
+			Pl:
+				ისინი რადიოგადაცემას ისმენენ.
+				ის რადიოგადაცემა-ს 0-ისმენ-ენ.
+				3.PL.NOM radiobroadcast-DAT PRES-listen-3.PL
+				`They are listening to the radiobroadcast.'
+Gender:
+	Georgian doesn't distinguish gender, not even at the level of having distinct pronouns for 3rd person.  There are also not classes of words based off of animacy, or anything else.
+
+Case:
+	Georgian expresses a split between nom-acc and erg-abs, primarily based off the tense of the verb (there are also classes of verbs, such as stative verbs, some verbs of motion, and many verbs involving the weather which just behave oddly).  There are in fact 3 different patterns of case which are used, which I'm having slight problems getting into the grammar matrix correctly, as it doesn't wish to allow me to reuse nominative for more than one option, and doesn't have a spot for the 3rd case pattern. I currently haven't accounted the last cast, of DAT-NOM-GEN ordering, in my grammar.  This is because the genitive argument is purely optional, involves a case marker + postposition combination, and a case, that outside of the pluperfect tense and a series of postpositions, isn't really useful until we start to deal with possessives.  The ditransitives are used to show the case pattern of the indirect object as well as the object and subject of the basic transitive.
+	Ditransitives:
+		Nom-Dat-Dat:
+			შვილები წერილს გაუგზავნიან მამას.
+			შვილ-ებ-ი წერილ-ს გა-უ-გზავნ-ან მამა-ს
+			child-PL-NOM letter-DAT PERF-3.OBJ-send-3.PL father-DAT
+			`The children will send a letter to (their) father.'
+		Erg-Nom-Dat:
+			შვილებმა წერილი გაუგზავნეს მამას.
+			შვილ-ებ-მა წერილ-ი გა-უ-გზავნ-ეს მამა-ს
+			child-PL-ERG letter-NOM PERF-3.OBJ-send-AOR father-DAT
+			`The children sent a letter to (their) father.'
+		DAT-NOM-GEN.for
+			შვილებს წერილი გაუგზავნიათ მამისათვის.
+			შვილ-ებ-ს წერილ-ი გა-უ-გზავნ-ათ მამ-ისა-თვის
+			child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.PL father-GEN-for
+			`The children have sent a letter to (their) father.'
+	
+The intransitive subject is almost always in the nominative case, except for a small set of verbs (motion, weather, stative) which take the dative for the subject.  For now, I have an example of one with the dative subject, but I have not yet accounted for it in anyway.
+	Nominative:
+		მე ვმუშაობ.
+		მე 0-ვ-მუშაობ-0
+		1.SG.NOM PRES-1-word-SG
+		`I work.'
+

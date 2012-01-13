@@ -5,6 +5,9 @@ Date: January 10, 2012
 Source a: The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery
 Source b: Georgian, A structural reference grammar by B.G. Hewitt
 Source c: Georgian, A Reading Grammar by Howard I. Aronson
+Source d: Beginner's Georgian by ?
+Source e: Kartvelian Morphosyntax: Number Agreement and Morphosynactic Orientation in the South Caucasian Languages by Kevin Tuite
+Source f: Essentials of Georgian Grammar by Shorena Kurtsikidze
 
 #Ex 1 - SOV
 Source: c:49
@@ -17,7 +20,7 @@ teacher-NOM letter-DAT 0-write-3.SG
 `The teacher is writing a letter.'
 
 #Word order is "quite free" (c:47), the most common word order is SOV, but SVO is also very common depending on emphasis. However, none of my sources say anything more than this and don't give examples of other word orders.
-#Ex 2 
+#Ex 2 - SVO
 Source: author
 Vetted: f
 Judgment: g
@@ -27,7 +30,7 @@ Phenomena: word order, case, agreement
 teacher-NOM PRES-write-3.SG letter-DAT
 `The teacher is writing a letter.'
 
-#Ex 3
+#Ex 3 - VSO
 Source: author
 Vetted: f
 Judgment: g
@@ -37,7 +40,7 @@ Phenomena: word order, case, agreement
 PRES-write-3.SG teacher-NOM letter-DAT
 `The teacher is writing a letter.'
 
-#Ex 4
+#Ex 4 - VOS
 Source: author
 Vetted: f
 Judgment: g
@@ -47,7 +50,7 @@ Phenomena: word order, case, agreement
 PRES-write-3.SG letter-DAT teacher-NOM
 `The teacher is writing a letter.'
 
-#Ex 5
+#Ex 5 - OVS
 Source: author
 Vetted: f
 Judgment: g
@@ -57,7 +60,7 @@ Phenomena: word order, case, agreement
 letter-DAT PRES-write-3.SG teacher-NOM
 `The teacher is writing a letter.'
 
-#Ex 6
+#Ex 6 - OSV
 Source: author
 Vetted: f
 Judgment: g
@@ -126,3 +129,123 @@ Phenomena: pronouns, case, agreement
 თქვენ რადიოგადაცემა-ს 0-0-ისმენ-თ.
 2.PL.NOM radiobroadcast-DAT PRES-2-listen-PL
 `You all are listening to the radiobroadcast.'
+
+#Ex 13 - SV intrans. word order:
+Source: d:40
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement, word order
+მე ვმუშაობ.
+მე 0-ვ-მუშაობ-0
+1.SG.NOM PRES-1-word-SG
+`I work.'
+
+#Ex 14 - VS intrans. word order:
+Source: d:40
+Vetted: s
+Judgment: g
+Phenomena: pronouns, case, agreement, word order
+მუშაობთ თქვენ.
+0-0-მუშაობ-თ თქვენ
+PRES-2-word-PL 2.PL.NOM
+`You work.'
+
+#Ex 15 - Det-Noun ordering
+Source: a
+Vetted: f
+Judgment: g
+Phenomena: word order, case, agreement, determiners
+ერთი მასწავლებელი წერილს წერს.
+ერთ-ი მასწავლებელ-ი წერილ-ს PRES-წერ-ს
+one-NOM teacher-NOM letter-DAT 0-write-3.SG
+`A teacher is writing a letter.'
+
+#Ex 15 - Noun-Det ordering
+Source: a
+Vetted: f
+Judgment: u
+Phenomena: word order, case, agreement, determiners
+მასწავლებელი ერთი წერილს წერს.
+მასწავლებელ-ი ერთ-ი წერილ-ს PRES-წერ-ს
+teacher-NOM one-NOM letter-DAT 0-write-3.SG
+`A teacher is writing a letter.'
+
+#Ex 15 - Det-Noun ordering, dative case
+Source: a
+Vetted: f
+Judgment: g
+Phenomena: word order, case, agreement, determiners
+მასწავლებელი ერთ წერილს წერს.
+მასწავლებელ-ი ერთ-0 წერილ-ს PRES-წერ-ს
+teacher-NOM one-DAT letter-DAT 0-write-3.SG
+`A teacher is writing a letter.'
+
+#Ex 15 - Det-Noun ordering, dative case
+Source: a
+Vetted: f
+Judgment: u
+Phenomena: word order, case, agreement, determiners
+მასწავლებელი ერთ წერილს წერს.
+მასწავლებელ-ი წერილ-ს ერთ-0 PRES-წერ-ს
+teacher-NOM letter-DAT one-DAT 0-write-3.SG
+`A teacher is writing a letter.'
+
+#Ex 15 - Nom-Dat-Dat case pattern, indirect-object marking, perfective/future; order of the direct object and indirect object matter relative to each other
+Source: e:18
+Vetted: s
+Judgment: g
+Phenomena: case, agreement
+შვილები წერილს გაუგზავნიან მამას.
+შვილ-ებ-ი წერილ-ს გა-უ-გზავნ-ან მამა-ს
+child-PL-NOM letter-DAT PERF-3.OBJ-send-3.PL father-DAT
+`The children will send a letter to (their) father.'
+
+#Ex 16 - Nom-Dat-Dat case pattern, indirect-object marking, perfective/future; order of the direct object and indirect object matter relative to each other; this example is a bit non-sensical and should be REPLACED when I find a better one
+Source: a
+Vetted: f
+Judgment: g
+Phenomena: case, agreement
+შვილები მამას გაუგზავნიან წერილს.
+შვილ-ებ-ი მამა-ს გა-უ-გზავნ-ან წერილ-ს
+child-PL-NOM father-DAT PERF-3.OBJ-send-3.PL letter-DAT
+`The children will send (their) father to a letter.'
+
+#Ex 17 - Erg-Nom-Dat case pattern
+Source: e:18
+Vetted: s
+Judgment: g
+Phenomena: case, agreement
+შვილებმა წერილი გაუგზავნეს მამას.
+შვილ-ებ-მა წერილ-ი გა-უ-გზავნ-ეს მამა-ს
+child-PL-ERG letter-NOM PERF-3.OBJ-send-AOR.3.PL father-DAT
+`The children sent a letter to (their) father.'
+
+#Ex 18 - Dat-Nom-Gen.for case pattern
+Source: e:18
+Vetted: s
+Judgment: g
+Phenomena: case, agreement
+შვილებს წერილი გაუგზავნიათ მამისათვის.
+შვილ-ებ-ს წერილ-ი გა-უ-გზავნ-ათ მამ-ისა-თვის
+child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.PL father-GEN-for
+`The children have sent a letter to (their) father.'
+
+#Ex 19 - Nom -> Erg case pattern in intransitives
+Source: e:19
+Vetted: s
+Judgment: g
+Phenomena: case, agreement
+წყალი დუღს.
+წყალ-ი დუღ-ს
+water-NOM boil-3.SG
+`The water boils.'
+
+#Ex 19 - Nom -> Erg case pattern in intransitives
+Source: e:19
+Vetted: s
+Judgment: g
+Phenomena: case, agreement
+წყალმა იდუღა.
+წყალ-მა ი-დუღ-ა
+water-ERG PERF-boil-AOR.3.SG
+`The water boils.'
