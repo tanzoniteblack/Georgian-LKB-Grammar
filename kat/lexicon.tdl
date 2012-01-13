@@ -1,27 +1,27 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-მასწავლებელ := noun1-noun-lex &
+მასწავლებელ := general-noun-lex &
   [ STEM < "მასწავლებელ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_მასწავლებელ_n_rel" ].
 
-წერილ := noun1-noun-lex &
+წერილ := general-noun-lex &
   [ STEM < "წერილ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_წერილ_n_rel" ].
 
-რადიოგადაცემა := noun1-noun-lex &
+რადიოგადაცემა := general-noun-lex &
   [ STEM < "რადიოგადაცემა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_რადიოგადაცემა_n_rel" ].
 
-შვილ := noun1-noun-lex &
+შვილ := general-noun-lex &
   [ STEM < "შვილ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_შვილ_n_rel" ].
 
-მამა := noun1-noun-lex &
+მამა := general-noun-lex &
   [ STEM < "მამა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_მამა_n_rel" ].
 
-წყალ := noun1-noun-lex &
+წყალ := general-noun-lex &
   [ STEM < "წყალ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_წყალ_n_rel" ].
 

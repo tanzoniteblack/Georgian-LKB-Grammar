@@ -1,4 +1,8 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+noun-pc1_lrt1-suffix :=
+%suffix (* ი)
+noun-pc1_lrt1-lex-rule.
+
 dative-suffix :=
 %suffix (* ს)
 dative-lex-rule.
@@ -15,6 +19,10 @@ dative-lex-rule.
 %suffix (* თ)
 1st2ndplural-lex-rule.
 
-det-pc1-suffix :=
+det-pc1_lrt1-suffix :=
 %suffix (* ი)
-det-pc1-lex-rule.
+det-pc1_lrt1-lex-rule.
+
+det-pc1_lrt2-suffix :=
+%suffix (* ს)
+det-pc1_lrt2-lex-rule.
