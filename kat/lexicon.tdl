@@ -1,0 +1,50 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;; Nouns
+
+მასწავლებელ := noun1-noun-lex &
+  [ STEM < "მასწავლებელ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_მასწავლებელ_n_rel" ].
+
+წერილ := noun1-noun-lex &
+  [ STEM < "წერილ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_წერილ_n_rel" ].
+
+რადიოგადაცემა := noun1-noun-lex &
+  [ STEM < "რადიოგადაცემა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_რადიოგადაცემა_n_rel" ].
+
+შვილ := noun1-noun-lex &
+  [ STEM < "შვილ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_შვილ_n_rel" ].
+
+მამა := noun1-noun-lex &
+  [ STEM < "მამა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_მამა_n_rel" ].
+
+წყალ := noun1-noun-lex &
+  [ STEM < "წყალ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_წყალ_n_rel" ].
+
+;;; Verbs
+
+წერ := trans-verb-lex &
+  [ STEM < "წერ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_წერ_v_rel" ].
+
+დუღ := intran-verb-lex &
+  [ STEM < "დუღ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_დუღ_v_rel" ].
+
+მუშაობ := intran-verb-lex &
+  [ STEM < "მუშაობ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_მუშაობ_v_rel" ].
+
+;;; Determiners
+
+ერთ := indeterminate-determiner-lex &
+  [ STEM < "ერთ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ერთ_q_rel" ].
+
+ზოგ := indeterminate-determiner-lex &
+  [ STEM < "ზოგ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ზოგ_q_rel" ].

@@ -1,0 +1,238 @@
+;;; -*- Mode: TDL; Coding: utf-8 -*-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Grammar of Georgian
+;;; created at:
+;;;     Fri Jan 13 04:34:28 UTC 2012
+;;; based on Matrix customization system version of:
+;;;     Mon Jan  9 20:21:21 UTC 2012
+;;;
+;;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Matrix Type Addenda
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+noun :+ [ CASE case ].
+
+inflected :+ [ NOUN-PC1-FLAG luk,
+    DET-PC1-FLAG luk ].
+
+infl-satisfied :+ [ NOUN-PC1-FLAG na-or-+,
+    DET-PC1-FLAG na-or-+ ].
+
+png :+ [ PER person,
+    NUM number ].
+
+basic-head-comp-phrase :+ [ SYNSEM.LOCAL.CAT.MC #mc,
+    HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
+
+basic-head-mod-phrase-simple :+ [ SYNSEM.LOCAL.CAT.MC #mc,
+    NON-HEAD-DTR.SYNSEM.LOCAL.CAT.MC #mc ].
+
+; We can't just use the V-final and V-initial word
+; order modules together to get a good free word order
+; module. The root of the problem seems to be that we
+; need the subject to be able to attach inside the
+; object(s) for VSO and OSV, but at the same time, we
+; don't want complete flexibility on order of attachment
+; when the verb is in the middle -- that would give
+; spurious ambiguity.  This solution adopts the xmod
+; hierarchy to enforce right-first attachment.  That is,
+; all arguments appears to the right of the verb must
+; attach before all arguments appearing to the left.  The
+; linguistic prediction of this analysis is that free
+; word order languages do not have a consistent VP
+; consituent, even when the verb and object are adjacent
+; (OV order).  Using a separate feature for tracking
+; argument attachment (as opposed to modifier
+; attachment).  We might be able to collapse these one
+; day, but that's not obvious.
+
+synsem :+ [ ATTACH xmod ].
+
+; We'll need to add identification of ATTACH between
+; mother and head-daughter for all other kinds of phrases
+; if we do this.  Just for illustration, I'm putting it
+; in for head-adjunct phrases here:
+
+head-mod-phrase :+ [ SYNSEM.ATTACH #attach,
+    HEAD-DTR.SYNSEM.ATTACH #attach ].
+
+;;;;;;;;;;;;;;
+;;; Features
+;;;;;;;;;;;;;;
+
+;;; Case
+
+case := *top*.
+dat := case.  ; dative
+erg := case.  ; ergative
+abs+nom := case.
+abs := abs+nom.
+nom := abs+nom.
+
+;;; Person
+
+person := *top*.
+3rd := person.
+non-3rd := person.
+2nd := non-3rd.
+1st := non-3rd.
+
+;;; Number
+
+number := *top*.
+singular := number.
+plural := number.
+
+;;;;;;;;;;;;;;;;;;;
+;;; Lexical Types
+;;;;;;;;;;;;;;;;;;;
+
+;;; Nouns
+
+noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL [ SPR < #spr &
+                                 [ LOCAL.CAT.HEAD det ] >,
+                           COMPS < >,
+                           SUBJ < >,
+                           SPEC < > ],
+    ARG-ST < #spr >,
+    INFLECTED.NOUN-PC1-FLAG - ].
+
+noun1-noun-lex := noun-lex.
+
+;;; Verbs
+
+verb-lex := basic-verb-lex &
+  [ SYNSEM.LOCAL [ CAT.VAL [ SPR < >,
+                             SPEC < >,
+                             SUBJ < #subj > ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST.FIRST #subj &
+                 [ LOCAL [ CAT.VAL [ SPR < >,
+                                     COMPS < > ],
+                           CONT.HOOK.INDEX #xarg ] ] ].
+
+intransitive-verb-lex := verb-lex & intransitive-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
+    ARG-ST.FIRST.LOCAL.CAT.HEAD noun ].
+
+transitive-verb-lex := verb-lex & transitive-lex-item &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
+    ARG-ST < [ LOCAL.CAT.HEAD noun ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun ] ] > ].
+
+trans-verb-lex := transitive-verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL [ SUBJ.FIRST.LOCAL.CAT.HEAD.CASE nom,
+                           COMPS.FIRST.LOCAL.CAT.HEAD.CASE dat ] ].
+
+intran-verb-lex := intransitive-verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CAT.HEAD.CASE nom ].
+
+;;; Others
+
+;;; Determiners
+;;; SPEC is non-empty, and already specified by basic-determiner-lex.
+
+determiner-lex := basic-determiner-lex & basic-zero-arg &
+  [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
+                           COMPS < >,
+                           SUBJ < > ],
+    INFLECTED.DET-PC1-FLAG - ].
+
+indeterminate-determiner-lex := determiner-lex.
+
+;;;;;;;;;;;;;;;;;;;
+;;; Lexical Rules
+;;;;;;;;;;;;;;;;;;;
+
+;;; Lexical rule types
+
+noun-pc1-lex-rule-super := add-only-no-ccont-rule &
+  [ INFLECTED [ NOUN-PC1-FLAG +,
+                DET-PC1-FLAG #det-pc1 ],
+    DTR noun-lex &
+        [ INFLECTED.DET-PC1-FLAG #det-pc1 ] ].
+
+noun-pc1_lrt1-lex-rule := const-lex-rule & noun-pc1-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE nom ].
+
+dative-lex-rule := infl-lex-rule & noun-pc1-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE dat ].
+
+1st_2nd_person-lex-rule-super := add-only-no-ccont-rule & const-lex-rule &
+  [ INFLECTED #infl,
+    DTR verb-lex &
+        [ INFLECTED #infl ] ].
+
+1st-lex-rule := 1st_2nd_person-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 1st ].
+
+3rd_person-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED #infl,
+    DTR verb-lex &
+        [ INFLECTED #infl ] ].
+
+3rdsg-lex-rule := 3rd_person-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM singular,
+                                                                PER 3rd ] ].
+
+3rdpl-lex-rule := 3rd_person-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
+                                                                PER 3rd ] ].
+
+1st2ndplural-lex-rule := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED #infl,
+    DTR verb-lex &
+        [ INFLECTED #infl ],
+    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
+                                                                PER non-3rd ] ].
+
+det-pc1-lex-rule := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED [ DET-PC1-FLAG +,
+                NOUN-PC1-FLAG #noun-pc1 ],
+    DTR determiner-lex &
+        [ INFLECTED.NOUN-PC1-FLAG #noun-pc1 ],
+    SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE abs+nom ].
+
+;;;;;;;;;;;;;;;;;;;
+;;; Phrasal Types
+;;;;;;;;;;;;;;;;;;;
+
+;Constraint on MC used to be part of matrix.tdl
+;;it applies to all wo implementations, except for v2
+
+head-initial-head-nexus := head-initial &
+  [ SYNSEM.ATTACH lmod,
+    HEAD-DTR.SYNSEM.ATTACH notmod-or-lmod ].
+
+head-final-head-nexus := head-final &
+  [ SYNSEM.ATTACH rmod ].
+
+head-subj-phrase := decl-head-subj-phrase & head-initial-head-nexus.
+
+subj-head-phrase := decl-head-subj-phrase & head-final-head-nexus.
+
+head-comp-phrase := basic-head-1st-comp-phrase & head-initial-head-nexus.
+
+comp-head-phrase := basic-head-1st-comp-phrase & head-final-head-nexus.
+
+head-comp-phrase-2 := basic-head-2nd-comp-phrase & head-initial-head-nexus.
+
+comp-head-phrase-2 := basic-head-2nd-comp-phrase & head-final-head-nexus.
+
+; Rules for building NPs.  Note that the Matrix uses SPR for
+; the specifier of nouns and SUBJ for the subject (specifier) of verbs.
+
+head-spec-phrase := basic-head-spec-phrase & head-final.
+
+; Bare NP phrase.  Consider modifying the PRED value of the quantifier relation
+; introduced to match the semantic effect of bare NPs in your language.
+
+bare-np-phrase := basic-bare-np-phrase &
+  [ C-CONT.RELS <! [ PRED "exist_q_rel" ] !> ].
