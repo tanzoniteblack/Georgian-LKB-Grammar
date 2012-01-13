@@ -14,8 +14,8 @@ Source: c:49
 Vetted: s
 Judgment: g
 Phenomena: word order, case, agreement
-mastavlebeli terils ters.
-mastavlebel-i teril-s PRES-ter-s
+masts'avlebeli ts'erils ts'ers.
+masts'avlebel-i ts'eril-s PRES-ts'er-s
 teacher-NOM letter-DAT 0-write-3.SG
 `The teacher is writing a letter.'
 
@@ -25,8 +25,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
-mastavlebeli ters terils.
-mastavlebel-i 0-ter-s teril-s
+masts'avlebeli ts'ers ts'erils.
+masts'avlebel-i 0-ts'er-s ts'eril-s
 teacher-NOM PRES-write-3.SG letter-DAT
 `The teacher is writing a letter.'
 
@@ -35,8 +35,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
-ters mastavlebeli terils.
-0-ter-s mastavlebel-i teril-s
+ts'ers masts'avlebeli ts'erils.
+0-ts'er-s masts'avlebel-i ts'eril-s
 PRES-write-3.SG teacher-NOM letter-DAT
 `The teacher is writing a letter.'
 
@@ -45,8 +45,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
-ters terils mastavlebeli.
-0-ter-s teril-s mastavlebel-i
+ts'ers ts'erils masts'avlebeli.
+0-ts'er-s ts'eril-s masts'avlebel-i
 PRES-write-3.SG letter-DAT teacher-NOM
 `The teacher is writing a letter.'
 
@@ -55,8 +55,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
-terils ters mastavlebeli.
-teril-s 0-ter-s mastavlebel-i
+ts'erils ts'ers masts'avlebeli.
+ts'eril-s 0-ts'er-s masts'avlebel-i
 letter-DAT PRES-write-3.SG teacher-NOM
 `The teacher is writing a letter.'
 
@@ -65,8 +65,8 @@ Source: author
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
-terils mastavlebeli ters.
-teril-s mastavlebel-i 0-ter-s
+ts'erils masts'avlebeli ts'ers.
+ts'eril-s masts'avlebel-i 0-ts'er-s
 letter-DAT teacher-NOM PRES-write-3.SG
 `The teacher is writing a letter.'
 
@@ -75,8 +75,8 @@ Source: c:52
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
-is radiogadatemas ismens.
-is radiogadatema-s 0-ismen-s.
+is radiogadatsemas ismens.
+is radiogadatsema-s 0-ismen-s.
 3.SG.NOM radiobroadcast-DAT PRES-listen-3.SG
 `He is listening to the radiobroadcast.'
 
@@ -85,8 +85,8 @@ Source: c:52
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
-isini radiogadatemas ismenen.
-is radiogadatema-s 0-ismen-en.
+isini radiogadatsemas ismenen.
+is radiogadatsema-s 0-ismen-en.
 3.PL.NOM radiobroadcast-DAT PRES-listen-3.PL
 `They are listening to the radiobroadcast.'
 
@@ -95,8 +95,8 @@ Source: c:52
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
-me radiogadatemas vismen.
-me radiogadatema-s 0-v-ismen-0.
+me radiogadatsemas vismen.
+me radiogadatsema-s 0-v-ismen-0.
 1.SG.NOM radiobroadcast-DAT PRES-1-listen-SG
 `I am listening to the radiobroadcast.'
 
@@ -105,8 +105,8 @@ Source: c:52
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
-cven radiogadatemas visment.
-cven radiogadatema-s 0-v-ismen-t.
+chven radiogadatsemas visment.
+chven radiogadatsema-s 0-v-ismen-t.
 1.PL.NOM radiobroadcast-DAT PRES-1-listen-PL
 `I am listening to the radiobroadcast.'
 
@@ -115,8 +115,8 @@ Source: c:52
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
-sen radiogadatemas ismen.
-sen radiogadatema-s 0-0-ismen-0.
+sen radiogadatsemas ismen.
+sen radiogadatsema-s 0-0-ismen-0.
 2.SG.NOM radiobroadcast-DAT PRES-2-listen-SG
 `You are listening to the radiobroadcast.'
 
@@ -125,8 +125,8 @@ Source: c:52
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
-tkven radiogadatemas isment.
-tkven radiogadatema-s 0-0-ismen-t.
+tkven radiogadatsemas isment.
+tkven radiogadatsema-s 0-0-ismen-t.
 2.PL.NOM radiobroadcast-DAT PRES-2-listen-PL
 `You all are listening to the radiobroadcast.'
 
@@ -135,8 +135,8 @@ Source: d:40
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement, word order
-me vmusaob.
-me 0-v-musaob-0
+me vmushaob.
+me 0-v-mushaob-0
 1.SG.NOM PRES-1-word-SG
 `I work.'
 
@@ -145,8 +145,8 @@ Source: d:40
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement, word order
-musaobt tkven.
-0-0-musaob-t tkven
+mushaobt tkven.
+0-0-mushaob-t tkven
 PRES-2-word-PL 2.PL.NOM
 `You work.'
 
@@ -155,8 +155,8 @@ Source: a
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement, determiners
-erti mastavlebeli terils ters.
-ert-i mastavlebel-i teril-s PRES-ter-s
+erti masts'avlebeli ts'erils ts'ers.
+ert-i masts'avlebel-i ts'eril-s PRES-ts'er-s
 one-NOM teacher-NOM letter-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
@@ -165,8 +165,8 @@ Source: a
 Vetted: f
 Judgment: u
 Phenomena: word order, case, agreement, determiners
-mastavlebeli erti terils ters.
-mastavlebel-i ert-i teril-s PRES-ter-s
+masts'avlebeli erti ts'erils ts'ers.
+masts'avlebel-i ert-i ts'eril-s PRES-ts'er-s
 teacher-NOM one-NOM letter-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
@@ -175,8 +175,8 @@ Source: a
 Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement, determiners
-mastavlebeli ert terils ters.
-mastavlebel-i ert-0 teril-s PRES-ter-s
+masts'avlebeli ert ts'erils ts'ers.
+masts'avlebel-i ert-0 ts'eril-s PRES-ts'er-s
 teacher-NOM one-DAT letter-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
@@ -185,8 +185,8 @@ Source: a
 Vetted: f
 Judgment: u
 Phenomena: word order, case, agreement, determiners
-mastavlebeli ert terils ters.
-mastavlebel-i teril-s ert-0 PRES-ter-s
+masts'avlebeli ert ts'erils ts'ers.
+masts'avlebel-i ts'eril-s ert-0 PRES-ts'er-s
 teacher-NOM letter-DAT one-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
@@ -195,8 +195,8 @@ Source: e:18
 Vetted: s
 Judgment: g
 Phenomena: case, agreement
-svilebi terils gaugzavnian mamas.
-svil-eb-i teril-s ga-u-gzavn-an mama-s
+shvilebi ts'erils gaugzavnian mamas.
+shvil-eb-i ts'eril-s ga-u-gzavn-an mama-s
 child-PL-NOM letter-DAT PERF-3.OBJ-send-3.PL father-DAT
 `The children will send a letter to (their) father.'
 
@@ -205,8 +205,8 @@ Source: a
 Vetted: f
 Judgment: g
 Phenomena: case, agreement
-svilebi mamas gaugzavnian terils.
-svil-eb-i mama-s ga-u-gzavn-an teril-s
+shvilebi mamas gaugzavnian ts'erils.
+shvil-eb-i mama-s ga-u-gzavn-an ts'eril-s
 child-PL-NOM father-DAT PERF-3.OBJ-send-3.PL letter-DAT
 `The children will send (their) father to a letter.'
 
@@ -215,8 +215,8 @@ Source: e:18
 Vetted: s
 Judgment: g
 Phenomena: case, agreement
-svilebma terili gaugzavnes mamas.
-svil-eb-ma teril-i ga-u-gzavn-es mama-s
+shvilebma ts'erili gaugzavnes mamas.
+shvil-eb-ma ts'eril-i ga-u-gzavn-es mama-s
 child-PL-ERG letter-NOM PERF-3.OBJ-send-AOR.3.PL father-DAT
 `The children sent a letter to (their) father.'
 
@@ -225,8 +225,8 @@ Source: e:18
 Vetted: s
 Judgment: g
 Phenomena: case, agreement
-svilebs terili gaugzavniat mamisatvis.
-svil-eb-s teril-i ga-u-gzavn-at mam-isa-tvis
+shvilebs ts'erili gaugzavniat mamisatvis.
+shvil-eb-s ts'eril-i ga-u-gzavn-at mam-isa-tvis
 child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.PL father-GEN-for
 `The children have sent a letter to (their) father.'
 
@@ -235,8 +235,8 @@ Source: e:19
 Vetted: s
 Judgment: g
 Phenomena: case, agreement
-tqali dugs.
-tqal-i dug-s
+ts'q'ali dughs.
+ts'q'al-i dugh-s
 water-NOM boil-3.SG
 `The water boils.'
 
@@ -245,8 +245,8 @@ Source: e:19
 Vetted: s
 Judgment: g
 Phenomena: case, agreement
-tqalma iduga.
-tqal-ma i-dug-a
+ts'q'alma idugha.
+ts'q'al-ma i-dugh-a
 water-ERG PERF-boil-AOR.3.SG
 `The water boiled.'
 
@@ -255,8 +255,8 @@ Source: http://answers.ge/question/225048
 Vetted: f
 Judgment: g
 Phenomena: pronoun, case, agreement
-zogi sen moatquo.
-zog-i sen 0-0-moatquo-0
+zogi shen moat'q'uo.
+zog-i shen 0-0-moat'q'uo-0
 some-NOM 2.SG.NOM PRES-2-cheat-SG
 `Some of you cheat.'
 
