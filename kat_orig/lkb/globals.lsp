@@ -1,5 +1,5 @@
 ;;; LinGO grammar specific globals file
-;;; parameters only - grammar specific functions
+;;; parameters only - grammar specific functions 
 ;;; should go in user-fns.lsp
 
 
@@ -47,12 +47,12 @@
 ;;;
 (defparameter *punctuation-characters*
   (append
-   '(#\space #\! #\" #\& #\( #\)
+   '(#\space #\! #\" #\& #\' #\( #\)
      #\* #\+ #\, #\− #\. #\/ #\\ #\;
      #\< #\> #\? #\@ #\[ #\] #\^ #\`
      #\{ #\| #\} #\~)
    #+:ics
-   '(#\ideographic_full_stop #\fullwidth_question_mark
+   '(#\ideographic_full_stop #\fullwidth_question_mark 
      #\horizontal_ellipsis #\fullwidth_full_stop
      #\fullwidth_exclamation_mark #\black_circle
      #\fullwidth_comma #\ideographic_space
@@ -76,7 +76,7 @@
    "The number of lexical rule applications which may be made
    before it is assumed that some rules are applying circularly")
 
-(defparameter *deleted-daughter-features*
+(defparameter *deleted-daughter-features* 
   '(ARGS HEAD-DTR NON-HEAD-DTR DTR)
   "features pointing to daughters deleted on building a constituent")
 
@@ -102,7 +102,7 @@
 
 (defparameter *label-template-type* 'label)
 
-;;; for the compare function
+;;; for the compare function 
 
 (defparameter *discriminant-path* '(synsem local keys key pred))
 

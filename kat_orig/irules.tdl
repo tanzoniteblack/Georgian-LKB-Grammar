@@ -1,24 +1,24 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 noun-pc1_lrt1-suffix :=
-%suffix (* i)
+%suffix (* ი)
 noun-pc1_lrt1-lex-rule.
 
 dative-suffix :=
-%suffix (* s)
+%suffix (* ს)
 dative-lex-rule.
 
 3rdsg-suffix :=
-%suffix (* s)
+%suffix (* ს)
 3rdsg-lex-rule.
 
 3rdpl-suffix :=
-%suffix (* en)
+%suffix (* ენ)
 3rdpl-lex-rule.
 
 1st2ndplural-suffix :=
-%suffix (* t)
+%suffix (* თ)
 1st2ndplural-lex-rule.
 
 det-pc1_lrt1-suffix :=
-%suffix (* i)
+%suffix (* ი)
 det-pc1_lrt1-lex-rule.

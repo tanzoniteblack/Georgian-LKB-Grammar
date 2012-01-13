@@ -1,50 +1,50 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-მასწავლებელ := general-noun-lex &
-  [ STEM < "მასწავლებელ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_მასწავლებელ_n_rel" ].
+mastavlebel := general-noun-lex &
+  [ STEM < "mastavlebel" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_mastavlebel_n_rel" ].
 
-წერილ := general-noun-lex &
-  [ STEM < "წერილ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_წერილ_n_rel" ].
+teril := general-noun-lex &
+  [ STEM < "teril" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teril_n_rel" ].
 
-რადიოგადაცემა := general-noun-lex &
-  [ STEM < "რადიოგადაცემა" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_რადიოგადაცემა_n_rel" ].
+radiogadatema := general-noun-lex &
+  [ STEM < "radiogadatema" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_radiogadatema_n_rel" ].
 
-შვილ := general-noun-lex &
-  [ STEM < "შვილ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_შვილ_n_rel" ].
+svil := general-noun-lex &
+  [ STEM < "svil" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_svil_n_rel" ].
 
-მამა := general-noun-lex &
-  [ STEM < "მამა" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_მამა_n_rel" ].
+mama := general-noun-lex &
+  [ STEM < "mama" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_mama_n_rel" ].
 
-წყალ := general-noun-lex &
-  [ STEM < "წყალ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_წყალ_n_rel" ].
+tqal := general-noun-lex &
+  [ STEM < "tqal" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tqal_n_rel" ].
 
 ;;; Verbs
 
-წერ := trans-verb-lex &
-  [ STEM < "წერ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_წერ_v_rel" ].
+ter := trans-verb-lex &
+  [ STEM < "ter" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ter_v_rel" ].
 
-დუღ := intran-verb-lex &
-  [ STEM < "დუღ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_დუღ_v_rel" ].
+dug := intran-verb-lex &
+  [ STEM < "dug" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dug_v_rel" ].
 
-მუშაობ := intran-verb-lex &
-  [ STEM < "მუშაობ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_მუშაობ_v_rel" ].
+musaob := intran-verb-lex &
+  [ STEM < "musaob" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_musaob_v_rel" ].
 
 ;;; Determiners
 
-ერთ := indeterminate-determiner-lex &
-  [ STEM < "ერთ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ერთ_q_rel" ].
+ert := indeterminate-determiner-lex &
+  [ STEM < "ert" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ert_q_rel" ].
 
-ზოგ := indeterminate-determiner-lex &
-  [ STEM < "ზოგ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ზოგ_q_rel" ].
+zog := indeterminate-determiner-lex &
+  [ STEM < "zog" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_zog_q_rel" ].
