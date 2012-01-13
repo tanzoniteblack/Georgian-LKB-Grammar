@@ -1,6 +1,0 @@
-;;; -*- Mode: TDL; Coding: utf-8 -*-
-1st-lex := 1st-lex-rule.
-
-2nd-lex := 2nd-lex-rule.
-
-det-pc1_lrt2-lex := det-pc1_lrt2-lex-rule.
