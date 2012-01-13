@@ -47,9 +47,9 @@
 ;;;
 (defparameter *punctuation-characters*
   (append
-   '(#\space #\! #\" #\& #\( #\)
+   '(#\space #\! #\" #\& #\' #\( #\)
      #\* #\+ #\, #\− #\. #\/ #\\ #\;
-     #\< #\> #\? #\@ #\[ #\] #\^ #\`
+     #\< #\> #\@ #\[ #\] #\^ #\`
      #\{ #\| #\} #\~)
    #+:ics
    '(#\ideographic_full_stop #\fullwidth_question_mark

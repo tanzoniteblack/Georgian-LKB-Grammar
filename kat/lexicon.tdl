@@ -1,13 +1,13 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-masts%27avlebel := general-noun-lex &
-  [ STEM < "masts'avlebel" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_masts'avlebel_n_rel" ].
+masts%3Favlebel := general-noun-lex &
+  [ STEM < "masts?avlebel" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_masts?avlebel_n_rel" ].
 
-ts%27eril := general-noun-lex &
-  [ STEM < "ts'eril" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ts'eril_n_rel" ].
+ts%3Feril := general-noun-lex &
+  [ STEM < "ts?eril" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ts?eril_n_rel" ].
 
 radiogadatsema := general-noun-lex &
   [ STEM < "radiogadatsema" >,
@@ -21,15 +21,15 @@ mama := general-noun-lex &
   [ STEM < "mama" >,
     SYNSEM.LKEYS.KEYREL.PRED "_mama_n_rel" ].
 
-ts%27q%27al := general-noun-lex &
-  [ STEM < "ts'q'al" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ts'q'al_n_rel" ].
+ts%3Fq%3Fal := general-noun-lex &
+  [ STEM < "ts?q?al" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ts?q?al_n_rel" ].
 
 ;;; Verbs
 
-ts%27er := trans-verb-lex &
-  [ STEM < "ts'er" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ts'er_v_rel" ].
+ts%3Fer := trans-verb-lex &
+  [ STEM < "ts?er" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ts?er_v_rel" ].
 
 dugh := intran-verb-lex &
   [ STEM < "dugh" >,
