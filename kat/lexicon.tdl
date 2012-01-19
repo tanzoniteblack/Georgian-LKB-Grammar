@@ -103,8 +103,12 @@
 
 ერთ := indeterminate-determiner-lex &
   [ STEM < "ერთ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ერთ_q_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_one_q_rel" ].
 
 ზოგ := indeterminate-determiner-lex &
   [ STEM < "ზოგ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_ზოგ_q_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_some_q_rel" ].
+
+არ := neg-adv-lex &
+  [ STEM < "არ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].

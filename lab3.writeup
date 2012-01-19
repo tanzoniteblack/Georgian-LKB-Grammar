@@ -1,0 +1,21 @@
+Tense and aspect:
+	All of the Georgian grammars I have use traditional Georgian grammatical categories to describe the tense/aspect (what are called screeves) rather than more traditional western words.  They describe 11 different screeves, which are each some combination of past, present, future, aorist, imperfective, perfective and subjunctive.  Because future tense is made from the present tense, with the addition of a preverb that is often described as a perfective marker, I have decided that past & non-past is probably the most accurate analysis of the tense system.  There are about different preverbs used for this, which are lexically selected.  Though when attached to a presense verb, it correlates to the English notion of future, I will stick with the sources I have in calling it a perfective marker, as this is the most accurate when using it to describe the aorist aspect.
+
+	მასწავლებელი წერილს წერს.
+	მასწავლებელ-ი წერილ-ს 0-0-წერ-ს
+	teacher-NOM letter-DAT IMPERF-3.OBJ-write-3.SUBJ.SG
+	`The teacher is writing a letter.'
+	
+	მასწავლებელი წერილს დაწერს.
+	მასწავლებელ-ი წერილ-ს და-0-წერ-ს
+	teacher-NOM letter-DAT PERF-3.OBJ-write-3.SUBJ.SG
+	`The teacher will a letter.'
+	
+	In the aorist aspect, the presense of this prefix actually does correspond to the difference between perfective and imperfective:
+	
+	გუშინ ორი საათი ვწერე ეს სტატია, მაგრამ ვერ დავწერე ბოლომდე.
+	გუშინ ორ-0-ი საათ-0-ი 0-ვ-0-წერ-ე-0 ეს-0-0 სტატია-0-0 მაგრამ ვერ და-ვ-0-წერ-ე-0 ბოლო-მდე.
+	yesterday two-SG-NOM hour-SG-NOM IMPERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ this-SG-NOM article-SG-NOM but unable PERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ end-until
+	`For two hours yesterday I wrote this article, but I could not complete it.'
+	
+	In aspect, I have created 3 types: perfective, imperfective, and aorist.  The perfective and imperfective are in contrast with each other, and exist each with only the supertype aspect.  Aorist is another aspect, which when the verb takes it, will also express perfect or imperfect.  Therefore, I made the 3rd aspect aorist with the supertypes perfective and imperfective.

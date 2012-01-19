@@ -15,17 +15,33 @@ plural-noun-suffix :=
 %suffix (* ებ)
 plural-noun-lex-rule.
 
-3rdsg-suffix :=
+3rd_sg_subj-suffix :=
 %suffix (* ს)
-3rdsg-lex-rule.
+3rd_sg_subj-lex-rule.
 
-3rdpl-suffix :=
+3rd_pl_subj-suffix :=
 %suffix (* ენ)
-3rdpl-lex-rule.
+3rd_pl_subj-lex-rule.
 
-1st2ndplural-suffix :=
+1st_2nd_subj_plural_suffix-suffix :=
 %suffix (* თ)
-1st2ndplural-lex-rule.
+1st_2nd_subj_plural_suffix-lex-rule.
+
+1st_sg_obj_prefix-prefix :=
+%prefix (* მ)
+1st_sg_obj_prefix-lex-rule.
+
+1st_pl_obj_prefix-prefix :=
+%prefix (* გვ)
+1st_pl_obj_prefix-lex-rule.
+
+2nd_obj_prefix-prefix :=
+%prefix (* გ)
+2nd_obj_prefix-lex-rule.
+
+2nd_obj_pl_suffix-suffix :=
+%suffix (* თ)
+2nd_obj_pl_suffix-lex-rule.
 
 nominative-deter-suffix :=
 %suffix (* ი)

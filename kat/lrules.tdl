@@ -5,4 +5,6 @@ singular-noun-lex := singular-noun-lex-rule.
 
 2nd-lex := 2nd-lex-rule.
 
+3rd_obj_prefix-lex := 3rd_obj_prefix-lex-rule.
+
 dative-deter-lex := dative-deter-lex-rule.

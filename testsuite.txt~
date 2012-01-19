@@ -15,8 +15,8 @@ Vetted: s
 Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერილს წერს.
-მასწავლებელ-ი წერილ-ს PRES-წერ-ს
-teacher-NOM letter-DAT 0-write-3.SG
+მასწავლებელ-ი წერილ-ს 0-0-წერ-ს
+teacher-NOM letter-DAT IMPERF-3.OBJ-write-3.SUBJ.SG
 `The teacher is writing a letter.'
 
 #Word order is "quite free" (c:47), the most common word order is SOV, but SVO is also very common depending on emphasis. However, none of my sources say anything more than this and don't give examples of other word orders.
@@ -27,7 +27,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერს წერილს.
 მასწავლებელ-ი 0-წერ-ს წერილ-ს
-teacher-NOM PRES-write-3.SG letter-DAT
+teacher-NOM IMPERF-write-3.SG letter-DAT
 `The teacher is writing a letter.'
 
 #Ex 3 - VSO
@@ -37,7 +37,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერს მასწავლებელი წერილს.
 0-წერ-ს მასწავლებელ-ი წერილ-ს
-PRES-write-3.SG teacher-NOM letter-DAT
+IMPERF-write-3.SG teacher-NOM letter-DAT
 `The teacher is writing a letter.'
 
 #Ex 4 - VOS
@@ -47,7 +47,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერს წერილს მასწავლებელი.
 0-წერ-ს წერილ-ს მასწავლებელ-ი
-PRES-write-3.SG letter-DAT teacher-NOM
+IMPERF-write-3.SG letter-DAT teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 5 - OVS
@@ -57,7 +57,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერილს წერს მასწავლებელი.
 წერილ-ს 0-წერ-ს მასწავლებელ-ი
-letter-DAT PRES-write-3.SG teacher-NOM
+letter-DAT IMPERF-write-3.SG teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 6 - OSV
@@ -67,7 +67,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერილს მასწავლებელი წერს.
 წერილ-ს მასწავლებელ-ი 0-წერ-ს
-letter-DAT teacher-NOM PRES-write-3.SG
+letter-DAT teacher-NOM IMPERF-write-3.SG
 `The teacher is writing a letter.'
 
 #Ex 7 - 3rd person sg pronoun + agreement
@@ -77,7 +77,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 ის რადიოგადაცემას ისმენს.
 ის რადიოგადაცემა-ს 0-ისმენ-ს.
-3.SG.NOM radiobroadcast-DAT PRES-listen-3.SG
+3.SG.NOM radiobroadcast-DAT IMPERF-listen-3.SG
 `He is listening to the radiobroadcast.'
 
 #Ex 8 - 3rd person pl pronoun + agreement
@@ -87,7 +87,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 ისინი რადიოგადაცემას ისმენენ.
 ის რადიოგადაცემა-ს 0-ისმენ-ენ.
-3.PL.NOM radiobroadcast-DAT PRES-listen-3.PL
+3.PL.NOM radiobroadcast-DAT IMPERF-listen-3.PL
 `They are listening to the radiobroadcast.'
 
 #Ex 9 - 1st person sg pronoun + agreement
@@ -97,7 +97,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 მე რადიოგადაცემას ვისმენ.
 მე რადიოგადაცემა-ს 0-ვ-ისმენ-0.
-1.SG.NOM radiobroadcast-DAT PRES-1-listen-SG
+1.SG.NOM radiobroadcast-DAT IMPERF-1-listen-SG
 `I am listening to the radiobroadcast.'
 
 #Ex 10 - 1st person pl pronoun + agreement
@@ -107,7 +107,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 ჩვენ რადიოგადაცემას ვისმენთ.
 ჩვენ რადიოგადაცემა-ს 0-ვ-ისმენ-თ.
-1.PL.NOM radiobroadcast-DAT PRES-1-listen-PL
+1.PL.NOM radiobroadcast-DAT IMPERF-1-listen-PL
 `I am listening to the radiobroadcast.'
 
 #Ex 11 - 2nd person sg pronoun + agreement
@@ -117,7 +117,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 სენ რადიოგადაცემას ისმენ.
 სენ რადიოგადაცემა-ს 0-0-ისმენ-0.
-2.SG.NOM radiobroadcast-DAT PRES-2-listen-SG
+2.SG.NOM radiobroadcast-DAT IMPERF-2-listen-SG
 `You are listening to the radiobroadcast.'
 
 #Ex 12 - 2nd person pl pronoun + agreement
@@ -127,7 +127,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 თქვენ რადიოგადაცემას ისმენთ.
 თქვენ რადიოგადაცემა-ს 0-0-ისმენ-თ.
-2.PL.NOM radiobroadcast-DAT PRES-2-listen-PL
+2.PL.NOM radiobroadcast-DAT IMPERF-2-listen-PL
 `You all are listening to the radiobroadcast.'
 
 #Ex 13 - SV intrans. word order:
@@ -137,7 +137,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement, word order
 მე ვმუშაობ.
 მე 0-ვ-მუშაობ-0
-1.SG.NOM PRES-1-word-SG
+1.SG.NOM IMPERF-1-word-SG
 `I work.'
 
 #Ex 14 - VS intrans. word order:
@@ -147,7 +147,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement, word order
 მუშაობთ თქვენ.
 0-0-მუშაობ-თ თქვენ
-PRES-2-word-PL 2.PL.NOM
+IMPERF-2-word-PL 2.PL.NOM
 `You work.'
 
 #Ex 15 - Det-Noun ordering
@@ -156,7 +156,7 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement, determiners
 ერთი მასწავლებელი წერილს წერს.
-ერთ-ი მასწავლებელ-ი წერილ-ს PRES-წერ-ს
+ერთ-ი მასწავლებელ-ი წერილ-ს IMPERF-წერ-ს
 one-NOM teacher-NOM letter-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
@@ -166,7 +166,7 @@ Vetted: f
 Judgment: u
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთი წერილს წერს.
-მასწავლებელ-ი ერთ-ი წერილ-ს PRES-წერ-ს
+მასწავლებელ-ი ერთ-ი წერილ-ს IMPERF-წერ-ს
 teacher-NOM one-NOM letter-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
@@ -176,17 +176,17 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
-მასწავლებელ-ი ერთ-0 წერილ-ს PRES-წერ-ს
+მასწავლებელ-ი ერთ-0 წერილ-ს IMPERF-წერ-ს
 teacher-NOM one-DAT letter-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
 #Ex 15 - Det-Noun ordering, dative case
 Source: a
 Vetted: f
-Judgment: u
+Judgment: g
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
-მასწავლებელ-ი წერილ-ს ერთ-0 PRES-წერ-ს
+მასწავლებელ-ი წერილ-ს ერთ-0 IMPERF-წერ-ს
 teacher-NOM letter-DAT one-DAT 0-write-3.SG
 `A teacher is writing a letter.'
 
@@ -257,5 +257,25 @@ Judgment: g
 Phenomena: pronoun, case, agreement
 ზოგი შენ მოატყუო.
 ზოგ-ი შენ 0-0-მოატყუო-0
-some-NOM 2.SG.NOM PRES-2-cheat-SG
+some-NOM 2.SG.NOM IMPERF-2-cheat-SG
 `Some of you cheat.'
+
+#Ex 21 - SOV, preverb
+Source: a
+Vetted: s
+Judgment: g
+Phenomena: word order, case, agreement, tense
+მასწავლებელი წერილს დაწერს.
+მასწავლებელ-ი წერილ-ს და-0-წერ-ს
+teacher-NOM letter-DAT PERF-3.OBJ-write-3.SUBJ.SG
+`The teacher will a letter.'
+
+#Ex 22 - aorist, ergative-absolutive structure
+Source: 
+Vetted: s
+Judgment: g
+Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
+გუშინ ორი საათი ვწერე ეს სტატია, მაგრამ ვერ დავწერე ბოლომდე.
+გუშინ ორ-0-ი საათ-0-ი 0-ვ-0-წერ-ე-0 ეს-0-0 სტატია-0-0 მაგრამ ვერ და-ვ-0-წერ-ე-0 ბოლო-მდე.
+yesterday two-SG-NOM hour-SG-NOM IMPERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ this-SG-NOM article-SG-NOM but unable PERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ end-until
+`For two hours yesterday I wrote this article, but I could not complete it.'

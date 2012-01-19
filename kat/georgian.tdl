@@ -2,12 +2,17 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Georgian
 ;;; created at:
-;;;     Fri Jan 13 23:22:59 UTC 2012
+;;;     Wed Jan 18 01:13:37 UTC 2012
 ;;; based on Matrix customization system version of:
-;;;     Mon Jan  9 20:21:21 UTC 2012
+;;;     Mon Jan 16 23:32:55 UTC 2012
 ;;;
 ;;; 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Type assigning empty mod list. Added to basic types for nouns, verbs and determiners.
+
+non-mod-lex-item := lex-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < > ].
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Matrix Type Addenda
@@ -15,15 +20,21 @@
 
 noun :+ [ CASE case ].
 
-inflected :+ [ NOUN-CASE-SUFFIX-FLAG luk,
+inflected :+ [ 3RD_SUBJ_SUFFIXES-FLAG luk,
+    2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG luk,
+    1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG luk,
+    DETERMINER-CASE-SUFFIX-FLAG luk,
     NOUN-PLURALITY-FLAG luk,
-    1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG luk,
-    DETERMINER-CASE-SUFFIX-FLAG luk ].
+    1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG luk,
+    NOUN-CASE-SUFFIX-FLAG luk ].
 
-infl-satisfied :+ [ NOUN-CASE-SUFFIX-FLAG na-or-+,
+infl-satisfied :+ [ 3RD_SUBJ_SUFFIXES-FLAG na-or-+,
+    2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG na-or-+,
+    1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG na-or-+,
+    DETERMINER-CASE-SUFFIX-FLAG na-or-+,
     NOUN-PLURALITY-FLAG na-or-+,
-    1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG na-or-+,
-    DETERMINER-CASE-SUFFIX-FLAG na-or-+ ].
+    1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG na-or-+,
+    NOUN-CASE-SUFFIX-FLAG na-or-+ ].
 
 png :+ [ PER person,
     NUM number ].
@@ -63,6 +74,14 @@ synsem :+ [ ATTACH xmod ].
 head-mod-phrase :+ [ SYNSEM.ATTACH #attach,
     HEAD-DTR.SYNSEM.ATTACH #attach ].
 
+; This grammar includes head-modifier rules.  To keep
+; out extraneous parses, constrain the value of MOD on
+; various subtypes of head.  This may need to be loosened later.
+; This constraint says that only adverbs, adjectives,
+; and adpositions can be modifiers.
+
++nvcdmo :+ [ MOD < > ].
+
 ;;;;;;;;;;;;;;
 ;;; Features
 ;;;;;;;;;;;;;;
@@ -90,13 +109,23 @@ number := *top*.
 singular := number.
 plural := number.
 
+;;; Aspect
+
+perfective := aspect.
+imperfective := aspect.
+
+;;; Mood
+
+subjunctive := mood.
+indicative := mood.
+
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Types
 ;;;;;;;;;;;;;;;;;;;
 
 ;;; Nouns
 
-noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item &
+noun-lex := basic-noun-lex & basic-one-arg & no-hcons-lex-item & non-mod-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL [ SPR < #spr &
                                  [ LOCAL.CAT.HEAD det ] >,
                            COMPS < >,
@@ -147,7 +176,7 @@ general-noun-lex := noun-lex & noun-case-suffix-rule-dtr &
 
 ;;; Verbs
 
-verb-lex := basic-verb-lex &
+verb-lex := basic-verb-lex & non-mod-lex-item &
   [ SYNSEM.LOCAL [ CAT.VAL [ SPR < >,
                              SPEC < >,
                              SUBJ < #subj > ],
@@ -156,13 +185,13 @@ verb-lex := basic-verb-lex &
                  [ LOCAL [ CAT.VAL [ SPR < >,
                                      COMPS < > ],
                            CONT.HOOK.INDEX #xarg ] ],
-    INFLECTED.1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG - ].
+    INFLECTED.3RD_SUBJ_SUFFIXES-FLAG - ].
 
 intransitive-verb-lex := verb-lex & intransitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
     ARG-ST.FIRST.LOCAL.CAT.HEAD noun ].
 
-transitive-verb-lex := verb-lex & transitive-lex-item &
+transitive-verb-lex := verb-lex & transitive-lex-item & 1st_2nd_person_subj_prefixes-rule-dtr & 1st_2nd_subj_plural_suffix-rule-dtr &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
     ARG-ST < [ LOCAL.CAT.HEAD noun ],
              #comps &
@@ -172,7 +201,10 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
 
 trans-verb-lex := transitive-verb-lex &
   [ SYNSEM.LOCAL.CAT.VAL [ SUBJ.FIRST.LOCAL.CAT.HEAD.CASE nom,
-                           COMPS.FIRST.LOCAL.CAT.HEAD.CASE dat ] ].
+                           COMPS.FIRST.LOCAL.CAT.HEAD.CASE dat ],
+    INFLECTED [ 2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG -,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG -,
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG - ] ].
 
 intran-verb-lex := intransitive-verb-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CAT.HEAD.CASE nom ].
@@ -182,7 +214,7 @@ intran-verb-lex := intransitive-verb-lex &
 ;;; Determiners
 ;;; SPEC is non-empty, and already specified by basic-determiner-lex.
 
-determiner-lex := basic-determiner-lex & basic-zero-arg &
+determiner-lex := basic-determiner-lex & basic-zero-arg & non-mod-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
                            COMPS < >,
                            SUBJ < > ],
@@ -190,24 +222,50 @@ determiner-lex := basic-determiner-lex & basic-zero-arg &
 
 indeterminate-determiner-lex := determiner-lex.
 
+; Type for negative adverbs.
+; 
+; Constrain the MOD value of this adverb to keep
+; 
+;     it from modifying the kind of verbs which can select it,
+; 
+;     To keep spurious parses down, as a starting point, we have
+; 
+;     assumed that it only modifies verbs (e.g., non-finite verbs).
+
+neg-adv-lex := basic-scopal-adverb-lex &
+  [ SYNSEM.LOCAL.CAT [ VAL [ SPR < >,
+                             COMPS < >,
+                             SUBJ < > ],
+                       POSTHEAD -,
+                       HEAD.MOD < [ LOCAL.CAT.HEAD verb,
+                                    LIGHT + ] > ] ].
+
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Rules
 ;;;;;;;;;;;;;;;;;;;
 
 ;;; Intermediate rule types
 
+1st_2nd_subj_plural_suffix-rule-dtr := word-or-lexrule.
+1st_2nd_person_subj_prefixes-rule-dtr := word-or-lexrule.
 noun-case-suffix-rule-dtr := word-or-lexrule.
 
 ;;; Lexical rule types
 
 noun-case-suffix-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED [ NOUN-CASE-SUFFIX-FLAG +,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
                 DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
+                3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
                 NOUN-PLURALITY-FLAG #noun-plurality ],
     DTR noun-case-suffix-rule-dtr &
-        [ INFLECTED [ DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
+        [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                      2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                      1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
                       NOUN-PLURALITY-FLAG #noun-plurality ] ] ].
 
 nominative-noun-lex-rule := noun-case-suffix-lex-rule-super &
@@ -221,12 +279,18 @@ ergative-noun-lex-rule := noun-case-suffix-lex-rule-super &
 
 noun-plurality-lex-rule-super := add-only-no-ccont-rule & noun-case-suffix-rule-dtr &
   [ INFLECTED [ NOUN-PLURALITY-FLAG +,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
                 DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
+                3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
                 NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
     DTR general-noun-lex &
-        [ INFLECTED [ DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
+        [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                      2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                      1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
                       NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
 
 singular-noun-lex-rule := const-lex-rule & noun-plurality-lex-rule-super &
@@ -235,61 +299,133 @@ singular-noun-lex-rule := const-lex-rule & noun-plurality-lex-rule-super &
 plural-noun-lex-rule := infl-lex-rule & noun-plurality-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM plural ].
 
-1st_2nd_person-lex-rule-super := add-only-no-ccont-rule & const-lex-rule &
-  [ INFLECTED [ 1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG +,
+1st_2nd_person_subj_prefixes-lex-rule-super := 1st_2nd_subj_plural_suffix-rule-dtr & add-only-no-ccont-rule & const-lex-rule &
+  [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG +,
+                2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
                 DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
-    DTR verb-lex &
-        [ INFLECTED [ DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
+                3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality ],
+    DTR 1st_2nd_person_subj_prefixes-rule-dtr &
+        [ INFLECTED [ 2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality ] ] ].
 
-1st-lex-rule := 1st_2nd_person-lex-rule-super &
+1st-lex-rule := 1st_2nd_person_subj_prefixes-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 1st ].
 
-2nd-lex-rule := 1st_2nd_person-lex-rule-super &
+2nd-lex-rule := 1st_2nd_person_subj_prefixes-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 2nd ].
 
-3rd_person-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
-  [ INFLECTED [ 1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG +,
+3rd_subj_suffixes-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED [ 3RD_SUBJ_SUFFIXES-FLAG +,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
                 DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality ],
     DTR verb-lex &
-        [ INFLECTED [ DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
+        [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality ] ] ].
 
-3rdsg-lex-rule := 3rd_person-lex-rule-super &
+3rd_sg_subj-lex-rule := 3rd_subj_suffixes-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM singular,
                                                                 PER 3rd ] ].
 
-3rdpl-lex-rule := 3rd_person-lex-rule-super &
+3rd_pl_subj-lex-rule := 3rd_subj_suffixes-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
                                                                 PER 3rd ] ].
 
-1st2ndplural-lex-rule := add-only-no-ccont-rule & infl-lex-rule &
-  [ INFLECTED [ 1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG +,
+1st_2nd_subj_plural_suffix-lex-rule := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED [ 1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG +,
+                2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
                 DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
-    DTR verb-lex &
-        [ INFLECTED [ DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ],
+                3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality ],
+    DTR 1st_2nd_subj_plural_suffix-rule-dtr &
+        [ INFLECTED [ 2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality ] ],
     SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
                                                                 PER non-3rd ] ].
 
+obj_prefix-lex-rule-super := 1st_2nd_person_subj_prefixes-rule-dtr & 1st_2nd_subj_plural_suffix-rule-dtr & add-only-no-ccont-rule &
+  [ INFLECTED [ 2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG +,
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality ],
+    DTR trans-verb-lex &
+        [ INFLECTED [ 1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality ] ] ].
+
+1st_sg_obj_prefix-lex-rule := infl-lex-rule & obj_prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM singular,
+                                                                 PER 1st ] ].
+
+1st_pl_obj_prefix-lex-rule := infl-lex-rule & obj_prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
+                                                                 PER 1st ] ].
+
+2nd_obj_prefix-lex-rule := infl-lex-rule & obj_prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 2nd ].
+
+3rd_obj_prefix-lex-rule := const-lex-rule & obj_prefix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
+
+2nd_obj_suffix-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED [ 2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG +,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG +,
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG +,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes ],
+    DTR trans-verb-lex &
+        [ INFLECTED [ NOUN-PLURALITY-FLAG #noun-plurality,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes ] ] ].
+
+2nd_obj_pl_suffix-lex-rule := 2nd_obj_suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
+                                                                 PER 2nd ] ].
+
 determiner-case-suffix-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED [ DETERMINER-CASE-SUFFIX-FLAG +,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality ],
     DTR determiner-lex &
-        [ INFLECTED [ NOUN-PLURALITY-FLAG #noun-plurality,
-                      1ST2NDPLURAL-OR-1ST_2ND_PERSON-OR-3RD_PERSON-FLAG #1st2ndplural-or-1st_2nd_person-or-3rd_person,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
+        [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_suffix,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      3RD_SUBJ_SUFFIXES-FLAG #3rd_subj_suffixes,
+                      2ND_OBJ_SUFFIX-OR-OBJ_PREFIX-FLAG #2nd_obj_suffix-or-obj_prefix,
+                      1ST_2ND_SUBJ_PLURAL_SUFFIX-OR-2ND_OBJ_SUFFIX-FLAG #1st_2nd_subj_plural_suffix-or-2nd_obj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality ] ] ].
 
 nominative-deter-lex-rule := determiner-case-suffix-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE abs+nom ].
