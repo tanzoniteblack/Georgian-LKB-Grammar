@@ -360,3 +360,103 @@ Phenomena: negation
 ისინი შენ 0-გ-მალ-ავ-ენ არ
 3.PL.NOM 2.SG.NOM NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES not
 `They aren't hiding you.'
+
+#Ex 30 - negation; error: not adverb must come right before verb
+Source: a
+Vetted: s
+Judgment: u
+Phenomena: negation
+არ ისინი შენ გმალავენ
+არ ისინი შენ 0-გ-მალ-ავ-ენ
+not 3.PL.NOM 2.SG.NOM NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES
+`They aren't hiding you.'
+
+#Ex 31 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: g
+Phenomena: det, agreement
+ეს ბრმა მუშაობს.
+ეს ბრმა-0 0-მუშა-ობ-ს
+DEM.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`This woman (close to me) is working.'
+
+#Ex 32 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: g
+Phenomena: det, agreement
+ეგ ბრმა მუშაობს.
+ეგ ბრმა-0 0-მუშა-ობ-ს
+DEM.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`That woman (close to you) is working.'
+
+#Ex 33 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: g
+Phenomena: det, agreement
+ის ბრმა მუშაობს.
+ის ბრმა-0 0-მუშა-ობ-ს
+DEM.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`That woman (over there) is working.'
+
+#Ex 34 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: u
+Phenomena: det, agreement
+ამ ბრმა მუშაობს.
+ამ ბრმა-0 0-მუშა-ობ-ს
+DEM.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`This woman (close to me) is working.'
+
+#Ex 35 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: u
+Phenomena: det, agreement
+მაგ ბრმა მუშაობს.
+მაგ ბრმა-0 0-მუშა-ობ-ს
+DEM.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`That woman (close to you) is working.'
+
+#Ex 36 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: u
+Phenomena: det, agreement
+იმ ბრმა მუშაობს.
+იმ ბრმა-0 0-მუშა-ობ-ს
+DEM.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`That woman (over there) is working.'
+
+#Ex 37 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: u
+Phenomena: det, agreement
+ბრმა ეს მუშაობს.
+ბრმა-0 ეს 0-მუშა-ობ-ს
+woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`This woman (close to me) is working.'
+
+#Ex 38 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: u
+Phenomena: det, agreement
+ბრმა ეგ მუშაობს.
+ბრმა-0 ეგ 0-მუშა-ობ-ს
+woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`That woman (close to you) is working.'
+
+#Ex 39 - demonstratives
+Source: b:58
+Vetted: s
+Judgment: u
+Phenomena: det, agreement
+ბრმა ის მუშაობს.
+ბრმა-0 ის 0-მუშა-ობ-ს
+woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+`That woman (over there) is working.'

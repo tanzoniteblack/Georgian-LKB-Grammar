@@ -1,27 +1,27 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
-მასწავლებელ := general-noun-lex &
+მასწავლებელ := general_ending_consonant-noun-lex &
   [ STEM < "მასწავლებელ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_teacher_n_rel" ].
 
-წერილ := general-noun-lex &
+წერილ := general_ending_consonant-noun-lex &
   [ STEM < "წერილ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_letter_n_rel" ].
 
-რადიოგადაცემა := general-noun-lex &
+რადიოგადაცემა := general_ending_consonant-noun-lex &
   [ STEM < "რადიოგადაცემა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_radiobroadcast_n_rel" ].
 
-შვილ := general-noun-lex &
+შვილ := general_ending_consonant-noun-lex &
   [ STEM < "შვილ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_child_n_rel" ].
 
-მამა := general-noun-lex &
+მამა := general_ending_consonant-noun-lex &
   [ STEM < "მამა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_father_n_rel" ].
 
-წყალ := general-noun-lex &
+წყალ := general_ending_consonant-noun-lex &
   [ STEM < "წყალ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_water_n_rel" ].
 
@@ -33,7 +33,7 @@
   [ STEM < "შენ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
 
-ის := 3sg-pro-nom-noun-lex &
+ის_1 := 3sg-pro-nom-noun-lex &
   [ STEM < "ის" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
 
@@ -72,6 +72,10 @@
 მათ := 3pl-pro-dat-noun-lex &
   [ STEM < "მათ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
+ბრმა := general_ending_vowel-noun-lex &
+  [ STEM < "ბრმა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
 
 ;;; Verbs
 
@@ -116,6 +120,30 @@
 ზოგ := indeterminate-determiner-lex &
   [ STEM < "ზოგ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_some_q_rel" ].
+
+ეს := proximal_nom-determiner-lex &
+  [ STEM < "ეს" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_proximal_q_rel" ].
+
+ამ := proximal_others-determiner-lex &
+  [ STEM < "ამ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_proximal_q_rel" ].
+
+ეგ := hearer_nom-determiner-lex &
+  [ STEM < "ეგ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hearer_q_rel" ].
+
+მაგ := hearer_others-determiner-lex &
+  [ STEM < "მაგ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hearer_q_rel" ].
+
+ის_2 := remote_nom-determiner-lex &
+  [ STEM < "ის" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_remote_q_rel" ].
+
+იმ := remote_others-determiner-lex &
+  [ STEM < "იმ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_remote_q_rel" ].
 
 არ := neg-adv-lex &
   [ STEM < "არ" >,

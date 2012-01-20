@@ -1,4 +1,6 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+nominative_noun_vowel_ending-lex := nominative_noun_vowel_ending-lex-rule.
+
 singular-noun-lex := singular-noun-lex-rule.
 
 2nd_subj_prefix-lex := 2nd_subj_prefix-lex-rule.

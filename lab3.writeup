@@ -86,9 +86,25 @@ Agreement:
 	2_obj_plural: plural 2nd person object, ambiguous for number and person on subject
 
 	Demonstratives:
-	Georgian distinguishes 3 types of demonstrative adjectives based off of location: close to the speaker, close to the addressee, and distant from both. 
+	Georgian distinguishes 3 types of demonstrative adjectives based off of location: close to the speaker, close to the addressee, and distant from both.  There is a basic set of demonstrative adjectives, and then there is a series that is specified for quantity, quality, type, size, or origin.  We are only going to look at the basic set for now.  Demonstratives occur before the noun phrases they modify (which means they also occur before adjectives), in this way they are probably best analyzed as determiners.  The demonstratives agree with the noun they modify for case, but not number.
 	
-	Negation:
+	Judgment: g
+		ეს ბრმა მუშაობს.
+		ეს ბრმა-0 0-მუშა-ობ-ს
+		DEM.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+		`This woman (close to me) is working.'
+	
+	Judgment: u
+		ამ ბრმა მუშაობს.
+		ამ ბრმა-0 0-მუშა-ობ-ს
+		DEM.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+		`This woman (close to me) is working.'
+		ბრმა ეს მუშაობს.
+		ბრმა-0 ეს 0-მუშა-ობ-ს
+		woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+		`This woman (close to me) is working.'
+	
+Negation:
 	Georgian sentential negation is done by placing the adverb "რა" immediately before the verb.
 	
 	Judgment: g
@@ -105,3 +121,10 @@ Agreement:
 		ისინი შენ 0-გ-მალ-ავ-ენ არ
 		3.PL.NOM 2.SG.NOM NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES not
 		`They aren't hiding you.'
+
+Changes to lexicon:
+	Added a noun class that'd 3rd person, but ends in vowels.  Added in the morphology section a method to add null nominative suffix to nouns of this type that are singular (plurals behave like everything else).
+	
+	Added determiners for the 3 types of demonstratives in all cases.
+	
+	
