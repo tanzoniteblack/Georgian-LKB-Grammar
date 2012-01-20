@@ -217,7 +217,7 @@ Judgment: g
 Phenomena: case, agreement
 შვილებმა წერილი გაუგზავნეს მამას.
 შვილ-ებ-მა წერილ-ი გა-0-უგზავნ-ეს მამა-ს
-child-PL-ERG letter-NOM PERF-3.OBJ-send-AOR.SUBJ.3.PL father-DAT
+child-PL-ERG letter-NOM PRE-3.OBJ-send-AOR.SUBJ.3.PL father-DAT
 `The children sent a letter to (their) father.'
 
 #Ex 18 - Dat-Nom-Gen.for case pattern
@@ -226,8 +226,8 @@ Vetted: s
 Judgment: g
 Phenomena: case, agreement
 შვილებს წერილი გაუგზავნიათ მამისათვის.
-შვილ-ებ-ს წერილ-ი გა-უ-გზავნ-ათ მამ-ისა-თვის
-child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.SUBJ.PL father-GEN-for
+შვილ-ებ-ს წერილ-ი გა-0-უგზავნ-ი-ათ მამ-ისა-თვის
+child-PL-DAT letter-NOM PRE-3.OBJ-send-PERF?-PLUPERF.3.SUBJ.PL father-GEN-for
 `The children have sent a letter to (their) father.'
 
 #Ex 19 - Nom -> Erg case pattern in intransitives
@@ -237,7 +237,7 @@ Judgment: g
 Phenomena: case, agreement
 წყალი დუღს.
 წყალ-ი 0-დუღ-0-ს
-water-NOM IMPERF-boil-PRES-3.SG
+water-NOM NOPRE-boil-PRES-3.SG
 `The water boils.'
 
 #Ex 19 - Nom -> Erg case pattern in intransitives
@@ -247,7 +247,7 @@ Judgment: g
 Phenomena: case, agreement
 წყალმა იდუღა.
 წყალ-მა ი-დუღ-ა
-water-ERG PERF-boil-AOR.3.SG
+water-ERG PRE-boil-AOR.3.SG
 `The water boiled.'
 
 #Ex 20 - Det PRO

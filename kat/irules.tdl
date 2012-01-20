@@ -39,12 +39,20 @@ has_preverb_future-prefix2 :=
 %prefix (* გა)
 has_preverb_future-lex-rule.
 
+has_preverb_future-prefix3 :=
+%prefix (* ი)
+has_preverb_future-lex-rule.
+
 has_preverb_other-prefix1 :=
 %prefix (* და)
 has_preverb_other-lex-rule.
 
 has_preverb_other-prefix2 :=
 %prefix (* გა)
+has_preverb_other-lex-rule.
+
+has_preverb_other-prefix3 :=
+%prefix (* ი)
 has_preverb_other-lex-rule.
 
 PSF_av-suffix :=
@@ -59,17 +67,17 @@ past_imperfective-suffix :=
 %suffix (* ი)
 past_imperfective-lex-rule.
 
-past_perfective_suffix_i-suffix1 :=
+past_perfective_suffix-suffix1 :=
 %suffix (* ი)
-past_perfective_suffix_i-lex-rule.
+past_perfective_suffix-lex-rule.
 
-past_perfective_suffix_i-suffix2 :=
+past_perfective_suffix-suffix2 :=
 %suffix (* ე)
-past_perfective_suffix_i-lex-rule.
+past_perfective_suffix-lex-rule.
 
-past_perfective_suffix_i-suffix3 :=
+past_perfective_suffix-suffix3 :=
 %suffix (* ა)
-past_perfective_suffix_i-lex-rule.
+past_perfective_suffix-lex-rule.
 
 past_imperfective_SA-suffix :=
 %suffix (* დ)
