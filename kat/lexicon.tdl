@@ -87,6 +87,14 @@
   [ STEM < "უგზავნ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_send_v_rel" ].
 
+მალ := trans-verb-lex &
+  [ STEM < "მალ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hide_v_rel" ].
+
+კლ := trans-verb-lex &
+  [ STEM < "კლ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kill_v_rel" ].
+
 დუღ := intran-verb-lex &
   [ STEM < "დუღ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_boil_v_rel" ].

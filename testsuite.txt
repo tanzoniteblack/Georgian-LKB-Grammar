@@ -267,8 +267,8 @@ Judgment: g
 Phenomena: word order, case, agreement, tense
 მასწავლებელი წერილს დაწერს.
 მასწავლებელ-ი წერილ-ს და-0-წერ-0-ს
-teacher-NOM letter-DAT PREVERB-3.OBJ-write-PSF-3.SUBJ.SG.PRES
-`The teacher will a letter.'
+teacher-NOM letter-DAT PRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+`The teacher will write a letter.'
 
 
 #Ex 23 - object agreement
@@ -278,15 +278,15 @@ Judgment: g
 Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
 ისინი შენ გმალავენ.
 ისინ-ი შენ 0-გ-მალ-ავ-ენ
-3.PL-NOM NOPRE-2.SG.DAT 2.OBJ-hide-PRES-3.PL.SUBJ.PRES
+3.PL-NOM NOPRE-2.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES
 `They are hiding you.'
 
 #Ex 24 - object agreement
 Source: a
 Vetted: s
 Judgment: g
-Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
-ისინი მე გმალავენ.
+Phenomena: coordination, tense aspect mood, argument optionality, agreement
+ისინი მე მმალავენ.
 ისინ-ი მე 0-მ-მალ-ავ-ენ
 3.PL-NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES
 `They are hiding me.'
@@ -295,7 +295,7 @@ Phenomena: coordination, negation, tense aspect mood, argument optionality, agre
 Source: author
 Vetted: f
 Judgment: u
-Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
+Phenomena: coordination, tense aspect mood, argument optionality, agreement
 ისინი შენ გმალავენ.
 ისინ-ი შენ 0-მ-მალ-ავ-ენ
 3.PL-NOM 2.SG.DAT NOPRE-2.OBJ-hide-PRES-3.PL.SUBJ.PRES

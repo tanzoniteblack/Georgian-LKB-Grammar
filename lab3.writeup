@@ -67,6 +67,9 @@ Agreement:
 	
 	On a note on case: I have removed from the lexicon, the requirement that subjects be nominative and objects be dative.  Now what case is required on the arguments is specified on the tense markers individually.
 	
+	This allows me to parse:
+	
+	
 	The next suffix that occurs, is the 3rd person subject marker. Either of the tense_marking suffixes are acceptable as inputs.  This is marked as optional, but either 1/2nd subject marker, the 2nd person object marker (as it overrides the 1st person subject maker), or 3rd person subject marker is required according to the lexicon.  The 3rd person marker is a polysynthetic suffix that changes for tense, aspect, and number.  Each 3rd person marker also states whether it forbids or requires the plural marker for the 1st and 2nd persons. 
 	
 	So far I have:
