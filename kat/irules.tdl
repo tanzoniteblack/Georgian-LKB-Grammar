@@ -31,12 +31,20 @@ plural-noun-lex-rule.
 %prefix (* გ)
 2nd_obj_prefix-lex-rule.
 
-has_preverb_future-prefix :=
+has_preverb_future-prefix1 :=
 %prefix (* და)
 has_preverb_future-lex-rule.
 
-has_preverb_other-prefix :=
+has_preverb_future-prefix2 :=
+%prefix (* გა)
+has_preverb_future-lex-rule.
+
+has_preverb_other-prefix1 :=
 %prefix (* და)
+has_preverb_other-lex-rule.
+
+has_preverb_other-prefix2 :=
+%prefix (* გა)
 has_preverb_other-lex-rule.
 
 PSF_av-suffix :=
@@ -51,8 +59,16 @@ past_imperfective-suffix :=
 %suffix (* ი)
 past_imperfective-lex-rule.
 
-past_perfective_suffix_i-suffix :=
+past_perfective_suffix_i-suffix1 :=
 %suffix (* ი)
+past_perfective_suffix_i-lex-rule.
+
+past_perfective_suffix_i-suffix2 :=
+%suffix (* ე)
+past_perfective_suffix_i-lex-rule.
+
+past_perfective_suffix_i-suffix3 :=
+%suffix (* ა)
 past_perfective_suffix_i-lex-rule.
 
 past_imperfective_SA-suffix :=
@@ -70,6 +86,14 @@ past_imperfective_SA-lex-rule.
 3_pl_subj_pres-suffix2 :=
 %suffix (* ან)
 3_pl_subj_pres-lex-rule.
+
+3_sg_subj_aor-suffix :=
+%suffix (* ს)
+3_sg_subj_aor-lex-rule.
+
+3_pl_subj_aor-suffix :=
+%suffix (* ნენ)
+3_pl_subj_aor-lex-rule.
 
 1_2_subj_plural_suffix-suffix :=
 %suffix (* თ)

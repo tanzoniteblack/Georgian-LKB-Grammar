@@ -206,8 +206,8 @@ Vetted: f
 Judgment: g
 Phenomena: case, agreement
 შვილები მამას გაუგზავნიან წერილს.
-შვილ-ებ-ი მამა-ს გა-0-უგზავნ-ან წერილ-ს
-child-PL-NOM father-DAT PERF-3.OBJ-send-3.PL.SUBJ.PRES letter-DAT
+შვილ-ებ-ი მამა-ს გა-0-უგზავნ-ი-ან წერილ-ს
+child-PL-NOM father-DAT PRE-3.OBJ-send-PERF?-3.PL.SUBJ.PRES letter-DAT
 `The children will send (their) father to a letter.'
 
 #Ex 17 - Erg-Nom-Dat case pattern
@@ -216,8 +216,8 @@ Vetted: s
 Judgment: g
 Phenomena: case, agreement
 შვილებმა წერილი გაუგზავნეს მამას.
-შვილ-ებ-მა წერილ-ი გა-უ-გზავნ-ეს მამა-ს
-child-PL-ERG letter-NOM PERF-3.OBJ-send-AOR.SUBJ.3.PL father-DAT
+შვილ-ებ-მა წერილ-ი გა-0-უგზავნ-ეს მამა-ს
+child-PL-ERG letter-NOM PRE-3.OBJ-send-AOR.SUBJ.3.PL father-DAT
 `The children sent a letter to (their) father.'
 
 #Ex 18 - Dat-Nom-Gen.for case pattern

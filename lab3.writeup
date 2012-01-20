@@ -51,11 +51,11 @@ Agreement:
 	1.SUBJ
 	2.SUBJ (which has a 0 affix)
 	
-	The last prefix that needs marked is the preverb.  There is a 0-affix preverb, which requires the 0-affix tense marker and the presense of the PSF; if this is the case then the tense will be present.  There is another 0-affix preverb, which requires the SA to be "დ" and the tense marker to be "ი" which will result in a imperfective past tense.  The preverb, if present, is lexically selected.  Currently I have only added the most common preverb: და, and not limited what verbs it can occur with.  What I have currently done to get the preverb correctly selected and adding the right information, is that the preverb existing has multiple forms.  One of which requires the PSF and forbids the SA, which adds the feature future; and another which which doesn't require or forbid anything, and doesn't add any features.  This preverb will be required by the other affixes when necessary.
+	The last prefix that needs marked is the preverb.  There is a 0-affix preverb, which requires the 0-affix tense marker and the presense of the PSF; if this is the case then the tense will be present.  There is another 0-affix preverb, which requires the SA to be "დ" and the tense marker to be "ი" which will result in a imperfective past tense.  The preverb, if present, is lexically selected.  Currently I have only added the most common preverbs: და, and გა and not limited what verbs they can occur with.  This means that generating I get a large number of verbs that are incorrect, and I also accept some ungrammatical verbs.  What I have currently done to get the preverb correctly selected and adding the right information, is that the preverb existing has multiple forms.  One of which requires the PSF and forbids the SA, which adds the feature future; and another which which doesn't require or forbid anything, and doesn't add any features.  This preverb will be required by the other affixes when necessary.
 	
 	Otherwise, one of the other preverbs is chosen (each require a specific type of verb from the lexicon).  If there is a 0-affix tense marker and the PSF, the the tense will be future; if there is not a PSF and the tense marker is 'aorist', then the tense will be past perfective.
 	
-	The first prefix, which might optionally occur, on a verb is the PSF.  This is in the literature a Present/Future Stem Formant.  Some sources refer to it as a 'thematic marker', which seems a little strange since it doesn't have anything to do with theme.  There are a limitted number of options of PSFs, including a 0-affix, which are lexically selected.  The PSF forbids the past perfective tense marker.
+	The first suffix, which might optionally occur, on a verb is the PSF.  This is in the literature a Present/Future Stem Formant.  Some sources refer to it as a 'thematic marker', which seems a little strange since it doesn't have anything to do with theme.  There are a limitted number of options of PSFs, including a 0-affix, which are lexically selected.  The PSF forbids the past perfective tense marker.
 	
 	Stem augment, or SA.  This is a suffix that occurs after the PSF (if the PSF occurred).  It always takes the form "დ" and is required to mark the past imperfective tense.  I have marked it as optional.
 	
@@ -65,13 +65,17 @@ Agreement:
 	
 	Under tense_marker_with_PSF I have markers for present/future tense (0-affix and forbids the SA) and past imperfective (marked with an "ი" and requires the SA).
 	
-	The next suffix that occurs, is the 3rd person subject marker. E Either of the tense_marking suffixes are acceptable as inputs.  This is marked as optional, but either 1/2nd subject marker, the 2nd person object marker (as it overrides the 1st person subject maker), or 3rd person subject marker is required according to the lexicon.  The 3rd person marker is a polysynthetic suffix that changes for tense, aspect, and number.  Each 3rd person marker also states whether it forbids or requires the plural marker for the 1st and 2nd persons.
-	So far I have:
-	3.SG.PRES/FUTURE : -ს which forbids the 1/2 plural marker
-	3.PL.PRES/FUTURE : -ენ and -ან which forbid the 1/2 plural marker (the two different ending depend on the verb that was inputted, currently I've not restricted it which means I will over generate acceptable answers)
+	The next suffix that occurs, is the 3rd person subject marker. Either of the tense_marking suffixes are acceptable as inputs.  This is marked as optional, but either 1/2nd subject marker, the 2nd person object marker (as it overrides the 1st person subject maker), or 3rd person subject marker is required according to the lexicon.  The 3rd person marker is a polysynthetic suffix that changes for tense, aspect, and number.  Each 3rd person marker also states whether it forbids or requires the plural marker for the 1st and 2nd persons. 
 	
-	The last possible suffix on a verb is a marker for plurality.  If the subject is 1st or 2nd person, then there is a suffix at the very end of the verb showing that.  If the object is 2nd person, then this same suffix is used (making verbs with a 2nd person object and 1st person subject ambiguous as to which, or both, are plural).  Some 3rd person suffixes forbid the existence of this suffix.  It takes as input: tense_marker_with_PSF, tense_marker_no_PSF, and 3rd_subj_suffix.  I have made the following lexicaul rule types:
+	So far I have:
+	3.SG.PRES/FUTURE : which forbids the 1/2 plural marker
+	3.PL.PRES/FUTURE : which forbid the 1/2 plural marker (the two different ending depend on the verb that was inputted, currently I've not restricted it which means I will over generate acceptable answers)
+	3.SG.SUBJ.AOR : forbids the 1/2 plural marker
+	
+	
+	The last possible suffix on a verb is a marker for plurality.  If the subject is 1st or 2nd person, then there is a suffix at the very end of the verb showing that.  If the object is 2nd person, then this same suffix is used (making verbs with a 2nd person object and 1st person subject ambiguous as to which, or both, are plural).  Some 3rd person suffixes forbid the existence of this suffix.  It takes as input: tense_marker_with_PSF, tense_marker_no_PSF, and 3rd_subj_suffix.  I have made the following lexical rule types:
 	
 	1_2_subj_plural_suffix: plural 1st or 2nd on subject NP
 	1_2_subj_sing_suffix: singular 1st or 2nd on subject NP (null affix)
 	2_obj_plural: plural 2nd person object, ambiguous for number and person on subject
+
