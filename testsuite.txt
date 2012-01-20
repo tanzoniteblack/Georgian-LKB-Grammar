@@ -16,7 +16,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერილს წერს.
 მასწავლებელ-ი წერილ-ს 0-0-წერ-0-ს
-teacher-NOM letter-DAT IMPERF-3.OBJ-write-3.SUBJ.SG
+teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
 `The teacher is writing a letter.'
 
 #Word order is "quite free" (c:47), the most common word order is SOV, but SVO is also very common depending on emphasis. However, none of my sources say anything more than this and don't give examples of other word orders.
@@ -27,7 +27,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერს წერილს.
 მასწავლებელ-ი 0-0-წერ-0-ს წერილ-ს
-teacher-NOM IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRESletter-DAT
+teacher-NOM NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES letter-DAT
 `The teacher is writing a letter.'
 
 #Ex 3 - VSO
@@ -37,7 +37,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერს მასწავლებელი წერილს.
 0-0-წერ-0-ს მასწავლებელ-ი წერილ-ს
-IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRESteacher-NOM letter-DAT
+NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES teacher-NOM letter-DAT
 `The teacher is writing a letter.'
 
 #Ex 4 - VOS
@@ -47,7 +47,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერს წერილს მასწავლებელი.
 0-0-წერ-0-ს წერილ-ს მასწავლებელ-ი
-IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRESletter-DAT teacher-NOM
+NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES letter-DAT teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 5 - OVS
@@ -57,7 +57,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერილს წერს მასწავლებელი.
 წერილ-ს 0-0-წერ-0-ს მასწავლებელ-ი
-letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES teacher-NOM
+letter-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 6 - OSV
@@ -67,7 +67,7 @@ Judgment: g
 Phenomena: word order, case, agreement
 წერილს მასწავლებელი წერს.
 წერილ-ს მასწავლებელ-ი 0-0-წერ-0-ს
-letter-DAT teacher-NOM IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
+letter-DAT teacher-NOM NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES
 `The teacher is writing a letter.'
 
 #Ex 7 - 3rd person sg pronoun + agreement
@@ -77,7 +77,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 ის რადიოგადაცემას ისმენს.
 ის რადიოგადაცემა-ს 0-0-ისმენ-0-ს.
-3.SG.NOM radiobroadcast-DAT IMPERF-3.OBJ-listen-PRES-3.SG.SUBJ.PRES
+3.SG.NOM radiobroadcast-DAT NOPRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES
 `He is listening to the radiobroadcast.'
 
 #Ex 8 - 3rd person pl pronoun + agreement
@@ -107,7 +107,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 ჩვენ რადიოგადაცემას ვისმენთ.
 ჩვენ რადიოგადაცემა-ს 0-ვ-0-ისმენ-0-თ
-1.PL.NOM radiobroadcast-DAT IMPERF-1.SUBJ-3.OBJ-listen-PRES-PL.SUBJ
+1.PL.NOM radiobroadcast-DAT NOPRE-1.SUBJ-3.OBJ-listen-PSF-PL.SUBJ
 `I am listening to the radiobroadcast.'
 
 #Ex 11 - 2nd person sg pronoun + agreement
@@ -115,8 +115,8 @@ Source: c:52
 Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
-სენ რადიოგადაცემას ისმენ.
-სენ რადიოგადაცემა-ს 0-0-0-ისმენ-0-0
+შენ რადიოგადაცემას ისმენ.
+შენ რადიოგადაცემა-ს 0-0-0-ისმენ-0-0
 2.SG.NOM radiobroadcast-DAT IMPERF-2.SUBJ-3.OBJ-listen-PRES-SG.SUBJ
 `You are listening to the radiobroadcast.'
 
@@ -127,7 +127,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement
 თქვენ რადიოგადაცემას ისმენთ.
 თქვენ რადიოგადაცემა-ს 0-0-0-ისმენ-0-თ
-2.PL.NOM radiobroadcast-DAT IMPERF-2.SUBJ-3.OBJ-listen-PRES-PL.SUBJ
+2.PL.NOM radiobroadcast-DAT NOPRE-2.SUBJ-3.OBJ-listen-PSF-PL.SUBJ
 `You all are listening to the radiobroadcast.'
 
 #Ex 13 - SV intrans. word order:
@@ -137,7 +137,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement, word order
 მე ვმუშაობ.
 მე 0-ვ-მუშა-ობ-0
-1.SG.NOM IMPERF-1.SUBJ-word-PRES-SG
+1.SG.NOM NOPRE-1.SUBJ-work-PSF-SG
 `I work.'
 
 #Ex 14 - VS intrans. word order:
@@ -147,7 +147,7 @@ Judgment: g
 Phenomena: pronouns, case, agreement, word order
 მუშაობთ თქვენ.
 0-0-მუშა-ობ-თ თქვენ
-IMPERF-2.SUBJ-work-PRES-PL 2.PL.NOM
+NOPRE-2.SUBJ-work-PSF-PL 2.PL.NOM
 `You work.'
 
 #Ex 15 - Det-Noun ordering
@@ -157,7 +157,7 @@ Judgment: g
 Phenomena: word order, case, agreement, determiners
 ერთი მასწავლებელი წერილს წერს.
 ერთ-ი მასწავლებელ-ი წერილ-ს 0-0-წერ-0-ს
-one-NOM teacher-NOM letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
+one-NOM teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Noun-Det ordering
@@ -167,7 +167,7 @@ Judgment: u
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთი წერილს წერს.
 მასწავლებელ-ი ერთ-ი წერილ-ს 0-0-წერ-0-ს
-teacher-NOM one-NOM letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
+teacher-NOM one-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Det-Noun ordering, dative case
@@ -177,7 +177,7 @@ Judgment: g
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
 მასწავლებელ-ი ერთ-0 წერილ-ს 0-0-წერ-0-ს
-teacher-NOM one-DAT letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
+teacher-NOM one-DAT letter-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Det-Noun ordering, dative case
@@ -187,7 +187,7 @@ Judgment: g
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
 მასწავლებელ-ი წერილ-ს ერთ-0 0-0-წერ-0-ს
-teacher-NOM letter-DAT one-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
+teacher-NOM letter-DAT one-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Nom-Dat-Dat case pattern, indirect-object marking, perfective/future; order of the direct object and indirect object matter relative to each other
@@ -196,8 +196,8 @@ Vetted: s
 Judgment: g
 Phenomena: case, agreement
 შვილები წერილს გაუგზავნიან მამას.
-შვილ-ებ-ი წერილ-ს გა-უ-გზავნ-ან მამა-ს
-child-PL-NOM letter-DAT PERF-3.OBJ-send-3.PL.SUBJ father-DAT
+შვილ-ებ-ი წერილ-ს გა-0-გზავნ-ან მამა-ს
+child-PL-NOM letter-DAT PRE-3.OBJ-send-3.PL.SUBJ father-DAT
 `The children will send a letter to (their) father.'
 
 #Ex 16 - Nom-Dat-Dat case pattern, indirect-object marking, perfective/future; order of the direct object and indirect object matter relative to each other; this example is a bit non-sensical and should be REPLACED when I find a better one
@@ -206,7 +206,7 @@ Vetted: f
 Judgment: g
 Phenomena: case, agreement
 შვილები მამას გაუგზავნიან წერილს.
-შვილ-ებ-ი მამა-ს გა-უ-გზავნ-ან წერილ-ს
+შვილ-ებ-ი მამა-ს გა-0-უგზავნ-ან წერილ-ს
 child-PL-NOM father-DAT PERF-3.OBJ-send-3.PL.SUBJ.PRES letter-DAT
 `The children will send (their) father to a letter.'
 

@@ -43,6 +43,10 @@ PSF_av-suffix :=
 %suffix (* ავ)
 PSF_av-lex-rule.
 
+PSF_ob-suffix :=
+%suffix (* ობ)
+PSF_ob-lex-rule.
+
 past_imperfective-suffix :=
 %suffix (* ი)
 past_imperfective-lex-rule.
@@ -58,6 +62,22 @@ past_imperfective_SA-lex-rule.
 3_sg_subj_pres-suffix :=
 %suffix (* ს)
 3_sg_subj_pres-lex-rule.
+
+3_pl_subj_pres-suffix1 :=
+%suffix (* ენ)
+3_pl_subj_pres-lex-rule.
+
+3_pl_subj_pres-suffix2 :=
+%suffix (* ან)
+3_pl_subj_pres-lex-rule.
+
+1_2_subj_plural_suffix-suffix :=
+%suffix (* თ)
+1_2_subj_plural_suffix-lex-rule.
+
+2_obj_plural-suffix :=
+%suffix (* თ)
+2_obj_plural-lex-rule.
 
 nominative-deter-suffix :=
 %suffix (* ი)
