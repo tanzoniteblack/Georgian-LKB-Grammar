@@ -85,4 +85,23 @@ Agreement:
 	1_2_subj_sing_suffix: singular 1st or 2nd on subject NP (null affix)
 	2_obj_plural: plural 2nd person object, ambiguous for number and person on subject
 
-
+	Demonstratives:
+	Georgian distinguishes 3 types of demonstrative adjectives based off of location: close to the speaker, close to the addressee, and distant from both. 
+	
+	Negation:
+	Georgian sentential negation is done by placing the adverb "რა" immediately before the verb.
+	
+	Judgment: g
+		ისინი შენ არ გმალავენ
+		ისინი შენ არ 0-გ-მალ-ავ-ენ
+		3.PL.NOM 2.SG.NOM not NOPRE-2.SG.OBJ-hide-PSF-3.PL.SUBJ.PRES
+		`They aren't hiding you.' 
+	Judgment: u
+		ისინი არ შენ გმალავენ
+		ისინი არ შენ 0-გ-მალ-ავ-ენ
+		3.PL.NOM not 2.SG.NOM  NOPRE-2.SG.OBJ-hide-PSF-3.PL.SUBJ.PRES
+		`They aren't hiding you.'
+		ისინი შენ გმალავენ არ
+		ისინი შენ 0-გ-მალ-ავ-ენ არ
+		3.PL.NOM 2.SG.NOM NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES not
+		`They aren't hiding you.'

@@ -286,7 +286,7 @@ Source: a
 Vetted: s
 Judgment: g
 Phenomena: coordination, tense aspect mood, argument optionality, agreement
-ისინი მე გმალავენ.
+ისინი მე მმალავენ.
 ისინ-ი მე 0-მ-მალ-ავ-ენ
 3.PL-NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES
 `They are hiding me.'
@@ -314,8 +314,49 @@ Phenomena: coordination, negation, tense aspect mood, argument optionality, agre
 #Ex 27 - pro-drop
 Source: b
 Vetted: s
+Judgment: g
 Phenomena: pro-d
 გვკლავ.
 0-0-გვ-კლ-ავ-0
 NOPRE-2.SUBJ-1.PL.OBJ-kill-PSF-SG.SUBJ
 `You are killing us.'
+
+#Ex 26 - object agreement
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
+შენ მე მმალავენ.
+შენ მე 0-მ-მალ-ავ-ენ
+2.SG.NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES
+`You are hiding me.'
+
+#Ex 27 - negation
+Source: a
+Vetted: s
+Judgment: g
+Phenomena: negation
+ისინი შენ არ გმალავენ
+ისინი შენ არ 0-გ-მალ-ავ-ენ
+3.PL.NOM 2.SG.NOM not NOPRE-2.SG.OBJ-hide-PSF-3.PL.SUBJ.PRES
+`They aren't hiding you.'
+
+#Ex 28 - negation; error: NOT adverb must come right before verb
+Source: a
+Vetted: s
+Judgment: u
+Phenomena: negation
+ისინი არ შენ გმალავენ
+ისინი არ შენ 0-გ-მალ-ავ-ენ
+3.PL.NOM not 2.SG.NOM  NOPRE-2.SG.OBJ-hide-PSF-3.PL.SUBJ.PRES
+`They aren't hiding you.'
+
+#Ex 29 - negation; error: not adverb must come right before verb
+Source: a
+Vetted: s
+Judgment: u
+Phenomena: negation
+ისინი შენ გმალავენ არ
+ისინი შენ 0-გ-მალ-ავ-ენ არ
+3.PL.NOM 2.SG.NOM NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES not
+`They aren't hiding you.'
