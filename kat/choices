@@ -293,6 +293,7 @@ section=morphology
       verb-pc5_lrt2_lri3_inflecting=yes
       verb-pc5_lrt2_lri3_orth=ი
     verb-pc5_lrt3_name=has_preverb_other
+      verb-pc5_lrt3_forbid1_others=verb-pc7_lrt1
       verb-pc5_lrt3_lri1_inflecting=yes
       verb-pc5_lrt3_lri1_orth=და
       verb-pc5_lrt3_lri2_inflecting=yes
