@@ -1,21 +1,71 @@
 Tense and aspect:
-	All of the Georgian grammars I have use traditional Georgian grammatical categories to describe the tense/aspect (what are called screeves) rather than more traditional western words.  They describe 11 different screeves, which are each some combination of past, present, future, aorist, imperfective, perfective and subjunctive.  Because future tense is made from the present tense, with the addition of a preverb that is often described as a perfective marker, I have decided that past & non-past is probably the most accurate analysis of the tense system.  There are about different preverbs used for this, which are lexically selected.  Though when attached to a presense verb, it correlates to the English notion of future, I will stick with the sources I have in calling it a perfective marker, as this is the most accurate when using it to describe the aorist aspect.
+	All of the Georgian grammars I have use traditional Georgian grammatical categories to describe the tense/aspect (what are called screeves) rather than more traditional western words.  They describe 11 different screeves, which are each some combination of past, present, future, aorist, imperfective, perfective and subjunctive.  With help from you on GoPost I have decided to select past, present, and future tenses along with perfective and imperfective aspects.  I have also included indicative and subjunctive, but do not currently deal with them.
+	
+	For this lab, I'm going to consider 4 different aspect/tense combinations on verbs: future and present (which are unspecified for aspect), and past tense in both a perfective and imperfective form.
+	
+	The tense system is not a clean "is there a morpheme indicating tense X?".  Instead, there are combinations of morphemes in different locations that end up dictating the tense and aspects.  In the following two examples, the only difference between the present tense and the future tense, is whether there is a non-empty affix in the preverb slot.  This preverb, in combination with the PSF (which is a marker for present/future, and is annoyingly 0-form for some verbs) specifies the verb for being either present or future.  I have chosen to mark preverb, and it's absense, in the IGT with NOPRE and PRE.  Please let me know if you have a better suggestion for that.
 
 	მასწავლებელი წერილს წერს.
-	მასწავლებელ-ი წერილ-ს 0-0-წერ-ს
-	teacher-NOM letter-DAT IMPERF-3.OBJ-write-3.SUBJ.SG
+	მასწავლებელ-ი წერილ-ს 0-0-წერ-0-ს
+	teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
 	`The teacher is writing a letter.'
 	
 	მასწავლებელი წერილს დაწერს.
-	მასწავლებელ-ი წერილ-ს და-0-წერ-ს
-	teacher-NOM letter-DAT PERF-3.OBJ-write-3.SUBJ.SG
+	მასწავლებელ-ი წერილ-ს და-0-წერ-0-ს
+	teacher-NOM letter-DAT PRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
 	`The teacher will a letter.'
 	
-	In the aorist aspect, the presense of this prefix actually does correspond to the difference between perfective and imperfective:
+Agreement:
+	Verbs agree with both their subject and their object.  They agree for both person (1st, 2nd, and 3rd) and number (singular and plural).
 	
-	გუშინ ორი საათი ვწერე ეს სტატია, მაგრამ ვერ დავწერე ბოლომდე.
-	გუშინ ორ-0-ი საათ-0-ი 0-ვ-0-წერ-ე-0 ეს-0-0 სტატია-0-0 მაგრამ ვერ და-ვ-0-წერ-ე-0 ბოლო-მდე.
-	yesterday two-SG-NOM hour-SG-NOM IMPERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ this-SG-NOM article-SG-NOM but unable PERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ end-until
-	`For two hours yesterday I wrote this article, but I could not complete it.'
+	ისინი შენ გმალავენ.
+	ისინ-ი შენ 0-გ-მალ-ავ-ენ
+	3.PL-NOM 2.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES
+	`They are hiding you.'
 	
-	In aspect, I have created 3 types: perfective, imperfective, and aorist.  The perfective and imperfective are in contrast with each other, and exist each with only the supertype aspect.  Aorist is another aspect, which when the verb takes it, will also express perfect or imperfect.  Therefore, I made the 3rd aspect aorist with the supertypes perfective and imperfective.
+	ისინი მე გმალავენ.
+	ისინ-ი მე 0-მ-მალ-ავ-ენ
+	3.PL-NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES
+	`They are hiding me.'	
+	
+	Most often though, the agreement is not actually seen, as pronouns are almost always dropped.  In fact, 3rd person nouns can also be dropped if it's clear what is being discussed from the rest of the conversation.
+	
+	გვკლავ.
+	0-0-გვ-კლ-ავ-0
+	NOPRE-2.SUBJ-1.PL.OBJ-kill-PSF-SG.SUBJ
+	`You are killing us.'
+	
+	(on a side note,the previous example is one of the reasons Georgian is considered completely unpronouncable without a lot of practice.  That sentence/word transliterates to: gvk'lav)
+	
+	To account for this in the customization system, in the morphology section I have started with a verb position class that adds the object marking prefixes.  This is the first prefix attached to the verb root, and so I selected that it obligatorily occurs, and that it can take any verb as a possible input.
+	
+	I have object prefixes marking:
+	1.SG.OBJ
+	1.PL.OBJ
+	2.OBJ (only 1st person is specified for number in this spot)
+	3.OBJ (which has a 0 affix)
+	
+	The next position class that was required, was another prefix that built on the previous one to specify 1st and 2nd person subject prefixes.  Only 1st and 2nd person are marked in the prefix spot, so this will have to forbid the occurence of the 3rd person suffix.  But I need at least one of the two to occur, so I have marked either this prefix or the 3rd person suffix as required in the lexicon.
+	
+	I have the subject prefixes marking:
+	1.SUBJ
+	2.SUBJ (which has a 0 affix)
+	
+	The last prefix that needs marked is the preverb.  There is a 0-affix preverb, which requires the 0-affix tense marker and the presense of the PSF; if this is the case then the tense will be present.  There is another 0-affix preverb, which requires the SA to be "დ" and the tense marker to be "ი" which will result in a imperfective past tense.  The preverb, if present, is lexically selected.  Currently I have only added the most common preverb: და, and not limited what verbs it can occur with.  What I have currently done to get the preverb correctly selected and adding the right information, is that the preverb existing has multiple forms.  One of which requires the PSF and forbids the SA, which adds the feature future; and another which which doesn't require or forbid anything, and doesn't add any features.  This preverb will be required by the other affixes when necessary.
+	
+	Otherwise, one of the other preverbs is chosen (each require a specific type of verb from the lexicon).  If there is a 0-affix tense marker and the PSF, the the tense will be future; if there is not a PSF and the tense marker is 'aorist', then the tense will be past perfective.
+	
+	The first prefix, which might optionally occur, on a verb is the PSF.  This is in the literature a Present/Future Stem Formant.  Some sources refer to it as a 'thematic marker', which seems a little strange since it doesn't have anything to do with theme.  There are a limitted number of options of PSFs, including a 0-affix, which are lexically selected.  The PSF forbids the past perfective tense marker.
+	
+	Stem augment, or SA.  This is a suffix that occurs after the PSF (if the PSF occurred).  It always takes the form "დ" and is required to mark the past imperfective tense.  I have marked it as optional.
+	
+	To account for the absense/presense of the PSF, I have made 2 tense marking suffixes spots.  1 of these is the tense_marker_with_PSF.  This suffix takes the SA as a possible input, and forbids the tense_marker_no_PSF.  The other type is tense_marker_no_PSF which takes preverb as an input type.  Both are optional in the morphology section, but are disjointedly required on the verbs in the lexicon section.
+	
+	In the tense_marker_no_PSF I currently only have the past perfective suffix marked.  This also takes the SA as a possible input.  There are 5 past perfective suffixes, which depend on the verb type that's inputted.  Currently I've only accounted for those that take "ი" as a suffix and will later need to expand this.
+	
+	Under tense_marker_with_PSF I have markers for present/future tense (0-affix and forbids the SA) and past imperfective (marked with an "ი" and requires the SA).
+	
+	The next suffix that occurs, is the 3rd person subject marker. E Either of the tense_marking suffixes are acceptable as inputs.  This is marked as optional, but either 1/2nd subject marker, the 2nd person object marker (as it overrides the 1st person subject maker), or 3rd person subject marker is required according to the lexicon.  The 3rd person marker is a polysynthetic suffix that changes for tense, aspect, and number.  Each 3rd person marker also states whether it forbids or requires the plural marker for the 1st and 2nd persons.
+	So far I have:
+	3.SG.PRES/FUTURE : -ს which forbids the 1/2 plural marker
+	

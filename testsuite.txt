@@ -15,7 +15,7 @@ Vetted: s
 Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერილს წერს.
-მასწავლებელ-ი წერილ-ს 0-0-წერ-ს
+მასწავლებელ-ი წერილ-ს 0-0-წერ-0-ს
 teacher-NOM letter-DAT IMPERF-3.OBJ-write-3.SUBJ.SG
 `The teacher is writing a letter.'
 
@@ -26,8 +26,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 მასწავლებელი წერს წერილს.
-მასწავლებელ-ი 0-წერ-ს წერილ-ს
-teacher-NOM IMPERF-write-3.SG letter-DAT
+მასწავლებელ-ი 0-0-წერ-0-ს წერილ-ს
+teacher-NOM IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRESletter-DAT
 `The teacher is writing a letter.'
 
 #Ex 3 - VSO
@@ -36,8 +36,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერს მასწავლებელი წერილს.
-0-წერ-ს მასწავლებელ-ი წერილ-ს
-IMPERF-write-3.SG teacher-NOM letter-DAT
+0-0-წერ-0-ს მასწავლებელ-ი წერილ-ს
+IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRESteacher-NOM letter-DAT
 `The teacher is writing a letter.'
 
 #Ex 4 - VOS
@@ -46,8 +46,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერს წერილს მასწავლებელი.
-0-წერ-ს წერილ-ს მასწავლებელ-ი
-IMPERF-write-3.SG letter-DAT teacher-NOM
+0-0-წერ-0-ს წერილ-ს მასწავლებელ-ი
+IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRESletter-DAT teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 5 - OVS
@@ -56,8 +56,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერილს წერს მასწავლებელი.
-წერილ-ს 0-წერ-ს მასწავლებელ-ი
-letter-DAT IMPERF-write-3.SG teacher-NOM
+წერილ-ს 0-0-წერ-0-ს მასწავლებელ-ი
+letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES teacher-NOM
 `The teacher is writing a letter.'
 
 #Ex 6 - OSV
@@ -66,8 +66,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement
 წერილს მასწავლებელი წერს.
-წერილ-ს მასწავლებელ-ი 0-წერ-ს
-letter-DAT teacher-NOM IMPERF-write-3.SG
+წერილ-ს მასწავლებელ-ი 0-0-წერ-0-ს
+letter-DAT teacher-NOM IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
 `The teacher is writing a letter.'
 
 #Ex 7 - 3rd person sg pronoun + agreement
@@ -76,8 +76,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
 ის რადიოგადაცემას ისმენს.
-ის რადიოგადაცემა-ს 0-ისმენ-ს.
-3.SG.NOM radiobroadcast-DAT IMPERF-listen-3.SG
+ის რადიოგადაცემა-ს 0-0-ისმენ-0-ს.
+3.SG.NOM radiobroadcast-DAT IMPERF-3.OBJ-listen-PRES-3.SG.SUBJ.PRES
 `He is listening to the radiobroadcast.'
 
 #Ex 8 - 3rd person pl pronoun + agreement
@@ -86,8 +86,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
 ისინი რადიოგადაცემას ისმენენ.
-ის რადიოგადაცემა-ს 0-ისმენ-ენ.
-3.PL.NOM radiobroadcast-DAT IMPERF-listen-3.PL
+ის რადიოგადაცემა-ს 0-0-ისმენ-0-ენ.
+3.PL.NOM radiobroadcast-DAT IMPERF-3.OBJ-listen-PRES-3.PL.SUBJ.PRES
 `They are listening to the radiobroadcast.'
 
 #Ex 9 - 1st person sg pronoun + agreement
@@ -96,8 +96,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
 მე რადიოგადაცემას ვისმენ.
-მე რადიოგადაცემა-ს 0-ვ-ისმენ-0.
-1.SG.NOM radiobroadcast-DAT IMPERF-1-listen-SG
+მე რადიოგადაცემა-ს 0-ვ-0-ისმენ-0-0
+1.SG.NOM radiobroadcast-DAT NOPRE-1.SUBJ-3.OBJ-listen-PSF-SG
 `I am listening to the radiobroadcast.'
 
 #Ex 10 - 1st person pl pronoun + agreement
@@ -106,8 +106,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
 ჩვენ რადიოგადაცემას ვისმენთ.
-ჩვენ რადიოგადაცემა-ს 0-ვ-ისმენ-თ.
-1.PL.NOM radiobroadcast-DAT IMPERF-1-listen-PL
+ჩვენ რადიოგადაცემა-ს 0-ვ-0-ისმენ-0-თ
+1.PL.NOM radiobroadcast-DAT IMPERF-1.SUBJ-3.OBJ-listen-PRES-PL.SUBJ
 `I am listening to the radiobroadcast.'
 
 #Ex 11 - 2nd person sg pronoun + agreement
@@ -116,8 +116,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
 სენ რადიოგადაცემას ისმენ.
-სენ რადიოგადაცემა-ს 0-0-ისმენ-0.
-2.SG.NOM radiobroadcast-DAT IMPERF-2-listen-SG
+სენ რადიოგადაცემა-ს 0-0-0-ისმენ-0-0
+2.SG.NOM radiobroadcast-DAT IMPERF-2.SUBJ-3.OBJ-listen-PRES-SG.SUBJ
 `You are listening to the radiobroadcast.'
 
 #Ex 12 - 2nd person pl pronoun + agreement
@@ -126,8 +126,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
 თქვენ რადიოგადაცემას ისმენთ.
-თქვენ რადიოგადაცემა-ს 0-0-ისმენ-თ.
-2.PL.NOM radiobroadcast-DAT IMPERF-2-listen-PL
+თქვენ რადიოგადაცემა-ს 0-0-0-ისმენ-0-თ
+2.PL.NOM radiobroadcast-DAT IMPERF-2.SUBJ-3.OBJ-listen-PRES-PL.SUBJ
 `You all are listening to the radiobroadcast.'
 
 #Ex 13 - SV intrans. word order:
@@ -136,8 +136,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement, word order
 მე ვმუშაობ.
-მე 0-ვ-მუშაობ-0
-1.SG.NOM IMPERF-1-word-SG
+მე 0-ვ-მუშა-ობ-0
+1.SG.NOM IMPERF-1.SUBJ-word-PRES-SG
 `I work.'
 
 #Ex 14 - VS intrans. word order:
@@ -146,8 +146,8 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement, word order
 მუშაობთ თქვენ.
-0-0-მუშაობ-თ თქვენ
-IMPERF-2-word-PL 2.PL.NOM
+0-0-მუშა-ობ-თ თქვენ
+IMPERF-2.SUBJ-work-PRES-PL 2.PL.NOM
 `You work.'
 
 #Ex 15 - Det-Noun ordering
@@ -156,8 +156,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement, determiners
 ერთი მასწავლებელი წერილს წერს.
-ერთ-ი მასწავლებელ-ი წერილ-ს IMPERF-წერ-ს
-one-NOM teacher-NOM letter-DAT 0-write-3.SG
+ერთ-ი მასწავლებელ-ი წერილ-ს 0-0-წერ-0-ს
+one-NOM teacher-NOM letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Noun-Det ordering
@@ -166,8 +166,8 @@ Vetted: f
 Judgment: u
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთი წერილს წერს.
-მასწავლებელ-ი ერთ-ი წერილ-ს IMPERF-წერ-ს
-teacher-NOM one-NOM letter-DAT 0-write-3.SG
+მასწავლებელ-ი ერთ-ი წერილ-ს 0-0-წერ-0-ს
+teacher-NOM one-NOM letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Det-Noun ordering, dative case
@@ -176,8 +176,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
-მასწავლებელ-ი ერთ-0 წერილ-ს IMPERF-წერ-ს
-teacher-NOM one-DAT letter-DAT 0-write-3.SG
+მასწავლებელ-ი ერთ-0 წერილ-ს 0-0-წერ-0-ს
+teacher-NOM one-DAT letter-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Det-Noun ordering, dative case
@@ -186,8 +186,8 @@ Vetted: f
 Judgment: g
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
-მასწავლებელ-ი წერილ-ს ერთ-0 IMPERF-წერ-ს
-teacher-NOM letter-DAT one-DAT 0-write-3.SG
+მასწავლებელ-ი წერილ-ს ერთ-0 0-0-წერ-0-ს
+teacher-NOM letter-DAT one-DAT IMPERF-3.OBJ-write-PRES-3.SG.SUBJ.PRES
 `A teacher is writing a letter.'
 
 #Ex 15 - Nom-Dat-Dat case pattern, indirect-object marking, perfective/future; order of the direct object and indirect object matter relative to each other
@@ -197,7 +197,7 @@ Judgment: g
 Phenomena: case, agreement
 შვილები წერილს გაუგზავნიან მამას.
 შვილ-ებ-ი წერილ-ს გა-უ-გზავნ-ან მამა-ს
-child-PL-NOM letter-DAT PERF-3.OBJ-send-3.PL father-DAT
+child-PL-NOM letter-DAT PERF-3.OBJ-send-3.PL.SUBJ father-DAT
 `The children will send a letter to (their) father.'
 
 #Ex 16 - Nom-Dat-Dat case pattern, indirect-object marking, perfective/future; order of the direct object and indirect object matter relative to each other; this example is a bit non-sensical and should be REPLACED when I find a better one
@@ -207,7 +207,7 @@ Judgment: g
 Phenomena: case, agreement
 შვილები მამას გაუგზავნიან წერილს.
 შვილ-ებ-ი მამა-ს გა-უ-გზავნ-ან წერილ-ს
-child-PL-NOM father-DAT PERF-3.OBJ-send-3.PL letter-DAT
+child-PL-NOM father-DAT PERF-3.OBJ-send-3.PL.SUBJ.PRES letter-DAT
 `The children will send (their) father to a letter.'
 
 #Ex 17 - Erg-Nom-Dat case pattern
@@ -217,7 +217,7 @@ Judgment: g
 Phenomena: case, agreement
 შვილებმა წერილი გაუგზავნეს მამას.
 შვილ-ებ-მა წერილ-ი გა-უ-გზავნ-ეს მამა-ს
-child-PL-ERG letter-NOM PERF-3.OBJ-send-AOR.3.PL father-DAT
+child-PL-ERG letter-NOM PERF-3.OBJ-send-AOR.SUBJ.3.PL father-DAT
 `The children sent a letter to (their) father.'
 
 #Ex 18 - Dat-Nom-Gen.for case pattern
@@ -227,7 +227,7 @@ Judgment: g
 Phenomena: case, agreement
 შვილებს წერილი გაუგზავნიათ მამისათვის.
 შვილ-ებ-ს წერილ-ი გა-უ-გზავნ-ათ მამ-ისა-თვის
-child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.PL father-GEN-for
+child-PL-DAT letter-NOM PERF-3.OBJ-send-PLUPERF.3.SUBJ.PL father-GEN-for
 `The children have sent a letter to (their) father.'
 
 #Ex 19 - Nom -> Erg case pattern in intransitives
@@ -236,8 +236,8 @@ Vetted: s
 Judgment: g
 Phenomena: case, agreement
 წყალი დუღს.
-წყალ-ი დუღ-ს
-water-NOM boil-3.SG
+წყალ-ი 0-დუღ-0-ს
+water-NOM IMPERF-boil-PRES-3.SG
 `The water boils.'
 
 #Ex 19 - Nom -> Erg case pattern in intransitives
@@ -256,8 +256,8 @@ Vetted: f
 Judgment: g
 Phenomena: pronoun, case, agreement
 ზოგი შენ მოატყუო.
-ზოგ-ი შენ 0-0-მოატყუო-0
-some-NOM 2.SG.NOM IMPERF-2-cheat-SG
+ზოგ-ი შენ 0-0-მოატყუო-0-0
+some-NOM 2.SG.NOM IMPERF-2.SUBJ-cheat-PRES-SUBJ.SG
 `Some of you cheat.'
 
 #Ex 21 - SOV, preverb
@@ -266,16 +266,56 @@ Vetted: s
 Judgment: g
 Phenomena: word order, case, agreement, tense
 მასწავლებელი წერილს დაწერს.
-მასწავლებელ-ი წერილ-ს და-0-წერ-ს
-teacher-NOM letter-DAT PERF-3.OBJ-write-3.SUBJ.SG
+მასწავლებელ-ი წერილ-ს და-0-წერ-0-ს
+teacher-NOM letter-DAT PREVERB-3.OBJ-write-PSF-3.SUBJ.SG.PRES
 `The teacher will a letter.'
 
-#Ex 22 - aorist, ergative-absolutive structure
-Source: 
+
+#Ex 23 - object agreement
+Source: a
 Vetted: s
 Judgment: g
 Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
-გუშინ ორი საათი ვწერე ეს სტატია, მაგრამ ვერ დავწერე ბოლომდე.
-გუშინ ორ-0-ი საათ-0-ი 0-ვ-0-წერ-ე-0 ეს-0-0 სტატია-0-0 მაგრამ ვერ და-ვ-0-წერ-ე-0 ბოლო-მდე.
-yesterday two-SG-NOM hour-SG-NOM IMPERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ this-SG-NOM article-SG-NOM but unable PERF-1.SUBJ-3.OBJ-write-AOR-SG.SUBJ end-until
-`For two hours yesterday I wrote this article, but I could not complete it.'
+ისინი შენ გმალავენ.
+ისინ-ი შენ 0-გ-მალ-ავ-ენ
+3.PL-NOM NOPRE-2.SG.DAT 2.OBJ-hide-PRES-3.PL.SUBJ.PRES
+`They are hiding you.'
+
+#Ex 24 - object agreement
+Source: a
+Vetted: s
+Judgment: g
+Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
+ისინი მე გმალავენ.
+ისინ-ი მე 0-მ-მალ-ავ-ენ
+3.PL-NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES
+`They are hiding me.'
+
+#Ex 25 - object agreement
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
+ისინი შენ გმალავენ.
+ისინ-ი შენ 0-მ-მალ-ავ-ენ
+3.PL-NOM 2.SG.DAT NOPRE-2.OBJ-hide-PRES-3.PL.SUBJ.PRES
+`They are hiding you.'
+
+#Ex 26 - object agreement
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
+ისინი მე გმალავენ.
+ისინ-ი მე 0-გ-მალ-ავ-ენ
+3.PL-NOM 1.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES
+`They are hiding me.'
+
+#Ex 27 - pro-drop
+Source: b
+Vetted: s
+Phenomena: pro-d
+გვკლავ.
+0-0-გვ-კლ-ავ-0
+NOPRE-2.SUBJ-1.PL.OBJ-kill-PSF-SG.SUBJ
+`You are killing us.'

@@ -1,10 +1,14 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 singular-noun-lex := singular-noun-lex-rule.
 
-1st-lex := 1st-lex-rule.
-
-2nd-lex := 2nd-lex-rule.
+2nd_subj_prefix-lex := 2nd_subj_prefix-lex-rule.
 
 3rd_obj_prefix-lex := 3rd_obj_prefix-lex-rule.
+
+NOPRE_present-lex := NOPRE_present-lex-rule.
+
+PSF_null-lex := PSF_null-lex-rule.
+
+present_future_suffix-lex := present_future_suffix-lex-rule.
 
 dative-deter-lex := dative-deter-lex-rule.

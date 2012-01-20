@@ -15,17 +15,9 @@ plural-noun-suffix :=
 %suffix (* ებ)
 plural-noun-lex-rule.
 
-3rd_sg_subj-suffix :=
-%suffix (* ს)
-3rd_sg_subj-lex-rule.
-
-3rd_pl_subj-suffix :=
-%suffix (* ენ)
-3rd_pl_subj-lex-rule.
-
-1st_2nd_subj_plural_suffix-suffix :=
-%suffix (* თ)
-1st_2nd_subj_plural_suffix-lex-rule.
+1st_subj_prefix-prefix :=
+%prefix (* ვ)
+1st_subj_prefix-lex-rule.
 
 1st_sg_obj_prefix-prefix :=
 %prefix (* მ)
@@ -39,9 +31,33 @@ plural-noun-lex-rule.
 %prefix (* გ)
 2nd_obj_prefix-lex-rule.
 
-2nd_obj_pl_suffix-suffix :=
-%suffix (* თ)
-2nd_obj_pl_suffix-lex-rule.
+has_preverb_future-prefix :=
+%prefix (* და)
+has_preverb_future-lex-rule.
+
+has_preverb_other-prefix :=
+%prefix (* და)
+has_preverb_other-lex-rule.
+
+PSF_av-suffix :=
+%suffix (* ავ)
+PSF_av-lex-rule.
+
+past_imperfective-suffix :=
+%suffix (* ი)
+past_imperfective-lex-rule.
+
+past_perfective_suffix_i-suffix :=
+%suffix (* ი)
+past_perfective_suffix_i-lex-rule.
+
+past_imperfective_SA-suffix :=
+%suffix (* დ)
+past_imperfective_SA-lex-rule.
+
+3_sg_subj_pres-suffix :=
+%suffix (* ს)
+3_sg_subj_pres-lex-rule.
 
 nominative-deter-suffix :=
 %suffix (* ი)
