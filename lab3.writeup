@@ -15,6 +15,8 @@ Tense and aspect:
 	teacher-NOM letter-DAT PRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
 	`The teacher will write a letter.'
 	
+	Currently only present and future tenses parse correctly in the grammar.  I hope to have them fully functional by next week's lab, but due to all the complications I ran into in even trying to figure out the parts of the verbs, and getting them into the system, I ran out of time after getting the present and future tenses to work correctly.  I know that it's a probably with my inputs or requirements that is causing the issue in parsing, but I'm not sure what
+	
 Agreement:
 	Verbs agree with both their subject and their object.  They agree for both person (1st, 2nd, and 3rd) and number (singular and plural).
 	
@@ -179,4 +181,8 @@ Reasons why I only have 84.8% coverage:
 	Haven't told the system how to deal with indirect objects yet.
 	Having problems with ergatives in past perfective tense.
 Reasons for the overgeneration:
-	Not having correctly lexically selected preverbs and PSFs.  	
+	Not having correctly lexically selected preverbs and PSFs.
+
+Things I need to improve:
+	Figure out why the 2 past tenses aren't working correctly.
+	Find more examples of case usage in the past perfective tense, as this is one of the tenses that shows ergativity.  Similarly, need to find more intransitive examples.  Both of these are problematic to find, as almost all of the examples sentences in my books either contain only 1 word, because they drop both the subject and the object, or are incredibly complex, multi clausal sentences.

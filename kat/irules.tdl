@@ -67,6 +67,10 @@ past_imperfective-suffix :=
 %suffix (* ი)
 past_imperfective-lex-rule.
 
+past_imperfective_with_object-suffix :=
+%suffix (* ი)
+past_imperfective_with_object-lex-rule.
+
 past_perfective_suffix-suffix1 :=
 %suffix (* ი)
 past_perfective_suffix-lex-rule.
@@ -78,6 +82,18 @@ past_perfective_suffix-lex-rule.
 past_perfective_suffix-suffix3 :=
 %suffix (* ა)
 past_perfective_suffix-lex-rule.
+
+past_perfective_suffix_with_object-suffix1 :=
+%suffix (* ი)
+past_perfective_suffix_with_object-lex-rule.
+
+past_perfective_suffix_with_object-suffix2 :=
+%suffix (* ე)
+past_perfective_suffix_with_object-lex-rule.
+
+past_perfective_suffix_with_object-suffix3 :=
+%suffix (* ა)
+past_perfective_suffix_with_object-lex-rule.
 
 past_imperfective_SA-suffix :=
 %suffix (* დ)
