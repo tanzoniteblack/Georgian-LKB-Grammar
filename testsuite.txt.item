@@ -29,3 +29,25 @@
 29@author@@@1@crd,tenseaspectmood,pro-d,agr@ისინი შენ გმალავენ.@@@@0@3@`They are hiding you.'@Ryan Smith@January 10, 2012
 30@author@@@1@crd,neg,tenseaspectmood,pro-d,agr@ისინი მე გმალავენ.@@@@0@3@`They are hiding me.'@Ryan Smith@January 10, 2012
 31@Georgian, A structural reference grammar by B.G. Hewitt@@@1@pro-d@გვკლავ.@@@@1@1@`You are killing us.'@Ryan Smith@January 10, 2012
+32@author@@@1@crd,neg,tenseaspectmood,pro-d,agr@შენ მე მმალავენ.@@@@0@3@`You are hiding me.'@Ryan Smith@January 10, 2012
+33@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@neg@ისინი შენ არ გმალავენ@@@@1@4@`They aren't hiding you.'@Ryan Smith@January 10, 2012
+34@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@neg@ისინი არ შენ გმალავენ@@@@0@4@`They aren't hiding you.'@Ryan Smith@January 10, 2012
+35@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@neg@ისინი შენ გმალავენ არ@@@@0@4@`They aren't hiding you.'@Ryan Smith@January 10, 2012
+36@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@neg@არ ისინი შენ გმალავენ@@@@0@4@`They aren't hiding you.'@Ryan Smith@January 10, 2012
+37@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ეს ბრმა მუშაობს.@@@@1@3@`This woman (close to me) is working.'@Ryan Smith@January 10, 2012
+38@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ეგ ბრმა მუშაობს.@@@@1@3@`That woman (close to you) is working.'@Ryan Smith@January 10, 2012
+39@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ის ბრმა მუშაობს.@@@@1@3@`That woman (over there) is working.'@Ryan Smith@January 10, 2012
+40@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ამ ბრმა მუშაობს.@@@@0@3@`This woman (close to me) is working.'@Ryan Smith@January 10, 2012
+41@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@მაგ ბრმა მუშაობს.@@@@0@3@`That woman (close to you) is working.'@Ryan Smith@January 10, 2012
+42@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@იმ ბრმა მუშაობს.@@@@0@3@`That woman (over there) is working.'@Ryan Smith@January 10, 2012
+43@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ბრმა ეს მუშაობს.@@@@0@3@`This woman (close to me) is working.'@Ryan Smith@January 10, 2012
+44@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ბრმა ეგ მუშაობს.@@@@0@3@`That woman (close to you) is working.'@Ryan Smith@January 10, 2012
+45@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ბრმა ის მუშაობს.@@@@0@3@`That woman (over there) is working.'@Ryan Smith@January 10, 2012
+46@Georgian, A structural reference grammar by B.G. Hewitt:132@@@1@agr@გკლავ@@@@1@1@`I kill you.'@Ryan Smith@January 10, 2012
+47@Georgian, A structural reference grammar by B.G. Hewitt:132@@@1@agr@ვგკლავ@@@@0@1@`I kill you.'@Ryan Smith@January 10, 2012
+48@author@@@1@pn,c,agr@მათ რადიოგადაცემას ისმენენ.@@@@0@3@`They are listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
+49@author@@@1@wo,c,agr@მასწავლებელი წერილს გწერს.@@@@0@3@`The teacher is writing a letter.'@Ryan Smith@January 10, 2012
+50@author@@@1@agr@გკლავსთ@@@@0@1@`It is killing you all.'@Ryan Smith@January 10, 2012
+51@author@@@1@agr@გკლავსთ@@@@0@1@`I am killing you all. We are killing you.'@Ryan Smith@January 10, 2012
+52@author@@@1@tam@მასწავლებელი წერილს წერავს.@@@@0@3@`The teacher is writing a letter.'@Ryan Smith@January 10, 2012
+53@author@@@1@tam@მასწავლებელი წერილს გაწერავს.@@@@0@3@`The teacher will a letter.'@Ryan Smith@January 10, 2012

@@ -2,7 +2,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grammar of Georgian
 ;;; created at:
-;;;     Fri Jan 20 23:45:45 UTC 2012
+;;;     Sat Jan 21 00:06:16 UTC 2012
 ;;; based on Matrix customization system version of:
 ;;;     Fri Jan 20 01:36:16 UTC 2012
 ;;;
@@ -21,34 +21,36 @@ non-mod-lex-item := lex-item &
 noun :+ [ CASE case ].
 
 inflected :+ [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG luk,
-    3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG luk,
-    DETERMINER-CASE-SUFFIX-FLAG luk,
+    2ND_OBJ_PREFIX-FLAG luk,
+    PAST_PERFECTIVE_SUFFIX-FLAG luk,
     PSF-FLAG luk,
     SA-FLAG luk,
-    NOUN-CASE-SUFFIX-FLAG luk,
-    TENSE_MARKER_WITH_PSF-FLAG luk,
-    GENERAL_ENDING_VOWEL-NOUN-FLAG luk,
-    1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG luk,
-    PREVERB-FLAG luk,
     NOUN-PLURALITY-FLAG luk,
+    GENERAL_ENDING_VOWEL-NOUN-FLAG luk,
+    1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG luk,
+    DETERMINER-CASE-SUFFIX-FLAG luk,
     OBJ_PREFIX-FLAG luk,
-    PAST_PERFECTIVE_SUFFIX-FLAG luk,
-    HAS_PREVERB_OTHER-FLAG luk ].
+    NOUN-CASE-SUFFIX-FLAG luk,
+    HAS_PREVERB_OTHER-FLAG luk,
+    TENSE_MARKER_WITH_PSF-FLAG luk,
+    3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG luk,
+    PREVERB-FLAG luk ].
 
 infl-satisfied :+ [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG na-or-+,
-    3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG na-or-+,
-    DETERMINER-CASE-SUFFIX-FLAG na-or-+,
+    2ND_OBJ_PREFIX-FLAG na-or-+,
+    PAST_PERFECTIVE_SUFFIX-FLAG na-or-+,
     PSF-FLAG na-or-+,
     SA-FLAG na-or-+,
-    NOUN-CASE-SUFFIX-FLAG na-or-+,
-    TENSE_MARKER_WITH_PSF-FLAG na-or-+,
-    GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-+,
-    1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG na-or-+,
-    PREVERB-FLAG na-or-+,
     NOUN-PLURALITY-FLAG na-or-+,
+    GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-+,
+    1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG na-or-+,
+    DETERMINER-CASE-SUFFIX-FLAG na-or-+,
     OBJ_PREFIX-FLAG na-or-+,
-    PAST_PERFECTIVE_SUFFIX-FLAG na-or-+,
-    HAS_PREVERB_OTHER-FLAG na-or-+ ].
+    NOUN-CASE-SUFFIX-FLAG na-or-+,
+    HAS_PREVERB_OTHER-FLAG na-or-+,
+    TENSE_MARKER_WITH_PSF-FLAG na-or-+,
+    3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG na-or-+,
+    PREVERB-FLAG na-or-+ ].
 
 png :+ [ PER person,
     NUM number ].
@@ -220,12 +222,13 @@ verb-lex := basic-verb-lex & non-mod-lex-item & 1_2_plurality-rule-dtr & 1st_2nd
                  [ LOCAL [ CAT.VAL [ SPR < >,
                                      COMPS < > ],
                            CONT.HOOK.INDEX #xarg ] ],
-    INFLECTED [ TENSE_MARKER_WITH_PSF-FLAG na-or--,
-                PSF-FLAG na-or--,
-                SA-FLAG na-or--,
-                PREVERB-FLAG -,
+    INFLECTED [ SA-FLAG na-or--,
                 PAST_PERFECTIVE_SUFFIX-FLAG na-or--,
-                HAS_PREVERB_OTHER-FLAG na-or-- ] ].
+                2ND_OBJ_PREFIX-FLAG na-or--,
+                HAS_PREVERB_OTHER-FLAG na-or--,
+                PSF-FLAG na-or--,
+                TENSE_MARKER_WITH_PSF-FLAG na-or--,
+                PREVERB-FLAG - ] ].
 
 intransitive-verb-lex := verb-lex & intransitive-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < >,
@@ -241,12 +244,12 @@ transitive-verb-lex := verb-lex & transitive-lex-item &
     INFLECTED.OBJ_PREFIX-FLAG - ].
 
 trans-verb-lex := transitive-verb-lex &
-  [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG -,
-                TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG - ] ].
+  [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG -,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG - ] ].
 
 intran-verb-lex := intransitive-verb-lex &
-  [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG -,
-                TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG - ] ].
+  [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG -,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG - ] ].
 
 ;;; Others
 
@@ -322,33 +325,35 @@ PSF-rule-dtr := word-or-lexrule.
 
 noun-case-suffix-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED [ NOUN-CASE-SUFFIX-FLAG +,
-                PREVERB-FLAG #preverb,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
                 GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                PSF-FLAG #psf,
                 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ],
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                PREVERB-FLAG #preverb ],
     DTR noun-case-suffix-rule-dtr &
-        [ INFLECTED [ PREVERB-FLAG #preverb,
-                      TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      PSF-FLAG #psf,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+        [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
                       GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                      PSF-FLAG #psf,
                       3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ] ] ].
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 nominative_noun_vowel_ending-lex-rule := const-lex-rule & noun-case-suffix-lex-rule-super &
   [ DTR.INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG +,
@@ -367,32 +372,34 @@ ergative-noun-lex-rule := infl-lex-rule & noun-case-suffix-lex-rule-super &
 noun-plurality-lex-rule-super := add-only-no-ccont-rule & noun-case-suffix-rule-dtr &
   [ INFLECTED [ NOUN-PLURALITY-FLAG +,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-                PREVERB-FLAG #preverb,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                SA-FLAG #sa,
+                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                PSF-FLAG #psf,
+                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ],
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                PREVERB-FLAG #preverb ],
     DTR general_ending_consonant-noun-lex &
         [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      PSF-FLAG #psf,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-                      PREVERB-FLAG #preverb,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                      SA-FLAG #sa,
+                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                      PSF-FLAG #psf,
+                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ] ] ].
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                      PREVERB-FLAG #preverb ] ] ].
 
 singular-noun-lex-rule := const-lex-rule & noun-plurality-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM singular ].
@@ -401,37 +408,44 @@ plural-noun-lex-rule := infl-lex-rule & noun-plurality-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG.NUM plural ].
 
 1st_2nd_person_subj_prefixes-lex-rule-super := 1_2_plurality-rule-dtr & 3rd_subj_suffix-rule-dtr & PSF-rule-dtr & SA-rule-dtr & add-only-no-ccont-rule & preverb-rule-dtr & tense_marker_no_PSF-or-tense_marker_with_PSF-rule-dtr &
-  [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG +,
+  [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG +,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                 PSF-FLAG #psf,
                 HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                PREVERB-FLAG #preverb,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ],
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                PREVERB-FLAG #preverb ],
     DTR 1st_2nd_person_subj_prefixes-rule-dtr &
         [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                      PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                       PSF-FLAG #psf,
                       HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                      PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      PREVERB-FLAG #preverb,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ] ] ].
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 1st_subj_prefix-lex-rule := 1st_2nd_person_subj_prefixes-lex-rule-super & infl-lex-rule &
-  [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 1st ].
+  [ DTR.INFLECTED.2ND_OBJ_PREFIX-FLAG na,
+    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 1st ].
+
+1st_subj_prefix_2nd_obj-lex-rule := 1st_2nd_person_subj_prefixes-lex-rule-super & const-lex-rule &
+  [ DTR.INFLECTED.2ND_OBJ_PREFIX-FLAG +,
+    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 1st ].
 
 2nd_subj_prefix-lex-rule := 1st_2nd_person_subj_prefixes-lex-rule-super & const-lex-rule &
   [ SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 2nd ].
@@ -439,77 +453,81 @@ plural-noun-lex-rule := infl-lex-rule & noun-plurality-lex-rule-super &
 obj_prefix-lex-rule-super := 1_2_plurality-rule-dtr & 1st_2nd_person_subj_prefixes-rule-dtr & 3rd_subj_suffix-rule-dtr & PSF-rule-dtr & SA-rule-dtr & add-only-no-ccont-rule & preverb-rule-dtr & tense_marker_no_PSF-or-tense_marker_with_PSF-rule-dtr &
   [ INFLECTED [ OBJ_PREFIX-FLAG +,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                PREVERB-FLAG #preverb,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ],
+                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                PSF-FLAG #psf,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                PREVERB-FLAG #preverb ],
     DTR transitive-verb-lex &
         [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      PSF-FLAG #psf,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      PREVERB-FLAG #preverb,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ] ] ].
+                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      PSF-FLAG #psf,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 2nd_obj_prefix-lex-rule := infl-lex-rule & obj_prefix-lex-rule-super &
-  [ INFLECTED.1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG +,
+  [ INFLECTED.2ND_OBJ_PREFIX-FLAG +,
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 2nd ].
 
 3rd_obj_prefix-lex-rule := const-lex-rule & obj_prefix-lex-rule-super &
-  [ INFLECTED.1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-    DTR.INFLECTED.1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
+  [ INFLECTED.2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+    DTR.INFLECTED.2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
 
 1st_pl_obj_prefix-lex-rule := infl-lex-rule & obj_prefix-lex-rule-super &
-  [ INFLECTED.1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-    DTR.INFLECTED.1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
+  [ INFLECTED.2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+    DTR.INFLECTED.2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM plural,
                                                                  PER 1st ] ].
 
 1st_sg_obj_prefix-lex-rule := infl-lex-rule & obj_prefix-lex-rule-super &
-  [ INFLECTED.1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-    DTR.INFLECTED.1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
+  [ INFLECTED.2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+    DTR.INFLECTED.2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
     SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.PNG [ NUM singular,
                                                                  PER 1st ] ].
 
 preverb-lex-rule-super := 1_2_plurality-rule-dtr & 3rd_subj_suffix-rule-dtr & PSF-rule-dtr & SA-rule-dtr & add-only-no-ccont-rule & tense_marker_no_PSF-or-tense_marker_with_PSF-rule-dtr &
   [ INFLECTED [ PREVERB-FLAG +,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                 GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
                 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ],
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality ],
     DTR preverb-rule-dtr &
         [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                       GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
                       3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ] ] ].
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality ] ] ].
 
 NOPRE_present-lex-rule := const-lex-rule & preverb-lex-rule-super &
   [ INFLECTED [ PSF-FLAG -,
@@ -530,33 +548,35 @@ has_preverb_other-lex-rule := infl-lex-rule & preverb-lex-rule-super &
 
 PSF-lex-rule-super := 1_2_plurality-rule-dtr & 3rd_subj_suffix-rule-dtr & SA-rule-dtr & add-only-no-ccont-rule & tense_marker_no_PSF-or-tense_marker_with_PSF-rule-dtr &
   [ INFLECTED [ PSF-FLAG +,
-                PREVERB-FLAG #preverb,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                 GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
                 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ],
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                PREVERB-FLAG #preverb ],
     DTR PSF-rule-dtr &
-        [ INFLECTED [ PREVERB-FLAG #preverb,
-                      TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+        [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                       GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
                       3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ] ] ].
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 PSF_null-lex-rule := PSF-lex-rule-super & const-lex-rule.
 
@@ -567,31 +587,33 @@ PSF_ob-lex-rule := PSF-lex-rule-super & infl-lex-rule.
 tense_marker_with_PSF-lex-rule-super := 1_2_plurality-rule-dtr & 3rd_subj_suffix-rule-dtr & add-only-no-ccont-rule &
   [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG +,
                 TENSE_MARKER_WITH_PSF-FLAG +,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                OBJ_PREFIX-FLAG #obj_prefix,
+                PSF-FLAG #psf,
+                SA-FLAG #sa,
                 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
                 NOUN-PLURALITY-FLAG #noun-plurality,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-                PREVERB-FLAG #preverb,
-                PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                SA-FLAG #sa,
-                OBJ_PREFIX-FLAG #obj_prefix,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
+                PREVERB-FLAG #preverb ],
     DTR tense_marker_no_PSF-or-tense_marker_with_PSF-rule-dtr &
-        [ INFLECTED [ 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      PSF-FLAG #psf & +,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
-                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-                      PREVERB-FLAG #preverb,
+        [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
-                      SA-FLAG #sa,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
+                      PSF-FLAG #psf & +,
+                      SA-FLAG #sa,
+                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 past_imperfective-lex-rule := infl-lex-rule & tense_marker_with_PSF-lex-rule-super &
   [ DTR.INFLECTED.SA-FLAG +,
@@ -610,33 +632,35 @@ pres_future_suffix_with_object-lex-rule := present_future_suffix-lex-rule &
 
 tense_marker_no_PSF-lex-rule-super := 1_2_plurality-rule-dtr & 3rd_subj_suffix-rule-dtr & add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG +,
-                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                 GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-                PREVERB-FLAG #preverb,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
+                PSF-FLAG #psf,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                PREVERB-FLAG #preverb ],
     DTR tense_marker_no_PSF-or-tense_marker_with_PSF-rule-dtr &
-        [ INFLECTED [ 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      PSF-FLAG #psf & na,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+        [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                       GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
-                      PREVERB-FLAG #preverb,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
+                      PSF-FLAG #psf & na,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 past_perfective_suffix-lex-rule := tense_marker_no_PSF-lex-rule-super &
   [ DTR.INFLECTED.HAS_PREVERB_OTHER-FLAG +,
@@ -647,65 +671,69 @@ past_perfective_suffix-lex-rule := tense_marker_no_PSF-lex-rule-super &
 
 SA-lex-rule-super := 1_2_plurality-rule-dtr & 3rd_subj_suffix-rule-dtr & add-only-no-ccont-rule & infl-lex-rule & tense_marker_no_PSF-or-tense_marker_with_PSF-rule-dtr &
   [ INFLECTED [ SA-FLAG +,
-                PREVERB-FLAG #preverb,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                 GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
                 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ],
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                PSF-FLAG #psf,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                PREVERB-FLAG #preverb ],
     DTR SA-rule-dtr &
-        [ INFLECTED [ PREVERB-FLAG #preverb,
-                      TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      PSF-FLAG #psf,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+        [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
                       GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
                       3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix ] ] ].
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      PSF-FLAG #psf,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 past_imperfective_SA-lex-rule := SA-lex-rule-super &
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.E [ TENSE past,
                                      ASPECT perfective ] ].
 
 3rd_subj_suffix-lex-rule-super := 1_2_plurality-rule-dtr & add-only-no-ccont-rule &
-  [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG +,
+  [ INFLECTED [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG +,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
                 GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                PREVERB-FLAG #preverb,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                PSF-FLAG #psf,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                PREVERB-FLAG #preverb,
+                NOUN-PLURALITY-FLAG #noun-plurality ],
     DTR 3rd_subj_suffix-rule-dtr &
         [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
-                      PSF-FLAG #psf,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
                       GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      PREVERB-FLAG #preverb,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                      PSF-FLAG #psf,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+                      DETERMINER-CASE-SUFFIX-FLAG #determiner-case-suffix,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      PREVERB-FLAG #preverb,
+                      NOUN-PLURALITY-FLAG #noun-plurality ] ] ].
 
 3_sg_subj_aor-lex-rule := 3rd_subj_suffix-lex-rule-super & infl-lex-rule &
   [ DTR.INFLECTED.PAST_PERFECTIVE_SUFFIX-FLAG +,
@@ -767,33 +795,35 @@ past_imperfective_SA-lex-rule := SA-lex-rule-super &
 
 determiner-case-suffix-lex-rule-super := add-only-no-ccont-rule &
   [ INFLECTED [ DETERMINER-CASE-SUFFIX-FLAG +,
-                PREVERB-FLAG #preverb,
                 TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                PSF-FLAG #psf,
-                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                 PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
                 GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                PSF-FLAG #psf,
                 3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                NOUN-PLURALITY-FLAG #noun-plurality,
-                SA-FLAG #sa,
+                HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                 OBJ_PREFIX-FLAG #obj_prefix,
-                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ],
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                SA-FLAG #sa,
+                TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                PREVERB-FLAG #preverb ],
     DTR indeterminate-determiner-lex &
-        [ INFLECTED [ PREVERB-FLAG #preverb,
-                      TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
-                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
-                      PSF-FLAG #psf,
-                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
+        [ INFLECTED [ TENSE_MARKER_NO_PSF-OR-TENSE_MARKER_WITH_PSF-FLAG #tense_marker_no_psf-or-tense_marker_with_psf,
                       PAST_PERFECTIVE_SUFFIX-FLAG #past_perfective_suffix,
                       GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
-                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-2ND_OBJ_PREFIX-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-2nd_obj_prefix-or-3rd_subj_suffix,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                      PSF-FLAG #psf,
                       3_PL_SUBJ_AOR-OR-3_PL_SUBJ_PRES-OR-3_SG_SUBJ_AOR-OR-3_SG_SUBJ_PRES-FLAG #3_pl_subj_aor-or-3_pl_subj_pres-or-3_sg_subj_aor-or-3_sg_subj_pres,
-                      NOUN-PLURALITY-FLAG #noun-plurality,
-                      SA-FLAG #sa,
+                      HAS_PREVERB_OTHER-FLAG #has_preverb_other,
                       OBJ_PREFIX-FLAG #obj_prefix,
-                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix ] ] ].
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      SA-FLAG #sa,
+                      TENSE_MARKER_WITH_PSF-FLAG #tense_marker_with_psf,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3RD_SUBJ_SUFFIX-FLAG #1st_2nd_person_subj_prefixes-or-3rd_subj_suffix,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      PREVERB-FLAG #preverb ] ] ].
 
 nominative-deter-lex-rule := determiner-case-suffix-lex-rule-super & infl-lex-rule &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE abs+nom ].

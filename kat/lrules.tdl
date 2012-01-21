@@ -5,6 +5,8 @@ singular-noun-lex := singular-noun-lex-rule.
 
 2nd_subj_prefix-lex := 2nd_subj_prefix-lex-rule.
 
+1st_subj_prefix_2nd_obj-lex := 1st_subj_prefix_2nd_obj-lex-rule.
+
 3rd_obj_prefix-lex := 3rd_obj_prefix-lex-rule.
 
 NOPRE_present-lex := NOPRE_present-lex-rule.

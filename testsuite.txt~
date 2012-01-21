@@ -460,3 +460,93 @@ Phenomena: det, agreement
 ბრმა-0 ის 0-მუშა-ობ-ს
 woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
 `That woman (over there) is working.'
+
+#Ex 40 - 2nd person object marker blocking 1st person subject
+Source: b:132
+Vetted: s
+Judgment: g
+Phenomena: agreement
+გკლავ
+0-გ-კლ-ავ-0
+NOPRE-2.OBJ-kill-PSF-SG
+`I kill you.'
+
+#Ex 41 - 2nd person object marker blocking 1st person subject
+Source: b:132
+Vetted: s
+Judgment: u
+Phenomena: agreement
+ვგკლავ
+0-ვ-გ-კლ-ავ-0
+NOPRE-1.SUBJ-2.OBJ-kill-PSF-SG
+`I kill you.'
+
+#Ex 42 - 3rd person pl pronoun dative + dative object
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: pronouns, case, agreement
+მათ რადიოგადაცემას ისმენენ.
+მათ რადიოგადაცემა-ს 0-0-ისმენ-0-ენ.
+3.PL.DAT radiobroadcast-DAT NOPRE-3.OBJ-listen-PRES-3.PL.SUBJ.PRES
+`They are listening to the radiobroadcast.'
+
+#Ex 43 - 2nd person object marker clash
+Source: author
+Vetted: f
+Judgment: u
+Phenomena: word order, case, agreement
+მასწავლებელი წერილს გწერს.
+მასწავლებელ-ი წერილ-ს 0-გ-წერ-0-ს
+teacher-NOM letter-DAT NOPRE-2.OBJ-write-PSF-3.SUBJ.SG.PRES
+`The teacher is writing a letter.'
+
+#Ex 44 - 2nd person object plural on 3rd singular person present
+Source: author
+vetted: f
+Judgment: u
+Phenomena: agreement
+გკლავსთ
+0-გ-კლ-ავ-ს-თ
+NOPRE-2.OBJ-kill-PSF-3.SG.SUBJ-2.OBJ.PL
+`It is killing you all.'
+
+#Ex 44 - 2nd person object plural on 3rd singular person present
+Source: author
+vetted: f
+Judgment: u
+Phenomena: agreement
+გკლავსთ
+0-გ-კლ-ავ-თ
+NOPRE-2.OBJ-kill-PSF-2.OBJ.PL
+`I am killing you all. We are killing you.'
+
+#Ex 45 - Wrong PSF
+Source: author
+vetted: f
+Judgment: u
+Phenomena: tam
+მასწავლებელი წერილს წერავს.
+მასწავლებელ-ი წერილ-ს 0-0-წერ-ავ-ს
+teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+`The teacher is writing a letter.'
+
+#Ex 45 - Wrong PRE
+Source: author
+vetted: f
+Judgment: u
+Phenomena: tam
+მასწავლებელი წერილს გაწერავს.
+მასწავლებელ-ი წერილ-ს გა-0-წერ-ავ-ს
+teacher-NOM letter-DAT PRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+`The teacher will a letter.'
+
+#Ex 46 - imperfective past tense
+Source: author
+vetted: f
+Judgment: g
+Phenomena: tam
+წერილს ვწერდი.
+წერილ-ს NOPRE-ვ-0-წერ-დ-ი
+teacher-NOM letter-DAT PRE-1.SUBJ-3.OBJ-write-SA-PAST.IMPERF
+`I was writing a letter.'
