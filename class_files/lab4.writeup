@@ -9,4 +9,7 @@ Changes to stuff from lab 3:
 	Have collapsed the tense_marker_with_PSF and tense_marker_no_PSF together with the 3rd_subj_suffix.  These happen in the same slot, it's just 1 occurs with 1st and 2nd person subjects (tense markers), while the 3rd person subject suffixes carry the tense information.  This new type is now obligatory, and I have gone through adding a -0 suffix to all of my examples having 1st and 2nd person subjects that are either present or future tense. Creating:
 	tense_and_3rd_subj
 		possible inputs: preverb, PSF, stem_augment
-		
+	I've also created a few super types that other types in this class rely on:
+	     nom-dat & erg-nom for transitive case marking
+	     3rd-nom-dat & 3rd-erg-nom for 3rd person versions of these
+	     verbs either require a 3rd-person super type of some sort, or a 1st/2nd person prefix marker.

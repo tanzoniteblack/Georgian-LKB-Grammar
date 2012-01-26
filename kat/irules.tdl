@@ -104,9 +104,13 @@ pres-fut-lex-rule.
 1_2_subj_singular_suffix-lex-rule.
 
 nominative-deter-suffix :=
-%suffix (* ი)
+%suffix (* -ი)
 nominative-deter-lex-rule.
 
+dative-deter-suffix :=
+%suffix (* -0)
+dative-deter-lex-rule.
+
 ergative-deter-suffix :=
-%suffix (* მა)
+%suffix (* -მა)
 ergative-deter-lex-rule.
