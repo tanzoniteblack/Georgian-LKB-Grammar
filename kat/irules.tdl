@@ -15,10 +15,6 @@ nominative_noun_vowel_ending-suffix :=
 %suffix (* -0)
 nominative_noun_vowel_ending-lex-rule.
 
-singular-noun-suffix :=
-%suffix (* -0)
-singular-noun-lex-rule.
-
 plural-noun-suffix :=
 %suffix (* -ებ)
 plural-noun-lex-rule.

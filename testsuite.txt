@@ -86,7 +86,7 @@ Vetted: s
 Judgment: g
 Phenomena: pronouns, case, agreement
 ისინი რადიოგადაცემას ისმენენ.
-ის რადიოგადაცემა-ს 0-0-ისმენ-PSF-ენ.
+ისინი რადიოგადაცემა-ს 0-0-ისმენ-PSF-ენ.
 3.PL.NOM radiobroadcast-DAT NOPRE-3.OBJ-listen-PSF-3.PL.SUBJ.PRES/FUT
 `They are listening to the radiobroadcast.'
 
@@ -277,8 +277,8 @@ Vetted: s
 Judgment: g
 Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
 ისინი შენ გმალავენ.
-ისინ-ი შენ 0-გ-მალ-PSF-ენ
-3.PL-NOM 2.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
+ისინი შენ 0-გ-მალ-PSF-ენ
+3.PL.NOM 2.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
 `They are hiding you.'
 
 #Ex 24 - object agreement
@@ -287,8 +287,8 @@ Vetted: s
 Judgment: g
 Phenomena: coordination, tense aspect mood, argument optionality, agreement
 ისინი მე მმალავენ.
-ისინ-ი მე 0-მ-მალ-PSF-ენ
-3.PL-NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
+ისინი მე 0-მ-მალ-PSF-ენ
+3.PL.NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
 `They are hiding me.'
 
 #Ex 25 - object agreement
@@ -297,8 +297,8 @@ Vetted: f
 Judgment: u
 Phenomena: coordination, tense aspect mood, argument optionality, agreement
 ისინი შენ გმალავენ.
-ისინ-ი შენ 0-მ-მალ-PSF-ენ
-3.PL-NOM 2.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
+ისინი შენ 0-მ-მალ-PSF-ენ
+3.PL.NOM 2.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
 `They are hiding you.'
 
 #Ex 26 - object agreement
@@ -307,8 +307,8 @@ Vetted: f
 Judgment: u
 Phenomena: coordination, negation, tense aspect mood, argument optionality, agreement
 ისინი მე გმალავენ.
-ისინ-ი მე 0-გ-მალ-PSF-ენ
-3.PL-NOM 1.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
+ისინი მე 0-გ-მალ-PSF-ენ
+3.PL.NOM 1.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES/FUT
 `They are hiding me.'
 
 #Ex 27 - pro-drop

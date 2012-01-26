@@ -5,7 +5,7 @@
 5@author@@@1@wo,c,agr@წერილ-ს 0-0-წერ-PSF-ს მასწავლებელ-ი@@@@1@3@`The teacher is writing a letter.'@Ryan Smith@January 10, 2012
 6@author@@@1@wo,c,agr@წერილ-ს მასწავლებელ-ი 0-0-წერ-PSF-ს@@@@1@3@`The teacher is writing a letter.'@Ryan Smith@January 10, 2012
 7@Georgian, A Reading Grammar by Howard I. Aronson:52@@@1@pn,c,agr@ის რადიოგადაცემა-ს 0-0-ისმენ-PSF-ს.@@@@1@3@`He is listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
-8@Georgian, A Reading Grammar by Howard I. Aronson:52@@@1@pn,c,agr@ისინი რადიოგადაცემა-ს 0-0-ისმენ-PSF-ენ.@@@@1@3@`They are listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
+8@Georgian, A Reading Grammar by Howard I. Aronson:52@@@1@pn,c,agr@ის რადიოგადაცემა-ს 0-0-ისმენ-PSF-ენ.@@@@1@3@`They are listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
 9@Georgian, A Reading Grammar by Howard I. Aronson:52@@@1@pn,c,agr@მე რადიოგადაცემა-ს 0-ვ-0-ისმენ-PSF-0-0@@@@1@3@`I am listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
 10@Georgian, A Reading Grammar by Howard I. Aronson:52@@@1@pn,c,agr@ჩვენ რადიოგადაცემა-ს 0-ვ-0-ისმენ-PSF-0-თ@@@@1@3@`I am listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
 11@Georgian, A Reading Grammar by Howard I. Aronson:52@@@1@pn,c,agr@შენ რადიოგადაცემა-ს 0-0-0-ისმენ-PSF-0-0@@@@1@3@`You are listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
@@ -24,10 +24,10 @@
 24@Kartvelian Morphosyntax: Number Agreement and Morphosynactic Orientation in the South Caucasian Languages by Kevin Tuite:19@@@1@c,agr@წყალ-მა PRE-დუღ-ა@@@@1@2@`The water boiled.'@Ryan Smith@January 10, 2012
 25@http://answers.ge/question/225048@@@1@pronoun,c,agr@ზოგ-ი შენ 0-0-მოატყუო-PSF-0-0@@@@1@3@`Some of you cheat.'@Ryan Smith@January 10, 2012
 26@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@wo,c,agr,tense@მასწავლებელ-ი წერილ-ს PRE-0-წერ-PSF-ს@@@@1@3@`The teacher will write a letter.'@Ryan Smith@January 10, 2012
-27@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@crd,neg,tenseaspectmood,pro-d,agr@ისინი შენ 0-გ-მალ-PSF-ენ@@@@1@3@`They are hiding you.'@Ryan Smith@January 10, 2012
-28@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@crd,tenseaspectmood,pro-d,agr@ისინი მე 0-მ-მალ-PSF-ენ@@@@1@3@`They are hiding me.'@Ryan Smith@January 10, 2012
-29@author@@@1@crd,tenseaspectmood,pro-d,agr@ისინი შენ 0-მ-მალ-PSF-ენ@@@@0@3@`They are hiding you.'@Ryan Smith@January 10, 2012
-30@author@@@1@crd,neg,tenseaspectmood,pro-d,agr@ისინი მე 0-გ-მალ-PSF-ენ@@@@0@3@`They are hiding me.'@Ryan Smith@January 10, 2012
+27@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@crd,neg,tenseaspectmood,pro-d,agr@ისინ-ი შენ 0-გ-მალ-PSF-ენ@@@@1@3@`They are hiding you.'@Ryan Smith@January 10, 2012
+28@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@crd,tenseaspectmood,pro-d,agr@ისინ-ი მე 0-მ-მალ-PSF-ენ@@@@1@3@`They are hiding me.'@Ryan Smith@January 10, 2012
+29@author@@@1@crd,tenseaspectmood,pro-d,agr@ისინ-ი შენ 0-მ-მალ-PSF-ენ@@@@0@3@`They are hiding you.'@Ryan Smith@January 10, 2012
+30@author@@@1@crd,neg,tenseaspectmood,pro-d,agr@ისინ-ი მე 0-გ-მალ-PSF-ენ@@@@0@3@`They are hiding me.'@Ryan Smith@January 10, 2012
 31@Georgian, A structural reference grammar by B.G. Hewitt@@@1@pro-d@0-0-გვ-კლ-PSF-0-0@@@@1@1@`You are killing us.'@Ryan Smith@January 10, 2012
 32@author@@@1@crd,neg,tenseaspectmood,pro-d,agr@შენ მე 0-მ-მალ-PSF-ენ@@@@0@3@`You are hiding me.'@Ryan Smith@January 10, 2012
 33@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@neg@ისინი შენ არ 0-გ-მალ-PSF-ენ@@@@1@4@`They aren't hiding you.'@Ryan Smith@January 10, 2012

@@ -77,6 +77,14 @@
   [ STEM < "ბრმა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
 
+სავარჯიშო := general_ending_vowel-noun-lex &
+  [ STEM < "სავარჯიშო" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_exercise_n_rel" ].
+
+მან := 3sg-pro-erg-noun-lex &
+  [ STEM < "მან" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
+
 ;;; Verbs
 
 წერ := trans-verb-lex &
@@ -98,6 +106,10 @@
 კლ := trans-verb-lex &
   [ STEM < "კლ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_kill_v_rel" ].
+
+მზად := trans-verb-lex &
+  [ STEM < "მზად" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_prepare_v_rel" ].
 
 დუღ := intran-verb-lex &
   [ STEM < "დუღ" >,
