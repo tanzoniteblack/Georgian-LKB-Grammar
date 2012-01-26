@@ -511,35 +511,15 @@ Phenomena: agreement
 NOPRE-2.OBJ-kill-PSF-3.SG.SUBJ-2.OBJ.PL
 `It is killing you all.'
 
-#Ex 44 - 2nd person object plural on 3rd singular person present
+#Ex 44 - 2nd person marker correctly hiding 1st person marker
 Source: author
 vetted: f
-Judgment: u
+Judgment: g
 Phenomena: agreement
 გკლავსთ
 0-0-გ-კლ-PSF-0-თ
 NOPRE-1.SUBJ.2.OBJ-2.OBJ-kill-PSF-PRES/FUT-2.OBJ.PL
 `I am killing you all. We are killing you.'
-
-#Ex 45 - Wrong PSF
-Source: author
-vetted: f
-Judgment: u
-Phenomena: tam
-მასწავლებელი წერილს წერავს.
-მასწავლებელ-ი წერილ-ს 0-0-წერ-PSF-ს
-teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
-`The teacher is writing a letter.'
-
-#Ex 45 - Wrong PRE
-Source: author
-vetted: f
-Judgment: u
-Phenomena: tam
-მასწავლებელი წერილს გაწერავს.
-მასწავლებელ-ი წერილ-ს PRE-0-წერ-PSF-ს
-teacher-NOM letter-DAT PRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
-`The teacher will a letter.'
 
 #Ex 46 - imperfective past tense
 Source: author
