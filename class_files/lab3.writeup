@@ -1,0 +1,188 @@
+Tense and aspect:
+	All of the Georgian grammars I have use traditional Georgian grammatical categories to describe the tense/aspect (what are called screeves) rather than more traditional western words.  They describe 11 different screeves, which are each some combination of past, present, future, aorist, imperfective, perfective and subjunctive.  With help from you on GoPost I have decided to select past, present, and future tenses along with perfective and imperfective aspects.  I have also included indicative and subjunctive, but do not currently deal with them.
+	
+	For this lab, I'm going to consider 4 different aspect/tense combinations on verbs: future and present (which are unspecified for aspect), and past tense in both the perfective and imperfective forms.
+	
+	The tense system is not a clean "is there a morpheme indicating tense X?".  Instead, there are combinations of morphemes in different locations that end up dictating the tense and aspects.  In the following two examples, the only difference between the present tense and the future tense, is whether there is a non-empty affix in the preverb slot.  This preverb, in combination with the PSF (which is a marker for present/future, and is annoyingly 0-form for some verbs) specifies the verb for being either present or future.  I have chosen to mark preverb, and it's absense, in the IGT with NOPRE and PRE.  Please let me know if you have a better suggestion for that.
+
+	მასწავლებელი წერილს წერს.
+	მასწავლებელ-ი წერილ-ს 0-0-წერ-0-ს
+	teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+	`The teacher is writing a letter.'
+	
+	მასწავლებელი წერილს დაწერს.
+	მასწავლებელ-ი წერილ-ს და-0-წერ-0-ს
+	teacher-NOM letter-DAT PRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+	`The teacher will write a letter.'
+	
+	Currently only present and future tenses parse correctly in the grammar.  I hope to have them fully functional by next week's lab, but due to all the complications I ran into in even trying to figure out the parts of the verbs, and getting them into the system, I ran out of time after getting the present and future tenses to work correctly.  I know that it's a probably with my inputs or requirements that is causing the issue in parsing, but I'm not sure what
+	
+Agreement:
+	Verbs agree with both their subject and their object.  They agree for both person (1st, 2nd, and 3rd) and number (singular and plural).
+	
+	ისინი შენ გმალავენ.
+	ისინ-ი შენ 0-გ-მალ-ავ-ენ
+	3.PL-NOM 2.SG.DAT NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES
+	`They are hiding you.'
+	
+	ისინი მე გმალავენ.
+	ისინ-ი მე 0-მ-მალ-ავ-ენ
+	3.PL-NOM 1.SG.DAT NOPRE-1.OBJ-hide-PSF-3.PL.SUBJ.PRES
+	`They are hiding me.'	
+	
+	Most often though, the agreement is not actually seen, as pronouns are almost always dropped.  In fact, even 3rd person nouns can also be dropped if it's clear what is being discussed from the rest of the conversation.
+	
+	გვკლავ.
+	0-0-გვ-კლ-ავ-0
+	NOPRE-2.SUBJ-1.PL.OBJ-kill-PSF-SG.SUBJ
+	`You are killing us.'
+	
+	(on a side note,the previous example is one of the reasons Georgian is considered completely unpronouncable without a lot of practice.  That sentence/word transliterates to: gvk'lav)
+
+	The 2nd person object marker forbids the existence of the first person subject marker.  And added a forbid restriction to 2nd person object markers saying they forbid the 1st person subject marker and have added a 0-affix 1st person marker that requires the 2nd person object.
+	
+	grammatical:
+		გკლავ
+		0-გ-კლ-ავ-0
+		NOPRE-2.OBJ-kill-PSF-SG
+		`I kill you.'
+	
+	ungrammatical:
+		ვგკლავ
+		0-ვ-გ-კლ-ავ-0
+		NOPRE-1.SUBJ-2.OBJ-kill-PSF-SG
+		`I kill you.'
+	
+	The grammatical example here is ambiguous according to the current system, as it could have either the null 1st person subject that requires the 2nd person object, or it could have the 2nd person object with the 2nd person subject (which is always null).  Pragmatically, the sentence is unambiguous, as `you are killing you' doesn't really make any sense, though I have not seen anything in the grammars that explicitly forbids this sort of a construction.  But I imagine that if this were a real sentence, then something to stress the reflexive would be needed.
+	
+Morphology:
+	
+	To account for person agreement in the customization system, in the morphology section I have started with a verb position class that adds the object marking prefixes.  This is the first prefix attached to the verb root, and so I selected that it obligatorily occurs, and that it can take any verb as a possible input.
+	
+	I have object prefixes marking:
+	1.SG.OBJ
+	1.PL.OBJ
+	2.OBJ (only 1st person is specified for number in this spot)
+	3.OBJ (which has a 0 affix)
+	
+	The next position class that was required, was another prefix that built on the previous one to specify 1st and 2nd person subject prefixes.  Only 1st and 2nd person are marked in the prefix spot, so this will have to forbid the occurence of the 3rd person suffix.  But I need at least one of the two to occur, so I have marked either this prefix or the 3rd person suffix as required in the lexicon.
+	
+	I have the subject prefixes marking:
+	1.SUBJ
+	2.SUBJ (which has a 0 affix)
+	
+	The last prefix that needs marked is the preverb.  There is a 0-affix preverb, which requires the 0-affix tense marker and the presense of the PSF; if this is the case then the tense will be present.  There is another 0-affix preverb, which requires the SA to be "დ" and the tense marker to be "ი" which will result in a imperfective past tense.  The preverb, if present, is lexically selected.  Currently I have only added the most common preverbs: და, and გა and not limited what verbs they can occur with.  This means that generating I get a large number of verbs that are incorrect, and I also accept ungrammatical verbs.
+	
+	Ungrammatical because `წერ' should take the preverb `და' not `გა', but currently parses.
+	მასწავლებელი წერილს გაწერავს.
+	მასწავლებელ-ი წერილ-ს გა-0-წერ-ავ-ს
+	teacher-NOM letter-DAT PRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+	`The teacher will a letter.'
+	
+	What I have currently have done to get a preverb selected and adding the right information about future tense, is that the preverb exists in multiple forms.  One of which requires the PSF and forbids the SA, which adds the feature future; and another which which doesn't require or forbid anything, and doesn't add any features.  This preverb will be required by the other affixes when necessary.
+	
+	If there is a 0-affix tense marker and the PSF is added to the verb, then the tense will be future; if there is not a PSF and the tense marker is 'aorist', then the tense will be past perfective.
+	
+Suffixes:
+	The first suffix, which might optionally occur, on a verb is the PSF.  This is in the literature a Present/Future Stem Formant.  Some sources refer to it as a 'thematic marker', which seems a little strange since it doesn't have anything to do with theme.  There are a limitted number of options of PSFs, including a 0-affix, which are lexically selected.  The PSF forbids the past perfective tense marker.  Currently I have not limitted the PSF's to the verbs they are supposed to go with.  This means that I am over generating, and accepting verbs that have the wrong PSF:
+	
+	Ungrammatical because it should have a null PSF instead of 'ავ'
+	მასწავლებელი წერილს წერავს.
+	მასწავლებელ-ი წერილ-ს 0-0-წერ-ავ-ს
+	teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+	`The teacher is writing a letter.'
+
+	The next suffix is the stem augment, or SA.  This is a suffix that occurs after the PSF (if the PSF occurred).  It always takes the form "დ" and is required to mark the past imperfective tense.  I have marked it as optional.
+	
+	To account for the absense/presense of the PSF, I have made 2 tense marking suffixes spots.  1 of these is the tense_marker_with_PSF.  This suffix takes the SA as a possible input, and forbids the tense_marker_no_PSF.  The other type is tense_marker_no_PSF which takes preverb as an input type.  Both are optional in the morphology section, but are disjointedly required on the verbs in the lexicon section.
+	
+	In the tense_marker_no_PSF I currently only have the past perfective suffix marked.  This also takes the SA as a possible input.  There are 5 past perfective suffixes, which depend on the verb type that's inputted.  Currently I've only accounted for those that take "ი" as a suffix and will later need to expand this.
+	
+	Under tense_marker_with_PSF I have markers for present/future tense (0-affix and forbids the SA) and past imperfective (marked with an "ი" and requires the SA).
+	
+	On a note on case: I have removed from the lexicon, the requirement that subjects be nominative and objects be dative.  Now what case is required on the arguments is specified on the tense markers individually.  This is to account for the split ergativity, though I am still having a few issues with this that I need to work out.  This is something that I am planning on having fully functional by next week's lab, but due to all the complications I ran into trying to implement ANYTHING to do with the verb, I ran out of time.
+	
+	Grammatical and parses.
+	წყალი დუღს.
+	წყალ-ი 0-დუღ-0-ს
+	water-NOM NOPRE-boil-PRES-3.SG
+	`The water boils.'
+	
+	Also grammatical, but not parsing yet.
+	წყალმა იდუღა.
+	წყალ-მა ი-დუღ-ა
+	water-ERG PRE-boil-AOR.3.SG
+	`The water boiled.'
+	
+	The next suffix that occurs, is the 3rd person subject marker. Either of the tense_marking suffixes are acceptable as inputs.  This is marked as optional, but either 1/2nd subject marker, the 2nd person object marker (as it overrides the 1st person subject maker), or 3rd person subject marker is required according to the lexicon.  The 3rd person marker is a polysynthetic suffix that changes for tense, aspect, and number.  Each 3rd person marker also states whether it forbids or requires the plural marker for the 1st and 2nd persons. 
+	
+	So far I have:
+	3.SG.PRES/FUTURE : which forbids the 1/2 plural marker
+	3.PL.PRES/FUTURE : which forbid the 1/2 plural marker (the two different ending depend on the verb that was inputted, currently I've not restricted it which means I will over generate acceptable answers)
+	3.SG.SUBJ.AOR : allows the 1/2 plural marker if 0 affix, forbids if not (which affix depends on verb type...currently not functional)
+	3.PL.SUBJ.AOR : allows the 1/2 plural marker if 0 affix, forbids if not (which affix depends on verb type)
+	
+	The last possible suffix on a verb is a marker for plurality.  If the subject is 1st or 2nd person, then there is a suffix at the very end of the verb showing that.  If the object is 2nd person, then this same suffix is used (making verbs with a 2nd person object and 1st person subject ambiguous as to which, or both, are plural).  Some 3rd person suffixes forbid the existence of this suffix.  It takes as input: tense_marker_with_PSF, tense_marker_no_PSF, and 3rd_subj_suffix.  I have made the following lexical rule types:
+	
+	1_2_subj_plural_suffix: plural 1st or 2nd on subject NP
+	1_2_subj_sing_suffix: singular 1st or 2nd on subject NP (null affix)
+	2_obj_plural: plural 2nd person object, ambiguous for number and person on subject
+
+	Demonstratives:
+	Georgian distinguishes 3 types of demonstrative adjectives based off of location: close to the speaker, close to the addressee, and distant from both.  There is a basic set of demonstrative adjectives, and then there is a series that is specified for quantity, quality, type, size, or origin.  We are only going to look at the basic set for now.  Demonstratives occur before the noun phrases they modify (which means they also occur before adjectives), in this way they are probably best analyzed as determiners.  The demonstratives agree with the noun they modify for case, but not number.
+	
+	Judgment: g
+		ეს ბრმა მუშაობს.
+		ეს ბრმა-0 0-მუშა-ობ-ს
+		DEM.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+		`This woman (close to me) is working.'
+	
+	Judgment: u
+		ამ ბრმა მუშაობს.
+		ამ ბრმა-0 0-მუშა-ობ-ს
+		DEM.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+		`This woman (close to me) is working.'
+		ბრმა ეს მუშაობს.
+		ბრმა-0 ეს 0-მუშა-ობ-ს
+		woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES
+		`This woman (close to me) is working.'
+	
+Negation:
+	Georgian sentential negation is done by placing the adverb "რა" immediately before the verb.
+	
+	Judgment: g
+		ისინი შენ არ გმალავენ
+		ისინი შენ არ 0-გ-მალ-ავ-ენ
+		3.PL.NOM 2.SG.NOM not NOPRE-2.SG.OBJ-hide-PSF-3.PL.SUBJ.PRES
+		`They aren't hiding you.' 
+	Judgment: u
+		ისინი არ შენ გმალავენ
+		ისინი არ შენ 0-გ-მალ-ავ-ენ
+		3.PL.NOM not 2.SG.NOM  NOPRE-2.SG.OBJ-hide-PSF-3.PL.SUBJ.PRES
+		`They aren't hiding you.'
+		ისინი შენ გმალავენ არ
+		ისინი შენ 0-გ-მალ-ავ-ენ არ
+		3.PL.NOM 2.SG.NOM NOPRE-2.OBJ-hide-PSF-3.PL.SUBJ.PRES not
+		`They aren't hiding you.'
+
+Changes to lexicon:
+	Added a noun class that'd 3rd person, but ends in vowels.  Added in the morphology section a method to add null nominative suffix to nouns of this type that are singular (plurals behave like everything else).
+	
+	Added determiners for the 3 types of demonstratives in all cases.
+	
+	verbs now require: tense_marker_with_PSF OR tense_marker_no_PSF
+	verbs require: 1st_2nd_person_subj_prefixes or 3rd_subj_prefix
+	
+[incr tsdb()] result:
+	84.8% Coverage on coverage
+	20.0% Coverage on overgeneraton
+
+Reasons why I only have 84.8% coverage:
+	Haven't told the system how to deal with indirect objects yet.
+	Having problems with ergatives in past perfective tense.
+Reasons for the overgeneration:
+	Not having correctly lexically selected preverbs and PSFs.
+
+Things I need to improve:
+	Figure out why the 2 past tenses aren't working correctly.
+	Find more examples of case usage in the past perfective tense, as this is one of the tenses that shows ergativity.  Similarly, need to find more intransitive examples.  Both of these are problematic to find, as almost all of the examples sentences in my books either contain only 1 word, because they drop both the subject and the object, or are incredibly complex, multi clausal sentences.
