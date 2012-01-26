@@ -103,6 +103,18 @@ pres-fut_intrans-suffix :=
 %suffix (* -0)
 pres-fut_intrans-lex-rule.
 
+3_pl_subj_pres_intrans-suffix :=
+%suffix (* -ენ)
+3_pl_subj_pres_intrans-lex-rule.
+
+3_sg_subj_aor_intrans-suffix :=
+%suffix (* -ა)
+3_sg_subj_aor_intrans-lex-rule.
+
+3_pl_subj_aor_intrans-suffix :=
+%suffix (* -ეს)
+3_pl_subj_aor_intrans-lex-rule.
+
 1_2_subj_plural_suffix-suffix :=
 %suffix (* -თ)
 1_2_subj_plural_suffix-lex-rule.
