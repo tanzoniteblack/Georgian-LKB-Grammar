@@ -1,22 +1,2 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
-nominative_noun_vowel_ending-lex := nominative_noun_vowel_ending-lex-rule.
-
-singular-noun-lex := singular-noun-lex-rule.
-
-2nd_subj_prefix-lex := 2nd_subj_prefix-lex-rule.
-
-1st_subj_prefix_2nd_obj-lex := 1st_subj_prefix_2nd_obj-lex-rule.
-
-3rd_obj_prefix-lex := 3rd_obj_prefix-lex-rule.
-
-NOPRE_present-lex := NOPRE_present-lex-rule.
-
-PSF_null-lex := PSF_null-lex-rule.
-
-present_future_suffix-lex := present_future_suffix-lex-rule.
-
-pres_future_suffix_with_object-lex := pres_future_suffix_with_object-lex-rule.
-
-3_sg_pl_subj_aor_null-lex := 3_sg_pl_subj_aor_null-lex-rule.
-
 dative-deter-lex := dative-deter-lex-rule.

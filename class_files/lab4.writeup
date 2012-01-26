@@ -1,0 +1,12 @@
+Changes to stuff from lab 3:
+	Have converted everything to work with the morpheme segmented line.  All things that were previously no affix, are now marked with an affix '0-' or '-0'.  All the different preverbs are adjusted to just being "PRE-" rather than all the different forms that previously existed.  All the Present/Future stem formants have been modified to be "-PSF".  This will allow me to not have the giant headache of all the different prefixes and suffixes which are identical in function, but have different forms depending on the particular verb.
+	
+	There are still 3 different PRE-:
+		PRE = 0- AND verb has PSF : add present tense
+		PRE = PRE- AND verb has PSF : add future tense
+		PRE = PRE- AND verb doesn't have PSF : no semantic meaning (some tenses just require this, but it wouldn't mean something different if there wasn't a prefix)
+	
+	Have collapsed the tense_marker_with_PSF and tense_marker_no_PSF together with the 3rd_subj_suffix.  These happen in the same slot, it's just 1 occurs with 1st and 2nd person subjects (tense markers), while the 3rd person subject suffixes carry the tense information.  This new type is now obligatory, and I have gone through adding a -0 suffix to all of my examples having 1st and 2nd person subjects that are either present or future tense. Creating:
+	tense_and_3rd_subj
+		possible inputs: preverb, PSF, stem_augment
+		

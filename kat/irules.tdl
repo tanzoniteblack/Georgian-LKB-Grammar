@@ -1,131 +1,111 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 nominative-noun-suffix :=
-%suffix (* ი)
+%suffix (* -ი)
 nominative-noun-lex-rule.
 
 dative-noun-suffix :=
-%suffix (* ს)
+%suffix (* -ს)
 dative-noun-lex-rule.
 
 ergative-noun-suffix :=
-%suffix (* მა)
+%suffix (* -მა)
 ergative-noun-lex-rule.
 
+nominative_noun_vowel_ending-suffix :=
+%suffix (* -0)
+nominative_noun_vowel_ending-lex-rule.
+
+singular-noun-suffix :=
+%suffix (* -0)
+singular-noun-lex-rule.
+
 plural-noun-suffix :=
-%suffix (* ებ)
+%suffix (* -ებ)
 plural-noun-lex-rule.
 
 1st_subj_prefix-prefix :=
-%prefix (* ვ)
+%prefix (* ვ-)
 1st_subj_prefix-lex-rule.
 
+2nd_subj_prefix-prefix :=
+%prefix (* 0-)
+2nd_subj_prefix-lex-rule.
+
+1st_subj_prefix_2nd_obj-prefix :=
+%prefix (* 0-)
+1st_subj_prefix_2nd_obj-lex-rule.
+
 1st_sg_obj_prefix-prefix :=
-%prefix (* მ)
+%prefix (* მ-)
 1st_sg_obj_prefix-lex-rule.
 
 1st_pl_obj_prefix-prefix :=
-%prefix (* გვ)
+%prefix (* გვ-)
 1st_pl_obj_prefix-lex-rule.
 
 2nd_obj_prefix-prefix :=
-%prefix (* გ)
+%prefix (* გ-)
 2nd_obj_prefix-lex-rule.
 
-has_preverb_future-prefix1 :=
-%prefix (* და)
-has_preverb_future-lex-rule.
+3rd_obj_prefix-prefix :=
+%prefix (* 0-)
+3rd_obj_prefix-lex-rule.
 
-has_preverb_future-prefix2 :=
-%prefix (* გა)
-has_preverb_future-lex-rule.
+NOPRE-prefix :=
+%prefix (* 0-)
+NOPRE-lex-rule.
 
-has_preverb_future-prefix3 :=
-%prefix (* ი)
-has_preverb_future-lex-rule.
+preverb_future-prefix :=
+%prefix (* PRE-)
+preverb_future-lex-rule.
 
-has_preverb_other-prefix1 :=
-%prefix (* და)
-has_preverb_other-lex-rule.
+preverb_other-prefix :=
+%prefix (* PRE-)
+preverb_other-lex-rule.
 
-has_preverb_other-prefix2 :=
-%prefix (* გა)
-has_preverb_other-lex-rule.
-
-has_preverb_other-prefix3 :=
-%prefix (* ი)
-has_preverb_other-lex-rule.
-
-PSF_av-suffix :=
-%suffix (* ავ)
-PSF_av-lex-rule.
-
-PSF_ob-suffix :=
-%suffix (* ობ)
-PSF_ob-lex-rule.
-
-past_imperfective-suffix :=
-%suffix (* ი)
-past_imperfective-lex-rule.
-
-past_imperfective_with_object-suffix :=
-%suffix (* ი)
-past_imperfective_with_object-lex-rule.
-
-past_perfective_suffix-suffix1 :=
-%suffix (* ი)
-past_perfective_suffix-lex-rule.
-
-past_perfective_suffix-suffix2 :=
-%suffix (* ე)
-past_perfective_suffix-lex-rule.
-
-past_perfective_suffix-suffix3 :=
-%suffix (* ა)
-past_perfective_suffix-lex-rule.
-
-past_perfective_suffix_with_object-suffix1 :=
-%suffix (* ი)
-past_perfective_suffix_with_object-lex-rule.
-
-past_perfective_suffix_with_object-suffix2 :=
-%suffix (* ე)
-past_perfective_suffix_with_object-lex-rule.
-
-past_perfective_suffix_with_object-suffix3 :=
-%suffix (* ა)
-past_perfective_suffix_with_object-lex-rule.
+has_PSF-suffix :=
+%suffix (* -PSF)
+has_PSF-lex-rule.
 
 past_imperfective_SA-suffix :=
-%suffix (* დ)
+%suffix (* -დ)
 past_imperfective_SA-lex-rule.
 
 3_sg_subj_pres-suffix :=
-%suffix (* ს)
+%suffix (* -ს)
 3_sg_subj_pres-lex-rule.
 
-3_pl_subj_pres-suffix1 :=
-%suffix (* ენ)
-3_pl_subj_pres-lex-rule.
-
-3_pl_subj_pres-suffix2 :=
-%suffix (* ან)
+3_pl_subj_pres-suffix :=
+%suffix (* -ენ)
 3_pl_subj_pres-lex-rule.
 
 3_sg_subj_aor-suffix :=
-%suffix (* ს)
+%suffix (* -ა)
 3_sg_subj_aor-lex-rule.
 
 3_pl_subj_aor-suffix :=
-%suffix (* ნენ)
+%suffix (* -ეს)
 3_pl_subj_aor-lex-rule.
 
+aorist-suffix :=
+%suffix (* -ე)
+aorist-lex-rule.
+
+pres-fut-suffix :=
+%suffix (* -0)
+pres-fut-lex-rule.
+
 1_2_subj_plural_suffix-suffix :=
-%suffix (* თ)
+%suffix (* -თ)
 1_2_subj_plural_suffix-lex-rule.
 
 2_obj_plural-suffix :=
-%suffix (* თ)
+%suffix (* -თ)
 2_obj_plural-lex-rule.
+
+1_2_subj_singular_suffix-suffix :=
+%suffix (* -0)
+1_2_subj_singular_suffix-lex-rule.
 
 nominative-deter-suffix :=
 %suffix (* ი)
