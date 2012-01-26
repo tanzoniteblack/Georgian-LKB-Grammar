@@ -550,3 +550,33 @@ Phenomena: tam
 წერილ-ს 0-ვ-0-წერ-დ-ი
 teacher-NOM letter-DAT NOPRE-1.SUBJ-3.OBJ-write-SA-PAST.IMPERF
 `I was writing a letter.'
+
+#Ex 47 - adjective agreement
+Source: c
+vetted: s
+Judgment: g
+Phenomena: agreement, word order
+ქართულ სავარჯიშოს ვწერთ.
+ქართულ-0 სავარჯიშო-ს 0-ვ-0-წერ-0-თ
+georgian-DAT exercise-DAT NOPRE-1.SUBJ-3.OBJ-write-PSF-PL.SUBJ
+`We are writing the Georgian exercises.'
+
+#Ex 48 - adjective agreement
+Source: author
+vetted: f
+Judgment: u
+Phenomena: agreement
+ქართული სავარჯიშოს ვწერთ.
+ქართულ-ი სავარჯიშო-ს 0-ვ-0-წერ-0-თ
+georgian-NOM exercise-DAT NOPRE-1.SUBJ-3.OBJ-write-PSF-PL.SUBJ
+`We are writing the Georgian exercises.'
+
+#Ex 49 - adjective agreement
+Source: author
+vetted: f
+Judgment: u
+Phenomena: word order
+სავარჯიშოს ქართულ ვწერთ.
+სავარჯიშო-ს ქართულ-0 0-ვ-0-წერ-0-თ
+exercise-DAT georgian-DAT NOPRE-1.SUBJ-3.OBJ-write-PSF-PL.SUBJ
+`We are writing the Georgian exercises.'
