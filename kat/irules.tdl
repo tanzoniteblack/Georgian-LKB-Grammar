@@ -67,21 +67,21 @@ past_imperfective_SA-suffix :=
 %suffix (* -დ)
 past_imperfective_SA-lex-rule.
 
-3_sg_subj_pres-suffix :=
+3_sg_subj_pres_trans-suffix :=
 %suffix (* -ს)
-3_sg_subj_pres-lex-rule.
+3_sg_subj_pres_trans-lex-rule.
 
-3_pl_subj_pres-suffix :=
+3_pl_subj_pres_trans-suffix :=
 %suffix (* -ენ)
-3_pl_subj_pres-lex-rule.
+3_pl_subj_pres_trans-lex-rule.
 
-3_sg_subj_aor-suffix :=
+3_sg_subj_aor_trans-suffix :=
 %suffix (* -ა)
-3_sg_subj_aor-lex-rule.
+3_sg_subj_aor_trans-lex-rule.
 
-3_pl_subj_aor-suffix :=
+3_pl_subj_aor_trans-suffix :=
 %suffix (* -ეს)
-3_pl_subj_aor-lex-rule.
+3_pl_subj_aor_trans-lex-rule.
 
 aorist-suffix :=
 %suffix (* -ე)
@@ -90,6 +90,10 @@ aorist-lex-rule.
 pres-fut-suffix :=
 %suffix (* -0)
 pres-fut-lex-rule.
+
+3_sg_subj_pres_intrans-suffix :=
+%suffix (* -ს)
+3_sg_subj_pres_intrans-lex-rule.
 
 1_2_subj_plural_suffix-suffix :=
 %suffix (* -თ)
