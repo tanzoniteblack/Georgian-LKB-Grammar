@@ -183,7 +183,7 @@ teacher-NOM one-DAT letter-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES/FUT
 #Ex 15 - Det-Noun ordering, dative case
 Source: a
 Vetted: f
-Judgment: g
+Judgment: u
 Phenomena: word order, case, agreement, determiners
 მასწავლებელი ერთ წერილს წერს.
 მასწავლებელ-ი წერილ-ს ერთ-0 0-0-წერ-PSF-ს
@@ -517,8 +517,8 @@ vetted: f
 Judgment: u
 Phenomena: agreement
 გკლავსთ
-0-გ-კლ-PSF-0-თ
-NOPRE-2.OBJ-kill-PSF-PRES/FUT-2.OBJ.PL
+0-0-გ-კლ-PSF-0-თ
+NOPRE-1.SUBJ.2.OBJ-2.OBJ-kill-PSF-PRES/FUT-2.OBJ.PL
 `I am killing you all. We are killing you.'
 
 #Ex 45 - Wrong PSF
