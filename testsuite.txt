@@ -467,8 +467,8 @@ Vetted: s
 Judgment: g
 Phenomena: agreement
 გკლავ
-0-გ-კლ-PSF-0-0
-NOPRE-2.OBJ-kill-PSF-PRES/FUT-SG
+0-0-გ-კლ-PSF-0-0
+NOPRE-1.SUBJ.2.OBJ-2.OBJ-kill-PSF-PRES/FUT-SG
 `I kill you.'
 
 #Ex 41 - 2nd person object marker blocking 1st person subject

@@ -15,7 +15,7 @@
 15@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@wo,c,agr,det@ერთ-ი მასწავლებელ-ი წერილ-ს 0-0-წერ-PSF-ს@@@@1@4@`A teacher is writing a letter.'@Ryan Smith@January 10, 2012
 16@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@wo,c,agr,det@მასწავლებელ-ი ერთ-ი წერილ-ს 0-0-წერ-PSF-ს@@@@0@4@`A teacher is writing a letter.'@Ryan Smith@January 10, 2012
 17@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@wo,c,agr,det@მასწავლებელ-ი ერთ-0 წერილ-ს 0-0-წერ-PSF-ს@@@@1@4@`A teacher is writing a letter.'@Ryan Smith@January 10, 2012
-18@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@wo,c,agr,det@მასწავლებელ-ი წერილ-ს ერთ-0 0-0-წერ-PSF-ს@@@@1@4@`A teacher is writing a letter.'@Ryan Smith@January 10, 2012
+18@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@wo,c,agr,det@მასწავლებელ-ი წერილ-ს ერთ-0 0-0-წერ-PSF-ს@@@@0@4@`A teacher is writing a letter.'@Ryan Smith@January 10, 2012
 19@Kartvelian Morphosyntax: Number Agreement and Morphosynactic Orientation in the South Caucasian Languages by Kevin Tuite:18@@@1@c,agr@შვილ-ებ-ი წერილ-ს PRE-0-გზავნ-PSF-ენ მამა-ს@@@@1@4@`The children will send a letter to (their) father.'@Ryan Smith@January 10, 2012
 20@The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery@@@1@c,agr@შვილ-ებ-ი მამა-ს PRE-0-გზავნ-PSF-ენ წერილ-ს@@@@1@4@`The children will send (their) father to a letter.'@Ryan Smith@January 10, 2012
 21@Kartvelian Morphosyntax: Number Agreement and Morphosynactic Orientation in the South Caucasian Languages by Kevin Tuite:18@@@1@c,agr@შვილ-ებ-მა წერილ-ი PRE-0-გზავნ-ეს მამა-ს@@@@1@4@`The children sent a letter to (their) father.'@Ryan Smith@January 10, 2012
@@ -43,12 +43,12 @@
 43@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ბრმა-0 ეს 0-მუშა-PSF-ს@@@@0@3@`This woman (close to me) is working.'@Ryan Smith@January 10, 2012
 44@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ბრმა-0 ეგ 0-მუშა-PSF-ს@@@@0@3@`That woman (close to you) is working.'@Ryan Smith@January 10, 2012
 45@Georgian, A structural reference grammar by B.G. Hewitt:58@@@1@det,agr@ბრმა-0 ის 0-მუშა-PSF-ს@@@@0@3@`That woman (over there) is working.'@Ryan Smith@January 10, 2012
-46@Georgian, A structural reference grammar by B.G. Hewitt:132@@@1@agr@0-გ-კლ-PSF-0-0@@@@1@1@`I kill you.'@Ryan Smith@January 10, 2012
+46@Georgian, A structural reference grammar by B.G. Hewitt:132@@@1@agr@0-0-გ-კლ-PSF-0-0@@@@1@1@`I kill you.'@Ryan Smith@January 10, 2012
 47@Georgian, A structural reference grammar by B.G. Hewitt:132@@@1@agr@0-ვ-გ-კლ-PSF-0-0@@@@0@1@`I kill you.'@Ryan Smith@January 10, 2012
 48@author@@@1@pn,c,agr@მათ რადიოგადაცემა-ს 0-0-ისმენ-PSF-ენ.@@@@0@3@`They are listening to the radiobroadcast.'@Ryan Smith@January 10, 2012
 49@author@@@1@wo,c,agr@მასწავლებელ-ი წერილ-ს 0-გ-წერ-PSF-ს@@@@0@3@`The teacher is writing a letter.'@Ryan Smith@January 10, 2012
 50@author@@@1@agr@0-გ-კლ-PSF-ს-თ@@@@0@1@`It is killing you all.'@Ryan Smith@January 10, 2012
-51@author@@@1@agr@0-გ-კლ-PSF-0-თ@@@@0@1@`I am killing you all. We are killing you.'@Ryan Smith@January 10, 2012
+51@author@@@1@agr@0-0-გ-კლ-PSF-0-თ@@@@0@1@`I am killing you all. We are killing you.'@Ryan Smith@January 10, 2012
 52@author@@@1@tam@მასწავლებელ-ი წერილ-ს 0-0-წერ-PSF-ს@@@@0@3@`The teacher is writing a letter.'@Ryan Smith@January 10, 2012
 53@author@@@1@tam@მასწავლებელ-ი წერილ-ს PRE-0-წერ-PSF-ს@@@@0@3@`The teacher will a letter.'@Ryan Smith@January 10, 2012
 54@author@@@1@tam@წერილ-ს 0-ვ-0-წერ-დ-ი@@@@1@2@`I was writing a letter.'@Ryan Smith@January 10, 2012
