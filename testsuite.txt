@@ -597,7 +597,16 @@ vetted: s
 Judgment: g
 Phenomena: coordination
 ჩვენ ვსვამთ და ვისმენთ
-ჩვენ 0-ვ-0-სვამ-PSF-0-თ და 0-ვ-0-ისმენ-PSF-თ
-3.PL.SUBJ NOPRE-1.SUBJ-3.OBJ-drink-PSF-PRES/FUT-1.SUBJ.PL and NOPRE-1.SUBJ-3.OBJ-listen-PSF-1.SUBJ.PL
+ჩვენ 0-ვ-0-სვამ-PSF-0-თ და 0-ვ-0-ისმენ-PSF-0-თ
+3.PL.SUBJ NOPRE-1.SUBJ-3.OBJ-drink-PSF-PRES/FUT-1.SUBJ.PL and NOPRE-1.SUBJ-3.OBJ-listen-PSF-PRES/FUT-1.SUBJ.PL
 `We are drinking (something) and listening (to something).'
 
+#Ex 54 - coordinating sentences
+Source: author
+vetted: s
+Judgment: g
+Phenomena: coordination
+მე წიგნს ვკითხავ და შენ გაზეთს კითხავ
+მე წიგნ-ს 0-ვ-0-კითხ-PSF-0-0 და შენ გაზეთ-ს 0-0-0-კითხ-PSF-0-0
+1.SG.NOM book-DAT NOPRE-1.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG and 2.SG.NOM newspaper-DAT NOPRE-2.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG
+`I am reading a book and you are reading a newspaper.'

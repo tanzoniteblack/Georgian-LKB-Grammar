@@ -25,6 +25,18 @@
   [ STEM < "წყალ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_water_n_rel" ].
 
+ლუდ := general_ending_consonant-noun-lex &
+  [ STEM < "ლუდ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_beer_n_rel" ].
+
+წიგნ := general_ending_consonant-noun-lex &
+  [ STEM < "წიგნ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_book_n_rel" ].
+
+გაზეთ := general_ending_consonant-noun-lex &
+  [ STEM < "გაზეთ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_newspaper_n_rel" ].
+
 მე := 1sg-pro-noun-lex &
   [ STEM < "მე" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
@@ -81,6 +93,10 @@
   [ STEM < "სავარჯიშო" >,
     SYNSEM.LKEYS.KEYREL.PRED "_exercise_n_rel" ].
 
+ლიტერატურა := general_ending_vowel-noun-lex &
+  [ STEM < "ლიტერატურა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_literature_n_rel" ].
+
 მან := 3sg-pro-erg-noun-lex &
   [ STEM < "მან" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
@@ -110,6 +126,18 @@
 მზად := trans-verb-lex &
   [ STEM < "მზად" >,
     SYNSEM.LKEYS.KEYREL.PRED "_prepare_v_rel" ].
+
+სვამ := trans-verb-lex &
+  [ STEM < "სვამ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_drink_v_rel" ].
+
+ასწავლი := trans-verb-lex &
+  [ STEM < "ასწავლი" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_teach_v_rel" ].
+
+კითხ := trans-verb-lex &
+  [ STEM < "კითხ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_read_v_rel" ].
 
 დუღ := intrans-verb-lex &
   [ STEM < "დუღ" >,
@@ -160,3 +188,8 @@
 არ := neg-adv-lex &
   [ STEM < "არ" >,
     SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+
+და := conj-lex &
+  [ STEM < "და" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
+    CFORM "1" ].

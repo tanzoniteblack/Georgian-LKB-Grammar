@@ -16,9 +16,10 @@ Changes to stuff from lab 3:
 
 Yes/No Questions:
        To quote source b (Hewitt): "Questions this type [yes-no] involve no movement of words but are signalled entirely by the application of the appropriate intonation-pattern, namely a rise-falling pitch on the final syllable of the verb, which will normally be the last word in the sentence."  In written form, these questions are typically indicated with a question mark.  Because of this, any of the sentences I already have in the test suite could be questions, and therefore I will not have any new examples from this.
+       Because there is no overt clues this is a question from the text form, there is no way to handle it in the customization system, so I have not selected anything on this page and left it blank.
 
 Coordination:
-	Coordination in Georgian is a rather straight forward affair.  Conjunction between any constituents of the same kind occurs with the word 'და':
+	Coordination in Georgian is a rather straight forward affair.  Conjunction between any constituents of the same kind occurs with the word 'და', which is a `monosyndenton' phenomenon:
 	(Pro)Nouns:
 		მე და შენ ვსვამთ ლუდს
 		მე და შენ 0-ვ-0-სვამ-PSF-0-თ ლუდ-ს
@@ -33,6 +34,11 @@ Coordination:
 
 	Verbs:
 		ჩვენ ვსვამთ და ვისმენთ
-		ჩვენ 0-ვ-0-სვამ-PSF-0-თ და 0-ვ-0-ისმენ-PSF-თ
-		3.PL.SUBJ NOPRE-1.SUBJ-3.OBJ-drink-PSF-PRES/FUT-1.SUBJ.PL and NOPRE-1.SUBJ-3.OBJ-listen-PSF-1.SUBJ.PL
+		ჩვენ 0-ვ-0-სვამ-PSF-0-თ და 0-ვ-0-ისმენ-PSF-0-თ
+		3.PL.SUBJ NOPRE-1.SUBJ-3.OBJ-drink-PSF-PRES/FUT-1.SUBJ.PL and NOPRE-1.SUBJ-3.OBJ-listen-PSF-PRES/FUT-1.SUBJ.PL
 		`We are drinking (something) and listening (to something).'
+	Sentences:
+		მე წიგნს ვკითხავ და შენ გაზეთს კითხავ
+		მე წიგნ-ს 0-ვ-0-კითხ-PSF-0-0 და შენ გაზეთ-ს 0-0-0-კითხ-PSF-0-0
+		1.SG.NOM book-DAT NOPRE-1.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG and 2.SG.NOM newspaper-DAT NOPRE-2.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG
+		`I am reading a book and you are reading a newspaper.'
