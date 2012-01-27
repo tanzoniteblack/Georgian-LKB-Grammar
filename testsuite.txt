@@ -5,7 +5,7 @@ Date: January 10, 2012
 Source a: The Georgian Language, website at http://www.armazi.demon.co.uk/georgian/, by PJ Hillery
 Source b: Georgian, A structural reference grammar by B.G. Hewitt
 Source c: Georgian, A Reading Grammar by Howard I. Aronson
-Source d: Beginner's Georgian by ?
+Source d: Beginner's Georgian by Dodona Kiziria
 Source e: Kartvelian Morphosyntax: Number Agreement and Morphosynactic Orientation in the South Caucasian Languages by Kevin Tuite
 Source f: Essentials of Georgian Grammar by Shorena Kurtsikidze
 
@@ -570,3 +570,34 @@ Phenomena: tam, agreement
 მან სავარჯიშო-ებ-ი PRE-0-მზად-ა
 3.SG.ERG exercise-PL-NOM PRE-3.OBJ-prepare-3.SUBJ.SG.AOR
 `He prepared the exercises.'
+
+#Ex 51 - coordinating pronouns, shortened form of a sentence from a blog in Georgian: მე და შენ ერთ ჩვენს მეგობართან ერთად ვსვამთ ლუდს. `You and I are drinking beer at a friend of mine's place.' Implied near future usage.
+Source: http://mwvanevashli.wordpress.com/2011/10/25/god/
+vetted: s
+Judgment: g
+Phenomena: coordination, agreement
+მე და შენ ვსვამთ ლუდს
+მე და შენ 0-ვ-0-სვამ-PSF-0-თ ლუდ-ს
+1.SG.NOM and 2.SG.NOM NOPRE-1.SUBJ-3.OBJ-drink-PSF-PRES/FUT-1.SUBJ.PL beer-DAT
+`You and me are drinking beer.'
+
+#Ex 52 - coordinating adjectives
+Source: c:101
+vetted: s
+Judgment: g
+Phenomena: coordination
+პოლანდიურ და გერმანულ ლიტერატურას ასწავლის.
+პოლანდიურ-0 და გერმანულ-0 ლიტერატურა-ს 0-0-ასწავლი-PSF-ს
+dutch.DAT and german.DAT literature-DAT NOPRE-3.OBJ-teach-PSF-3.SG.SUBJ.PRES/FUT
+`(S)he teaches Dutch and German literature.'
+
+#Ex 53 - coordinating verbs
+Source: author
+vetted: s
+Judgment: g
+Phenomena: coordination
+ჩვენ ვსვამთ და ვისმენთ
+ჩვენ 0-ვ-0-სვამ-PSF-0-თ და 0-ვ-0-ისმენ-PSF-თ
+3.PL.SUBJ NOPRE-1.SUBJ-3.OBJ-drink-PSF-PRES/FUT-1.SUBJ.PL and NOPRE-1.SUBJ-3.OBJ-listen-PSF-1.SUBJ.PL
+`We are drinking (something) and listening (to something).'
+
