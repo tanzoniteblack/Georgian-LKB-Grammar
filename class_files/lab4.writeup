@@ -16,6 +16,8 @@ Changes to stuff from lab 3:
 
 	Realized that I accidently had the word 'ბრმა' (blind) meaning woman rather than the real word: ქალი.
 
+	Got rid of the SA position class, and have just added the SA 'დ' directly to the tense markers that require it.  They weren't being reused for anything, and the marker itself doesn't carry any specific meaning, so having a unique position that added this marker wasn't doing anything useful.  Relatedly, finally got the past imperfective working correctly and have added extra example sentences of this type in the test suite.
+
 Yes/No Questions:
        To quote source b (Hewitt): "Questions this type [yes-no] involve no movement of words but are signalled entirely by the application of the appropriate intonation-pattern, namely a rise-falling pitch on the final syllable of the verb, which will normally be the last word in the sentence."  In written form, these questions are typically indicated with a question mark.  Because of this, any of the sentences I already have in the test suite could be questions, and therefore I will not have any new examples from this.
        Because there is no overt clues this is a question from the text form, there is no way to handle it in the customization system, so I have not selected anything on this page and left it blank.
@@ -185,3 +187,14 @@ Information Structure:
 	    ჩიკაგო-ში და-ვ-იბა-დ-ე-0
 	    chicago-in PRE-1.SG.SUBJ-bear-PASSIVE-AOR-SG
 	    `I was born in Chicago.'
+
+I am currently getting 60.3% coverage of my testsuite, and 0% overgeneration.
+
+Overgeneration analysis:
+	I'm no longer getting near the overgeneration of before, because I have switched to dealing with the morphologically seperated and regularized forms, which is removing the overgeneration I had before.
+
+Coverage analysis:
+	The 60.3% seems to be coming from the number of sentences I've added for lab 4 that I don't have a way to deal with yet: adjectives, copula, information structure, etc.  So I am quite pleased with my coverage.  I don't see anything in here that I think should be able to parse by now that isn't. 
+
+Looking at MRS:
+	Looking at the MRSs, I don't see any in particular that are incorrect.  There is a bit of ambiguity at the moment resulting in several charts identical sentences, this is because nouns are only specified for number if they are specifically marked as plural.  This wasn't actually an intentional feature of the grammar, but isn't incorrect as marking plurality in Georgian is in fact optional based on pragmatics.  If a noun is explicitly marked as plural, then it is in fact specified as plural and the verb should agree, if the noun isn't marked for plural then it still may or may not be plural, and the verb will agree with it as though it were singular.

@@ -527,8 +527,8 @@ vetted: f
 Judgment: g
 Phenomena: tam
 წერილს ვწერდი.
-წერილ-ს 0-ვ-0-წერ-დ-ი
-teacher-NOM letter-DAT NOPRE-1.SUBJ-3.OBJ-write-SA-PAST.IMPERF
+წერილ-ს 0-ვ-0-წერ-დი-0
+teacher-NOM letter-DAT NOPRE-1.SUBJ-3.OBJ-write-PAST.IMPERF-SG
 `I was writing a letter.'
 
 #Ex 47 - adjective agreement
@@ -810,6 +810,7 @@ Phenomena: copula
 ამერიკელი-ა ექიმი
 ამერიკელ-ი-ა ექიმ-ი
 american-NOM-3.SG.PRES.be doctor-NOM
+`The American is a doctor.'
 
 #Ex 81 -If the case isn't nominative, then we have an ungrammatical sentence:
 Source: author
@@ -840,3 +841,53 @@ Phenomena: passive
 ჩიკაგო-ში და-ვ-იბა-დ-ე-0
 chicago-in PRE-1.SG.SUBJ-bear-PASSIVE-AOR-SG
 `I was born in Chicago.'
+
+#Ex 84 - Past imperfective
+Source: c:45
+vetted: s
+Judgment: g
+Phenomena: tam
+დავწერდი
+PRE-ვ-0-წერ-PSF-დი-0
+PRE-1.SUBJ-3.OBJ-write-PSF-IMPERF.PAST-SG
+`I used to write / was writing it.'
+
+#Ex 85 - Past imperfective
+Source: c:45
+vetted: s
+Judgment: g
+Phenomena: tam
+დაწერდი
+PRE-0-0-წერ-PSF-დი-0
+PRE-2.SUBJ-3.OBJ-write-PSF-IMPERF.PAST-SG
+`You used to write / was writing it.'
+
+#Ex 86 - Past imperfective
+Source: c:45
+vetted: s
+Judgment: g
+Phenomena: tam
+დაწერდა
+PRE-0-წერ-PSF-და
+PRE-3.OBJ-write-PSF-IMPERF.PAST.3.SG.SUBJ
+`You used to write / was writing it.'
+
+#Ex 87 - Past imperfective
+Source: c:45
+vetted: s
+Judgment: g
+Phenomena: tam
+წერილს დავწერდით
+წერილ-ს PRE-ვ-0-წერ-PSF-დი-თ
+letter-DAT PRE-1.SUBJ-3.OBJ-write-PSF-IMPERF.PAST-PL
+`We used to write / was writing the letter.'
+
+#Ex 88 - Past imperfective
+Source: c:45
+vetted: s
+Judgment: g
+Phenomena: tam
+წერილს დაწერდით
+წერილ-ს PRE-0-0-წერ-PSF-დი-თ
+letter-DAT PRE-2.SUBJ-3.OBJ-write-PSF-IMPERF.PAST-PL
+`You (all) used to write / was writing the letter.'
