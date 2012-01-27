@@ -730,3 +730,23 @@ Phenomena: embedded clause
 0-ვ-0-იც-PSF-0-0 რომ იგი 0-0-კითხ-PSF-ს წიგნ-ს
 NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG that 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
 `I know, that she is reading a book.'
+
+#Ex 73 - embedded declarative clause
+Source: author
+vetted: f
+Judgment: g
+Phenomena: embedded clause
+ვიცი, იგი კითხულობს წიგნს
+0-ვ-0-იც-PSF-0-0 იგი 0-0-კითხ-PSF-ს წიგნ-ს
+NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
+`I know, that she is reading a book.'
+
+#Ex 74 - embedded interrogative clause
+Source: author
+vetted: f
+Judgment: g
+Phenomena: embedded clause
+ბავშვი კითხვას თუ ფრინველები მღერიან
+ბავშვ-ი 0-კითხვა-PSF-ს თუ ფრინველ-ებ-ი 0-0-მღერი-PSF-ენ
+child-NOM NOPRE-ask-PSF-3.SG.SUBJ.PRES/FUT whether bird-PL-NOM NOPRE-3.OBJ-sing-PSF-3.PL.SUBJ.PRES/FUT
+`The child is asking whether birds sing.'

@@ -100,3 +100,17 @@ Embedded clauses:
 	 0-ვ-0-იც-PSF-0-0 რომ იგი 0-0-კითხ-PSF-ს წიგნ-ს
 	 NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG that 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
 	 `I know, that she is reading a book.'
+
+	 Embedded declarative clauses can also occur without the complementizer:
+	 ვიცი, იგი კითხულობს წიგნს
+	 0-ვ-0-იც-PSF-0-0 იგი 0-0-კითხ-PSF-ს წიგნ-ს
+	 NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
+	 `I know, that she is reading a book.'
+	 
+	 Georgian embedded interrogative clauses are marked by the complementizer "თუ", which also occurs at the beginning of the subordinate clause.  I have given this one example here, but honestly this kind of structure is incredibly difficult to find examples of, mostly due to the fact that most of the times there is a question involving whether something occured, the part in question isn't embedded, but rather lead by "თუ არა რომ" (gloss: if not that).  This phrasal structure is apparently so popular that it has become something almost like a meme online (see http://icode.ge/category/%E1%83%98%E1%83%AA%E1%83%98%E1%83%97-%E1%83%97%E1%83%A3-%E1%83%90%E1%83%A0%E1%83%90-%E1%83%A0%E1%83%9D%E1%83%9B%E2%80%A6/ for a page with tons of these), perhaps similar to "does anyone know if..." in English.
+
+	 ბავშვი კითხვას თუ ფრინველები მღერიან
+	 ბავშვ-ი 0-კითხვა-PSF-ს თუ ფრინველ-ებ-ი 0-0-მღერი-PSF-ენ
+	 child-NOM NOPRE-ask-PSF-3.SG.SUBJ.PRES/FUT whether bird-PL-NOM NOPRE-3.OBJ-sing-PSF-3.PL.SUBJ.PRES/FUT
+	 `The child is asking whether birds sing.'
+
