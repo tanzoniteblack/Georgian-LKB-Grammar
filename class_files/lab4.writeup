@@ -114,3 +114,74 @@ Embedded clauses:
 	 child-NOM NOPRE-ask-PSF-3.SG.SUBJ.PRES/FUT whether bird-PL-NOM NOPRE-3.OBJ-sing-PSF-3.PL.SUBJ.PRES/FUT
 	 `The child is asking whether birds sing.'
 
+
+Non-verbal Predicates:
+	   Non-verbal predicates are formed using a copula that exists in all tenses and aspect combinations.  In present indicative, this copula is often slightly obscure, as the copula has (only for 3rd person present/future tense) a form which suffixes onto one of the other constituents in the sentence.  The constituents being linked by the copula are in the nominative case.  None of my books mention specifically what case the constituents take in the past perfective tense (where the subject normally takes the ergative case), but all the examples I can find by googling the past perfective 3rd person verbs have nominative case.
+
+	   Copula, adjective, full form 3rd person sg present:
+	   ის ლამიზი არის.
+	   ის ლამიზ-ი არის
+	   3.SG.NOM beautiful-NOM 3.SG.PRES.be
+	   `(S)he is beautiful.'
+
+	   Copula, adjective, clitic form:
+	   ის ლამიზია.
+	   ის ლამიზ-ი-ა
+	   3.SG.NOM beautiful-NOM-3.SG.PRES.be
+	   `(S)he is beautiful.'
+
+	   Copula, preposition, past perfective (nominative case):
+	   იყვნენ ამერიკელები მთვარეზე?
+	   იყვნენ ამერიკელ-ებ-ი მთვარე-ზე
+	   3.PL.AOR.be american-PL-NOM moon-on
+	   `Were American on the moon?'
+
+	   Copula, noun phrase, future:
+	   ვიქნები ექიმი.
+	   ვიქნები ექიმ-ი
+	   1.SG.FUT.be doctor
+	   `I will be a doctor.'
+
+	   The clitic copula can appear on either constituent (though it seems to be stylistically wrong to attach it to a pronoun), though it generally will attach to the last word:
+	   ამერიკელი ექიმია
+	   ამერიკელ-ი ექიმ-ი-ა
+	   american-NOM doctor-NOM-3.SG.PRES.be
+	   `The American is a doctor.'
+
+	   ამერიკელი-ა ექიმი
+	   ამერიკელ-ი-ა ექიმ-ი
+	   american-NOM-3.SG.PRES.be doctor-NOM
+	   `The American is a doctor.'
+
+	   If the case isn't nominative, then we have an ungrammatical sentence:
+   	   ამერიკელს ექიმია
+	   ამერიკელ-ს ექიმ-ი-ა
+	   american-DAT doctor-NOM-3.SG.PRES.be
+	   `*The American is a doctor.'
+
+Information Structure:
+	    Besides intonation, the largest indicator of focus is word order in Georgian.  The neutral word order is SOV, but if something besides the subject needs to be brought into focus, then it is moved to the beginning of the sentence.
+
+	    Compare the neutral order:
+	    მასწავლებელი წერილს წერს.
+	    მასწავლებელ-ი წერილ-ს 0-0-წერ-PSF-ს
+	    teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+	    `The teacher is writing a letter.'
+	    
+	    with 'letter' being stressed:
+	    წერილს მასწავლებელი წერს.
+	    წერილ-ს მასწავლებელ-ი 0-0-წერ-PSF-ს
+	    letter-DAT teacher-NOM NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES/FUT
+	    `The teacher is writing a letter.'
+
+	    Another method of bringing focus to parts of a sentence are use of the conjunction 'კი' meaning 'however', mainly used to bring attention to the fact the subject has changed from the previous subject of the discourse:
+	    ამერიკელი კი წიგნს წერს.
+	    ამერიკელ-ი კი წიგნ-ს 0-0-წერ-PSF-ს
+	    david-NOM however book-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES/FUT
+	    `David, however, is writing a book.'
+
+	    The passive can also employed in to stress the object of a verb. This creates a subjectless sentence that stresses an event occured, who/what the event effected, but not who was the agent of the even.  For the passives, the verbs mark the patient of the verb as though it were a subject:
+	    ჩიკაგოში დავიბადე.
+	    ჩიკაგო-ში და-ვ-იბა-დ-ე-0
+	    chicago-in PRE-1.SG.SUBJ-bear-PASSIVE-AOR-SG
+	    `I was born in Chicago.'

@@ -726,8 +726,8 @@ Source: author
 vetted :f
 Judgment: g
 Phenomena: embedded clause
-ვიცი, რომ იგი კითხულობს წიგნს
-0-ვ-0-იც-PSF-0-0 რომ იგი 0-0-კითხ-PSF-ს წიგნ-ს
+ვიცი, რომ ის კითხულობს წიგნს
+0-ვ-0-იც-PSF-0-0 რომ ის 0-0-კითხ-PSF-ს წიგნ-ს
 NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG that 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
 `I know, that she is reading a book.'
 
@@ -736,8 +736,8 @@ Source: author
 vetted: f
 Judgment: g
 Phenomena: embedded clause
-ვიცი, იგი კითხულობს წიგნს
-0-ვ-0-იც-PSF-0-0 იგი 0-0-კითხ-PSF-ს წიგნ-ს
+ვიცი, ის კითხულობს წიგნს
+0-ვ-0-იც-PSF-0-0 ის 0-0-კითხ-PSF-ს წიგნ-ს
 NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
 `I know, that she is reading a book.'
 
@@ -750,3 +750,93 @@ Phenomena: embedded clause
 ბავშვ-ი 0-კითხვა-PSF-ს თუ ფრინველ-ებ-ი 0-0-მღერი-PSF-ენ
 child-NOM NOPRE-ask-PSF-3.SG.SUBJ.PRES/FUT whether bird-PL-NOM NOPRE-3.OBJ-sing-PSF-3.PL.SUBJ.PRES/FUT
 `The child is asking whether birds sing.'
+
+
+#Ex 75 - Copula, full form 3rd person sg present:
+Source: author
+vetted: f
+Judgment: g
+Phenomena: copula
+ის ლამიზი არის.
+ის ლამიზ-ი არის
+3.SG.NOM beautiful-NOM 3.SG.PRES/FUT.COPULA
+`(S)he is beautiful.'
+
+#Ex 76 - Copula, clitic form:
+Source: author
+vetted: f
+Judgment: g
+Phenomena: copula
+ის ლამიზია.
+ის ლამიზ-ი-ა
+3.SG.NOM beautiful-NOM-3.SG.PRES/FUT.COPULA
+`(S)he is beautiful.'
+
+#Ex 77 - Past perfective copula (nominative case):
+Source: http://church.ge/index.php?showtopic=8269&st=20
+vetted: s
+Judgment: g
+Phenomena: copula, tam
+იყვნენ ამერიკელები მთვარეზე?
+იყვნენ ამერიკელ-ებ-ი მთვარე-ზე
+3.PL.AOR.COPULA american-PL-NOM moon-on
+`Were American on the moon?'
+
+#Ex 78 - Copula, noun phrase, future:
+Source: http://forum.ge/?f=97&showtopic=34291057&st=315
+vetted: s
+Judgment: g
+Phenomena: copula, tam
+ვიქნები ექიმი.
+ვიქნები ექიმ-ი
+1.SG.FUT.be doctor
+`I will be a doctor.'
+
+#Ex 79 - Copula, clitic form, 2 nouns
+Source: http://forum.ge/?f=43&showtopic=33946806&st=15
+vetted: s
+Judgment: g
+Phenomena: copula
+ამერიკელი ექიმია
+ამერიკელ-ი ექიმ-ი-ა
+american-NOM doctor-NOM-3.SG.PRES.be
+`The American is a doctor.'
+
+#Ex 80 - Copula, clitic form, 2 nouns
+Source: author
+vetted: f
+Judgment: g
+Phenomena: copula
+ამერიკელი-ა ექიმი
+ამერიკელ-ი-ა ექიმ-ი
+american-NOM-3.SG.PRES.be doctor-NOM
+
+#Ex 81 -If the case isn't nominative, then we have an ungrammatical sentence:
+Source: author
+vetted: f
+Judgment: u
+Phenomena: agreement
+ამერიკელს ექიმია
+ამერიკელ-ს ექიმ-ი-ა
+american-DAT doctor-NOM-3.SG.PRES.be
+`*The American is a doctor.'
+
+#Ex 82 - კი
+Source: author
+vetted: f
+Judgment: g
+Phenomena: information structure
+ამერიკელი კი წიგნს წერს.
+ამერიკელ-ი კი წიგნ-ს 0-0-წერ-PSF-ს
+david-NOM however book-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES/FUT
+`David, however, is writing a book.'
+
+#Ex 83 - passive
+Source: c:123
+vetted: s
+Judgment: g
+Phenomena: passive
+ჩიკაგოში დავიბადე.
+ჩიკაგო-ში და-ვ-იბა-დ-ე-0
+chicago-in PRE-1.SG.SUBJ-bear-PASSIVE-AOR-SG
+`I was born in Chicago.'
