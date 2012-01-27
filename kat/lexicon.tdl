@@ -9,10 +9,6 @@
   [ STEM < "წერილ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_letter_n_rel" ].
 
-რადიოგადაცემა := general_ending_consonant-noun-lex &
-  [ STEM < "რადიოგადაცემა" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_radiobroadcast_n_rel" ].
-
 შვილ := general_ending_consonant-noun-lex &
   [ STEM < "შვილ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_child_n_rel" ].
@@ -36,6 +32,10 @@
 გაზეთ := general_ending_consonant-noun-lex &
   [ STEM < "გაზეთ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_newspaper_n_rel" ].
+
+ქალ := general_ending_consonant-noun-lex &
+  [ STEM < "ქალ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
 
 მე := 1sg-pro-noun-lex &
   [ STEM < "მე" >,
@@ -85,10 +85,6 @@
   [ STEM < "მათ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
 
-ბრმა := general_ending_vowel-noun-lex &
-  [ STEM < "ბრმა" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
-
 სავარჯიშო := general_ending_vowel-noun-lex &
   [ STEM < "სავარჯიშო" >,
     SYNSEM.LKEYS.KEYREL.PRED "_exercise_n_rel" ].
@@ -96,6 +92,10 @@
 ლიტერატურა := general_ending_vowel-noun-lex &
   [ STEM < "ლიტერატურა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_literature_n_rel" ].
+
+რადიოგადაცემა := general_ending_vowel-noun-lex &
+  [ STEM < "რადიოგადაცემა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_radiobroadcast_n_rel" ].
 
 მან := 3sg-pro-erg-noun-lex &
   [ STEM < "მან" >,

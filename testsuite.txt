@@ -690,3 +690,43 @@ Phenomena: word order
 ქალ-მა რადიოგადაცემა-0 ბრმა PRE-0-ისმენ-ა
 woman-ERG radiobroadcast-NOM blind PRE-3.OBJ-listen-AOR.3.SG.SUBJ
 `The blind woman listened to the radiobroadcast.'
+
+#Ex 69 - adverb, word order
+Source: author
+vetted: f
+Judgment: g
+Phenomena: word order, adverbs
+მე სწრაფად წიგნი წავიკითხე.
+მე სწრაფად წიგნ-ი PRE-ვ-0-კითხ-ე-0
+1.SG.ERG quickly book-NOM PRE-1.SUBJ-3.OBJ-read-AOR-PL.SUBJ
+`I read the book quickly.'
+
+#Ex 70 - adverb, word order
+Source: author
+vetted: f
+Judgment: g
+Phenomena: word order, adverbs
+სწრაფად მე წიგნი წავიკითხე.
+სწრაფად მე წიგნ-ი PRE-ვ-0-კითხ-ე-0
+quickly 1.SG.ERG  book-NOM PRE-1.SUBJ-3.OBJ-read-AOR-PL.SUBJ
+`I read the book quickly.'
+
+#Ex 71  - adverb, word order
+Source: author
+vetted: f
+Judgment: g
+Phenomena: word order, adverbs
+მე წიგნი წავიკითხე სწრაფად.
+მე წიგნ-ი PRE-ვ-0-კითხ-ე-0 სწრაფად
+1.SG.ERG  book-NOM PRE-1.SUBJ-3.OBJ-read-AOR-PL.SUBJ quickly
+`I read the book quickly.'
+
+#Ex 72 - embedded declarative clause
+Source: author
+vetted :f
+Judgment: g
+Phenomena: embedded clause
+ვიცი, რომ იგი კითხულობს წიგნს
+0-ვ-0-იც-PSF-0-0 რომ იგი 0-0-კითხ-PSF-ს წიგნ-ს
+NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG that 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
+`I know, that she is reading a book.'

@@ -66,3 +66,7 @@
 66@author@@@1@adj,agr@მაგალ-მა ქალ-მა რადიოგადაცემა-0 PRE-0-ისმენ-ა@@@@1@4@`The tall woman listened to the radiobroadcast.'@Ryan Smith@January 10, 2012
 67@author@@@1@adj,agr@ბრმა ქალ-მა რადიოგადაცემა-0 PRE-0-ისმენ-ა@@@@1@4@`The blind woman listened to the radiobroadcast.'@Ryan Smith@January 10, 2012
 68@author@@@1@wo@ქალ-მა რადიოგადაცემა-0 ბრმა PRE-0-ისმენ-ა@@@@0@4@`The blind woman listened to the radiobroadcast.'@Ryan Smith@January 10, 2012
+69@author@@@1@wo,adverbs@მე სწრაფად წიგნ-ი PRE-ვ-0-კითხ-ე-0@@@@1@4@`I read the book quickly.'@Ryan Smith@January 10, 2012
+70@author@@@1@wo,adverbs@სწრაფად მე წიგნ-ი PRE-ვ-0-კითხ-ე-0@@@@1@4@`I read the book quickly.'@Ryan Smith@January 10, 2012
+71@author@@@1@wo,adverbs@მე წიგნ-ი PRE-ვ-0-კითხ-ე-0 სწრაფად@@@@1@4@`I read the book quickly.'@Ryan Smith@January 10, 2012
+72@author@@@1@embeddedclause@0-ვ-0-იც-PSF-0-0 რომ იგი 0-0-კითხ-PSF-ს წიგნ-ს@@@@1@5@`I know, that she is reading a book.'@Ryan Smith@January 10, 2012
