@@ -14,6 +14,8 @@ Changes to stuff from lab 3:
 	     3rd-nom-dat & 3rd-erg-nom for 3rd person versions of these
 	     verbs either require a 3rd-person super type of some sort, or a 1st/2nd person prefix marker.
 
+	Realized that I accidently had the word 'ბრმა' (blind) meaning woman rather than the real word: ქალი.
+
 Yes/No Questions:
        To quote source b (Hewitt): "Questions this type [yes-no] involve no movement of words but are signalled entirely by the application of the appropriate intonation-pattern, namely a rise-falling pitch on the final syllable of the verb, which will normally be the last word in the sentence."  In written form, these questions are typically indicated with a question mark.  Because of this, any of the sentences I already have in the test suite could be questions, and therefore I will not have any new examples from this.
        Because there is no overt clues this is a question from the text form, there is no way to handle it in the customization system, so I have not selected anything on this page and left it blank.
@@ -42,3 +44,30 @@ Coordination:
 		მე წიგნ-ს 0-ვ-0-კითხ-PSF-0-0 და შენ გაზეთ-ს 0-0-0-კითხ-PSF-0-0
 		1.SG.NOM book-DAT NOPRE-1.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG and 2.SG.NOM newspaper-DAT NOPRE-2.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG
 		`I am reading a book and you are reading a newspaper.'
+	In the customization system, I have selected a monosyndenton pattern, that is able to connect Nouns, NPs, VPs, and Ss.  The monosyndenton pattern is expressed by a word ("და") that occurs before the coordinand.
+
+Attributive Adjectives:
+	    When an adjective is modifying a noun (rather than acting as a predicate), the adjective comes immediately before the noun it modifies.  There are two classes of adjectives, 1 shows no agreement with the noun it modifies at all, and the other shows agreement only for case (but not number).  Adjectives do not require the conjunction და to be put in a series when modifying the same noun.
+	First adjective shows case agreement, 2nd adjective does not
+	მაგალი ბრმა ქალი რადიოგადაცემას მოისმენს.
+	მაგალ-ი ბრმა ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
+	tall-NOM blind woman-NOM radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
+	`The tall blind woman will listen to the radiobroadcast.'
+
+	compared with the same sentence in the past and perfective tense:
+	მაგალმა ბრმა ქალმა რადიოგადაცემა მოისმენა.
+	მაგალ-მა ბრმა ქალ-მა რადიოგადაცემა-0 PRE-0-ისმენ-ა
+	tall-ERG blind woman-ERG radiobroadcast-NOM PRE-3.OBJ-listen-AOR.3.SG.SUBJ
+	`The tall blind woman listened to the radiobroadcast.'
+
+	Ungrammatical word order (N-ADJ):
+	ქალი ბრმა რადიოგადაცემას მოისმენს.
+	ქალ-ი ბრმა რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
+	woman-NOM blind radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
+	`The blind woman will listen to the radiobroadcast.'
+
+	Ungrammatical lack of agreement:
+	      მაგალ ქალი რადიოგადაცემას მოისმენს.
+	      მაგალ-0 ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
+	      tall-DAT woman-NOM radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
+	      `The tall woman will listen to the radiobroadcast.'

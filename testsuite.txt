@@ -376,8 +376,8 @@ Source: b:58
 Vetted: s
 Judgment: g
 Phenomena: det, agreement
-ეს ბრმა მუშაობს.
-ეს ბრმა-0 0-მუშა-PSF-ს
+ეს ქალი მუშაობს.
+ეს ქალ-ი 0-მუშა-PSF-ს
 DEM.CLOSE.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `This woman (close to me) is working.'
 
@@ -386,8 +386,8 @@ Source: b:58
 Vetted: s
 Judgment: g
 Phenomena: det, agreement
-ეგ ბრმა მუშაობს.
-ეგ ბრმა-0 0-მუშა-PSF-ს
+ეგ ქალი მუშაობს.
+ეგ ქალ-ი 0-მუშა-PSF-ს
 DEM.LISTENER.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `That woman (close to you) is working.'
 
@@ -396,8 +396,8 @@ Source: b:58
 Vetted: s
 Judgment: g
 Phenomena: det, agreement
-ის ბრმა მუშაობს.
-ის ბრმა-0 0-მუშა-PSF-ს
+ის ქალი მუშაობს.
+ის ქალ-ი 0-მუშა-PSF-ს
 DEM.DISTAL.NOM woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `That woman (over there) is working.'
 
@@ -406,8 +406,8 @@ Source: b:58
 Vetted: s
 Judgment: u
 Phenomena: det, agreement
-ამ ბრმა მუშაობს.
-ამ ბრმა-0 0-მუშა-PSF-ს
+ამ ქალი მუშაობს.
+ამ ქალ-ი 0-მუშა-PSF-ს
 DEM.CLOSE.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `This woman (close to me) is working.'
 
@@ -416,8 +416,8 @@ Source: b:58
 Vetted: s
 Judgment: u
 Phenomena: det, agreement
-მაგ ბრმა მუშაობს.
-მაგ ბრმა-0 0-მუშა-PSF-ს
+მაგ ქალი მუშაობს.
+მაგ ქალ-ი 0-მუშა-PSF-ს
 DEM.LISTENER.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `That woman (close to you) is working.'
 
@@ -426,8 +426,8 @@ Source: b:58
 Vetted: s
 Judgment: u
 Phenomena: det, agreement
-იმ ბრმა მუშაობს.
-იმ ბრმა-0 0-მუშა-PSF-ს
+იმ ქალი მუშაობს.
+იმ ქალ-ი 0-მუშა-PSF-ს
 DEM.DISTAL.DAT woman-NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `That woman (over there) is working.'
 
@@ -436,8 +436,8 @@ Source: b:58
 Vetted: s
 Judgment: u
 Phenomena: det, agreement
-ბრმა ეს მუშაობს.
-ბრმა-0 ეს 0-მუშა-PSF-ს
+ქალი ეს მუშაობს.
+ქალ-ი ეს 0-მუშა-PSF-ს
 woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `This woman (close to me) is working.'
 
@@ -446,8 +446,8 @@ Source: b:58
 Vetted: s
 Judgment: u
 Phenomena: det, agreement
-ბრმა ეგ მუშაობს.
-ბრმა-0 ეგ 0-მუშა-PSF-ს
+ქალი ეგ მუშაობს.
+ქალ-ი ეგ 0-მუშა-PSF-ს
 woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `That woman (close to you) is working.'
 
@@ -456,8 +456,8 @@ Source: b:58
 Vetted: s
 Judgment: u
 Phenomena: det, agreement
-ბრმა ის მუშაობს.
-ბრმა-0 ის 0-მუშა-PSF-ს
+ქალი ის მუშაობს.
+ქალ-ი ის 0-მუშა-PSF-ს
 woman-NOM DEM.NOM NOPRE-work-PSF-3.SG.SUBJ.PRES/FUT
 `That woman (over there) is working.'
 
@@ -610,3 +610,83 @@ Phenomena: coordination
 მე წიგნ-ს 0-ვ-0-კითხ-PSF-0-0 და შენ გაზეთ-ს 0-0-0-კითხ-PSF-0-0
 1.SG.NOM book-DAT NOPRE-1.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG and 2.SG.NOM newspaper-DAT NOPRE-2.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG
 `I am reading a book and you are reading a newspaper.'
+
+#Ex 61 - coordinating sentences, da in wrong spot
+Source: author
+vetted: f
+Judgment: u
+Phenomena: coordination
+მე წიგნს და ვკითხავ შენ გაზეთს კითხავ
+მე წიგნ-ს 0-ვ-0-და კითხ-PSF-0-0 შენ გაზეთ-ს 0-0-0-კითხ-PSF-0-0
+1.SG.NOM book-DAT and NOPRE-1.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG 2.SG.NOM newspaper-DAT NOPRE-2.SUBJ-3.OBJ-read-PSF-PRES/FUT-SG
+`I am reading a book and you are reading a newspaper.'
+
+#Ex 62 - attributive adjectives
+Source: author
+vetted: f
+Judgment: g
+Phenomena: adjectives, agreement
+მაგალი ქალი რადიოგადაცემას მოისმენს.
+მაგალ-ი ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
+tall-NOM woman-NOM radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
+`The tall woman will listen to the radiobroadcast.'
+
+#Ex 63 - attributive adjectives
+Source: author
+vetted: f
+Judgment: u
+Phenomena: agreement
+მაგალ ქალი რადიოგადაცემას მოისმენს.
+მაგალ-0 ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
+tall-DAT woman-NOM radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
+`The tall woman will listen to the radiobroadcast.'
+
+#Ex 64 - attributive adjectives
+Source: author
+vetted: f
+Judgment: g
+Phenomena: adjectives, agreement
+ბრმა ქალი რადიოგადაცემას მოისმენს.
+ბრმა ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
+blind woman-NOM radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
+`The blind woman will listen to the radiobroadcast.'
+
+#Ex 65 - attributive adjectives
+Source: author
+vetted: f
+Judgment: u
+Phenomena: word order
+ქალი ბრმა რადიოგადაცემას მოისმენს.
+ქალ-ი ბრმა რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
+woman-NOM blind radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
+`The blind woman will listen to the radiobroadcast.'
+
+#Ex 66 - attributive adjectives
+Source: author
+vetted: f
+Judgment: g
+Phenomena: adjectives, agreement
+მაგალმა ქალმა რადიოგადაცემა მოისმენა.
+მაგალ-მა ქალ-მა რადიოგადაცემა-0 PRE-0-ისმენ-ა
+tall-ERG woman-ERG radiobroadcast-NOM PRE-3.OBJ-listen-AOR.3.SG.SUBJ
+`The tall woman listened to the radiobroadcast.'
+
+#Ex 67 - attributive adjectives
+Source: author
+vetted: f
+Judgment: g
+Phenomena: adjectives, agreement
+ბრმა ქალმა რადიოგადაცემა მოისმენა.
+ბრმა ქალ-მა რადიოგადაცემა-0 PRE-0-ისმენ-ა
+blind woman-ERG radiobroadcast-NOM PRE-3.OBJ-listen-AOR.3.SG.SUBJ
+`The blind woman listened to the radiobroadcast.'
+
+#Ex 68 - attributive adjectives
+Source: author
+vetted: f
+Judgment: u
+Phenomena: word order
+ქალმა რადიოგადაცემა ბრმა მოისმენა.
+ქალ-მა რადიოგადაცემა-0 ბრმა PRE-0-ისმენ-ა
+woman-ERG radiobroadcast-NOM blind PRE-3.OBJ-listen-AOR.3.SG.SUBJ
+`The blind woman listened to the radiobroadcast.'
