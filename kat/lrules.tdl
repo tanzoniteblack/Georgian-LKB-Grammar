@@ -1,1 +1,2 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
+singular-noun-lex := singular-noun-lex-rule.
