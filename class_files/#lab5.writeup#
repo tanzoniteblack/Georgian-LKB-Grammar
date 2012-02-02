@@ -25,3 +25,4 @@ Head-modifier rules:
 	which is grammatically incorrect, because the adjective hasn't had a case marker put on, I get a parse that puts the adjective modifying the correct noun.
 	
 	I will comment at this point, that using emacs to enter in sentences manually (with C-p), it will not parse.  But if I enter it in through the 'enter parse' dialogue in the LKB, it works fine.
+

@@ -205,3 +205,13 @@
   [ STEM < "და" >,
     SYNSEM.LKEYS.KEYREL.PRED "_and_coord_rel",
     CFORM "1" ].
+
+;; Adjectives
+ქართულ := adjective-lex &
+  [ STEM < "ქართულ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_georgian_a_rel" ].
+
+;; Adverbs
+სწრაფად := adverb-lex & 
+  [ STEM < "სწრაფად" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_quickly_adv_red" ].

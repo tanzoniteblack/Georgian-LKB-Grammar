@@ -323,6 +323,24 @@ neg-adv-lex := basic-scopal-adverb-lex &
                        HEAD.MOD < [ LOCAL.CAT.HEAD verb,
                                     LIGHT + ] > ] ].
 
+; Types for adjectives
+
+adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & 
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD noun, VAL.SPR cons ]] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS < >,
+								 SPEC < > ],
+						   POSTHEAD - ]]]].
+;; Types for adverbs
+
+adverb-lex := basic-adverb-lex & intersective-mod-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS < >,
+								 SPEC < > ]]]]].
+
 ;;;;;;;;;;;;;;;;;;;
 ;;; Lexical Rules
 ;;;;;;;;;;;;;;;;;;;
