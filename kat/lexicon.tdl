@@ -1,6 +1,14 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
 
+ძაღლ := general_ending_consonant-noun-lex &
+  [ STEM < "ძაღლ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_dog_n_rel" ].
+
+თევზ := general_ending_consonant-noun-lex &
+  [ STEM < "თევზ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_fish_n_rel" ].
+
 მასწავლებელ := general_ending_consonant-noun-lex &
   [ STEM < "მასწავლებელ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_teacher_n_rel" ].
@@ -106,6 +114,10 @@
 წერ := trans-verb-lex &
   [ STEM < "წერ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
+
+ჭამ := trans-verb-lex &
+  [ STEM < "ჭამ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_eat_v_rel" ].
 
 ისმენ := trans-verb-lex &
   [ STEM < "ისმენ" >,

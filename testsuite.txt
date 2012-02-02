@@ -891,3 +891,13 @@ Phenomena: tam
 წერილ-ს PRE-0-0-წერ-PSF-დი-თ
 letter-DAT PRE-2.SUBJ-3.OBJ-write-PSF-IMPERF.PAST-PL
 `You (all) used to write / was writing the letter.'
+
+#Ex 89 - subject-verb number disagreement
+Source: author
+vetted: f
+Judgment: u
+Phenomena: agreement
+ძაღლი ჭამს თევზს.
+ძაღლ-ი 0-0-ჭამ-PSF-ს თევზ-ს
+dog-NOM NOPRE-3.OBJ-eat-PSF-3.SUBJ.SG.PRES/FUT fish-DAT
+`The dog is eating fish.'
