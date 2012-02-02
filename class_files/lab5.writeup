@@ -1,0 +1,8 @@
+Ryan Smith
+Lab 5 - L567
+2/1/2012
+
+Head-modifier rules:
+    In Georgian, all adjectives MUST precede (i.e. appear to the left) of the noun that they modify.  Therefore, I only require a adj-head-int-phrase, and not a head-adj-int-phrase.
+	
+	
