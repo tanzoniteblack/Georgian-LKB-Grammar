@@ -980,7 +980,7 @@ bare-np-phrase := basic-bare-np-phrase &
 ; Rules for building adjectives
 
 nominative-adj-lex-rule := infl-ltow-rule &
-  [ SYNSEM.LOCAL.CAT.HEAD.MODE < [ LOCAL.CAT.HEAD.CASE nom ] >, DTR adjective-lex ].
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.CASE nom ] >, DTR adjective-lex ].
 
 dative-adj-lex-rule := infl-lex-rule  &
   [	DTR adjective-lex & [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE dat ] ].

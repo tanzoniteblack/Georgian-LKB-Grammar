@@ -25,3 +25,25 @@ Head-modifier rules:
 	which is grammatically incorrect, because the adjective hasn't had a case marker put on, I get a parse that puts the adjective modifying the correct noun.
 	
 	I will comment at this point, that using emacs to enter in sentences manually (with C-p), it will not parse.  But if I enter it in through the 'enter parse' dialogue in the LKB, it works fine.
+
+Adverbs:
+	When working with adverbs, I realized that I do need the head-adj-int rule as well, because adverbs can go more or less anywhere in the sentence.
+
+	Therefore I have changed:
+	head-adj-int := head-adj-scop-phrase.
+	to:
+	head-adj-scop := head-adj-scop-phrase.
+
+	and added:
+	head-adj-int := head-adj-int-phrase.
+
+	My adverb-lex rule:
+	
+adverb-lex := basic-adverb-lex & intersective-mod-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT.HEAD verb ] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS < >,
+								 SPEC < > ]]]]].
+
+    Because my adjective rule above limits to POSTHEAD, and my adverb-lex doesn't, it allows for types of parses I had hoped for.

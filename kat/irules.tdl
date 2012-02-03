@@ -158,3 +158,15 @@ dative-deter-lex-rule.
 ergative-deter-suffix :=
 %suffix (* -მა)
 ergative-deter-lex-rule.
+
+nominative-adj-suffix :=
+%suffix (* -ი)
+nominative-adj-lex-rule.
+
+dative-adj-suffix :=
+%suffix (* -0)
+dative-adj-lex-rule.
+
+ergative-adj-suffix :=
+%suffix (* -მა)
+ergative-adj-lex-rule.
