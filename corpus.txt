@@ -1,0 +1,207 @@
+იყო და არა იყო რა, იყო ხუთი ძმა.
+იყო და არა იყო რა, იყო ხუთ-ი ძმა-0
+3.SG.AOR.be and not 3.SG.AOR.be 3.SG.AOR.be five-NOM brother-NOM
+`Once upon a time there were five brothers.'
+
+ერთხელ ძმებმა მოითათბირეს:
+ერთხელ ძმა-ებ-მა PRE-0-ითათბირ-ეს
+oneday brother-PL-ERG PRE-3.OBJ-deliberate-3.PL.SUBJ.AOR
+`One day they deliberated:'
+
+– მოდი, ერთი ისეთი კოშკი ავაშენოთ, მთელ ხეობაში იმისთანა მეორე არ იდგესო.
+მოდი ერთ-ი ისეთ-ი კოშკ-ი PRE-ვ-0-აშენ-ო-თ მთელ-0 ხეობა-ში ისთან მეორე არ PRE-დგ-PSF-ო
+let one-NOM such-NOM tower-NOM PRE-1.SUBJ-3.OBJ-build-OPT-PL.SUBJ entire-DAT valley-in 3.SG.DAT not PRE-stand-PSF-OPT
+`"Let’s build such a tower,” they said, “the like of which there will be no other in the whole valley."'
+
+მართლაც, ადგნენ და წავიდნენ ოსტატის საძებნელად.
+მართლა ც PRE-დგ-ნენ და PRE-ვიდ-ნენ ოსტატ-ის სა-ძებნ-PSF-ელ-ად
+true PARTICLE PRE-stand-3.PL.SUBJ.AOR and PRE-depart-3.PL.SUBJ.AOR craftsman-GEN FUT-search-PSF-PART-ADV
+`And so they set out to look for a master-builder.'
+
+ბევრი ძნებისა და კითხვა-კითხვის შემდეგ იპოვეს ერთი კარგი ოსტატი და შეუდგნენ კოშკის აშენებას.
+ბევრ-ის ძნებ-ის და კითხვ-ა კითხვ-ის შემდეგ PRE-0-პოვ-ეს ერთ-ი კარგ-ი ოსტატ-ი და PRE-0-უდგ-ნენ კოშკ-ის PRE-0-შენ-PSF-ა-ს
+much-GEN 3.OBJ-search-MASDAR-GEN and ask-MASDAR.NOM ask-MASDAR-GEN then PRE-3.OBJ-find-3.PL.SUBJ.AOR one-NOM good-NOM craftsman-NOM and PRE-3.OBJ-begin-3.PL.SUBJ.AOR tower-GEN PRE-3.OBJ-build-MASDAR-DAT
+`After much searching and questioning they found a good builder, and they began to construct the tower.'
+
+თორმეტ წელიწადს აშენეს და, როგორც იქნა, მეთორმეტე წელიწადს დაასრულეს.
+თორმეტ-0 წელიწად-ს PRE-0-შენ-ეს და როგორ ც იქნა მეთორმეტე-0 წელიწად-ს PRE-0-ასრულ-ეს
+twelve-DAT year-DAT PRE-3.OBJ-build-3.PL.SUBJ.AOR and how PARTICLE 3.SG.SUBJ.AOR twelfth-DAT year-DAT PRE-3.OBJ-complete-3.PL.SUBJ.AOR
+`They were twelve years building it and, at long last, they completed it in the twelfth year.'
+
+აშენება რომ დაამთავრეს, ოსტატმა თქვა:
+PSF-0-შენ-PSF-ა რომ PSF-0-ამთავრ-ეს ოსტატ-მა 0-თქვ-ა
+PSF-3.OBJ-build-PSF-MASDAR that PSF-3.OBJ-finish-3.SG.SUBJ.AOR craftsman-ERG 3.OBJ-say-3.SG.SUBJ.AOR
+`When it was finished, the builder said:'
+
+– წადით ახლა, მთელი ხეობა დაიარეთ და თუ სადმე უკეთესი კოშკი ნახოთ, რაც გინდათ, ის მიყავითო.
+წა-0-დი-0-თ ახლა მთელ-ი ხეობა-0 PRE-0-0-იარ-ე-თ და თუ სადმე უკეთეს-ი კოშკ-ი 0-0-ნახ-ო-თ რა ც გ-ინდ-PSF-თ ის 0-მ-იყავ-ი-თ-ო
+out-2.SUBJ-go-PRES/FUT-SUBJ.PL now entire-NOM valley-NOM PRE-2.SUBJ-3.OBJ-visit-2.SUBJ.IMPER-SUBJ.PL and if somewhere better-NOM tower-NOM 2.SUBJ-3.OBJ-see-OPT-SUBJ.PL what PARTICLE 2.OBJ-want-PSF-2.OBJ.PL 3.SG.NOM 0-1.SG.SUBJ-do-3.SG.SUBJ.PRES/FUT-?-?
+"Go now and travel around the whole valley, and if you see a better tower standing anywhere, you may do whatever you want with me."
+
+დაიარეს ძმებმა მთელი ხეობა, ყველა კოშკი დაათვალიერეს, მაგრამ თავიანთი კოშკისთანა, მართლაც, მეორე ვერ მონახეს.
+da-i-ar-es żm-eb-ma mtel-i xeob-a, q’vela k’ošk’-i da-a-tval+ier-es, magram tav+ian+t-i k’ošk’-is-tana, martla+c, me-or-e ver mo-nax-es.
+X-visits-various-places-in-Y (aor 3p 3s) | brother (nar pl) | whole (nom) | valley (nom sg), | all (nom) | tower (nom sg) | X-goes-and-sees-Y (aor 3p 3s), | but | their-own (gen) | tower (gen sg) – [suffix], | true – [particle], | other (nom) | [particle] | X-searches-for-and-finds-Y (aor 3p 3s).
+they visited various places in it | brothers | whole | valley, | all | tower | they went and saw it, | but | their own | like the tower, | indeed, | another | could not | they searched for and found it.
+The brothers traveled around the whole valley taking a look at all the towers, but they just could not find another one like their own.
+
+ძმებმა იფიქრეს: კოშკი კი ყველაზე უკეთესი გვიდგას, მაგრამ ჩვენმა ოსტატმა ხომ შეიძლება სხვასაც აუშენოს ასეთი კოშკი.
+żm-eb-ma i-pikr-es: k’ošk’-i k’i q’vela-ze u+k’et+es-i gv-i-dga-s, magram čven-ma ost’at’-ma xom še+i+żl+eb+a sxva-s-a-c a-u-šen-os ase+t-i k’ošk’-i (nom).
+brother (nar pl) | X-thinks (aor 3p): | tower (nom sg) | [particle] | all (dat) – on | better (nom) | X’s-Y-stands (pres 1p 3s), | but | our (nar) | craftsman (nar sg) | [particle] | [particle] | other (dat sg) – [case extension] – [particle] | X-builds-Y-for-Z (opt 3s 3s 3s) | such-a (nom) | tower (nom sg).
+brothers | they thought: | tower | indeed | of all | best | ours stands, | but | our | craftsman | surely | can | other | he may build it for him | such a | tower.
+Then the thought occurred to them: "Although we have the best tower of all, it is surely possible that our builder might construct another like it for someone else.
+
+მოდი, ოსტატი დილეგში ჩავამწყვდიოთ და სხვა კოშკს ვეღარ ააშენებსო.
+mo+di, ost’at’-i dileg-ši ča-v-a-mc’q’vd-i-o-t da sxva k’ošk’-s ve+ġar a-a-šen-eb-s-o.
+[particle], | craftsman (nom sg) | dungeon (dat sg) – in | X-locks-Y-up-in (opt 1p 3s) | and | other (dat) | tower (dat sg) | [particle] | X-builds-Y (fut 3s 3s) – [particle].
+come, | craftsman | in the dungeon | we may lock him up | and | other | tower | can no longer | he will build it they said.
+Let’s lock him up in the dungeon, and he will no longer be able to build another tower."
+
+ძმები შინ დაბრუნდნენ, ოსტატი დილეგში შეაგდეს და უთხრეს:
+żm-eb-i šin da-brun-d-nen, ost’at’-i dileg-ši še-a-gd-es da u-txr-es:
+brother (nom pl) | home | X-returns (aor 3p), | craftsman (nom sg) | dungeon (dat sg) – in | X-throws-Y-in (aor 3p 3s) | and | X-says-Y-to-Z (aor 3p 3s 3s):
+brothers | home | they returned, | craftsman | in the dungeon | they threw him in | and | they said it to him:
+The brothers returned home, threw the builder into the dungeon, and said to him:
+
+– კოშკი საუკეთესო აგვიშენებია, მაგრამ სანამ თუჯის კარსაც არ ჩამოაბამ, დილეგში იჯდებიო.
+– k’ošk’-i sa-u+k’et+es-o a-g-i-šen-eb-i-a, magram sanam tuj-is k’ar-s-a-c ar ča+mo-a-b-am, dileg-ši i-jd-eb-i-o.
+tower (nom sg) | best (nom) | X-builds-Y (perf 2s 3s), | but | until | cast-iron (gen) | door (dat sg) – [case extension] – [particle] | not | X-hangs-Y (fut 2s 3s), | dungeon (dat sg) – in | X-sits (fut 2s) – [particle].
+tower | best | you have built it, | but | until | of cast iron | door | not | you will hang it, | in the dungeon | you will sit he said.
+"You may have built the best tower of all but, unless you add an iron door, you will remain in the dungeon."
+
+– კარგიო, – უთხრა ოსტატმა, – ოღონდ, ერთ რამესა გთხოვთ და ის უნდა ამისრულოთ:
+– k’arg-i-o, – u-txr-a ost’at’-ma, – oġond, ert ra-me-s-a g-txov-t da is u+nd+a a-m-i-srul-o-t:
+good (nom) – [particle], | X-says-Y-to-Z (aor 3s 3s 3s) | craftsman (nar sg), | however, | one (dat) | what – [particle] (dat) – [case extension] | X-requests-Y-of-Z (pres 1s 3s 2p) | and | that (nom) | [particle] | X-fulfils-Y-for-Z (opt 2p 3s 1s):
+good he said, | he said it to him | craftsman, | however, | one | something | I ask it of you | and | that | must | you may fulfil it for me:
+"All right," the builder said, "but I have one request, which you must grant me:
+
+ჩემს ცოლთან მიმეგზავნეთ და უთხარით, თორმეტკლიტულში რომ ჩემი სწორ-მრუდის მაკრატელა დევს, ის გამოგატანოთ, თორემ თუჯის კარს ვერ ჩამოვაბამო.
+čem-s col-tan mi-m-e-gzavn-e-t da u-txar-i-t, t+or+met’-k’lit’-ul-ši rom čem-i sc’or–mrud-is mak’rat’ela dev-s, is ga+mo-g-a-t’an-o-t, torem tuj-is k’ar-s ver ča-mo-v-a-b-am-o.
+my (dat) | wife (dat sg) – at | X-visits-at-Y’s-request (imper 2p 1s) | and | X-says-Y-to-Z (imper 2p 3s 3s), | twelve-lock-place (dat sg) – in | that | my (nom) | straight–curve (gen sg) | shears (nom sg) | X-lies (stat pres 3s), | that (nom) | X-sends-Y-by-Z’s-hand (opt 3s 3s 2p), | else | cast-iron (gen) | door (dat sg) | [particle] | X-hangs-Y (fut 1s 3s) – [particle].
+my | at wife’s place | visit at my request | and | say it to her, | in the twelve lock place | that | my | of straight-curve | shears | it lies, | that | she may send it by your hand, | else | cast iron | door | cannot | I will hang it he said.
+Go to my wife for me and tell her to give you my straight-curved shears that is kept behind twelve locks, for without it I cannot hang the iron door."
+
+ძმებმა იფიქრეს, რა გვენაღვლება, წავალთ, იმ სწორ-მრუდის მაკრატელას მოვიტანთ, თუჯის კარსაც ჩამოვაბამთ, ოსტატის დამწყვდევას კი მერეც მოვესწრებითო.
+żm-eb-ma i-pikr-es, ra gv-e-naġvl-eb-a, c’a-val-t, im sc’or–mrud-is mak’rat’ela-s mo-v-i-t’an-t, tuj-is k’ar-s-a-c ča+mo-v-a-b-am-t, ost’at’-is da-mc’q’vd-ev-a-s k’i mere-c mo-v-e-sc’r-eb-i-t-o.
+brother (nar pl) | X-thinks (aor 3p), | what (nom) | X-bothers-Y (pres 3s 1p), | X-goes-away (fut 1p), | that (dat) | straight–curve (gen sg) | shears (dat sg) | X-brings-Y (fut 1p 3s), | cast-iron (gen) | door (dat) – [case extension] – [particle] | X-hangs-Y (fut 1p 3s), | craftsman (gen sg) | X-locks-Y-up (masdar dat) | [particle] | then – [particle] | X-will-do-Y-on-time (fut 1p 3s) – [particle].
+brothers | they thought, | what | it bothers us, | we will go away, | that | of straight-curve | shears | we will bring it, | cast iron | door | we will hang it, | of the craftsman | locking up | however | after | we will do it on time they said.
+The brothers thought: "What does it matter to us – we’ll go and fetch the straight-curved shears, we’ll hang the iron door, and we can lock up the builder later."
+
+გაგზავნეს ორი ძმა.
+ga-gzavn-es or-i żma.
+X-sends-Y (aor 3p 3s) | two (nom) | brother (nom sg).
+they sent him | two | brother.
+They sent two of the brothers off.
+
+ბევრი სიარულის შემდეგ ძმები ოსტატის ცოლს მიადგნენ და დანაბარები მოახსენეს.
+bevr-i si+ar+ul-is šemdeg żm-eb-i ost’at’-is col-s mi-a-dg-nen da da-na-bar-eb-i mo-a-xsen-es.
+much (gen) | X-walks (masdar gen) | after | brother (nom pl) | craftsman (gen sg) | wife (dat sg) | X-approaches-Y (aor 3p 3s) | and | X-entrusts-Y (perf part nom pl) | X-says-Y-to-Z (aor 3p 3s 3s).
+much | of walking | after | brothers | of the craftsman | wife | they approached her | and | what had been entrusted | they said it to her.
+After much walking, they reached the builder’s wife and gave her the message.
+
+ქალი მაშინვე მიხვდა ყველაფერს, შეიყვანა ძმები თორმეტკლიტულში, კარი გარედან მაგრად დაუკეტა და მიაძახა:
+kal-i mašin-ve mi-Ø-xvd-a q’vela+per-s, še-i-q’van-a żm-eb-i t+or+met’-k’lit-ul-ši, k’ar-i gare+dan magr-ad da-u-k’et’-a da mi-a-żax-a:
+woman (nom sg) | then – [particle] | X-realizes-Y (aor 3s 3s) | everything (dat), | X-brings-Y-in (aor 3s 3p) | brother (nom pl) | twelve-lock-place (dat sg) – in, | door (nom sg) | from-outside | strongly | X-closes-Y-on-Z (aor 3s 3s 3p) | and | X-suddenly-calls-out-Y-to-Z (aor 3s 3s 3p):
+woman | right then | she realized it | everything, | she brought them in | brothers | into the twelve lock place, | door | from outside | strongly | she closed it on them | and | she suddenly called it out to them:
+She immediately realized what was afoot, led the brothers into the room with twelve locks, and securely locked them in, calling out to them:
+
+– ერთი კაცი ხომ ჩემი ქმარია დამწყვდეული, ორნიც თქვენ იქნებითო.
+– ert-i k’ac-i xom čem-i kmar-i-a da-mc’q’vd-e-ul-i, or-n-i-c tkven i-kn-eb-i-t-o.
+one (nom) | man (nom sg) | [particle] | my (nom) | husband (nom sg) – X-is (pres 3s) | X-locks-Y-up (perf part nom sg) | two (nom pl) – [particle] | you (nom pl) | X-is (fut 2p) – [particle].
+one | man | indeed | my | husband is | locked up | two | you | you will be she said.
+"My husband is just one prisoner, and now you’ll make two more!"
+
+ძმებმა რომ დაიგვიანეს, ადგა კიდევ ორი ძმა და იმათი ამბის გასაგებად გაეშურა.
+żm-eb-ma rom da-i-gvian-es, a-dg-a k’idev or-i żma da i+mat-i amb-is ga-sa-g-eb-ad ga-e-šur-a.
+brother (nar pl) | that | X-is-late (aor 3p), | X-gets-up (aor 3s) | again | two (nom) | brother (nom sg) | and | their (gen) | news (gen sg) | X-learns-of-Y (fut part adv) | X-hurries-away (aor 3s).
+brothers | when | they were late, | he got up | another | two | brother | and | their | of the news | to learn of | they hurried away.
+When the brothers were overdue, two others rushed off to find out what had happened to them.
+
+ოსტატის ცოლმა ამათაც იგივე დღე აწია:
+ost’at’-is col-ma a+ma+t-a-c igi-ve dġe a-c’-i-a:
+craftsman (gen sg) | wife (nar sg) | that (dat pl) – [case extension] – [particle] | it (nom) – [particle] | day (nom sg) | X-causes-Y-to-Z (aor 3s 3s 3p):
+of the craftsman | wife | them | very same | day | she caused it to them:
+The builder’s wife played the very same trick on them too.
+
+შეიყვანა თორმეტკლიტულში, ორ ძმას კიდევ ორი მიუმატა და გარედან კარი მაგრად დაუკეტა.
+še-i-q’van-a t+or+met’-k’lit’-ul-ši, or żma-s k’idev or-i mi-u-mat’-a da gare+dan k’ar-i magr-ad da-u-k’et’-a.
+X-brings-Y-in (aor 3s 3p) | twelve-lock-place (dat sg) – in, | two (dat) | brother (dat sg) | again | two (nom) | X-adds-Y-to-Z (aor 3s 3s 3s) | and | from-outside | door (nom sg) | strongly | X-closes-Y-on-Z (aor 3s 3s 3p).
+she brought them in | into the twelve lock place, | two | brother | more | two | she added him to him | and | from outside | door | strongly | she closed it on them.
+She led them into the room with twelve locks, put the two of them with the other pair, and closed the door securely on them from outside.
+
+– ერთი ჩემი ქმარი იქნება დამწყვდეული, ოთხი კი თქვენო.
+– ert-i čem-i kmar-i i-kn-eb-a da-mc’q’vd-e-ul-i, otx-i k’i tkven-o.
+one (nom) | my (nom) | husband (nom sg) | X-is (fut 3s) | X-locks-Y-up (perf part nom sg) | four (nom) | [particle] | you (nom pl) – [particle].
+one | my | husband | he will be | locked up | four | however | you she said.
+"My husband is just one prisoner, but there are four of you!".
+
+გავიდა ხანი და ძმებმა იფიქრეს:
+ga-vid-a xan-i da żm-eb-ma i-pikr-es:
+X-goes (aor 3s) | period-of-time (nom sg) | and | brother (nar pl) | X-thinks (aor 3p):
+it passed | period of time| and | brothers | they thought:
+Some time passed and the brothers thought:
+
+თუ რამე არ ვიღონეთ, ამ თორმეტკლიტულში ამოვიხოცებითო და ოსტატის ცოლს შეუთვალეს:
+tu ra-me ar v-i-ġon-e-t, am t+or+met’-k’lit’-ul-ši a-mo-v-i-xoc-eb-i-t-o da ost’at’-is col-s še-u-tval-es:
+if | what – [particle] | not | X-makes-vigorous-effort-to-achieve-Y (aor 1p 3s) | this (dat) | twelve-lock-place (dat sg) – in | X-is-killed (fut 1p) – [particle] | and | craftsman (gen sg) | wife (dat sg) | X-lets-Y-know-Z (aor 3p 3s 3s):
+if | something | not | we made vigorous effort to achieve it | this | in the twelve lock place | we will be killed they said | and | of the craftsman | wife | they let her know it:
+‘If we don’t attempt something, we will all die here in this room with twelve locks’, and so they proposed to the builder’s wife:
+
+– ოღონდ აქედან გაგვიშვი და რასაც ითხოვ, აგისრულებთო.
+– oġond ake+dan ga-gv-i-šv-i da ra-s-a-c i-txov, a-g-i-srul-eb-t-o.
+only | from-here | X-lets-Y-go (imper 2s 1p) | and | what (dat) – [case extension] – [particle] | X-demands-Y (fut 2s 3s), | X-fulfils-Y-for-Z (fut 1p 3s 2s) – [particle].
+only | from here | let us go | and | what | you demand it, | we will fulfil it for you they said.
+"If you only let us out of here, we will do anything you ask of us."
+
+ოსტატის ცოლმა უპასუხა:
+ost’at’-is col-ma u-p’asux-a:
+craftsman (gen sg) | wife (nar sg) | X-answers-Y (3s 3p):
+of the craftsman | wife | she answered them:
+The builder's wife replied:
+
+– რამდენი ლოდიც თქვენს ციხე-კოშკს მოხმარდა, იმდენ ხარ-ძროხას სანამ არ მომიყვანთ და ჩემს ქმარსაც არ გამოუშვებთ, დღის სინათლეს ვერ ეღირსებითო.
+– r+am+den-i lod-i-c tkven-s cixe–k’ošk’-s mo-Ø-xmar-d-a, im+den xar–żroxa-s sanam ar mo-m-i-q’van-t da čem-s kmar-s-a-c ar ga-mo-u-šv-eb-t , dġ-is si+natl+e-s (dat) ver e-ġirs-eb-i-t-o.
+as-many (nom) | stone (nom sg) – [particle] | your (dat) | castle-tower (dat sg) | X-is-used-for-Y (aor 3s 3s), | so-many (dat) | bull–cow (dat sg) | until | not | X-brings-Y-to-Z (fut 2p 3s 1s) | and | my (dat) | husband (dat sg) – [case extension] – [particle] | not | X-lets-Y-out (fut 2p 3s) | day (gen sg) | light (dat) | [particle] | X-deserves-Y (fut 2p 3s) – [particle].
+so many | stone | your | castle tower | it was used for it, | that many | bull cow | until | not | you will bring it to me | and | my | husband | not | you will let him out | of the day | light | cannot | you will deserve it she said.
+"Until you bring me here as many cattle as you have used stones in the tower, and until you have freed my husband, you will never see the light of day again!"
+
+რაღას იზამდნენ დამწყვდეული ძმები, შინ დარჩენილს კაცი გაუგზავნეს და ყველაფერი წერილად შეუთვალეს:
+ra-ġa-s i-z-am-d-nen da-mc’q’vd-e-ul-i żm-eb-i, šin da-rčen-il-s k’ac-i ga-u-gzavn-es da q’vela+per-i c’er+il-ad še-u-tval-es:
+what – [particle] (dat) | X-does-Y (cond 3p 3s) | X-locks-Y-up (perf part nom sg) | brother (nom pl), | at-home | X-remains (perf part dat sg) | man (nom sg) | X-sends-Y-to-Z (aor 3p 3s 3s) | and | everything (nom) | letter (adv sg) | X-lets-Y-know-Z (aor 3p 3s 3s):
+something | they would do it | locked up | brothers, | at home | he who remained | man | they sent him to him | and | everything | by a letter | they let him know it:
+What could the imprisoned brothers do but send a man to the remaining brother at home, explaining everything in a letter:
+
+ჩვენი ოსტატიც გამოუშვი, რაც ხარ-ძროხა გვყავს, ისიც დღესვე აქ მორეკეო.
+čven-i ost’at’-i-c ga+mo-u-šv-i, ra-c xar–żroxa gv-q’av-s is-i-c dġe-s-ve ak mo-rek’-e-o.
+our (nom) | craftsman (nom sg) – [particle] | X-lets-Y-go (imper 2s 3s), | what (nom) – [particle] | bull–cow (nom sg) | X-has-Y (pres 1p 3s) | that (nom) – [particle] | day (dat) – [particle] | here | X-brings-Y (imper 2s 3s) – [particle].
+our | craftsman | let him go, | what | bull cow | we have it | that | this very day | here | bring it here they said.
+"Let our builder go, and drive all our cattle here this very day", they wrote.
+
+ამ ხუთივე ძმას უთვალავი ხარ-ძროხა ჰყავდა.
+am xut-i-ve żma-s u+tval+av-i xar–żroxa h-q’av-d-a.
+this (dat) | five – [particle] | brother (dat sg) | countless (nom) | bull–cow (nom sg) | X-has-Y (imp 3s 3s).
+this | five | brother | countless | bull cow | he used to have it.
+These five brothers had very many cattle indeed.
+
+გამოუშვა ძმამ დილეგში დამწყვდეული ოსტატი, გაირეკა წინ ხუთივე ძმის ჯოგი, ოსტატის ცოლს კარზე მიაყენა.
+ga+mo-u-šv-a żma-m dileg-ši da-mc’q’vd-e-ul-i ost’at’-i, ga-i-rek’-a c’in xut-i-ve żm-is jog-i, ost’at’-is col-s k’ar-ze mi-a-q’en-a (aor).
+X-lets-Y-go (aor 3s 3s) | brother (nar sg) | dungeon (dat sg) – in | X-locks-Y-up (perf part nom sg) | craftsman (nom sg), | X-drives-Y (aor 3s 3s) | before | five (gen) – [particle] | brother (gen sg) | herd (nom sg), | craftsman (gen sg) | wife (dat sg) | door (dat sg) – on | X-brings-Y-to-a-stop-near-Z (aor 3s 3s 3s).
+he lets him go | brother | in the dungeon | locked up | craftsman, | he drove it | before | five | of the brother | herd, | of the craftsman | wife | at the door | he brought it to a stop near it.
+The brother set the builder free from the dungeon and drove the brothers’ herd before him to the door of the house where the builder’s wife lived.
+
+ოსტატის ცოლმაც თავისი აასრულა, გაათავისუფლა თორმეტკლიტულში დამწყვდეული ოთხივე ძმა და უთხრა:
+ost’at’-is col-ma-c tav+is-i a-a-srul-a, ga-a-tav+is+upl-a t+or+met’-k’lit’-ul-ši da-mc’q’de-ul-i otx-i-ve żma da u-txr-a:
+craftsman (gen sg) | wife (nar sg) – [particle] | her (nom) | X-fulfils-Y (aor 3s 3s), | X-frees-Y (aor 3s 3s) | twelve-lock-place (dat sg) – in | X-locks-Y-up (perf part nom sg) | four – [particle] | brother (nom sg) | and | X-says-Y-to-Z (aor 3s 3s 3p):
+of the craftsman | wife | her | she fulfilled it, | she freed him | in the twelve lock place | locked up | four | brother | and | she said to them:
+The builder’s wife kept her side of the bargain, freed the four brothers who were imprisoned in the room with twelve locks, and said:
+
+– აი, ასეც თქვენი სწორ-მრუდის მაკრატელა, წაბრძანდით და ღმერთმა სიკეთეში მოგახმაროთო.
+– ai, ase-c tkven-i sc’or–mrud-is mak’rat’ela, c’a-brżan-d-i-t da ġmert-ma si+k’et+e-ši mo-g-a-xmar-o-t-o.
+[particle], | thus – [particle] | your (nom) | straight–curve (gen sg) | shears (nom sg), | X-goes-away (imper 2p) | and | God (nar) | goodness (dat) – in | X-makes-use-of-Y-for-Z (opt 3s 2p 3s) – [particle].
+there, | thus | your | of straight-curve | shears, | please go away | and | God | in goodness | may he make use of you she said.
+“There’s your straight-curved shears for you!” she said to them. “Please leave us alone, and may God make good use of you."
+
+კუდამოძუებული ძმები შინ დაბრუნდნენ, ოსტატმა და მისმა ცოლმა კი ბედნიერად იცხოვრეს.
+k’ud+a+mo+żu+eb+ul-i żm-eb-i šin da-brun-d-nen, ost’at’-ma da mis-ma col-ma k’i bed+n+ier-ad i-cxovr-es.
+tail + X-hangs-between-legs (perf part nom sg) | brother (nom pl) | home | X-returns (aor 3p), | craftsman (nar sg) | and | his (nar) | wife (nar sg) | [particle] | happily | X-lives (aor 3p).
+tail hung between legs | brothers | home | they returned, | craftsman | and | his | wife | however | happily | they lived.
+The brothers returned home with their tails between their legs, and the builder and his wife lived happily ever after. 

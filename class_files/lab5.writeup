@@ -184,3 +184,10 @@ Optional arguments:
 
 	Because it looks like most of this is already done, I change basic-head-opt-comp-phrase to include OPT-CS in-foc.
 
+Corpus:
+    The test corpus I have found is from http://www.armazi.com/georgian/unicode/sample_text.htm and is a Georgian folk tale.  This is a convenient choice, because it already comes with IGT (though in a completely different format than is standard, and is a lot of work to adapt...but at least I know for sure what it all means). However, because it is a folk tale there are a few oddities such as:
+
+    იყო და არა იყო რა...
+    იყო და არა იყო რა
+    3.SG.AOR.be and not 3.SG.AOR.be
+    `Once upon a time...'
