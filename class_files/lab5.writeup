@@ -122,3 +122,65 @@ and made a few items in lexicon.tdl that inherited from this type, such as:
 ბრმა := infl-adjective-lex &
   [ STEM < "ბრმა" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_blind_adj_rel" ].
+
+Demonstratives and definiteness:
+    Marked personal pronouns for COG-ST activ-or-more, SPECI +:
+	example with 1st sg, similar changes made to all pronouns:
+1sg-pro-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ PNG [ PER 1st,
+                                       NUM singular ],
+								  COG-ST activ-or-more, SPECI + ],
+    INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
+
+indefinite determiners:
+    Georgian does have indefinite determiners, I have modified their class type to include COG-ST type-id:
+
+indeterminate-determiner-lex := determiner-lex &
+  [ INFLECTED.DETERMINER-CASE-SUFFIX-FLAG - ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CONT.HOOK.INDEX [COG-ST type-id ] ] ].
+
+  My demonstrative adjectives have also changed, to include this hierarchy:
+
+demonstrative_a_rel := predsort.
+proximal+dem_a_rel := demonstrative_a_rel. ; close to speaker
+distal+dem_a_rel := demonstrative_a_rel.   ; away from speaker
+remote+dem_a_rel := distal+dem_a_rel.      ; away from speaker and hearer
+hearer+dem_a_rel := distal+dem_a_rel.      ; near hearer
+
+  an example of one of my demonstrative determiners changed to one of these labels:
+
+იმ := remote_others-determiner-lex &
+  [ STEM < "იმ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_remote+dem_a_rel" ].
+
+also added to georgian.tdl:
+
+determiner-lex-supertype := norm-hook-lex-item & basic-zero-arg &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD det,
+			   VAL[ SPEC.FIRST.LOCAL.CONT.HOOK [ INDEX #ind,
+				  			     LTOP #larg ],
+                                SPR < >,
+                                SUBJ < >,
+                                COMPS < >]],
+		     CONT.HCONS < ! qeq &
+				 [ HARG #harg,
+				   LARG #larg ] ! > ], 
+	     LKEYS.KEYREL quant-relation &
+		   [ ARG0 #ind,
+		     RSTR #harg ] ] ].
+ which means I had to change indeterminate-determiner-lex to include single-rel-lex-item as a supertype.
+indeterminate-determiner-lex := determiner-lex & single-rel-lex-item
+
+For the demonstratives, I added a type that inherited from determiner-lex-supertype:
+demonstrative-determiner-lex := determiner-lex-supertype & determiner-lex &
+    [ SYNSEM [LKEYS [ALTKEYREL arg1-ev-relation ] ] ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX [COG-ST activ+fam ] ].
+
+and made it the supertype of all my demonstrative types
+proximal_nom-determiner-lex := demonstrative-determiner-lex & 
+  [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
+                                            CONT.HOOK.INDEX.PNG.PER 3rd ] ].
+
+Optional arguments:
+    As far as I can currently tell, the system is currently handling dropped arguments appropriately in terms of syntax.  But this is probably because you seem to be able to drop arguments whenever they're in focus.  I'm not completely sure of the COG-ST value, but it seems that in-foc seems to be the best for subjects, but I wouldn't be surprised to learn that objects are more of a situation of COG-ST type-id.  Unfortunately, none of my sources really talk about the pragmatics of argument drop much, except for the fact that it's exceedingly common.
+
+	Because it looks like most of this is already done, I change basic-head-opt-comp-phrase to include OPT-CS in-foc.
+

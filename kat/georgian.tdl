@@ -168,47 +168,55 @@ general_ending_consonant-noun-lex := noun-lex & noun-case-suffix-rule-dtr & noun
                 GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ] ].
 
 1sg-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 1st,
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ PNG [ PER 1st,
                                        NUM singular ],
+								  COG-ST activ-or-more, SPECI + ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 2sg-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ NUM singular,
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [PNG [ NUM singular,
                                        PER 2nd ],
+								  COG-ST activ-or-more, SPECI + ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 3sg-pro-nom-noun-lex := noun-lex &
   [ SYNSEM.LOCAL [ CAT.HEAD.CASE abs+nom,
-                   CONT.HOOK.INDEX.PNG [ NUM singular,
-                                         PER 3rd ] ],
+                   CONT.HOOK.INDEX [PNG [ NUM singular,
+                                         PER 3rd ],  
+								  COG-ST activ-or-more, SPECI + ] ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 1pl-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 1st,
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [PNG [ PER 1st,
                                        NUM plural ],
+								  COG-ST activ-or-more, SPECI + ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 2pl-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.PNG [ PER 2nd,
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [PNG [ PER 2nd,
                                        NUM plural ],
+								  COG-ST activ-or-more, SPECI + ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 3pl-pro-nom-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX.PNG [ PER 3rd,
+  [ SYNSEM.LOCAL [ CONT.HOOK.INDEX [PNG [ PER 3rd,
                                          NUM plural ],
+								  COG-ST activ-or-more, SPECI + ],
                    CAT.HEAD.CASE nom ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 3sg-pro-dat-noun-lex := noun-lex &
   [ SYNSEM.LOCAL [ CAT.HEAD.CASE dat,
-                   CONT.HOOK.INDEX.PNG [ PER 3rd,
-                                         NUM singular ] ],
+                   CONT.HOOK.INDEX [PNG [ PER 3rd,
+                                         NUM singular ],
+								  COG-ST activ-or-more, SPECI + ] ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 3pl-pro-dat-noun-lex := noun-lex &
   [ SYNSEM.LOCAL [ CAT.HEAD.CASE dat,
-                   CONT.HOOK.INDEX.PNG [ NUM plural,
-                                         PER 3rd ] ],
+                   CONT.HOOK.INDEX [PNG [ NUM plural,
+                                         PER 3rd ],
+								  COG-ST activ-or-more, SPECI + ] ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 general_ending_vowel-noun-lex := noun-lex & noun-case-suffix-rule-dtr & noun-plurality-rule-dtr &
@@ -219,8 +227,9 @@ general_ending_vowel-noun-lex := noun-lex & noun-case-suffix-rule-dtr & noun-plu
 
 3sg-pro-erg-noun-lex := noun-lex &
   [ SYNSEM.LOCAL [ CAT.HEAD.CASE erg,
-                   CONT.HOOK.INDEX.PNG [ NUM singular,
-                                         PER 3rd ] ],
+                   CONT.HOOK.INDEX [PNG [ NUM singular,
+                                         PER 3rd ],
+								  COG-ST activ-or-more, SPECI + ] ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 ;;; Verbs
@@ -275,15 +284,24 @@ intrans-verb-lex := intransitive-verb-lex &
 ;;; Determiners
 ;;; SPEC is non-empty, and already specified by basic-determiner-lex.
 
+demonstrative_a_rel := predsort.
+proximal+dem_a_rel := demonstrative_a_rel. ; close to speaker
+distal+dem_a_rel := demonstrative_a_rel.   ; away from speaker
+remote+dem_a_rel := distal+dem_a_rel.      ; away from speaker and hearer
+hearer+dem_a_rel := distal+dem_a_rel.      ; near hearer
+
 determiner-lex := basic-determiner-lex & basic-zero-arg & non-mod-lex-item &
   [ SYNSEM.LOCAL.CAT.VAL [ SPR < >,
                            COMPS < >,
                            SUBJ < > ] ].
 
-indeterminate-determiner-lex := determiner-lex &
-  [ INFLECTED.DETERMINER-CASE-SUFFIX-FLAG - ].
+indeterminate-determiner-lex := determiner-lex & single-rel-lex-item &
+  [ INFLECTED.DETERMINER-CASE-SUFFIX-FLAG - ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CONT.HOOK.INDEX [COG-ST type-id ] ] ].
 
-proximal_nom-determiner-lex := determiner-lex &
+demonstrative-determiner-lex := determiner-lex-supertype & determiner-lex &
+    [ SYNSEM [LKEYS [ALTKEYREL arg1-ev-relation ] ] ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX [COG-ST activ+fam ] ].
+
+proximal_nom-determiner-lex := demonstrative-determiner-lex & 
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
@@ -306,6 +324,20 @@ remote_nom-determiner-lex := determiner-lex &
 remote_others-determiner-lex := determiner-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE non-abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
+
+determiner-lex-supertype := norm-hook-lex-item & basic-zero-arg &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD det,
+			   VAL[ SPEC.FIRST.LOCAL.CONT.HOOK [ INDEX #ind,
+				  			     LTOP #larg ],
+                                SPR < >,
+                                SUBJ < >,
+                                COMPS < >]],
+		     CONT.HCONS < ! qeq &
+				 [ HARG #harg,
+				   LARG #larg ] ! > ], 
+	     LKEYS.KEYREL quant-relation &
+		   [ ARG0 #ind,
+		     RSTR #harg ] ] ].
 
 ; Type for negative adverbs.
 ; 
