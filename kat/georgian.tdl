@@ -295,7 +295,7 @@ determiner-lex := basic-determiner-lex & basic-zero-arg & non-mod-lex-item &
                            COMPS < >,
                            SUBJ < > ] ].
 
-indeterminate-determiner-lex := determiner-lex & single-rel-lex-item &
+indeterminate-determiner-lex := determiner-lex-supertype & determiner-lex & single-rel-lex-item &
   [ INFLECTED.DETERMINER-CASE-SUFFIX-FLAG - ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CONT.HOOK.INDEX [COG-ST type-id ] ] ].
 
 demonstrative-determiner-lex := determiner-lex-supertype & determiner-lex &
@@ -305,23 +305,23 @@ proximal_nom-determiner-lex := demonstrative-determiner-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
-proximal_others-determiner-lex := determiner-lex &
+proximal_others-determiner-lex := demonstrative-determiner-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE non-abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
-hearer_nom-determiner-lex := determiner-lex &
+hearer_nom-determiner-lex := demonstrative-determiner-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
-hearer_others-determiner-lex := determiner-lex &
+hearer_others-determiner-lex := demonstrative-determiner-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE non-abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
-remote_nom-determiner-lex := determiner-lex &
+remote_nom-determiner-lex := demonstrative-determiner-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
-remote_others-determiner-lex := determiner-lex &
+remote_others-determiner-lex := demonstrative-determiner-lex &
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE non-abs+nom,
                                             CONT.HOOK.INDEX.PNG.PER 3rd ] ].
 
