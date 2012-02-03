@@ -654,12 +654,12 @@ blind woman-NOM radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
 #Ex 65 - attributive adjectives
 Source: author
 vetted: f
-Judgment: u
+Judgment: g
 Phenomena: word order
 ქალი ბრმა რადიოგადაცემას მოისმენს.
 ქალ-ი ბრმა რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს
 woman-NOM blind radiobroadcast-DAT PRE-3.OBJ-listen-PSF-3.SG.SUBJ.PRES/FUT
-`The blind woman will listen to the radiobroadcast.'
+`The woman will listen to the blind radiobroadcast.'
 
 #Ex 66 - attributive adjectives
 Source: author

@@ -209,7 +209,15 @@
 ;; Adjectives
 ქართულ := adjective-lex &
   [ STEM < "ქართულ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_georgian_a_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_georgian_adj_rel" ].
+
+მაგალ := adjective-lex &
+  [ STEM < "მაგალ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tall_adj_rel" ].
+
+ბრმა := infl-adjective-lex &
+  [ STEM < "ბრმა" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_blind_adj_rel" ].
 
 ;; Adverbs
 სწრაფად := adverb-lex & 

@@ -30,6 +30,7 @@ inflected :+ [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3_PL_SUBJ_AOR_TRANS-OR-3_PL_SUBJ_
     NOUN-PLURALITY-FLAG luk,
     NOUN-CASE-SUFFIX-FLAG luk,
     TENSE_AND_3RD_SUBJ-FLAG luk,
+    ADJ-CASE-SUFFIX-FLAG luk,
     DETERMINER-CASE-SUFFIX-FLAG luk,
     GENERAL_ENDING_VOWEL-NOUN-FLAG luk,
     PREVERB_OTHER-FLAG luk,
@@ -47,6 +48,7 @@ infl-satisfied :+ [ 1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3_PL_SUBJ_AOR_TRANS-OR-3_PL_
     NOUN-PLURALITY-FLAG na-or-+,
     NOUN-CASE-SUFFIX-FLAG na-or-+,
     TENSE_AND_3RD_SUBJ-FLAG na-or-+,
+    ADJ-CASE-SUFFIX-FLAG na-or-+,
     DETERMINER-CASE-SUFFIX-FLAG na-or-+,
     GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-+,
     PREVERB_OTHER-FLAG na-or-+,
@@ -332,6 +334,10 @@ adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item
 								 COMPS < >,
 								 SPEC < > ],
 						   POSTHEAD - ]]]].
+
+infl-adjective-lex := adjective-lex & 
+    [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +]].
+
 ;; Types for adverbs
 
 adverb-lex := basic-adverb-lex & intersective-mod-lex &
@@ -979,14 +985,48 @@ bare-np-phrase := basic-bare-np-phrase &
 
 ; Rules for building adjectives
 
-nominative-adj-lex-rule := infl-ltow-rule &
-  [ SYNSEM.LOCAL.CAT.HEAD.MODE < [ LOCAL.CAT.HEAD.CASE nom ] >, DTR adjective-lex ].
+adj-case-suffix-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
+  [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +,
+                PREVERB_OTHER-FLAG #preverb_other,
+                NOUN-PLURALITY-FLAG #noun-plurality,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3_PL_SUBJ_AOR_TRANS-OR-3_PL_SUBJ_PAST_IMPERF_TRANS-OR-3_PL_SUBJ_PRES_TRANS-OR-3_SG_SUBJ_AOR_TRANS-OR-3_SG_SUBJ_PAST_IMPERF_TRANS-OR-3_SG_SUBJ_PRES_TRANS-OR-3RD_PERSON_ERG_NOM-OR-3RD_PERSON_NOM_DAT-FLAG #1st_2nd_person_subj_prefixes-or-3_pl_subj_aor_trans-or-3_pl_subj_past_imperf_trans-or-3_pl_subj_pres_trans-or-3_sg_subj_aor_trans-or-3_sg_subj_past_imperf_trans-or-3_sg_subj_pres_trans-or-3rd_person_erg_nom-or-3rd_person_nom_dat,
+                TRANS-VERB-FLAG #trans-verb,
+                PREVERB-FLAG #preverb,
+                GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                3_PL_SUBJ_AOR_INTRANS-OR-3_PL_SUBJ_AOR_TRANS-OR-3_PL_SUBJ_PRES_INTRANS-OR-3_PL_SUBJ_PRES_TRANS-OR-3_SG_SUBJ_PRES_INTRANS-OR-3_SG_SUBJ_PRES_TRANS-FLAG #3_pl_subj_aor_intrans-or-3_pl_subj_aor_trans-or-3_pl_subj_pres_intrans-or-3_pl_subj_pres_trans-or-3_sg_subj_pres_intrans-or-3_sg_subj_pres_trans,
+                3_PL_SUBJ_AOR_INTRANS-OR-3_PL_SUBJ_PAST_IMPERF_INTRANS-OR-3_PL_SUBJ_PRES_INTRANS-OR-3_SG_SUBJ_AOR_INTRANS-OR-3_SG_SUBJ_PAST_IMPERF_INTRANS-OR-3_SG_SUBJ_PRES_INTRANS-OR-TENSE_AND_3RD_SUBJ-FLAG #3_pl_subj_aor_intrans-or-3_pl_subj_past_imperf_intrans-or-3_pl_subj_pres_intrans-or-3_sg_subj_aor_intrans-or-3_sg_subj_past_imperf_intrans-or-3_sg_subj_pres_intrans-or-tense_and_3rd_subj,
+                OBJ_PREFIX-FLAG #obj_prefix,
+                PSF-FLAG #psf,
+                NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                INTRANS-VERB-FLAG #intrans-verb,
+                TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
+                1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3_PL_SUBJ_AOR_INTRANS-OR-3_PL_SUBJ_PAST_IMPERF_INTRANS-OR-3_PL_SUBJ_PRES_INTRANS-OR-3_SG_SUBJ_AOR_INTRANS-OR-3_SG_SUBJ_PAST_IMPERF_INTRANS-OR-3_SG_SUBJ_PRES_INTRANS-FLAG #1st_2nd_person_subj_prefixes-or-3_pl_subj_aor_intrans-or-3_pl_subj_past_imperf_intrans-or-3_pl_subj_pres_intrans-or-3_sg_subj_aor_intrans-or-3_sg_subj_past_imperf_intrans-or-3_sg_subj_pres_intrans ],
+    DTR adjective-lex &
+        [ INFLECTED [ PREVERB_OTHER-FLAG #preverb_other,
+                      NOUN-PLURALITY-FLAG #noun-plurality,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3_PL_SUBJ_AOR_TRANS-OR-3_PL_SUBJ_PAST_IMPERF_TRANS-OR-3_PL_SUBJ_PRES_TRANS-OR-3_SG_SUBJ_AOR_TRANS-OR-3_SG_SUBJ_PAST_IMPERF_TRANS-OR-3_SG_SUBJ_PRES_TRANS-OR-3RD_PERSON_ERG_NOM-OR-3RD_PERSON_NOM_DAT-FLAG #1st_2nd_person_subj_prefixes-or-3_pl_subj_aor_trans-or-3_pl_subj_past_imperf_trans-or-3_pl_subj_pres_trans-or-3_sg_subj_aor_trans-or-3_sg_subj_past_imperf_trans-or-3_sg_subj_pres_trans-or-3rd_person_erg_nom-or-3rd_person_nom_dat,
+                      TRANS-VERB-FLAG #trans-verb,
+                      PREVERB-FLAG #preverb,
+                      GENERAL_ENDING_VOWEL-NOUN-FLAG #general_ending_vowel-noun,
+                      2ND_OBJ_PREFIX-FLAG #2nd_obj_prefix,
+                      3_PL_SUBJ_AOR_INTRANS-OR-3_PL_SUBJ_AOR_TRANS-OR-3_PL_SUBJ_PRES_INTRANS-OR-3_PL_SUBJ_PRES_TRANS-OR-3_SG_SUBJ_PRES_INTRANS-OR-3_SG_SUBJ_PRES_TRANS-FLAG #3_pl_subj_aor_intrans-or-3_pl_subj_aor_trans-or-3_pl_subj_pres_intrans-or-3_pl_subj_pres_trans-or-3_sg_subj_pres_intrans-or-3_sg_subj_pres_trans,
+                      3_PL_SUBJ_AOR_INTRANS-OR-3_PL_SUBJ_PAST_IMPERF_INTRANS-OR-3_PL_SUBJ_PRES_INTRANS-OR-3_SG_SUBJ_AOR_INTRANS-OR-3_SG_SUBJ_PAST_IMPERF_INTRANS-OR-3_SG_SUBJ_PRES_INTRANS-OR-TENSE_AND_3RD_SUBJ-FLAG #3_pl_subj_aor_intrans-or-3_pl_subj_past_imperf_intrans-or-3_pl_subj_pres_intrans-or-3_sg_subj_aor_intrans-or-3_sg_subj_past_imperf_intrans-or-3_sg_subj_pres_intrans-or-tense_and_3rd_subj,
+                      OBJ_PREFIX-FLAG #obj_prefix,
+                      PSF-FLAG #psf,
+                      NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
+                      INTRANS-VERB-FLAG #intrans-verb,
+                      TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
+                      1ST_2ND_PERSON_SUBJ_PREFIXES-OR-3_PL_SUBJ_AOR_INTRANS-OR-3_PL_SUBJ_PAST_IMPERF_INTRANS-OR-3_PL_SUBJ_PRES_INTRANS-OR-3_SG_SUBJ_AOR_INTRANS-OR-3_SG_SUBJ_PAST_IMPERF_INTRANS-OR-3_SG_SUBJ_PRES_INTRANS-FLAG #1st_2nd_person_subj_prefixes-or-3_pl_subj_aor_intrans-or-3_pl_subj_past_imperf_intrans-or-3_pl_subj_pres_intrans-or-3_sg_subj_aor_intrans-or-3_sg_subj_past_imperf_intrans-or-3_sg_subj_pres_intrans ] ] ].
 
-dative-adj-lex-rule := infl-lex-rule  &
-  [	DTR adjective-lex & [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE dat ] ].
+nominative-adj-lex-rule :=  adj-case-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD.FIRST.LOCAL.CAT.HEAD.CASE abs+nom ].
 
-ergative-adj-lex-rule := infl-lex-rule  &
-  [	DTR adjective-lex & [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CAT.HEAD.CASE erg ] ].
+dative-adj-lex-rule :=  adj-case-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD.FIRST.LOCAL.CAT.HEAD.CASE dat ].
+
+ergative-adj-lex-rule :=  adj-case-suffix-lex-rule-super &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD.FIRST.LOCAL.CAT.HEAD.CASE erg ].
 
 ;;;;;;;;;;;;;;;;;;
 ;;; Coordination
