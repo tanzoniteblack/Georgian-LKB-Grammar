@@ -1,0 +1,71 @@
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+იყო და არა იყო რა, იყო ხუთი ძმა.
+იყო და არა იყო რა, იყო ხუთ-ი ძმა-0
+3.SG.AOR.be and not 3.SG.AOR.be 3.SG.AOR.be five-NOM brother-NOM
+`Once upon a time there were five brothers.'
+
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+ერთხელ ძმებმა მოითათბირეს:
+ერთხელ ძმა-ებ-მა PRE-0-ითათბირ-ეს
+oneday brother-PL-ERG PRE-3.OBJ-deliberate-3.PL.SUBJ.AOR
+`One day they deliberated:'
+
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+– მოდი, ერთი ისეთი კოშკი ავაშენოთ, მთელ ხეობაში იმისთანა მეორე არ იდგესო.
+მოდი ერთ-ი ისეთ-ი კოშკ-ი PRE-ვ-0-აშენ-ო-თ მთელ-0 ხეობა-ში ისთან მეორე არ PRE-დგ-PSF-ო
+let one-NOM such-NOM tower-NOM PRE-1.SUBJ-3.OBJ-build-OPT-PL.SUBJ entire-DAT valley-in 3.SG.DAT not PRE-stand-PSF-OPT
+`"Let’s build such a tower,” they said, “the like of which there will be no other in the whole valley."'
+
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+მართლაც, ადგნენ და წავიდნენ ოსტატის საძებნელად.
+მართლა ც PRE-დგ-ნენ და PRE-ვიდ-ნენ ოსტატ-ის სა-ძებნ-PSF-ელ-ად
+true PARTICLE PRE-stand-3.PL.SUBJ.AOR and PRE-depart-3.PL.SUBJ.AOR craftsman-GEN FUT-search-PSF-PART-ADV
+`And so they set out to look for a master-builder.'
+
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+ბევრი ძნებისა და კითხვა-კითხვის შემდეგ იპოვეს ერთი კარგი ოსტატი და შეუდგნენ კოშკის აშენებას.
+ბევრ-ის ძნებ-ის და კითხვ-ა კითხვ-ის შემდეგ PRE-0-პოვ-ეს ერთ-ი კარგ-ი ოსტატ-ი და PRE-0-უდგ-ნენ კოშკ-ის PRE-0-შენ-PSF-ა-ს
+much-GEN 3.OBJ-search-MASDAR-GEN and ask-MASDAR.NOM ask-MASDAR-GEN then PRE-3.OBJ-find-3.PL.SUBJ.AOR one-NOM good-NOM craftsman-NOM and PRE-3.OBJ-begin-3.PL.SUBJ.AOR tower-GEN PRE-3.OBJ-build-MASDAR-DAT
+`After much searching and questioning they found a good builder, and they began to construct the tower.'
+
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+თორმეტ წელიწადს აშენეს და, როგორც იქნა, მეთორმეტე წელიწადს დაასრულეს.
+თორმეტ-0 წელიწად-ს PRE-0-შენ-ეს და როგორ ც იქნა მეთორმეტე-0 წელიწად-ს PRE-0-ასრულ-ეს
+twelve-DAT year-DAT PRE-3.OBJ-build-3.PL.SUBJ.AOR and how PARTICLE 3.SG.SUBJ.AOR twelfth-DAT year-DAT PRE-3.OBJ-complete-3.PL.SUBJ.AOR
+`They were twelve years building it and, at long last, they completed it in the twelfth year.'
+
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+აშენება რომ დაამთავრეს, ოსტატმა თქვა:
+PSF-0-შენ-PSF-ა რომ PSF-0-ამთავრ-ეს ოსტატ-მა 0-თქვ-ა
+PSF-3.OBJ-build-PSF-MASDAR that PSF-3.OBJ-finish-3.SG.SUBJ.AOR craftsman-ERG 3.OBJ-say-3.SG.SUBJ.AOR
+`When it was finished, the builder said:'
+
+Source: http://www.armazi.com/georgian/unicode/sample_text.htm
+Vetted: s
+Judgment: g
+Phenomena: corpus
+– წადით ახლა, მთელი ხეობა დაიარეთ და თუ სადმე უკეთესი კოშკი ნახოთ, რაც გინდათ, ის მიყავითო.
+წა-0-დი-0-თ ახლა მთელ-ი ხეობა-0 PRE-0-0-იარ-ე-თ და თუ სადმე უკეთეს-ი კოშკ-ი 0-0-ნახ-ო-თ რა ც გ-ინდ-PSF-თ ის 0-მ-იყავ-ი-თ-ო
+out-2.SUBJ-go-PRES/FUT-SUBJ.PL now entire-NOM valley-NOM PRE-2.SUBJ-3.OBJ-visit-2.SUBJ.IMPER-SUBJ.PL and if somewhere better-NOM tower-NOM 2.SUBJ-3.OBJ-see-OPT-SUBJ.PL what PARTICLE 2.OBJ-want-PSF-2.OBJ.PL 3.SG.NOM 0-1.SG.SUBJ-do-3.SG.SUBJ.PRES/FUT-?-?
+"Go now and travel around the whole valley, and if you see a better tower standing anywhere, you may do whatever you want with me."

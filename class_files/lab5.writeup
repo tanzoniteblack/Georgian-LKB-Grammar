@@ -191,3 +191,6 @@ Corpus:
     იყო და არა იყო რა
     3.SG.AOR.be and not 3.SG.AOR.be
     `Once upon a time...'
+I have begun converting this corpus into a form that's readable by [incr tsdb()], but it's not yet finished. This is available both through tsdb, and in the file corpus-tsdb.txt.
+
+Current [incr tsdb()] results:
