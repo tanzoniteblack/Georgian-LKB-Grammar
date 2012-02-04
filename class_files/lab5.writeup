@@ -191,6 +191,8 @@ Corpus:
     იყო და არა იყო რა
     3.SG.AOR.be and not 3.SG.AOR.be
     `Once upon a time...'
-I have begun converting this corpus into a form that's readable by [incr tsdb()], but it's not yet finished. This is available both through tsdb, and in the file corpus-tsdb.txt.
+I have begun converting this corpus into a form that's readable by [incr tsdb()], but it's not yet finished, because of the amount of time it takes for me to create the morphologically seperated line when I keep running into morphological markers that I've never seen before.  Currently I have 8 of the 37 sentences in the text converted into the file format we've been using for our testsuite. This is available both through tsdb, and in the file corpus-tsdb.txt.
 
 Current [incr tsdb()] results:
+    Coverage: 71.9%
+    Overgeneration: 3.7%
