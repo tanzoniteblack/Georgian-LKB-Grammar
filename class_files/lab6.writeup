@@ -1,0 +1,51 @@
+# Write up for Lab 6 in L567
+# Ryan Smith
+# Language: Georgian (kat)
+# 02/07/12
+
+Matrix yes-no questions:
+    As already discussed in a previous write up, Georgian does not have any written distinction between matrix questions and propositions, so we do not need constrain the SF past the already ambiguous state it's in.
+
+	Double checking that the MRS has this right:
+	მასწავლებელი წერილს წერს.
+	მასწავლებელ-ი წერილ-ს 0-0-წერ-PSF-ს
+	teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+	`The teacher is writing a letter.'
+	
+	and in the MRS it says: SF prop-or-ques
+
+Embedded clauses:
+    For embedded propositions, we will be using the verb `to know'. It is grammatical both with, and without the complementizer რომ.
+
+	ვიცი, რომ ის კითხულობს წიგნს
+	0-ვ-0-იც-PSF-0-0 რომ ის 0-0-კითხ-PSF-ს წიგნ-ს
+	NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG that 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
+	`I know, that she is reading a book.'
+    
+	ვიცი, ის კითხულობს წიგნს
+	0-ვ-0-იც-PSF-0-0 ის 0-0-კითხ-PSF-ს წიგნ-ს
+	NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
+	`I know, she is reading a book.'
+
+	and for embedded questions, we are going to use the verb 'to ask'.  It is grammatical only with the complementizer 'თუ'.
+
+	ბავშვი კითხვას თუ ფრინველები მღერიან
+	ბავშვ-ი 0-კითხვა-PSF-ს თუ ფრინველ-ებ-ი 0-0-მღერი-PSF-ენ
+	child-NOM NOPRE-ask-PSF-3.SG.SUBJ.PRES/FUT whether bird-PL-NOM NOPRE-3.OBJ-sing-PSF-3.PL.SUBJ.PRES/FUT
+	`The child is asking whether birds sing.'
+
+adding the types:
+
+clause-comp-verb-lex := verb-lex & clausal-second-arg-trans-lex-item  & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD comp ], CONT.HOOK.INDEX.SF prop-or-ques ] ].
+
+clause-sent-verb-lex := verb-lex & clausal-second-arg-trans-lex-item  & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD verb ], CONT.HOOK.INDEX.SF prop-or-ques ] ].
+
+prop-clause-verb-lex := clause-comp-verb-lex & clause-comp-verb-lex & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.SF prop ].
+
+ques-clause-verb-lex := clause-comp-verb-lex & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.SF ques ].
+
+adding lexical entries inheriting from these:

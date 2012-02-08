@@ -1107,3 +1107,26 @@ s1-mid-coord-rule := basic-s-mid-coord-rule & monopoly-mid-coord-rule &
 
 s1-bottom-coord-rule := conj-first-bottom-coord-rule & s-bottom-coord-phrase &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
+
+;; self added rules
+;; verbs with clausal arguments
+
+comp-verb-lex := clausal-second-arg-trans-lex-item & verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD +vc ], CONT.HOOK.INDEX.SF prop-or-ques ] ].
+
+prop-clause-verb-lex := comp-verb-lex & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.SF prop ].
+
+ques-clause-verb-lex := comp-verb-lex & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.SF ques ] & [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CAT.HEAD comp ].
+
+;; complementizers
+complementizer-lex-item := raise-sem-lex-item & basic-one-arg &  
+  [ ARG-ST < #ind >,
+    SYNSEM.LOCAL.CAT.VAL.COMPS < #ind > ] & [ SYNSEM.LOCAL.CAT.HEAD comp ].
+
+prop-comp-lex-item := complementizer-lex-item & 
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF prop ].
+
+ques-comp-lex-item := complementizer-lex-item & 
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques ].

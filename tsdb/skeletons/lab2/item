@@ -62,15 +62,15 @@
 62@author@@@1@adj,agr@მაგალ-ი ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს@@@@1@4@`The tall woman will listen to the radiobroadcast.'@Ryan Smith@January 10, 2012
 63@author@@@1@agr@მაგალ-0 ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს@@@@0@4@`The tall woman will listen to the radiobroadcast.'@Ryan Smith@January 10, 2012
 64@author@@@1@adj,agr@ბრმა ქალ-ი რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს@@@@1@4@`The blind woman will listen to the radiobroadcast.'@Ryan Smith@January 10, 2012
-65@author@@@1@wo@ქალ-ი ბრმა რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს@@@@0@4@`The blind woman will listen to the radiobroadcast.'@Ryan Smith@January 10, 2012
+65@author@@@1@wo@ქალ-ი ბრმა რადიოგადაცემა-ს PRE-0-ისმენ-PSF-ს@@@@1@4@`The woman will listen to the blind radiobroadcast.'@Ryan Smith@January 10, 2012
 66@author@@@1@adj,agr@მაგალ-მა ქალ-მა რადიოგადაცემა-0 PRE-0-ისმენ-ა@@@@1@4@`The tall woman listened to the radiobroadcast.'@Ryan Smith@January 10, 2012
 67@author@@@1@adj,agr@ბრმა ქალ-მა რადიოგადაცემა-0 PRE-0-ისმენ-ა@@@@1@4@`The blind woman listened to the radiobroadcast.'@Ryan Smith@January 10, 2012
 68@author@@@1@wo@ქალ-მა რადიოგადაცემა-0 ბრმა PRE-0-ისმენ-ა@@@@0@4@`The blind woman listened to the radiobroadcast.'@Ryan Smith@January 10, 2012
 69@author@@@1@wo,adverbs@მე სწრაფად წიგნ-ი PRE-ვ-0-კითხ-ე-0@@@@1@4@`I read the book quickly.'@Ryan Smith@January 10, 2012
 70@author@@@1@wo,adverbs@სწრაფად მე წიგნ-ი PRE-ვ-0-კითხ-ე-0@@@@1@4@`I read the book quickly.'@Ryan Smith@January 10, 2012
 71@author@@@1@wo,adverbs@მე წიგნ-ი PRE-ვ-0-კითხ-ე-0 სწრაფად@@@@1@4@`I read the book quickly.'@Ryan Smith@January 10, 2012
-72@author@@@1@embeddedclause@0-ვ-0-იც-PSF-0-0 რომ ის 0-0-კითხ-PSF-ს წიგნ-ს@@@@1@5@`I know, that she is reading a book.'@Ryan Smith@January 10, 2012
-73@author@@@1@embeddedclause@0-ვ-0-იც-PSF-0-0 ის 0-0-კითხ-PSF-ს წიგნ-ს@@@@1@4@`I know, that she is reading a book.'@Ryan Smith@January 10, 2012
+72@author@@@1@embeddedclause@0-ვ-იც-PSF-0-0 რომ ის 0-0-კითხ-PSF-ს წიგნ-ს@@@@1@5@`I know, that she is reading a book.'@Ryan Smith@January 10, 2012
+73@author@@@1@embeddedclause@0-ვ-იც-PSF-0-0 ის 0-0-კითხ-PSF-ს წიგნ-ს@@@@1@4@`I know, she is reading a book.'@Ryan Smith@January 10, 2012
 74@author@@@1@embeddedclause@ბავშვ-ი 0-კითხვა-PSF-ს თუ ფრინველ-ებ-ი 0-0-მღერი-PSF-ენ@@@@1@5@`The child is asking whether birds sing.'@Ryan Smith@January 10, 2012
 75@author@@@1@copula@ის ლამიზ-ი არის@@@@1@3@`(S)he is beautiful.'@Ryan Smith@January 10, 2012
 76@author@@@1@copula@ის ლამიზ-ი-ა@@@@1@2@`(S)he is beautiful.'@Ryan Smith@January 10, 2012

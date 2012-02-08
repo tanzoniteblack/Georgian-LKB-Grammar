@@ -727,8 +727,8 @@ vetted :f
 Judgment: g
 Phenomena: embedded clause
 ვიცი, რომ ის კითხულობს წიგნს
-0-ვ-0-იც-PSF-0-0 რომ ის 0-0-კითხ-PSF-ს წიგნ-ს
-NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG that 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
+0-ვ-იც-PSF-0-0 რომ ის 0-0-კითხ-PSF-ს წიგნ-ს
+NOPRE-1.SUBJ-know-PSF-PRES/FUT-SG that 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
 `I know, that she is reading a book.'
 
 #Ex 73 - embedded declarative clause
@@ -737,9 +737,9 @@ vetted: f
 Judgment: g
 Phenomena: embedded clause
 ვიცი, ის კითხულობს წიგნს
-0-ვ-0-იც-PSF-0-0 ის 0-0-კითხ-PSF-ს წიგნ-ს
-NOPRE-1.SUBJ-3.OBJ-know-PSF-PRES/FUT-SG 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
-`I know, that she is reading a book.'
+0-ვ-იც-PSF-0-0 ის 0-0-კითხ-PSF-ს წიგნ-ს
+NOPRE-1.SUBJ-know-PSF-PRES/FUT-SG 3.SG.PRES NOPRE-3.OBJ-read-PSF-3.SG.SUBJ.PRES/FUT book-DAT
+`I know, she is reading a book.'
 
 #Ex 74 - embedded interrogative clause
 Source: author

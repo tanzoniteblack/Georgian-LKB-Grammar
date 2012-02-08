@@ -163,6 +163,10 @@
   [ STEM < "მოატყუო" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cheat_v_rel" ].
 
+იც := prop-clause-verb-lex & 
+  [ STEM < "იც" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
+
 ;;; Determiners
 
 ერთ := indeterminate-determiner-lex &
@@ -223,3 +227,10 @@
 სწრაფად := adverb-lex & 
   [ STEM < "სწრაფად" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_red" ].
+
+;; Complementizers
+რომ := prop-comp-lex-item & 
+  [ STEM < "რომ" > ].
+
+თუ := ques-comp-lex-item & 
+  [ STEM < "თუ" > ].
