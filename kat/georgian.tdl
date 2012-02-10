@@ -1141,7 +1141,7 @@ locative-suffix-item := basic-int-mod-adposition-lex &
 								 COMPS < #comps >,
 								 SPEC < > ],
 						   POSTHEAD +],
-					 CONT.HOOK [XARG #xa, INDEX #xa ] ],
+					 CONT.HOOK [XARG #xa] ],
 			 LKEYS.KEYREL.ARG1 #xa ],
 	ARG-ST < [ ],
              #comps & [OPT -,

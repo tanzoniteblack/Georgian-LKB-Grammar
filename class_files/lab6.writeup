@@ -127,7 +127,7 @@ And now I am able to correctly parse this example with adjectives:
 book-NOM blue-NOM 3.SG.PRES.be
 `The book is blue.'
 
-and this example with a prepositional phrase (currently there's something wrong wiht this, waiting on GoPost to fix it):
+and this example with a prepositional phrase:
 კატა პარკსშია.
 კატა-0 პარკ-ს ში ა
 cat-NOM park-DAT in 3.SG.PRES.be
@@ -190,18 +190,16 @@ Standalone PP and AP predicates:
 Standalone NP predicates:
     Georgian predicates must have a verb, period. At the very least the copula, so 2 NP's do not form a sentence, and there are no NP standalone predicates.
 
-***CHECK BEFORE TURNING IN***
-The only thing currently not working is the PP predicates, waiting on assistance in GoPost.
 
 [incr tsdb()] results:
 Current:
-   Coverage: 75.4%
+   Coverage: 76.8%
    Overgeneration:0.0%
 
 Compared to baseline:
     gold:
-		in: 71.9
-		out: 3.7
+		in: 71.9%
+		out: 3.7%
 	new:
-		int: 75.4
-		out: 0.0
+		int: 76.8%
+		out: 0.0%
