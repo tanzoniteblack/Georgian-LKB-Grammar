@@ -1,5 +1,12 @@
 ;;; -*- Mode: TDL; Coding: utf-8 -*-
 ;;; Nouns
+პარკ := general_ending_consonant-noun-lex &
+  [ STEM < "პარკ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_park_n_rel" ].
+
+თბილის := general_ending_consonant-noun-lex &
+  [ STEM < "თბილის" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_tbilisi_n_rel" ].
 
 ძაღლ := general_ending_consonant-noun-lex &
   [ STEM < "ძაღლ" >,
@@ -44,6 +51,14 @@
 ქალ := general_ending_consonant-noun-lex &
   [ STEM < "ქალ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_woman_n_rel" ].
+
+ფრინველ := general_ending_consonant-noun-lex &
+  [ STEM < "ფრინველ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_bird_n_rel" ].
+
+ბავშვ := general_ending_consonant-noun-lex &
+  [ STEM < "ბავშვ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_child_n_rel" ].
 
 მე := 1sg-pro-noun-lex &
   [ STEM < "მე" >,
@@ -105,6 +120,10 @@
   [ STEM < "რადიოგადაცემა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_radiobroadcast_n_rel" ].
 
+კატა := general_ending_vowel-noun-lex &
+  [ STEM < "კატა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
+
 მან := 3sg-pro-erg-noun-lex &
   [ STEM < "მან" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
@@ -114,6 +133,10 @@
 წერ := trans-verb-lex &
   [ STEM < "წერ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
+
+მღერი := trans-verb-lex &
+  [ STEM < "მღერი" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_sing_v_rel" ].
 
 ჭამ := trans-verb-lex &
   [ STEM < "ჭამ" >,
@@ -167,6 +190,10 @@
   [ STEM < "იც" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
+კითხვა := ques-clause-verb-lex & 
+  [ STEM < "კითხვა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
+
 ;;; Determiners
 
 ერთ := indeterminate-determiner-lex &
@@ -219,6 +246,10 @@
   [ STEM < "მაგალ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tall_a_rel" ].
 
+ლურჯ := adjective-lex &
+  [ STEM < "ლურჯ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_blue_a_rel" ].
+
 ბრმა := infl-adjective-lex &
   [ STEM < "ბრმა" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_blind_a_rel" ].
@@ -226,7 +257,7 @@
 ;; Adverbs
 სწრაფად := adverb-lex & 
   [ STEM < "სწრაფად" >,
-	SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_red" ].
+	SYNSEM.LKEYS.KEYREL.PRED "_quickly_a_rel" ].
 
 ;; Complementizers
 რომ := prop-comp-lex-item & 
@@ -234,3 +265,17 @@
 
 თუ := ques-comp-lex-item & 
   [ STEM < "თუ" > ].
+
+;; Adpositions
+ში := dat-locative-suffix-item &
+  [ STEM < "ში" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_in_p_rel" ].
+
+;; Copulas
+ა := 3sg-pres-copula-lex &
+  [ STEM < "ა" >, 
+	SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].
+
+აa := 3sg-pres-copula-NP-lex &
+  [ STEM < "ა" >, 
+	SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].

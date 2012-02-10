@@ -838,8 +838,8 @@ vetted: s
 Judgment: g
 Phenomena: passive
 ჩიკაგოში დავიბადე.
-ჩიკაგო-ში და-ვ-იბა-დ-ე-0
-chicago-in PRE-1.SG.SUBJ-bear-PASSIVE-AOR-SG
+ჩიკაგო-ს ში და-ვ-იბა-დ-ე-0
+chicago-DAT in PRE-1.SG.SUBJ-bear-PASSIVE-AOR-SG
 `I was born in Chicago.'
 
 #Ex 84 - Past imperfective
@@ -921,3 +921,83 @@ Phenomena: agreement
 ძაღლ-ი 0-0-ჭამ-PSF-ენ თევზ-ს
 dog-NOM NOPRE-3.OBJ-eat-PSF-3.SUBJ.PL.PRES/FUT fish-DAT
 `The dog is eating fish.'
+
+#Ex 92 - adposition
+Source: author
+vetted: f
+Judgment: g
+Phenomena: adposition
+თბილისში ვმუშაობ.
+თბილის-ს ში 0-ვ-მუშა-PSF-0-0
+tibilisi-DAT in NOPRE-1.SUBJ-work-PSF-PRES/FUT-SG.SUBJ
+`I work in Tbilisi.'
+
+#Ex 93 - copula adjective
+Source: author
+vetted: f
+Judgment: g
+Phenomena: adj, copula
+წიგნი ლურჯია.
+წიგნ-ი ლურჯ-ი ა
+book-NOM blue-NOM 3.SG.PRES.be
+`The book is blue.'
+
+#Ex 94 - copula PP
+Source: author
+vetted:f
+Judgment: g
+Phenomena: preposition, copula
+კატა პარკსშია.
+კატა-0 პარკ-ს ში ა
+cat-NOM park-DAT in 3.SG.PRES.be
+`The cat is in the park.'
+
+#Ex 95 - copula NP
+Source: author
+vetted:f
+Judgment: g
+Phenomena: preposition, copula
+კატა მასწავლებელია.
+კატა-0 მასწავლებელ-ი ა
+cat-NOM teacher-NOM 3.SG.PRES.be
+`The cat is a teacher.
+
+#Ex 96 - copula NP
+Source: author
+vetted:f
+Judgment: u
+Phenomena: copula
+კატას მასწავლებელსა.
+კატა-ს მასწავლებელ-ს ა
+cat-DAT teacher-DAT 3.SG.PRES.be
+`The cat is a teacher.
+
+#Ex 97 - missing copula
+Source: author
+vetted: f
+Judgment: u
+Phenomena: copula
+კატა მასწავლებელია.
+კატა-0 მასწავლებელ-ი
+cat-NOM teacher-NOM
+`The cat is a teacher.
+
+#Ex 98 - missing copula PP
+Source: author
+vetted:f
+Judgment: u
+Phenomena: copula
+კატა პარკსში.
+კატა-0 პარკ-ს ში
+cat-NOM park-DAT in
+`The cat is in the park.'
+
+#Ex 99 - missing copula adjective
+Source: author
+vetted: f
+Judgment: u
+Phenomena: copula
+წიგნი ლურჯი.
+წიგნ-ი ლურჯ-ი
+book-NOM blue-NOM
+`The book is blue.'

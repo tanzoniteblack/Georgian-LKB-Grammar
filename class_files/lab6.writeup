@@ -35,17 +35,173 @@ Embedded clauses:
 	`The child is asking whether birds sing.'
 
 adding the types:
+comp-verb-lex := clausal-second-arg-trans-lex-item & verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD +vc ], CONT.HOOK.INDEX.SF prop-or-ques ] ] > ].
 
-clause-comp-verb-lex := verb-lex & clausal-second-arg-trans-lex-item  & 
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD comp ], CONT.HOOK.INDEX.SF prop-or-ques ] ].
+prop-clause-verb-lex := comp-verb-lex & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL.CONT.HOOK.INDEX.SF prop ] > ].
 
-clause-sent-verb-lex := verb-lex & clausal-second-arg-trans-lex-item  & 
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD verb ], CONT.HOOK.INDEX.SF prop-or-ques ] ].
+ques-clause-verb-lex := comp-verb-lex & 
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS  < [ LOCAL.CONT.HOOK.INDEX.SF ques ] > ] & [ SYNSEM.LOCAL.CAT.VAL.COMPS < [LOCAL.CAT.HEAD comp ] > ].
 
-prop-clause-verb-lex := clause-comp-verb-lex & clause-comp-verb-lex & 
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.SF prop ].
+and the complementizer types:
 
-ques-clause-verb-lex := clause-comp-verb-lex & 
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS.FIRST.LOCAL.CONT.HOOK.INDEX.SF ques ].
+complementizer-lex-item := raise-sem-lex-item & basic-one-arg &  
+  [ ARG-ST < #ind >,
+    SYNSEM.LOCAL.CAT.VAL [COMPS < #ind >, SUBJ < > ] ] & [ SYNSEM.LOCAL.CAT [ HEAD comp ] ] & [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD verb ] ] ] > ].
 
-adding lexical entries inheriting from these:
+prop-comp-lex-item := complementizer-lex-item & 
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF prop ].
+
+ques-comp-lex-item := complementizer-lex-item & 
+  [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques ].
+
+Non-verbal predicates.
+    First I had to add adpositions:
+;; adpositions
+locative-suffix-item := basic-int-mod-adposition-lex & 
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD +nv ]] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS < #comps >,
+								 SPEC < > ],
+						   POSTHEAD +],
+					 CONT.HOOK.XARG #xa ],
+			 LKEYS.KEYREL.ARG1 #xa ],
+	ARG-ST < [ ],
+             #comps & [OPT -,
+					   LOCAL.CAT.HEAD noun ] > ].
+
+and because the one I'm adding ('ში' 'in') requires the noun to be in the dative case:
+; ;; postposition that requires dative case
+dat-locative-suffix-item := locative-suffix-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.CASE dat ] > ].
+
+ში := dat-locative-suffix-item &
+  [ STEM < "ში" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_in_p_rel" ].
+
+And to create the copula:
+copula-verb-lex := trans-first-arg-raising-lex-item-2 &
+  [ SYNSEM.LOCAL [ CAT [HEAD verb, VAL [ SUBJ < #subj >,
+                             COMPS < #comps >,
+                             SPR < >,
+                             SPEC < > ] ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                       CAT [ VAL [ SPR < >,
+                                   COMPS < > ],
+                             HEAD noun, HEAD.CASE abs+nom ] ] ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ COMPS < > ],
+                           HEAD +jp ] ] > ].
+
+and to create specific instances I needed to specify a version of this that was in particular 3rd, singular, and present tense (doing it this way because the copula is a bit too irregular for me to want to actually have it go through verb rules).
+
+3sg-pres-fut-copula-lex := copula-verb-lex &
+  [ SYNSEM.LOCAL [ CAT [VAL.SUBJ.FIRST.LOCAL [ CONT.HOOK.INDEX.PNG [ PER 3rd,
+                                                                    NUM singular ] ] ],
+                   CONT.HOOK.INDEX.E [ TENSE present ] ] ].
+
+and then in the lexicon:
+ა := 3sg-pres-fut-copula-lex &
+  [ STEM < "ა" >, 
+	SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].
+
+I had to connect the ARG1 and XARG of adjectives, because they were showing up wrong in the MRS's otherwise:
+
+adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & 
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD noun, VAL.SPR cons ]] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS < >,
+								 SPEC < > ],
+						   POSTHEAD - ],
+						 CONT.HOOK.XARG #xa ],
+				   LKEYS.KEYREL.ARG1 #xa ]].
+
+And now I am able to correctly parse this example with adjectives:
+წიგნი ლურჯია.
+წიგნ-ი ლურჯ-ი ა
+book-NOM blue-NOM 3.SG.PRES.be
+`The book is blue.'
+
+and this example with a prepositional phrase (currently there's something wrong wiht this, waiting on GoPost to fix it):
+კატა პარკსშია.
+კატა-0 პარკ-ს ში ა
+cat-NOM park-DAT in 3.SG.PRES.be
+`The cat is in the park.'
+
+For Copula's with NP's I created the following:
+
+;; for NP (i.e. just a transitive that specifies it's person and number)
+
+copula-NP-verb-lex := basic-verb-lex & non-mod-lex-item & 1_2_plurality-rule-dtr & 1st_2nd_person_subj_prefixes-rule-dtr & PSF-rule-dtr & preverb-rule-dtr & tense_and_3rd_subj-rule-dtr &
+  [ ARG-ST.FIRST #subj &
+                 [ LOCAL [ CAT.VAL [ SPR < >,
+                                     COMPS < > ],
+                           CONT.HOOK.INDEX #xarg ] ],
+    SYNSEM.LOCAL [ CONT.HOOK.XARG #xarg,
+                   CAT [ VAL [ SPR < >,
+                               SPEC < >,
+                               SUBJ < #subj > ],
+                         HC-LIGHT - ] ] ].
+
+copula-NP-lex := copula-NP-verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
+    ARG-ST < [ LOCAL[ CAT.HEAD noun, CAT.HEAD.CASE abs+nom ] ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun, HEAD.CASE abs+nom ] ] > ].
+
+3sg-pres-copula-NP-lex := copula-NP-lex &
+  [ SYNSEM.LOCAL [ CAT [VAL.SUBJ.FIRST.LOCAL [ CONT.HOOK.INDEX.PNG [ PER 3rd,
+                                                                    NUM singular ] ] ],
+                   CONT.HOOK.INDEX.E [ TENSE present ] ] ].
+
+It was necessary to redefine the verb types, because I needed it act like a transitive, but it won't have the same inflectional rules (i.e. it's not going to go through the rule that adds the preverbs, or the PSF's, or object or person markers like normal).
+
+I created an instance of it (named აa as to not clash with the copula definition for AP's and PP's ა):
+
+აa := 3sg-pres-copula-NP-lex &
+  [ STEM < "ა" >, 
+	SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].
+
+and am able to correctly parse:
+კატა მასწავლებელი.
+კატა-0 მასწავლებელ-ი ა
+cat-NOM teacher-NOM 3.SG.PRES.be
+`The cat is a teacher.
+
+and not parse (as I wish) this sentence (with dative cases instead of NOM):
+კატას მასწავლებელსა.
+კატა-ს მასწავლებელ-ს ა
+cat-DAT teacher-DAT 3.SG.PRES.be
+`The cat is a teacher.
+
+Locative verbs:
+    Georgian doesn't really seem to have locative verbs, unless we're talking about verbs of motion, which are a whole different can of worms.
+
+Standalone PP and AP predicates:
+    Georgian predicates, if involving PP and AP, MUST have a copula, and therefore there are no stand alone PP's and AP's acting as a predicate.
+
+Standalone NP predicates:
+    Georgian predicates must have a verb, period. At the very least the copula, so 2 NP's do not form a sentence, and there are no NP standalone predicates.
+
+***CHECK BEFORE TURNING IN***
+The only thing currently not working is the PP predicates, waiting on assistance in GoPost.
+
+[incr tsdb()] results:
+Current:
+   Coverage: 75.4%
+   Overgeneration:0.0%
+
+Compared to baseline:
+    gold:
+		in: 71.9
+		out: 3.7
+	new:
+		int: 75.4
+		out: 0.0

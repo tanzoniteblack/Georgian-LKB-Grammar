@@ -365,7 +365,9 @@ adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item
 								 SUBJ < >,
 								 COMPS < >,
 								 SPEC < > ],
-						   POSTHEAD - ]]]].
+						   POSTHEAD - ],
+						 CONT.HOOK.XARG #xa ],
+				   LKEYS.KEYREL.ARG1 #xa ]].
 
 infl-adjective-lex := adjective-lex & 
     [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +]].
@@ -1130,3 +1132,69 @@ prop-comp-lex-item := complementizer-lex-item &
 
 ques-comp-lex-item := complementizer-lex-item & 
   [ SYNSEM.LOCAL.CONT.HOOK.INDEX.SF ques ].
+
+;; adpositions
+locative-suffix-item := basic-int-mod-adposition-lex & 
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD +nv ]] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS < #comps >,
+								 SPEC < > ],
+						   POSTHEAD +],
+					 CONT.HOOK [XARG #xa, INDEX #xa ] ],
+			 LKEYS.KEYREL.ARG1 #xa ],
+	ARG-ST < [ ],
+             #comps & [OPT -,
+					   LOCAL.CAT.HEAD noun ] > ].
+
+; ;; postposition that requires dative case
+dat-locative-suffix-item := locative-suffix-item &
+  [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.CASE dat ] > ].
+
+;; copulas
+;; for AP and PP
+copula-verb-lex := trans-first-arg-raising-lex-item-2 &
+  [ SYNSEM.LOCAL [ CAT [HEAD verb, VAL [ SUBJ < #subj >,
+                             COMPS < #comps >,
+                             SPR < >,
+                             SPEC < > ] ],
+                   CONT.HOOK.XARG #xarg ],
+    ARG-ST < #subj &
+             [ LOCAL [ CONT.HOOK.INDEX #xarg,
+                       CAT [ VAL [ SPR < >,
+                                   COMPS < > ],
+                             HEAD noun, HEAD.CASE abs+nom ] ] ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ COMPS < > ],
+                           HEAD +jp ] ] > ].
+
+3sg-pres-copula-lex := copula-verb-lex &
+  [ SYNSEM.LOCAL [ CAT [VAL.SUBJ.FIRST.LOCAL [ CONT.HOOK.INDEX.PNG [ PER 3rd,
+                                                                    NUM singular ] ] ],
+                   CONT.HOOK.INDEX.E [ TENSE present ] ] ].
+
+;; for NP (i.e. just a transitive that specifies it's person and number)
+
+copula-NP-verb-lex := basic-verb-lex & non-mod-lex-item & 1_2_plurality-rule-dtr & 1st_2nd_person_subj_prefixes-rule-dtr & PSF-rule-dtr & preverb-rule-dtr & tense_and_3rd_subj-rule-dtr &
+  [ ARG-ST.FIRST #subj &
+                 [ LOCAL [ CAT.VAL [ SPR < >,
+                                     COMPS < > ],
+                           CONT.HOOK.INDEX #xarg ] ],
+    SYNSEM.LOCAL [ CONT.HOOK.XARG #xarg,
+                   CAT [ VAL [ SPR < >,
+                               SPEC < >,
+                               SUBJ < #subj > ],
+                         HC-LIGHT - ] ] ].
+
+copula-NP-lex := copula-NP-verb-lex &
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
+    ARG-ST < [ LOCAL[ CAT.HEAD noun, CAT.HEAD.CASE abs+nom ] ],
+             #comps &
+             [ LOCAL.CAT [ VAL [ SPR < >,
+                                 COMPS < > ],
+                           HEAD noun, HEAD.CASE abs+nom ] ] > ].
+
+3sg-pres-copula-NP-lex := copula-NP-lex &
+  [ SYNSEM.LOCAL [ CAT [VAL.SUBJ.FIRST.LOCAL [ CONT.HOOK.INDEX.PNG [ PER 3rd,
+                                                                    NUM singular ] ] ],
+                   CONT.HOOK.INDEX.E [ TENSE present ] ] ].
