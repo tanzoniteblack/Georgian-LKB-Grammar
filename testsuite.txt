@@ -1001,3 +1001,23 @@ Phenomena: copula
 წიგნ-ი ლურჯ-ი
 book-NOM blue-NOM
 `The book is blue.'
+
+#Ex 100 - "I can eat glass."
+Source: author
+vetted: f
+Judgment: g
+Phenomena: aux
+შემიძლია შევჭამო მინა 
+PRE-მი-ძლი-ა PRE-ვ-ჭამ-ო-0 მინა-0
+PRE-1.SUBJ-can-3.OBJ.PRES/FUT PRE-1.SUBJ-eat-OPT-SG.SUBJ glass-NOM
+`I can eat glass.'
+
+#Ex 101 - "It doesn't hurt me."
+Source: author
+vetted: f
+Judgment: g
+Phenomena: pr
+მტკივა
+0-მ-ტკივ-PSF-ა
+NOPRE-1.OBJ.SG-hurt-PSF-3.SG.SUBJ.PRES/FUT
+`It doesn't hurt me.'
