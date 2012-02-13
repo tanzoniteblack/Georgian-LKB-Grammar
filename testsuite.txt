@@ -1017,7 +1017,7 @@ Source: author
 vetted: f
 Judgment: g
 Phenomena: pr
-მტკივა
-0-მ-ტკივ-PSF-ა
-NOPRE-1.OBJ.SG-hurt-PSF-3.SG.SUBJ.PRES/FUT
+არ მტკივა
+არ 0-მ-ტკივ-PSF-ა
+not NOPRE-1.OBJ.SG-hurt-PSF-3.SG.SUBJ.PRES/FUT
 `It doesn't hurt me.'
