@@ -64,6 +64,14 @@
   [ STEM < "ბავშვ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_child_n_rel" ].
 
+არაბ := general_ending_consonant-noun-lex &
+  [ STEM < "არაბ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_arab_n_rel" ].
+
+ქართლ := general_ending_consonant-noun-lex &
+  [ STEM < "ქართლ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_kartli_n_rel" ].
+
 მე := 1sg-pro-noun-lex &
   [ STEM < "მე" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
@@ -112,6 +120,10 @@
   [ STEM < "მათ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_pronoun_n_rel" ].
 
+საუკუნე := general_ending_vowel-noun-lex &
+  [ STEM < "საუკუნე" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_century_n_rel" ].
+
 სავარჯიშო := general_ending_vowel-noun-lex &
   [ STEM < "სავარჯიშო" >,
     SYNSEM.LKEYS.KEYREL.PRED "_exercise_n_rel" ].
@@ -141,6 +153,14 @@
 წერ := trans-verb-lex &
   [ STEM < "წერ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
+
+იპყრ := trans-verb-lex &
+  [ STEM < "იპყრ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_conquer_v_rel" ].
+
+იღ := trans-verb-lex &
+  [ STEM < "იღ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_capture_v_rel" ].
 
 მღერი := trans-verb-lex &
   [ STEM < "მღერი" >,
@@ -189,6 +209,10 @@
 დუღ := intrans-verb-lex &
   [ STEM < "დუღ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_boil_v_rel" ].
+
+წინაურდ := intrans-verb-lex &
+  [ STEM < "წინაურდ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_progress_v_rel" ].
 
 მუშა := intrans-verb-lex &
   [ STEM < "მუშა" >,
@@ -273,6 +297,18 @@
 ბრმა := infl-adjective-lex &
   [ STEM < "ბრმა" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_blind_a_rel" ].
+
+მეოთხე := infl-adjective-lex &
+  [ STEM < "მეოთხე" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_fourth_a_rel" ].
+
+მეხუთე := infl-adjective-lex &
+  [ STEM < "მეოთხე" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_fifth_a_rel" ].
+
+მეშვიდე := infl-adjective-lex &
+  [ STEM < "მეშვიდე" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_seventh_a_rel" ].
 
 ;; Adverbs
 სწრაფად := adverb-lex & 
