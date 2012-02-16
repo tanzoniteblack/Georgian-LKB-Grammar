@@ -4,6 +4,10 @@
   [ STEM < "პარკ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_park_n_rel" ].
 
+ქალაქ := general_ending_consonant-noun-lex &
+  [ STEM < "ქალაქ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_city_n_rel" ].
+
 თბილის := general_ending_consonant-noun-lex &
   [ STEM < "თბილის" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tbilisi_n_rel" ].
@@ -120,6 +124,10 @@
   [ STEM < "რადიოგადაცემა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_radiobroadcast_n_rel" ].
 
+მინა := general_ending_vowel-noun-lex &
+  [ STEM < "მინა" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_glass_n_rel" ].
+
 კატა := general_ending_vowel-noun-lex &
   [ STEM < "კატა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_cat_n_rel" ].
@@ -198,6 +206,10 @@
   [ STEM < "კითხვა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
 
+ძლი := can-verb-lex &
+  [ STEM < "ძლი" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_can_v_rel" ].
+
 ;;; Determiners
 
 ერთ := indeterminate-determiner-lex &
@@ -246,6 +258,10 @@
   [ STEM < "ქართულ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_georgian_a_rel" ].
 
+უძველეს := adjective-lex &
+  [ STEM < "უძველეს" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_very_old_a_rel" ].
+
 მაგალ := adjective-lex &
   [ STEM < "მაგალ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tall_a_rel" ].
@@ -277,8 +293,7 @@
 
 ;; Copulas
 ა := 3sg-pres-copula-lex &
-  [ STEM < "ა" >, 
-	SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].
+  [ STEM < "ა" > ].
 
 აa := 3sg-pres-copula-NP-lex &
   [ STEM < "ა" >, 

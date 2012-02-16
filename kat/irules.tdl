@@ -23,9 +23,17 @@ plural-noun-lex-rule.
 %prefix (* ვ-)
 1st_subj_prefix-lex-rule.
 
+1st_subj_prefix-prefix-type4 :=
+%prefix (* მი-)
+1st_subj_prefix-lex-rule-type4.
+
 2nd_subj_prefix-prefix :=
 %prefix (* 0-)
 2nd_subj_prefix-lex-rule.
+
+2nd_subj_prefix-prefix-type4 :=
+%prefix (* გი-)
+2nd_subj_prefix-lex-rule-type4.
 
 1st_subj_prefix_2nd_obj-prefix :=
 %prefix (* 0-)
@@ -83,9 +91,17 @@ aorist_trans-suffix :=
 %suffix (* -ე)
 aorist_trans-lex-rule.
 
+optative_trans-suffix :=
+%suffix (* -ო)
+optative_trans-lex-rule.
+
 pres-fut_trans-suffix :=
 %suffix (* -0)
 pres-fut_trans-lex-rule.
+
+pres-fut_trans-suffix-type4 :=
+%suffix (* -ა)
+pres-fut_trans-lex-rule-type4.
 
 3_sg_subj_pres_intrans-suffix :=
 %suffix (* -ს)

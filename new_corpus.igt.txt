@@ -1,0 +1,51 @@
+#Ex 1
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+თბილისი უძველესი ქალაქია.
+თბილის-ი უძველეს-ი ქალაქ-ი ა
+tbilisi-NOM very.old-NOM city-NOM 3.SUBJ.PRES.be
+`Tbilisi is a very old city.'
+
+#Ex 2
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+ის ძალიან დაწინაურდა მეოთხე-მეხუთე საუკუნეებში
+ის ძალიან PRE-წინაურდ-ა მეოთხე-მეხუთე საუკუნე-ებ-ს ში
+3.SG.NOM very PRE-progress-3.SG.SUBJ.AOR fourth-fifth century-PL-DAT in
+`It made much progress in the 4th-5th centuries.'
+
+#Ex 3
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+მეექვსე საუკუნეში თბილისი ქართლის დედაქალაქად გადაიქცა, მანამდის კი დედაქალაქად მცხეთა ითვლებოდა.
+მეექვსე საუკუნე-ს ში თბილის-ი ქართლ-ის დედაქალაქ-ად PRE-0-იქც-ა მანამდის კი დედაქალაქ-ად მცხეთა-0 ითვლებოდა
+sixth century-DAT in tbilisi-NOM kartli-GEN capital-ADV PRE-3.OBJ-become-3.SG.SUBJ.AOR untilthen EMPH.PART capital.ADV mtsxeta-NOM 3.SG.SUBJ.AOR.be
+`In the 6th century Tbilisi became the capital of Kartli. Until that time, Mtsxeta was the capital.
+
+
+#Ex 4
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+თბილისის ზრდას მისმა მდებარეობამაც შეუწყო ხელი.
+თბილის-ის ზრდა-ს მისმა მდებარეობა-მა ც PRE-0-უწყ-ა ხელ-ი
+tbilisi-GEN growth-GEN 3.SG.ERG location-ERG also PRE-3.OBJ-lend-3.SG.SUBJ.AOR hand-NOM
+`It's location also helped lend a hand to Tbilisi's growth.'
+
+
+#Ex 5
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+აქ გადიოდა სამხედრო და სავაჭრო გზები.
+აქ PRE-0-დიოდ-ა სამხედრო-0 და სავაჭრო-0 გზ-ებ-ი
+there PRE-3.OBJ-pass-3.SG.SUBJ.AOR military-NOM and commercial-NOM road-pl-NOM
+`There passed (by the area) military roads and trade routes.'

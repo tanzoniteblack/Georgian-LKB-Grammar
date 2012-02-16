@@ -69,3 +69,4 @@ Phenomena: corpus
 წა-0-დი-0-თ ახლა მთელ-ი ხეობა-0 PRE-0-0-იარ-ე-თ და თუ სადმე უკეთეს-ი კოშკ-ი 0-0-ნახ-ო-თ რა ც გ-ინდ-PSF-თ ის 0-მ-იყავ-ი-თ-ო
 out-2.SUBJ-go-PRES/FUT-SUBJ.PL now entire-NOM valley-NOM PRE-2.SUBJ-3.OBJ-visit-2.SUBJ.IMPER-SUBJ.PL and if somewhere better-NOM tower-NOM 2.SUBJ-3.OBJ-see-OPT-SUBJ.PL what PARTICLE 2.OBJ-want-PSF-2.OBJ.PL 3.SG.NOM 0-1.SG.SUBJ-do-3.SG.SUBJ.PRES/FUT-?-?
 "Go now and travel around the whole valley, and if you see a better tower standing anywhere, you may do whatever you want with me."
+
