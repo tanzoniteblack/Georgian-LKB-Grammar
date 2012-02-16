@@ -49,3 +49,23 @@ Phenomena: corpus
 აქ PRE-0-დიოდ-ა სამხედრო-0 და სავაჭრო-0 გზ-ებ-ი
 there PRE-3.OBJ-pass-3.SG.SUBJ.AOR military-NOM and commercial-NOM road-pl-NOM
 `There passed (by the area) military roads and trade routes.'
+
+#Ex 6
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+ბევრი მტერი ჰყავდა თბილისს, ყველა ცდილობდა მის ხელში ჩაგდებას.
+ბევრ-ი მტერ-ი ჰ-ყავ-და თბილის-ს ყველა 0-ცდილობ-და მის ხელ-ს ში ჩაგდებ-ა-ს
+many-NOM enemy-NOM 3.SUBJ-have-PAST.PERF.3.OBJ tbilisi-DAT each 3.OBJ-capture-PAST.PERF.3.SG.SUBJ 3.SG.NOM hand-DAT in capture-MASDAR-DAT
+`Tbilisi had many enemies, each trying to capture it.'
+
+#Ex 7
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+მეშვიდე საუკუნეში არაბებმა დაიპყრეს ქართლი და თბილისიც აიღეს
+მეშვიდე საუკუნე-ს ში არაბ-ებ-მა PRE-0-იპყრ-ეს ქართლ-ი და თბილის-ი ც PRE-0-იღ-ეს
+seventh century-DAT in arab-PL-ERG PRE-3.OBJ-conquer-AOR.3.PL.SUBJ kartli-NOM and tbilisi-NOM also PRE-3.OBJ-capture-AOR.3.PL.SUBJ
+`In the 7th century the Arabs conquered Kartli, and Tbilisi was also captured.'
