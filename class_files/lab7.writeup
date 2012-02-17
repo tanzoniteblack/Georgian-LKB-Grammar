@@ -1,0 +1,140 @@
+; I can eat glass, it doesn't hurt me.
+; Ryan Smith
+; ryansmit@uw.edu
+; 2/16/12
+; Lab 7 : L567
+
+შემიძლია შევჭამო მინა 
+PRE-მი-ძლი-ა PRE-ვ-0-ჭამ-ო-0 მინა-0
+PRE-1.SUBJ-can-3.OBJ.PRES/FUT PRE-1.SUBJ-3.OBJ-eat-OPT-SG.SUBJ glass-NOM
+`I can eat glass.'
+
+This sentence in Georgian pulls up 3 new phenomena in Georgian that I have to work through: auxilliary verbs, type IV verb conjugation, and the optative screeve.  Georgian verb conjugation classes are commonly referred to by type number.  There are 4 types (I-IV), and of these I have implemented types I and II.  Type I and II only differ based off a phonological change between present tense and past imperfective (shown in type II, not type I) that has been regularized away in my morphologically analyzed form.  Type III I haven't touched at all.  Type IV, while regular, is a very small class of verbs.  In type IV are verbs such as `love', possession/have, and `can'.
+
+Where type I has the following verb parts: (Preverb) + (1/2nd person Subject) + Object + root + (Present/Future Stem Formant) + Tense/3rd person subject
+type IV has the following:
+(Preverb) + All subject markers + root + object/tense marker
+
+To be able to handle the difference between Type I and type IV verb conjugations, I created the inflection flag `TYPE-4', and then implemented this in two different sections.  The original trans-verb-lex I modified to contain `TYPE-4 na-or--', and then I created an additional verb-lex type:
+
+trans-type4-verb-lex := transitive-verb-lex &
+  [ INFLECTED [ TRANS-TENSE-FLAG -,
+				OBJ_PREFIX-FLAG +,
+				TYPE-4 + ] ].
+
+At some point I may have to include an intransitive version of this verb type, but so far all the verbs I have seen in type 4 are transitives.  The OBJ_PREFIX-FLAG was set to positive because unlike all the other verbs, this verb is never going to go through the OBJ-PREFIX lexical rule that I had previously said was required for all transitive verbs.
+
+To handle the prefixed verbal subject agreement markers, I added rules like:
+
+1st_subj_prefix-lex-rule-type4 := 1st_2nd_person_subj_prefixes-lex-rule-super &
+  [ DTR.INFLECTED [ 2ND_OBJ_PREFIX-FLAG na, TYPE-4 + ],
+    SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 1st ].
+
+and modified the original prefix rule to include `TYPE-4 na-or--'.  At this point, it will still feed into the preverb rule the same as before.  For the tense suffix I created the rule:
+
+pres-fut_trans-lex-rule-type4 := tense_and_3rd_subj-lex-rule-super &
+  [ INFLECTED [ TYPE-4 +,
+				3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
+				TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+    DTR.INFLECTED [ PSF-FLAG na,
+                    3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
+                    TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+    SYNSEM.LOCAL [ CONT.HOOK.INDEX.E [ TENSE non-past,
+									   MOOD indicative ],
+                   CAT.VAL.SUBJ.FIRST.LOCAL [CONT.HOOK.INDEX.PNG.PER non-3rd, CAT.HEAD.CASE nom ] ] ].
+
+and again added the necessary `TYPE-4 na-or--' to all of my other verb types.  An idea for the future is to expand this to the other tenses; though according to one of my sources, the majority of the time that this verb class appears, it's in the present tense.  Another addition for the future is to add tense endings that agree with objects of 1st and 2nd person, but for now the only verb I have of this class in my lexicon or corpus is `can', so it's a non-issue.
+
+The 2nd phenomena was to add auxilliary verbs to my grammar, because I hadn't had any come up yet.  This verb is specifically of TYPE-4, and it requires that it's complement is a sentence, and that the mood of the sentence is contrained to optative.  This is because `can' requires it's complement to be in the optative screeve, which I have decided to express as being of mood optative, and underspecified for tense and aspect.  An alternative might be to link the tense and aspect to that of can's, but I'm not sure about that yet.
+
+can-verb-lex := verb-lex & trans-first-arg-raising-lex-item-1
+  [  INFLECTED [ TRANS-TENSE-FLAG -,
+				 OBJ_PREFIX-FLAG +,
+				 TYPE-4 + ],
+	 SYNSEM.LOCAL [ CAT.VAL [ SUBJ < #subj >,
+							  COMPS < #comps >,
+							  SPR < > ] ],
+	 ARG-ST < #subj ,
+             #comps &
+             [ LOCAL [CAT [ VAL [ SUBJ < >,
+                                 COMPS < > ],
+                           HEAD +vj ],
+					  CONT.HOOK.INDEX.E.MOOD optative ] ] > ].
+
+To allow for the mood optative, I had to add this as well:
+optative := mood.
+
+and of course add lexical rules that could apply to make a verb optative:
+optative_trans-lex-rule := erg-nom-lex-rule &
+  [ INFLECTED [ 3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
+                TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+    DTR.INFLECTED [ PSF-FLAG na,
+                    3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
+                    TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+    SYNSEM.LOCAL [ CONT.HOOK.INDEX.E [ MOOD optative ],
+                   CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER non-3rd ] ].
+
+In the future it would be good to add the 3rd person ending as well as the intransitive rules.  This rule is a daughter of the `erg-nom-lex-rule' because the optative screeve takes an ergative subject and a nominative object, very similar to the aorist screeve.  PSF-FLAG had to be set to `na', because the optative screeve (again, like the aorist) doesn't allow for the appearance of a PSF.
+
+At this point (with appropriate additions to the lexicon) I can parse:
+შემიძლია შევჭამო მინა 
+PRE-მი-ძლი-ა PRE-ვ-0-ჭამ-ო-0 მინა-0
+PRE-1.SUBJ-can-3.OBJ.PRES/FUT PRE-1.SUBJ-3.OBJ-eat-OPT-SG.SUBJ glass-NOM
+`I can eat glass.'
+
+and correctly not parse a non-optative complement to `can':
+შემიძლია შევჭამო მინა 
+PRE-მი-ძლი-ა PRE-ვ-0-ჭამ-PSF-0-0 მინა-ს
+PRE-1.SUBJ-can-3.OBJ.PRES/FUT PRE-1.SUBJ-3.OBJ-eat-PSF-PRES/FUT-SG.SUBJ glass-DAT
+`I can eat glass.'
+
+Negation:
+არ მტკივა
+არ 0-მ-ტკივ-PSF-ს
+not NOPRE-1.OBJ.SG-hurt-PSF-3.SG.SUBJ.PRES/FUT
+`It doesn't hurt me.'
+
+All I needed to do for this sentence was add the word `hurt' to the lexicon, everything else was correctly in my grammar already.
+
+One sentence from my corpus:
+I took the opportunity this week to switch to a new corpus.  My old choice was a folk tale, and I don't think it would've been possible to parse any of the sentences in it by the end of the quarter, as they were all quite long and involved many grammatical phenomenon that we hadn't touched yet.  The new one, is a short history of Georgia's capital, Tbilisi, aimed at children.  One of the sentences in my corpus parsed just by adding the appropriate lexical items:
+
+თბილისი უძველესი ქალაქია.
+თბილის-ი უძველეს-ი ქალაქ-ი ა
+tbilisi-NOM very.old-NOM city-NOM 3.SUBJ.PRES.be
+`Tbilisi is a very old city.'
+
+The word meaning `very old' had me a little irritated originally, as morphologically it should mean `older' due to the უ- -ეს circumfix; but in this sentence there is no comparison being made.  It turns out, after a little research, that this is a unique meaning to the word `old' and is unproductive, so I decided just to include it as a unique lexicon entry.
+
+That dealt with, I decided that the sentence I would use to obtain grammatical additions to my grammar would be:
+მეშვიდე საუკუნეში არაბებმა დაიპყრეს ქართლი და თბილისიც აიღეს
+მეშვიდე საუკუნე-ს ში არაბ-ებ-მა PRE-0-იპყრ-ეს ქართლ-ი და თბილის-ი ც PRE-0-იღ-ეს
+seventh century-DAT in arab-PL-ERG PRE-3.OBJ-conquer-AOR.3.PL.SUBJ kartli-NOM and tbilisi-NOM also PRE-3.OBJ-capture-AOR.3.PL.SUBJ
+`In the 7th century the Arabs conquered Kartli, and Tbilisi was also captured.'
+
+This had 2 things that were going wrong with it:
+my PP's were apparently not able to act as verbal modifiers
+and the addition of the clitic -ც meaning `too/also'.
+
+While I had added PP's last week, I didn't notice with any of my examples that they wouldn't parse unless they were next to a noun phrase.  Apparently they could only modifiy noun phrases despite having in it's definition: `SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT [ HEAD +nv ]] >'.  After a bit of playing around with my grammar, I eventually figured out what the problem was.  The only preposition I have currently implemented is `in' (ში), which requires it's NP complement to be in the dative case.  In this defintion, I had accidentally said: SYNSEM.LOCAL.CAT.HEAD < [ LOCAL.CAT>HEAD>CASE dat ] >, which was limiting the thing my preposition was modifying to being in the dative case, rather than it's complement being in the dative case.  I therefore fixed that to:
+
+dat-locative-suffix-item := locative-suffix-item &
+  [ ARG-ST < [ ], [LOCAL.CAT.HEAD.CASE dat ] > ].
+
+To get the -ც clitic to attach correctly, I made the lex type:
+also-lex-item := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & 
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD +nv, VAL.SPR cons ]] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS <  >,
+								 SPEC < > ],
+						   POSTHEAD +],
+					 CONT.HOOK [XARG #xa] ],
+			 LKEYS.KEYREL.ARG1 #xa ] ].
+
+My sentence, once having added all the appropriate lexical items now parses.  However, there are numerous extra parses, that I'm not entirely sure why they exist and would love some commentary on what I can do to fix them.
+
+Other changes made to my grammar this week:
+	  -- I went through and simplified all the rules made from the customization system so they wouldn't have all the extra flags pointlessly passed around.
+	  -- Changed some of the rediculously long flag names to shorter ones, so all my rules look respectably readable now.
+	  -- Fixed the copula problems I had from last week.
