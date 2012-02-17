@@ -69,3 +69,33 @@ Phenomena: corpus
 მეშვიდე საუკუნე-ს ში არაბ-ებ-მა PRE-0-იპყრ-ეს ქართლ-ი და თბილის-ი ც PRE-0-იღ-ეს
 seventh century-DAT in arab-PL-ERG PRE-3.OBJ-conquer-AOR.3.PL.SUBJ kartli-NOM and tbilisi-NOM also PRE-3.OBJ-capture-AOR.3.PL.SUBJ
 `In the 7th century the Arabs conquered Kartli, and Tbilisi was also captured.'
+
+#Ex 8
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+მერვე საუკუნეში ქართველები აუჯანყდნენ არაბებს, მაგრამ ვერაფერს გახდნენ.
+მერვე საუკუნე-ს ში ქართველ-ებ-ი PSF-0-უჯანყ-დნენ არაბ-ებ-ს მაგრამ ვერაფერ-ს PRE-0-ხ-დნენ
+eighth century-DAT in georgian-PL-NOM PSF-3.OBJ-revolt.against-3.PL.PAST.IMPERF arab-PL-DAT but nothing-DAT PRE-3.OBJ-accomplish-3.PL.PAST.IMPERF
+`In the eight century the Georgians revolted against the Arabs, but accomplished nothing.'
+
+#Ex 9
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+არაბთა სარდალმა მურვან ყრუმ ააოხრა საქართველო და მთელი კავკასია დაიპყრო.
+არაბთა სარდალ-მა მურვან ყრუ-მა PRE-0-აოხრ-ა საქართველო-0 და მთელ-ი კავკასია-0 PRE-0-იპყრ-ა
+arab general-ERG murvan deaf-ERG PRE-3.OBJ-destroy-3.SG.SUBJ.AOR georgia-NOM and entire-NOM caucasus-NOM PRE-3.OBJ-conquer-3.SG.SUBJ.AOR
+`The Arab General Murvan the Deaf destroyed Georgian and conquered the entirety of the Caucasus.
+
+#Ex 10
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+853 წელს ბუღა თურქმა დაწვა თბილისი და 50 ათასი კაცი გაჟლიტა.
+853 წელ-ს ბუღათურქ-მა PRE-0-წვ-ა თბილის-ი და 50 ათას-ი კაც-ი PRE-0-ჟლიტ-ა
+853 year-DAT bugha.the.turk-ERG PRE-3.OBJ-burn-3.SG.SUBJ.AOR tbilisi-NOM and 50 thousand-NOM man-NOM PRE-3.OBJ-slaughter-3.AOR.SUBJ.SG
+`In the year 853, Bugha the Turk burnt down Tbilisi and slaughtered 50,000 men.'
