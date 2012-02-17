@@ -99,3 +99,13 @@ Phenomena: corpus
 853 წელ-ს ბუღათურქ-მა PRE-0-წვ-ა თბილის-ი და 50 ათას-ი კაც-ი PRE-0-ჟლიტ-ა
 853 year-DAT bugha.the.turk-ERG PRE-3.OBJ-burn-3.SG.SUBJ.AOR tbilisi-NOM and 50 thousand-NOM man-NOM PRE-3.OBJ-slaughter-3.AOR.SUBJ.SG
 `In the year 853, Bugha the Turk burnt down Tbilisi and slaughtered 50,000 men.'
+
+#Ex 11
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+თბილისი უცხოელი დამპყრობლების ხელში დიდხანს იტანჯებოდა და მხოლოდ მეთორმეტე საუკუნეში გათავისუფლდა მტრებისაგან.
+თბილის-ი უცხოელი დამპყრობლებ-ის ხელ-ს ში დიდხანს 0-იტანჯებ-და და მხოლოდ მეთორმეტე საუკუნე-ს ში PRE-თავისუფლ-და მტერ-ებ-ის აგან
+tbilisi-ი foreign conqueror-GEN hand-DAT in for.a.long.time NOPRE-suffer-3.SG.PAST.IMPERF and only thirteenth cenutry-DAT in PRE-become.free-3.SG.PAST.IMPERF enemy-PL-GEN from
+`Tbilisi suffered for a long time in the hands of it's foreign conquerors, and only in the 13th century were they finally free from the their enemies.'
