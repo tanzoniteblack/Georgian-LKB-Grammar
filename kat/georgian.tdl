@@ -395,6 +395,16 @@ adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item
 infl-adjective-lex := adjective-lex & 
     [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +]].
 
+also-lex-item := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & 
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD +nv, VAL.SPR cons ]] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS <  >,
+								 SPEC < > ],
+						   POSTHEAD +],
+					 CONT.HOOK [XARG #xa] ],
+			 LKEYS.KEYREL.ARG1 #xa ] ].
+
 ;; Types for adverbs
 
 adverb-lex := basic-adverb-lex & intersective-mod-lex &
@@ -1045,7 +1055,10 @@ s1-bottom-coord-rule := conj-first-bottom-coord-rule & s-bottom-coord-phrase &
 ;; verbs with clausal arguments
 
 comp-verb-lex := clausal-second-arg-trans-lex-item & verb-lex &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL [CAT [ VAL [COMPS < >, SUBJ < >], HEAD +vc ], CONT.HOOK.INDEX.SF prop-or-ques ] ] > ].
+  [ SYNSEM.LOCAL.CAT.VAL.COMPS  < #comps & [ LOCAL [CAT [ VAL [COMPS < >, SUBJ < >],
+												HEAD +vc ],
+												CONT.HOOK.INDEX.SF prop-or-ques ] ] > ,
+	ARG-ST < [ ], #comps  >].
 
 prop-clause-verb-lex := comp-verb-lex & 
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < [ LOCAL.CONT.HOOK.INDEX.SF prop ] > ].
@@ -1070,17 +1083,21 @@ locative-suffix-item := basic-int-mod-adposition-lex &
 						   VAL [ SPR < >,
 								 SUBJ < >,
 								 COMPS < #comps >,
-								 SPEC < > ],
-						   POSTHEAD +],
+								 SPEC < > ] ],
 					 CONT.HOOK [XARG #xa] ],
-			 LKEYS.KEYREL.ARG1 #xa ],
+			 LKEYS.KEYREL [ ARG1 #xa, ARG2 #arg ] ],
 	ARG-ST < [ ],
              #comps & [OPT -,
-					   LOCAL.CAT.HEAD noun ] > ].
+					   LOCAL [ CAT [ HEAD noun,
+								   VAL [ SPR < >,
+										 SUBJ < >,
+										 COMPS < >,
+										 SPEC < > ] ],
+							   CONT.HOOK.INDEX #arg ] ] > ].
 
 ; ;; postposition that requires dative case
 dat-locative-suffix-item := locative-suffix-item &
-  [ SYNSEM.LOCAL.CAT.HEAD.MOD < [ LOCAL.CAT.HEAD.CASE dat ] > ].
+  [ ARG-ST < [ ], [LOCAL.CAT.HEAD.CASE dat ] > ].
 
 ;; copulas
 ;; for AP and PP
@@ -1107,15 +1124,17 @@ copula-verb-lex := trans-first-arg-raising-lex-item-2 &
 ;; for NP (i.e. just a transitive that specifies it's person and number)
 
 copula-NP-verb-lex := basic-verb-lex & non-mod-lex-item & 1_2_plurality-rule-dtr & 1st_2nd_person_subj_prefixes-rule-dtr & PSF-rule-dtr & preverb-rule-dtr & tense_and_3rd_subj-rule-dtr &
-  [ ARG-ST.FIRST #subj &
+  [ ARG-ST < #subj &
                  [ LOCAL [ CAT.VAL [ SPR < >,
                                      COMPS < > ],
-                           CONT.HOOK.INDEX #xarg ] ],
-    SYNSEM.LOCAL [ CONT.HOOK.XARG #xarg,
+                           CONT.HOOK.INDEX #xarg ] ], [LOCAL.CONT.HOOK.INDEX #xarg2 ] >,
+    SYNSEM [ LOCAL [ CONT.HOOK.XARG #xarg,
                    CAT [ VAL [ SPR < >,
                                SPEC < >,
                                SUBJ < #subj > ],
-                         HC-LIGHT - ] ] ].
+                         HC-LIGHT - ] ],
+			 LKEYS.KEYREL [ ARG1 #xarg, ARG2 #xarg2 ] ]
+		   ].
 
 copula-NP-lex := copula-NP-verb-lex &
   [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
