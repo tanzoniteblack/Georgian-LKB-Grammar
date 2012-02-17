@@ -1,0 +1,12 @@
+რომ_gr := arg0e_gtr &
+[ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
+  FLAGS.TRIGGER "რომ" ].
+
+თუ_gr := arg0e_gtr &
+[ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
+  FLAGS.TRIGGER "თუ" ].
+
+ა_gr := arg0e_gtr &
+[ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
+  FLAGS.TRIGGER "ა" ].
+

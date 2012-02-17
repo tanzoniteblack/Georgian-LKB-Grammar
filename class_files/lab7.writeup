@@ -138,3 +138,16 @@ Other changes made to my grammar this week:
 	  -- I went through and simplified all the rules made from the customization system so they wouldn't have all the extra flags pointlessly passed around.
 	  -- Changed some of the rediculously long flag names to shorter ones, so all my rules look respectably readable now.
 	  -- Fixed the copula problems I had from last week.
+	  -- Fixed generation rules so that my grammar once again generates
+
+[incr tsdb()] results:
+testsuite:
+		coverage: 78.9%
+		overgeneration: 0.0%
+compared to lab 6:
+		 gold:
+				in: 76.8%
+				out: 0.0%
+		new:
+				in: 78.9%
+				out: 0.0%

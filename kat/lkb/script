@@ -36,7 +36,8 @@
 (list
 (lkb-pathname (parent-directory) "matrix.tdl")
 (lkb-pathname (parent-directory) "head-types.tdl")
-   (lkb-pathname (parent-directory) "georgian.tdl")
+(lkb-pathname (parent-directory) "georgian.tdl")
+(lkb-pathname (parent-directory) "mtr.tdl")
 ))
 
 ;;;
@@ -92,6 +93,12 @@
 ;;; can also be run from the expanded LKB top menu, under
 ;;; Generate.
 ;;;
+
+(mt:read-transfer-rules
+ (list
+  (lkb-pathname (parent-directory) "trigger.mtr"))
+  "Generation trigger rules"
+  :filter nil :task :trigger :recurse nil :edges 200 :subsume nil)
 
 (index-for-generator)
 
