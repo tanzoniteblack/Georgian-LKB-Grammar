@@ -151,3 +151,7 @@ compared to lab 6:
 		new:
 				in: 78.9%
 				out: 0.0%
+
+corpus:
+		coverage: 12.5%
+		overgeneration: 0.0%
