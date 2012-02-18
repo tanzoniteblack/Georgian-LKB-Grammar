@@ -109,3 +109,53 @@ Phenomena: corpus
 თბილის-ი უცხოელი დამპყრობლებ-ის ხელ-ს ში დიდხანს 0-იტანჯებ-და და მხოლოდ მეთორმეტე საუკუნე-ს ში PRE-თავისუფლ-და მტერ-ებ-ის აგან
 tbilisi-ი foreign conqueror-GEN hand-DAT in for.a.long.time NOPRE-suffer-3.SG.PAST.IMPERF and only thirteenth cenutry-DAT in PRE-become.free-3.SG.PAST.IMPERF enemy-PL-GEN from
 `Tbilisi suffered for a long time in the hands of it's foreign conquerors, and only in the 13th century were they finally free from the their enemies.'
+
+#Ex 12
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+მეცამეტე საუკუნეში ხვარაზმელებმა აიღეს თბილისი.
+მეცამეტე საუკუნე-ს ში ხვარაზმელ-ებ-მა PRE-0-იღ-ეს თბილის-ი
+thirteenth century-DAT in khorezm-PL-ERG PRE-3.OBJ-capture-3.PL.SUBJ.AOR tbilisi-NOM
+`In the 13th century the Khorezms captured Tbilisi.'
+
+#Ex 13
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+ერთი წლის შემდეგ ქართველებმა განდევნეს ხვარაზმელები, მაგრამ ისინი 1227 წელს კვლავ წამოვიდნენ თბილისზე.
+ერთი წელ-ის შემდეგ ქართველ-ებ-მა PRE-0-დევნ-ეს ხვარაზმელ-ებ-ი მაგრამ ისინი 1227 წელ-ს კვლავ PRE-მოვ-დნენ თბილის-ს ზე
+one year-GEN later georgian-PL-ERG PRE-3.OBJ-drive.out-3.PL.SUBJ.AOR khorezm-PL-NOM but 3.PL.NOM 1227 year-DAT again PRE-come-3.PL.PAST.IMPERF tbilisi-DAT onto
+`One year later, the Georgians drove out the Khorezms, but in the year 1227, they came back to Tbilisi.'
+
+#Ex 14
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+ქართველებმა დაცალეს თავიანთი დედაქალაქი და დაწვეს.
+ქართველ-ებ-მა PRE-0-ცალ-ეს თავიანთი დედაქალაქ-ი და PRE-0-წვ-ეს
+georgian-PL-ERG PRE-3.OBJ-evacuate-3.PL.SUBJ.AOR their.own capital-NOM and PRE-3.OBJ-burn-3.PL.SUBJ.AOR
+`The Georgian's evacuated their own capital and burnt it down.'
+
+#Ex 15
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+ხვარაზმელების შემდეგ მონღოლებმა აიკლეს თბილისი, მერე სპარსელებმა ააოხრეს — ჯერ შაჰ-აბასისა და შემდეგ აღა-მაჰმად-ხანის მეთაურობით.
+ხვარაზმელ-ებ-ის შემდეგ მონღოლ-ებ-მა PRE-0-იკლ-ეს თბილის-ი მერე სპარსელ-ებ-მა PRE-0-აოხრ-ეს ჯერ შაჰაბასისა-0 და შემდეგ აღამაჰმადხან-ის მეთაურობ-ით
+khorezm-PL-GEN after mongol-PL-ERG PRE-3.OBJ-destroy-3.SUBJ.PL.AOR tbilisi-NOM later persian-PL-ERG PRE-0-ravish-3.PL.SUBJ.AOR at.first Shah.abasisa-0 and then agha.mahmad.xani-GEN command-INSTRUMENTAL
+`After the Khorzems, the mongols destroyed Tbilisi, and later the Persians ravished it, first under the command of Shah Abasisa and later under the command of Agha Mahmad Xani.'
+
+#Ex 16
+Source: "Tbilisi"
+vetted: s
+Judgment: g
+Phenomena: corpus
+ქართველი ხალხი მედგრად ებრძოდა სპარსელებს.
+ქართველ-ი ხალხ-ი მედგრ-ად 0-0-ებრძო-და სპარსელ-ებ-ს
+georgian-NOM people-NOM steadfast-ADV NOPRE-3.OBJ-fight-3.SG.SUBJ.PAST.IMPERF persian-PL-DAT
+`The Georgian people steadfastly, and constantly, fought with the Persians.'

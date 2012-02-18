@@ -8,4 +8,16 @@
 
 თბილისი უცხოელი დამპყრობლების ხელში დიდხანს იტანჯებოდა და მხოლოდ მეთორმეტე საუკუნეში გათავისუფლდა მტრებისაგან.
 
+მეცამეტე საუკუნეში ხვარაზმელებმა აიღეს თბილისი.  ერთი წლის შემდეგ ქართველებმა განდევნეს ხვარაზმელები, მაგრამ ისინი 1227 წელს კვლავ წამოვიდნენ თბილისზე. ქართველებმა დაცალეს თავიანთი დედაქალაქი და დაწვეს.
 
+ხვარაზმელების შემდეგ მონღოლებმა აიკლეს თბილისი, მერე სპარსელებმა ააოხრეს — ჯერ შაჰ-აბასისა და შემდეგ აღა-მაჰმად-ხანის მეთაურობით.  ქართველი ხალხი მედგრად ებრძოდა სპარსელებს.
+
+ხვარაზმელების შემდეგ მონღოლებმა აიკლეს თბილისი, მერე სპარსელებმა ააოხრეს — ჯერ შაჰ-აბასისა და შემდეგ აღა-მაჰმად-ხანის მეთაურობით.
+ხვარაზმელ-ებ-ის შემდეგ მონღოლ-ებ-მა PRE-0-იკლ-ეს თბილის-ი მერე სპარსელ-ებ-მა PRE-0-აოხრ-ეს ჯერ შაჰაბასისა-0 და შემდეგ აღამაჰმადხან-ის მეთაურობ-ით
+khorezm-PL-GEN after mongol-PL-ERG PRE-3.OBJ-destroy-3.SUBJ.PL.AOR tbilisi-NOM later persian-PL-ERG PRE-0-ravish-3.PL.SUBJ.AOR at.first Shah.abasisa-0 and then agha.mahmad.xani-GEN command-INSTRUMENTAL
+`After the Khorzems, the mongols destroyed Tbilisi, and later the Persians ravished it, first under the command of Shah Abasisa and later under the command of Agha Mahmad Xani.'
+
+ქართველი ხალხი მედგრად ებრძოდა სპარსელებს.
+ქართველ-ი ხალხ-ი მედგრ-ად 0-0-ებრძო-და სპარსელ-ებ-ს
+georgian-NOM people-NOM steadfast-ADV NOPRE-3.OBJ-fight-3.SG.SUBJ.PAST.IMPERF persian-PL-DAT
+`The Georgian people steadfastly, and constantly, fought with the Persians.'
