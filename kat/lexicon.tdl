@@ -4,6 +4,10 @@
   [ STEM < "პარკ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_park_n_rel" ].
 
+ამერიკელ := general_ending_consonant-noun-lex &
+  [ STEM < "ამერიკელ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_american_n_rel" ].
+
 ქალაქ := general_ending_consonant-noun-lex &
   [ STEM < "ქალაქ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_city_n_rel" ].
@@ -339,3 +343,7 @@
 ც := also-lex-item &
   [ STEM < "ც" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_also_a_rel" ].
+
+;; focus marking
+კი := focus-part-lex-item &
+  [ STEM < "კი" > ].

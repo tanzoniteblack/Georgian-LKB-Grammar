@@ -10,3 +10,6 @@
 [ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
   FLAGS.TRIGGER "ა" ].
 
+კი_gr := arg0e_gtr &
+[ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
+  FLAGS.TRIGGER "კი" ].

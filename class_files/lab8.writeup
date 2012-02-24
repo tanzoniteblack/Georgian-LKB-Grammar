@@ -1,0 +1,22 @@
+Information structure:
+Georgian 1st and 2nd person pronouns appear to be focused if present, and dropped if not in focus.  To accomplish this, I modified my pronoun lexical types to be like this with HOOK.--ICONS set to focus:
+
+1sg-pro-noun-lex := noun-lex &
+  [ SYNSEM.LOCAL.CONT.HOOK[ INDEX [ PNG [ PER 1st,
+                                       NUM singular ],
+								  COG-ST activ-or-more, SPECI + ],
+							--ICONS focus ],
+    INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
+
+this allows for a sentences like:
+მე რადიოგადაცემას ვისმენ.
+მე რადიოგადაცემა-ს 0-ვ-0-ისმენ-PSF-0-0
+1.SG.NOM radiobroadcast-DAT NOPRE-1.SUBJ-3.OBJ-listen-PSF-PRES/FUT-SG
+`I am listening to the radiobroadcast.'
+
+შენ რადიოგადაცემას ისმენ.
+შენ რადიოგადაცემა-ს 0-0-0-ისმენ-PSF-0-0
+2.SG.NOM radiobroadcast-DAT NOPRE-2.SUBJ-3.OBJ-listen-PSF-PRES/FUT-SG.SUBJ
+`You are listening to the radiobroadcast.'
+
+to have focus placed on the write element of the sentence.

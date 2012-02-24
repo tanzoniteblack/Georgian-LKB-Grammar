@@ -40,6 +40,7 @@
 (lkb-pathname (parent-directory) "mtr.tdl")
 ))
 
+(mt:read-vpm (lkb-pathname (parent-directory) "semi.vpm") :semi)
 ;;;
 ;;; Next, the lexicon itself, instantiating (lexical) types of the grammar
 ;;; (some grammars with larger lexica organize them into multiple files).

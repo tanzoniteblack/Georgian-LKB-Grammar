@@ -173,15 +173,17 @@ general_ending_consonant-noun-lex := noun-lex & noun-case-suffix-rule-dtr & noun
                 GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ] ].
 
 1sg-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [ PNG [ PER 1st,
+  [ SYNSEM.LOCAL.CONT.HOOK[ INDEX [ PNG [ PER 1st,
                                        NUM singular ],
 								  COG-ST activ-or-more, SPECI + ],
+							--ICONS focus ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 2sg-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [PNG [ NUM singular,
+  [ SYNSEM.LOCAL.CONT.HOOK[ INDEX [PNG [ NUM singular,
                                        PER 2nd ],
 								  COG-ST activ-or-more, SPECI + ],
+							--ICONS focus ],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 3sg-pro-nom-noun-lex := noun-lex &
@@ -192,15 +194,17 @@ general_ending_consonant-noun-lex := noun-lex & noun-case-suffix-rule-dtr & noun
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 1pl-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [PNG [ PER 1st,
+  [ SYNSEM.LOCAL.CONT.HOOK[ INDEX [PNG [ PER 1st,
                                        NUM plural ],
 								  COG-ST activ-or-more, SPECI + ],
+							--ICONS focus],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 2pl-pro-noun-lex := noun-lex &
-  [ SYNSEM.LOCAL.CONT.HOOK.INDEX [PNG [ PER 2nd,
+  [ SYNSEM.LOCAL.CONT.HOOK[ INDEX [PNG [ PER 2nd,
                                        NUM plural ],
 								  COG-ST activ-or-more, SPECI + ],
+							--ICONS focus],
     INFLECTED.GENERAL_ENDING_VOWEL-NOUN-FLAG na-or-- ].
 
 3pl-pro-nom-noun-lex := noun-lex &
@@ -394,6 +398,17 @@ adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item
 
 infl-adjective-lex := adjective-lex & 
     [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +]].
+
+focus-part-lex-item := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & mkg-fc-only-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL [ CAT [ HEAD noun, VAL.SPR cons ],
+												CONT.HOOK.--ICONS focus ] ] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS <  >,
+								 SPEC < > ],
+						   POSTHEAD +],
+					 CONT.HOOK [XARG #xa] ],
+			 LKEYS.KEYREL.ARG1 #xa ] ].
 
 also-lex-item := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & 
   [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL.CAT [ HEAD +nv, VAL.SPR cons ]] >,
@@ -1158,3 +1173,4 @@ optative_trans-lex-rule := erg-nom-lex-rule &
     SYNSEM.LOCAL [ CONT.HOOK.INDEX.E [ MOOD optative ],
                    CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER non-3rd ] ].
 
+;; focus marking adposition

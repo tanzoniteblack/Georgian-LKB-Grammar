@@ -108,7 +108,7 @@ Phenomena: pronouns, case, agreement
 ჩვენ რადიოგადაცემას ვისმენთ.
 ჩვენ რადიოგადაცემა-ს 0-ვ-0-ისმენ-PSF-0-თ
 1.PL.NOM radiobroadcast-DAT NOPRE-1.SUBJ-3.OBJ-listen-PSF-PRES/FUT-PL.SUBJ
-`I am listening to the radiobroadcast.'
+`We are listening to the radiobroadcast.'
 
 #Ex 11 - 2nd person sg pronoun + agreement
 Source: c:52
