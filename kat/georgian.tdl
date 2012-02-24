@@ -973,6 +973,9 @@ ergative-deter-lex-rule := determiner-case-suffix-lex-rule-super &
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
 
+focus-bg :+ head-icons-phrase &
+	[ NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.--ICONS semantic-focus ].
+
 head-initial-head-nexus := head-initial &
   [ SYNSEM.ATTACH lmod,
     HEAD-DTR.SYNSEM.ATTACH notmod-or-lmod ].
@@ -981,16 +984,26 @@ head-final-head-nexus := head-final &
   [ SYNSEM.ATTACH rmod ].
 
 head-subj-phrase := decl-head-subj-phrase & head-initial-head-nexus.
+head-subj-phrase-nofoc := head-subj-phrase.
+head-subj-phrase-foc := head-subj-phrase & focus-bg.
 
 subj-head-phrase := decl-head-subj-phrase & head-final-head-nexus.
 
 head-comp-phrase := basic-head-1st-comp-phrase & head-initial-head-nexus.
+head-comp-phrase-nofoc := head-comp-phrase.
+head-comp-phrase-foc := head-comp-phrase & focus-bg.
 
 comp-head-phrase := basic-head-1st-comp-phrase & head-final-head-nexus.
+comp-head-phrase-nofoc := comp-head-phrase.
+comp-head-phrase-foc := comp-head-phrase & focus-bg.
 
 head-comp-phrase-2 := basic-head-2nd-comp-phrase & head-initial-head-nexus.
+head-comp-phrase-2-nofoc := head-comp-phrase-2.
+head-comp-phrase-2-foc := head-comp-phrase-2 & focus-bg.
 
 comp-head-phrase-2 := basic-head-2nd-comp-phrase & head-final-head-nexus.
+comp-head-phrase-2-nofoc := comp-head-phrase-2.
+comp-head-phrase-2-foc := comp-head-phrase-2 & focus-bg.
 
 ; Rules for building NPs.  Note that the Matrix uses SPR for
 ; the specifier of nouns and SUBJ for the subject (specifier) of verbs.

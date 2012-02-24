@@ -20,3 +20,86 @@ this allows for a sentences like:
 `You are listening to the radiobroadcast.'
 
 to have focus placed on the write element of the sentence.
+
+Another method of adding focus in a Georgian sentence is the particle კი. This particle specifically adds contrastive-focus.
+
+ამერიკელი კი წიგნს წერს.
+ამერიკელ-ი კი წიგნ-ს 0-0-წერ-PSF-ს
+david-NOM however book-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES/FUT
+`David, however, is writing a book.'
+
+To get this to work I added to georgian.tdl:
+
+focus-part-lex-item := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & mkg-fc-only-lex &
+  [ SYNSEM [ LOCAL [ CAT [ HEAD.MOD < [ LOCAL [ CAT [ HEAD noun, VAL.SPR cons ],
+												CONT.HOOK.--ICONS focus ] ] >,
+						   VAL [ SPR < >,
+								 SUBJ < >,
+								 COMPS <  >,
+								 SPEC < > ],
+						   POSTHEAD +],
+					 CONT.HOOK [XARG #xa] ],
+			 LKEYS.KEYREL.ARG1 #xa ] ].
+
+and to my lexicon:
+კი := focus-part-lex-item &
+  [ STEM < "კი" > ].
+
+Yet another method of marking focus in Georgian is by fronting constituents of a sentence to the front of the sentence:
+Unmarked:
+		მასწავლებელი წერილს წერს.
+		მასწავლებელ-ი წერილ-ს 0-0-წერ-PSF-ს
+		teacher-NOM letter-DAT NOPRE-3.OBJ-write-PSF-3.SUBJ.SG.PRES
+		`The teacher is writing a letter.'
+Focus on letter:
+	  წერილს წერს მასწავლებელი.
+	  წერილ-ს 0-0-წერ-PSF-ს მასწავლებელ-ი
+	  letter-DAT NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES/FUT teacher-NOM
+	  `The teacher is writing a letter.'
+Focus on writing:
+	  წერს წერილს მასწავლებელი.
+	  0-0-წერ-PSF-ს წერილ-ს მასწავლებელ-ი
+	  NOPRE-3.OBJ-write-PSF-3.SG.SUBJ.PRES/FUT letter-DAT teacher-NOM
+	  `The teacher is writing a letter.'
+
+To attempt to get this to work I added to georgian.tdl:
+focus-bg :+  [ HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.INDEX #index,
+	 NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK [--ICONS semantic-focus, --ICONS.CLAUSE #index ]].
+
+And then made pairs of phrases that used this information like:
+
+head-subj-phrase := decl-head-subj-phrase & head-initial-head-nexus.
+head-subj-phrase-foc := decl-head-subj-phrase & head-initial-head-nexus & focus-bg.
+
+This however, doesn't actually appear to be working. I've been attempting to figure this out on GoPost, but my questions haven't really been answered...so I would appreciate if you could help me figure this out.
+
+Variable Property Mapping:
+I had to modify the provided semi.vpm for the following:
+  I used different names for first, second, third person (i.e. 1st, 2nd, 3rd)
+  I wrote out singular and plural explicitely in my grammar rather than using sg and pl
+  added to E.ASPECT:
+  		perfective <> perfective
+		   imperfective <> imperfective
+			 no-aspect << *
+  and to E.MOOD:
+    subjunctive <> subjunctive
+ 	 indicative <> indicative
+ 	  optative <> optative
+ 	   indicative << *
+  
+It seems to cut down the number of generations I have a bit, so I would suppose that means it's working.  Though on that note, I did also have to add a trigger rule for კი, due to it being semantically empty.
+
+[incr tsdb()]:
+	  testsuite:
+		coverage: 80.3
+		overgeneration: 0
+	compared to lab7 baseline:
+			 in: 
+			 	 lab7: 78.9%
+			 	 new: 80.3%
+			out:
+				lab7: 0.0%
+				new: 0.0%
+	corpus compared to lab7:
+		   No changes, still 12.5% coverage and 0.0% overgeneration.
+
