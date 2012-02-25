@@ -63,15 +63,17 @@ Focus on writing:
 	  `The teacher is writing a letter.'
 
 To attempt to get this to work I added to georgian.tdl:
-focus-bg :+  [ HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.INDEX #index,
-	 NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK [--ICONS semantic-focus, --ICONS.CLAUSE #index ]].
+focus-bg :+ 
+	[ NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.--ICONS semantic-focus ].
 
 And then made pairs of phrases that used this information like:
-
 head-subj-phrase := decl-head-subj-phrase & head-initial-head-nexus.
-head-subj-phrase-foc := decl-head-subj-phrase & head-initial-head-nexus & focus-bg.
+head-subj-phrase-nofoc := head-subj-phrase.
+head-subj-phrase-foc := head-subj-phrase & focus-bg.
 
-This however, doesn't actually appear to be working. I've been attempting to figure this out on GoPost, but my questions haven't really been answered...so I would appreciate if you could help me figure this out.
+I also had to include in rules.tdl phrase rules like:
+head-comp-foc := head-comp-phrase-foc.
+
 
 Variable Property Mapping:
 I had to modify the provided semi.vpm for the following:

@@ -973,7 +973,7 @@ ergative-deter-lex-rule := determiner-case-suffix-lex-rule-super &
 ;Constraint on MC used to be part of matrix.tdl
 ;;it applies to all wo implementations, except for v2
 
-focus-bg :+ head-icons-phrase &
+focus-bg :+ 
 	[ NON-HEAD-DTR.SYNSEM.LOCAL.CONT.HOOK.--ICONS semantic-focus ].
 
 head-initial-head-nexus := head-initial &
