@@ -74,6 +74,7 @@ head-subj-phrase-foc := head-subj-phrase & focus-bg.
 I also had to include in rules.tdl phrase rules like:
 head-comp-foc := head-comp-phrase-foc.
 
+This provides two analysises of each sentence, based on whether the first element is focused or not.  Sanghoun gave me some advice on how I could fix this if I wanted, but also pointed out that I might not want to.  While I know that the change in word order is used to highlight focus, I'm not convinced that's the only explanation for a non-default word order, and that if it weren't for highlighting focus that the alternative word orders wouldn't exist.  My reason for thinking this is due to how often the changes in word order occur, which is much much more often than in other languages I'm familiar with that have relatively free word order (c.f. Finnish, Japanese, Russian).
 
 Variable Property Mapping:
 I had to modify the provided semi.vpm for the following:
