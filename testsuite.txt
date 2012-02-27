@@ -1039,5 +1039,25 @@ Judgment: g
 Phenomena: sleep, 4thverbconj
 მძინავს
 0-მი-ძინ-PSF-ს
-NOPRE-1.SUBJ-sleep-PSF-PRES/FUT
+NOPRE-1.SUBJ-sleep-PSF-PRES/FUT.SG
 `I am sleeping.'
+
+#Ex 103 - sleep
+Source: http://forum.ge/?f=43&showtopic=34349955
+vetted: s
+Judgment: g
+Phenomena: sleep, 4thverbconj
+ძაღლი ძინავს
+ძაღლ-ი 0-0-ძინ-PSF-ს
+dog-NOM NOPRE-3.SUBJ-sleep-PSF-PRES/FUT.SG
+`The dog is sleeping.'
+
+#Ex 104 - The dogs sleep.
+Source: author
+vetted: f
+Judgment: g
+Phenomena: sleep, 4thverbconj
+ძაღლები ძინავთ
+ძაღლ-ებ-ი 0-0-ძინ-PSF-თ
+dog-PL-NOM NOPRE-3.SUBJ-sleep-PSF-PRES/FUT.PL
+`The dogs are sleeping.'

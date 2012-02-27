@@ -35,6 +35,10 @@ plural-noun-lex-rule.
 %prefix (* გი-)
 2nd_subj_prefix-lex-rule-type4.
 
+3rd_subj_prefix-prefix-type4 :=
+%prefix (* 0-)
+3rd_subj_prefix-lex-rule-type4.
+
 1st_subj_prefix_2nd_obj-prefix :=
 %prefix (* 0-)
 1st_subj_prefix_2nd_obj-lex-rule.
@@ -106,6 +110,10 @@ pres-fut_trans-lex-rule-type4.
 pres-fut_intrans-suffix-type4 :=
 %suffix (* -ს)
 pres-fut_intrans-lex-rule-type4.
+
+pres-fut_intrans-pl-lex-rule-type4 :=
+%suffix (* -თ)
+pres-fut_intrans-pl-lex-rule-type4.
 
 3_sg_subj_pres_intrans-suffix :=
 %suffix (* -ს)

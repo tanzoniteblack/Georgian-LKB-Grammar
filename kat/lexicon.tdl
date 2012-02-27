@@ -254,27 +254,27 @@
 
 ეს := proximal_nom-determiner-lex &
   [ STEM < "ეს" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_proximal+dem_a_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED proximal+dem_a_rel ].
 
 ამ := proximal_others-determiner-lex &
   [ STEM < "ამ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_proximal+dem_a_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED proximal+dem_a_rel ].
 
 ეგ := hearer_nom-determiner-lex &
   [ STEM < "ეგ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_hearer+dem_a_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED hearer+dem_a_rel ].
 
 მაგ := hearer_others-determiner-lex &
   [ STEM < "მაგ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_hearer+dem_a_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED hearer+dem_a_rel ].
 
 ის_2 := remote_nom-determiner-lex &
   [ STEM < "ის" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_remote+dem_a_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED remote+dem_a_rel ].
 
 იმ := remote_others-determiner-lex &
   [ STEM < "იმ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_remote+dem_a_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED remote+dem_a_rel ].
 
 არ := neg-adv-lex &
   [ STEM < "არ" >,
