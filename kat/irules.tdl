@@ -103,6 +103,10 @@ pres-fut_trans-suffix-type4 :=
 %suffix (* -ა)
 pres-fut_trans-lex-rule-type4.
 
+pres-fut_intrans-suffix-type4 :=
+%suffix (* -ს)
+pres-fut_intrans-lex-rule-type4.
+
 3_sg_subj_pres_intrans-suffix :=
 %suffix (* -ს)
 3_sg_subj_pres_intrans-lex-rule.

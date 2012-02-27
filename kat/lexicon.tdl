@@ -238,6 +238,10 @@
   [ STEM < "ძლი" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_can_v_rel" ].
 
+ძინ := intrans-type4-verb-lex &
+	[ STEM < "ძინ" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_sleep_v_rel" ].
+
 ;;; Determiners
 
 ერთ := indeterminate-determiner-lex &

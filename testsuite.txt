@@ -1038,6 +1038,6 @@ vetted: s
 Judgment: g
 Phenomena: sleep, 4thverbconj
 მძინავს
-მი-ძინ-PSF-ს
-PRE-1.SUBJ--sleep-PSF-PRES/FUT
+0-მი-ძინ-PSF-ს
+NOPRE-1.SUBJ-sleep-PSF-PRES/FUT
 `I am sleeping.'
