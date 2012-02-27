@@ -40,6 +40,7 @@ E.ASPECT : ASPECT
   perfective <> perfective
   imperfective <> imperfective
   no-aspect << *
+  * >> no-aspect
 
 E.MOOD : MOOD
   subjunctive <> subjunctive

@@ -145,6 +145,7 @@ present := non-past.
 
 perfective := aspect.
 imperfective := aspect.
+no-aspect := aspect.
 
 ;;; Mood
 

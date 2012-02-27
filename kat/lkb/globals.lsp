@@ -111,3 +111,4 @@
 
 ;(setf *lex-rule-suffix* nil)
 
+(setf *translate-grid* '(:kat :eng :ita))
