@@ -1,0 +1,2 @@
+Grammar Clean-up:
+		Restricted pres/fut tense suffixes to not accept preverb_others, which means that if there is a preverb present it will not be properly put as future.

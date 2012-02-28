@@ -760,15 +760,17 @@ imperfect_trans-lex-rule := nom-dat-lex-rule &
     SYNSEM.LOCAL.CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.PER 3rd ].
 
 3_pl_subj_pres_trans-lex-rule := 3rd_person_nom_dat-lex-rule &
-  [ DTR.INFLECTED.PSF-FLAG +,
+	[ INFLECTED.PREVERB_OTHER-FLAG na-or--,
+	DTR.INFLECTED.PSF-FLAG +,
     INFLECTED [ 3_SUBJ-TRANS-FLAG +,
-                TRANS-TENSE-FLAG + ],
+                TRANS-TENSE-FLAG +],
     SYNSEM.LOCAL [ CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.NUM plural,
                    CONT.HOOK.INDEX.E [ TENSE non-past,
 									   MOOD indicative ] ] ].
 
 3_sg_subj_pres_trans-lex-rule := 3rd_person_nom_dat-lex-rule &
-  [ DTR.INFLECTED.PSF-FLAG +,
+  [ INFLECTED.PREVERB_OTHER-FLAG na-or--,
+	DTR.INFLECTED.PSF-FLAG +,
     INFLECTED [ 3_SUBJ-TRANS-FLAG +,
                 TRANS-TENSE-FLAG + ],
     SYNSEM.LOCAL [ CAT.VAL.SUBJ.FIRST.LOCAL.CONT.HOOK.INDEX.PNG.NUM singular,
@@ -799,7 +801,8 @@ imperfect_trans-lex-rule := nom-dat-lex-rule &
 
 pres-fut_trans-lex-rule := nom-dat-lex-rule &
   [ INFLECTED [ 3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
-                TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+                TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
+				PREVERB_OTHER-FLAG na-or--],
     DTR.INFLECTED [ PSF-FLAG +,
                     3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
                     TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
@@ -810,7 +813,8 @@ pres-fut_trans-lex-rule := nom-dat-lex-rule &
 pres-fut_trans-lex-rule-type4 := tense_and_3rd_subj-lex-rule-super &
   [ INFLECTED [ TYPE-4 +,
 				3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
-				TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+				TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
+				PREVERB_OTHER-FLAG na-or--],
     DTR.INFLECTED [ PSF-FLAG na,
                     3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
                     TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
@@ -821,11 +825,10 @@ pres-fut_trans-lex-rule-type4 := tense_and_3rd_subj-lex-rule-super &
 pres-fut_intrans-lex-rule-type4 := tense_and_3rd_subj-lex-rule-super &
   [ INFLECTED [ TYPE-4 +,
 				3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
-				TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
-				INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ],
+				INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+				PREVERB_OTHER-FLAG na-or-- ],
     DTR.INFLECTED [ PSF-FLAG +,
                     3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
-                    TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
 					INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ],
     SYNSEM.LOCAL [ CONT.HOOK.INDEX.E [ TENSE non-past,
 									   MOOD indicative ],
@@ -836,7 +839,8 @@ pres-fut_intrans-pl-lex-rule-type4 := tense_and_3rd_subj-lex-rule-super &
   [ INFLECTED [ TYPE-4 +,
 				3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
 				TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
-				INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ],
+				INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+				PREVERB_OTHER-FLAG na-or--],
     DTR.INFLECTED [ PSF-FLAG +,
                     3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
                     TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
@@ -865,7 +869,8 @@ aorist_intrans-lex-rule := tense_and_3rd_subj-lex-rule-super &
   [ INFLECTED [ 3_SUBJ-TRANS-FLAG +,
                 3_SUBJ-INTRANS-FLAG +,
                 INTRANS-TENSE-FLAG +,
-                TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+                TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
+				PREVERB_OTHER-FLAG na-or-- ],
     DTR.INFLECTED [ PSF-FLAG +,
                     TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
     SYNSEM.LOCAL [ CONT.HOOK.INDEX.E [ TENSE non-past,
@@ -878,7 +883,8 @@ aorist_intrans-lex-rule := tense_and_3rd_subj-lex-rule-super &
   [ INFLECTED [ 3_SUBJ-TRANS-FLAG +,
                 3_SUBJ-INTRANS-FLAG +,
                 INTRANS-TENSE-FLAG +,
-                TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
+                TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
+				PREVERB_OTHER-FLAG na-or-- ],
     DTR.INFLECTED [ PSF-FLAG +,
                     TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
     SYNSEM.LOCAL [ CAT.VAL.SUBJ.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
@@ -890,7 +896,8 @@ aorist_intrans-lex-rule := tense_and_3rd_subj-lex-rule-super &
 pres-fut_intrans-lex-rule := tense_and_3rd_subj-lex-rule-super &
   [ INFLECTED [ 3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
                 TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
-                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ],
+                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+				PREVERB_OTHER-FLAG na-or-- ],
     DTR.INFLECTED [ PSF-FLAG +,
                     INTRANS-VERB-FLAG +,
                     3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,
