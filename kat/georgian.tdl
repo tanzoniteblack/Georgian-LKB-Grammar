@@ -500,7 +500,8 @@ singular-noun-lex-rule := const-lex-rule & noun-plurality-lex-rule-super &
                 PSF-FLAG #psf,
                 INTRANS-VERB-FLAG #intrans-verb,
                 TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                3_SUBJ-INTRANS-FLAG #3_SUBJ-INTRANS-FLAG ],
+                3_SUBJ-INTRANS-FLAG #3_SUBJ-INTRANS-FLAG,
+				TYPE-4 #type-4],
     DTR 1st_2nd_person_subj_prefixes-rule-dtr &
         [ INFLECTED [ PREVERB_OTHER-FLAG #preverb_other,
                       PREVERB-FLAG #preverb,
@@ -511,7 +512,8 @@ singular-noun-lex-rule := const-lex-rule & noun-plurality-lex-rule-super &
                       PSF-FLAG #psf,
                       INTRANS-VERB-FLAG #intrans-verb,
                       TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                      3_SUBJ-INTRANS-FLAG #3_SUBJ-INTRANS-FLAG ] ] ].
+                      3_SUBJ-INTRANS-FLAG #3_SUBJ-INTRANS-FLAG,
+					  TYPE-4 #type-4] ] ].
 
 1st_subj_prefix-lex-rule := 1st_2nd_person_subj_prefixes-lex-rule-super &
   [ INFLECTED.TYPE-4 na-or--,
@@ -552,7 +554,8 @@ obj_prefix-lex-rule-super := 1_2_plurality-rule-dtr & 1st_2nd_person_subj_prefix
                 PSF-FLAG #psf,
                 INTRANS-VERB-FLAG #intrans-verb,
                 TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ],
+                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+				TYPE-4 #type-4 ],
     DTR transitive-verb-lex &
         [ INFLECTED [ PREVERB_OTHER-FLAG #preverb_other,
                       TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
@@ -563,7 +566,8 @@ obj_prefix-lex-rule-super := 1_2_plurality-rule-dtr & 1st_2nd_person_subj_prefix
                       PSF-FLAG #psf,
                       INTRANS-VERB-FLAG #intrans-verb,
                       TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                      INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ] ] ].
+                      INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+					  TYPE-4 #type-4] ] ].
 
 2nd_obj_prefix-lex-rule := obj_prefix-lex-rule-super &
   [ INFLECTED.2ND_OBJ_PREFIX-FLAG +,
@@ -600,7 +604,8 @@ preverb-lex-rule-super := 1_2_plurality-rule-dtr & PSF-rule-dtr & add-only-no-cc
                 NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                 INTRANS-VERB-FLAG #intrans-verb,
                 TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ],
+                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+				TYPE-4 #type-4],
     DTR preverb-rule-dtr &
         [ INFLECTED [ TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
                       TRANS-VERB-FLAG #trans-verb,
@@ -614,7 +619,8 @@ preverb-lex-rule-super := 1_2_plurality-rule-dtr & PSF-rule-dtr & add-only-no-cc
                       NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                       INTRANS-VERB-FLAG #intrans-verb,
                       TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                      INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ] ] ].
+                      INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+					  TYPE-4 #type-4] ] ].
 
 NOPRE-lex-rule := preverb-lex-rule-super &
   [ INFLECTED [ PSF-FLAG -,
@@ -649,7 +655,8 @@ PSF-lex-rule-super := 1_2_plurality-rule-dtr & add-only-no-ccont-rule & infl-lex
                 NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                 INTRANS-VERB-FLAG #intrans-verb,
                 TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ],
+                INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+				TYPE-4 #type-4],
     DTR PSF-rule-dtr &
         [ INFLECTED [ PREVERB_OTHER-FLAG #preverb_other,
                       NOUN-PLURALITY-FLAG #noun-plurality,
@@ -665,7 +672,8 @@ PSF-lex-rule-super := 1_2_plurality-rule-dtr & add-only-no-ccont-rule & infl-lex
                       NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                       INTRANS-VERB-FLAG #intrans-verb,
                       TENSE_AND_3RD_SUBJ-FLAG #tense_and_3rd_subj,
-                      INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG ] ] ].
+                      INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
+					  TYPE-4 #type-4 ] ] ].
 
 has_PSF-lex-rule := PSF-lex-rule-super.
 
@@ -682,7 +690,8 @@ tense_and_3rd_subj-lex-rule-super := 1_2_plurality-rule-dtr & add-only-no-ccont-
                 PSF-FLAG #psf,
                 NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                 INTRANS-VERB-FLAG #intrans-verb,
-                TRANS-VERB-FLAG #trans-verb ],
+                TRANS-VERB-FLAG #trans-verb,
+				TYPE-4 #type-4 ],
     DTR tense_and_3rd_subj-rule-dtr &
         [ INFLECTED [ PREVERB_OTHER-FLAG #preverb_other,
                       PREVERB-FLAG #preverb,
@@ -694,7 +703,8 @@ tense_and_3rd_subj-lex-rule-super := 1_2_plurality-rule-dtr & add-only-no-ccont-
                       PSF-FLAG #psf,
                       NOUN-CASE-SUFFIX-FLAG #noun-case-suffix,
                       INTRANS-VERB-FLAG #intrans-verb,
-                      TRANS-VERB-FLAG #trans-verb ] ] ].
+                      TRANS-VERB-FLAG #trans-verb,
+					  TYPE-4 #type-4] ] ].
 
 erg-nom-lex-rule := tense_and_3rd_subj-lex-rule-super &
   [ INFLECTED.INTRANS-TENSE-FLAG #INTRANS-TENSE-FLAG,
