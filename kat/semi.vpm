@@ -47,6 +47,7 @@ E.MOOD : MOOD
   indicative <> indicative
   optative <> optative
   indicative << *
+  indicative << [e]
 
 SF : SF
   prop <> prop
