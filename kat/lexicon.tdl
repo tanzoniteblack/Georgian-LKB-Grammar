@@ -8,6 +8,10 @@
   [ STEM < "ამერიკელ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_american_n_rel" ].
 
+ავტომობილ := general_ending_consonant-noun-lex &
+  [ STEM < "ავტომობილ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_car_n_rel" ].
+
 ქალაქ := general_ending_consonant-noun-lex &
   [ STEM < "ქალაქ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_city_n_rel" ].
