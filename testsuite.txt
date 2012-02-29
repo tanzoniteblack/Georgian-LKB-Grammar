@@ -1061,3 +1061,23 @@ Phenomena: sleep, 4thverbconj
 ძაღლ-ებ-ი 0-0-ძინ-PSF-თ
 dog-PL-NOM NOPRE-3.SUBJ-sleep-PSF-PRES/FUT.PL
 `The dogs are sleeping.'
+
+#Ex 105 - The dogs chase cars.
+Source: author
+vetted: f
+Judgment: g
+Phenomena: agr
+ძაღლები ავტომობილს გამოდევნებიან
+ძაღლ-ებ-ი ავტომობილ-ს PRE-0-დევნ-PSF-ან
+dog-PL-NOM car-DAT PRE-0-chase-PSF-3.PL.SUBJ.PRES/FUT
+`The dogs will chase cars.'
+
+#Ex 106 - The dogs chase cars.
+Source: author
+vetted: f
+Judgment: g
+Phenomena: agr
+ძაღლები ავტომობილს დევნებიან
+ძაღლ-ებ-ი ავტომობილ-ს 0-0-დევნ-PSF-ან
+dog-PL-NOM car-DAT NOPRE-0-chase-PSF-3.PL.SUBJ.PRES/FUT
+`The dogs chase cars.'

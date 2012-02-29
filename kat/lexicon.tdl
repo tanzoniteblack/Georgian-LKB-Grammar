@@ -154,6 +154,10 @@
 
 ;;; Verbs
 
+დევნ := trans-verb-lex &
+  [ STEM < "დევნ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
+
 წერ := trans-verb-lex &
   [ STEM < "წერ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
