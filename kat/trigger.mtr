@@ -7,7 +7,7 @@
   FLAGS.TRIGGER "თუ" ].
 
 ა_gr := arg0e_gtr &
-[ CONTEXT.RELS <! [ PRED "_[pa]_" ] !>,
+[ CONTEXT.RELS <! [ PRED "~_[pa]_" ] !>,
   FLAGS.TRIGGER "ა" ].
 
 კი_gr := arg0e_gtr &
