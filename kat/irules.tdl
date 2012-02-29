@@ -103,9 +103,9 @@ pres-fut_trans-suffix :=
 %suffix (* -0)
 pres-fut_trans-lex-rule.
 
-pres-fut_intrans-suffix-type4 :=
-%suffix (* -ა)
-pres-fut_intrans-lex-rule-type4.
+; pres-fut_intrans-suffix-type4 :=
+; %suffix (* -ა)
+; pres-fut_intrans-lex-rule-type4.
 
 pres-fut_intrans-suffix-type4 :=
 %suffix (* -ს)

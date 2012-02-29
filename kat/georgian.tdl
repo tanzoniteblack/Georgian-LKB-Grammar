@@ -334,8 +334,8 @@ determiner-lex := basic-determiner-lex & basic-zero-arg & non-mod-lex-item &
 indeterminate-determiner-lex := determiner-lex-supertype & determiner-lex & single-rel-lex-item &
   [ INFLECTED.DETERMINER-CASE-SUFFIX-FLAG - ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CONT.HOOK.INDEX [COG-ST type-id ] ] ].
 
-demonstrative-determiner-lex := determiner-lex-supertype & determiner-lex &
-    [ SYNSEM [LKEYS [ALTKEYREL arg1-ev-relation ] ] ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX [COG-ST activ+fam ] ].
+demonstrative-determiner-lex := determiner-lex-supertype &
+    [ SYNSEM [LKEYS [ALTKEYREL arg1-ev-relation] ] ] & [SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL.CONT.HOOK.INDEX [COG-ST activ+fam ] ].
 
 proximal_nom-determiner-lex := demonstrative-determiner-lex & 
   [ SYNSEM.LOCAL.CAT.VAL.SPEC.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
@@ -374,6 +374,7 @@ determiner-lex-supertype := norm-hook-lex-item & basic-zero-arg &
 	     LKEYS.KEYREL quant-relation &
 		   [ ARG0 #ind,
 		     RSTR #harg ] ] ].
+
 
 ; Type for negative adverbs.
 ; 

@@ -4,21 +4,21 @@ decl-head-opt-subj := decl-head-opt-subj-phrase.
 basic-head-opt-comp := basic-head-opt-comp-phrase.
 
 head-comp := head-comp-phrase-nofoc.
-head-comp-foc := head-comp-phrase-foc.
+;head-comp-foc := head-comp-phrase-foc.
 
 head-subj := head-subj-phrase-nofoc.
-head-subj-foc := head-subj-phrase-foc.
+;head-subj-foc := head-subj-phrase-foc.
 
 comp-head := comp-head-phrase-nofoc.
-comp-head-foc := comp-head-phrase-foc.
+;comp-head-foc := comp-head-phrase-foc.
 
 subj-head := subj-head-phrase.
 
 head-comp-2 := head-comp-phrase-2-nofoc.
-head-comp-2-foc := head-comp-phrase-2-foc.
+;head-comp-2-foc := head-comp-phrase-2-foc.
 
 comp-head-2 := comp-head-phrase-2-nofoc.
-comp-head-2-foc := comp-head-phrase-2-foc.
+;comp-head-2-foc := comp-head-phrase-2-foc.
 
 head-spec := head-spec-phrase.
 

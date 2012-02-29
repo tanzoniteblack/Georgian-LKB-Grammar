@@ -160,7 +160,7 @@
 
 დევნ := trans-verb-lex &
   [ STEM < "დევნ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "_write_v_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_chase_v_rel" ].
 
 წერ := trans-verb-lex &
   [ STEM < "წერ" >,
@@ -238,6 +238,10 @@
   [ STEM < "იც" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_know_v_rel" ].
 
+ფიქრ := prop-clause-verb-lex & 
+  [ STEM < "იც" >,
+	SYNSEM.LKEYS.KEYREL.PRED "_think_v_rel" ].
+
 კითხვა := ques-clause-verb-lex & 
   [ STEM < "კითხვა" >,
     SYNSEM.LKEYS.KEYREL.PRED "_ask_v_rel" ].
@@ -297,6 +301,10 @@
 ქართულ := adjective-lex &
   [ STEM < "ქართულ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_georgian_a_rel" ].
+
+მშიერ := adjective-lex &
+  [ STEM < "მშიერ" >,
+    SYNSEM.LKEYS.KEYREL.PRED "_hungry_a_rel" ].
 
 უძველეს := adjective-lex &
   [ STEM < "უძველეს" >,
