@@ -406,7 +406,10 @@ adjective-lex := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item
 						 CONT.HOOK.XARG #xa ],
 				   LKEYS.KEYREL.ARG1 #xa ]].
 
-infl-adjective-lex := adjective-lex & 
+infl-adjective-lex := adjective-lex &
+    [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG -]].
+
+no-infl-adjective-lex := adjective-lex & 
     [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +]].
 
 focus-part-lex-item := basic-adjective-lex & intersective-mod-lex & norm-ltop-lex-item & mkg-fc-only-lex &
@@ -895,7 +898,8 @@ aorist_intrans-lex-rule := tense_and_3rd_subj-lex-rule-super &
                 3_SUBJ-INTRANS-FLAG +,
                 INTRANS-TENSE-FLAG +,
                 TRANS-TENSE-FLAG #TRANS-TENSE-FLAG,
-				PREVERB_OTHER-FLAG na-or-- ],
+				PREVERB_OTHER-FLAG na-or--,
+				TYPE-4 na-or--],
     DTR.INFLECTED [ PSF-FLAG +,
                     TRANS-TENSE-FLAG #TRANS-TENSE-FLAG ],
     SYNSEM.LOCAL [ CAT.VAL.SUBJ.FIRST.LOCAL [ CAT.HEAD.CASE abs+nom,
@@ -1082,7 +1086,7 @@ bare-np-phrase := basic-bare-np-phrase &
 
 adj-case-suffix-lex-rule-super := add-only-no-ccont-rule & infl-lex-rule &
   [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG + ],
-    DTR adjective-lex ].
+    DTR infl-adjective-lex ].
 
 nominative-adj-lex-rule :=  adj-case-suffix-lex-rule-super &
   [ SYNSEM.LOCAL.CAT.HEAD.MOD.FIRST.LOCAL.CAT.HEAD.CASE abs+nom ].
@@ -1097,26 +1101,54 @@ ergative-adj-lex-rule :=  adj-case-suffix-lex-rule-super &
 ;;; Coordination
 ;;;;;;;;;;;;;;;;;;
 
+basic-n-top-coord-case := basic-n-top-coord-rule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+	LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case ].
+
+basic-n-mid-coord-case := basic-n-mid-coord-rule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+	LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case ].
+
+n-bottom-coord-case := n-bottom-coord-phrase &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+	NONCONJ-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case].
+
 ;;; Coordination Strategy 1
 
-n1-top-coord-rule := basic-n-top-coord-rule & monopoly-top-coord-rule &
+n1-top-coord-rule := basic-n-top-coord-case & monopoly-top-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
-n1-mid-coord-rule := basic-n-mid-coord-rule & monopoly-mid-coord-rule &
+n1-mid-coord-rule := basic-n-mid-coord-case & monopoly-mid-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
-n1-bottom-coord-rule := conj-first-bottom-coord-rule & n-bottom-coord-phrase &
+n1-bottom-coord-rule := conj-first-bottom-coord-rule & n-bottom-coord-case &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
 ;;; Coordination Strategy 1
 
-np1-top-coord-rule := basic-np-top-coord-rule & monopoly-top-coord-rule &
+basic-np-top-coord-case := basic-np-top-coord-rule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+	LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case ].
+
+basic-np-mid-coord-case := basic-np-mid-coord-rule &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+	LCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+    RCOORD-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case ].
+
+np-bottom-coord-case := np-bottom-coord-phrase &
+  [ SYNSEM.LOCAL.CAT.HEAD.CASE #case,
+	NONCONJ-DTR.SYNSEM.LOCAL.CAT.HEAD.CASE #case].
+
+np1-top-coord-rule := basic-np-top-coord-case & monopoly-top-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
-np1-mid-coord-rule := basic-np-mid-coord-rule & monopoly-mid-coord-rule &
+np1-mid-coord-rule := basic-np-mid-coord-case & monopoly-mid-coord-rule &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
-np1-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-phrase &
+np1-bottom-coord-rule := conj-first-bottom-coord-rule & np-bottom-coord-case &
   [ SYNSEM.LOCAL.COORD-STRAT "1" ].
 
 ;;; Coordination Strategy 1

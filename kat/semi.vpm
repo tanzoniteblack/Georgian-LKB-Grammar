@@ -21,13 +21,14 @@ PNG.PER : PNG.PER
   1st  <> first
   2nd <> second
   3rd  <> third
+  3rd << [x]
   *      <> !
 
 PNG.NUM : PNG.NUM
   singular   <> sg
   plural   <> pl
-  plural << non-sg
-  plural << dual
+  plural << *
+  plural << [x]
   *    <> !
 
 E.TENSE : TENSE

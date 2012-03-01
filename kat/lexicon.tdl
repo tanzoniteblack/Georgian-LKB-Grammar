@@ -290,7 +290,7 @@
 
 არ := neg-adv-lex &
   [ STEM < "არ" >,
-    SYNSEM.LKEYS.KEYREL.PRED "neg_rel" ].
+    SYNSEM.LKEYS.KEYREL.PRED "_neg_r_rel" ].
 
 და := conj-lex &
   [ STEM < "და" >,
@@ -298,39 +298,39 @@
     CFORM "1" ].
 
 ;; Adjectives
-ქართულ := adjective-lex &
+ქართულ := infl-adjective-lex &
   [ STEM < "ქართულ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_georgian_a_rel" ].
 
-მშიერ := adjective-lex &
+მშიერ := infl-adjective-lex &
   [ STEM < "მშიერ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_hungry_a_rel" ].
 
-უძველეს := adjective-lex &
+უძველეს := infl-adjective-lex &
   [ STEM < "უძველეს" >,
     SYNSEM.LKEYS.KEYREL.PRED "_very_old_a_rel" ].
 
-მაგალ := adjective-lex &
+მაგალ := infl-adjective-lex &
   [ STEM < "მაგალ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_tall_a_rel" ].
 
-ლურჯ := adjective-lex &
+ლურჯ := infl-adjective-lex &
   [ STEM < "ლურჯ" >,
     SYNSEM.LKEYS.KEYREL.PRED "_blue_a_rel" ].
 
-ბრმა := infl-adjective-lex &
+ბრმა := no-infl-adjective-lex &
   [ STEM < "ბრმა" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_blind_a_rel" ].
 
-მეოთხე := infl-adjective-lex &
+მეოთხე := no-infl-adjective-lex &
   [ STEM < "მეოთხე" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_fourth_a_rel" ].
 
-მეხუთე := infl-adjective-lex &
+მეხუთე := no-infl-adjective-lex &
   [ STEM < "მეოთხე" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_fifth_a_rel" ].
 
-მეშვიდე := infl-adjective-lex &
+მეშვიდე := no-infl-adjective-lex &
   [ STEM < "მეშვიდე" >,
 	SYNSEM.LKEYS.KEYREL.PRED "_seventh_a_rel" ].
 
