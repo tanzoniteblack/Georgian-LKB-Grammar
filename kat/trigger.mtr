@@ -10,6 +10,18 @@
 [ CONTEXT.RELS <! [ PRED "~_[pa]_" ] !>,
   FLAGS.TRIGGER "ა" ].
 
+არიან_gr := arg0e_gtr &
+[ CONTEXT.RELS <! [ PRED "~_[pa]_" ] !>,
+  FLAGS.TRIGGER "არიან" ].
+
+ა-adj_gr := arg0e_gtr &
+[ CONTEXT.RELS <! [ PRED "~_[pa]_" ] !>,
+  FLAGS.TRIGGER "ა-adj" ].
+
+არიან-adj_gr := arg0e_gtr &
+[ CONTEXT.RELS <! [ PRED "~_[pa]_" ] !>,
+  FLAGS.TRIGGER "არიან-adj" ].
+
 კი_gr := arg0e_gtr &
 [ CONTEXT.RELS <! [ PRED "non_existing_rel" ] !>,
   FLAGS.TRIGGER "კი" ].

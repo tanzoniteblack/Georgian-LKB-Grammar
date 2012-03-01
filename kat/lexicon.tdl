@@ -352,9 +352,21 @@
 	SYNSEM.LKEYS.KEYREL.PRED "_in_p_rel" ].
 
 ;; Copulas
+;; for PP
 ა := 3sg-pres-copula-lex &
   [ STEM < "ა" > ].
 
+არიან := 3pl-pres-copula-lex &
+  [ STEM < "არიან" > ].
+
+;; for AP
+ა-adj := 3sg-pres-adj-copula-lex &
+  [ STEM < "ა" > ].
+
+არიან-adj := 3pl-pres-adj-copula-lex &
+  [ STEM < "არიან" > ].
+
+;; for NP
 აa := 3sg-pres-copula-NP-lex &
   [ STEM < "ა" >, 
 	SYNSEM.LKEYS.KEYREL.PRED "_be_v_id_rel" ].

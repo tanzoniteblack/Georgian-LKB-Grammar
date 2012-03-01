@@ -37,4 +37,6 @@ infl-adjective-lex := adjective-lex &
 no-infl-adjective-lex := adjective-lex & 
     [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +]].
 
-	
+	On a related note with adjective, my copula wasn't contraining the case of adjectives to abs+nom like it needed to be.  Since adp don't have a case, I split my copula for PP and ADJ into 2, and added for the one involving adjectives a constraint that the 2nd item on the arg-st needs to be head adj and HEAD.MOD.FIRST.LOCAL.CAT.HEAD.CASE abs+nom.  These new copulas also had to be added to the lexicon and my trigger rules.
+
+	On all of my copulas, I restricted all the arguments to being OPT -, otherwise I was getting many many extra results. This, however, is debateably a questionable decision grammatically and is over constraining the possibilities.
