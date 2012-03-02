@@ -1292,8 +1292,8 @@ copula-NP-verb-lex := basic-verb-lex & non-mod-lex-item &
 		   ].
 
 copula-NP-lex := copula-NP-verb-lex &
-  [ SYNSEM.LOCAL.CAT.VAL.COMPS < #comps >,
-    ARG-ST < [ OPT -, LOCAL[ CAT.HEAD noun, CAT.HEAD.CASE abs+nom ] ],
+  [ SYNSEM.LOCAL.CAT.VAL[ COMPS < #comps >, SUBJ < #subj > ],
+    ARG-ST < #subj & [ OPT -, LOCAL[ CAT.HEAD noun, CAT.HEAD.CASE abs+nom ] ],
              #comps &
              [ OPT -, LOCAL.CAT [ VAL [ SPR < >,
                                  COMPS < > ],
@@ -1303,6 +1303,12 @@ copula-NP-lex := copula-NP-verb-lex &
   [ SYNSEM.LOCAL [ CAT [VAL.SUBJ.FIRST.LOCAL [ CONT.HOOK.INDEX.PNG [ PER 3rd,
                                                                     NUM singular ] ] ],
                    CONT.HOOK.INDEX.E [ TENSE present ] ] ].
+
+3pl-pres-copula-NP-lex := copula-NP-lex &
+  [ SYNSEM.LOCAL [ CAT [VAL.SUBJ.FIRST.LOCAL [ CONT.HOOK.INDEX.PNG [ PER 3rd,
+                                                                    NUM plural ] ] ],
+                   CONT.HOOK.INDEX.E [ TENSE present ] ] ].
+
 
 optative_trans-lex-rule := erg-nom-lex-rule &
   [ INFLECTED [ 3_SUBJ-TRANS-FLAG #3_SUBJ-TRANS-FLAG,

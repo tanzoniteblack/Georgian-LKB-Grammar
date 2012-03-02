@@ -37,6 +37,30 @@ infl-adjective-lex := adjective-lex &
 no-infl-adjective-lex := adjective-lex & 
     [ INFLECTED [ ADJ-CASE-SUFFIX-FLAG +]].
 
-	On a related note with adjective, my copula wasn't contraining the case of adjectives to abs+nom like it needed to be.  Since adp don't have a case, I split my copula for PP and ADJ into 2, and added for the one involving adjectives a constraint that the 2nd item on the arg-st needs to be head adj and HEAD.MOD.FIRST.LOCAL.CAT.HEAD.CASE abs+nom.  These new copulas also had to be added to the lexicon and my trigger rules.
+	On a related note with adjective, my copula wasn't contraining the case of adjectives to abs+nom like it needed to be.  Since adp don't have a case, I split my copula for PP and ADJ into 2, and added for the one involving adjectives a constraint that the 2nd item on the arg-st needs to be head adj and HEAD.MOD.FIRST.LOCAL.CAT.HEAD.CASE abs+nom.  These new copulas also had to be added to the lexicon and my trigger rules.  I also needed to add 3rd plural versions of all of my copulas, since previously I only had ones created for singular.
 
 	On all of my copulas, I restricted all the arguments to being OPT -, otherwise I was getting many many extra results. This, however, is debateably a questionable decision grammatically and is over constraining the possibilities.
+
+    To allow for the Italian "make harm" construction to translate, I had to add the make-harm-mtr type to acm.tdl (as well as create acm.tdl and add it to my startup script) and make-harm := make-harm-mtr to acm.mtr (and add it to my script).
+
+
+At this point I have 14 English sentences translating, and 13 Italian ones translating.
+The sentences that are not translating into Georgian from English or Italian at the moment are:
+    "These dogs sleep."
+    "I can eat glass."
+    "I think that you know that dogs chase cars."
+    "I ask whether you know that dogs chase cars."
+
+    It appears that I have something wrong with the semantic information being created with "can", as well as something wrong with my determiners. I've attempted to play with these a little, but haven't been able to figure out where the problem might lay.  Any advice you give to me on this would be appreciated.
+
+    As for the other two sentences, the error seems to be coming from exceeding the maximum number of edges.  This is an understandable error, since each sentence has free word order (including where the complement phrase occurs) which means for the 3 embedded sentences alone I have 216 valid word order combinations, as well as the optional dropping of the complementizer which increases the valid options by 4 (presence or absence available twice).  Without creating some rules that would incorrectly restrict the grammar, I'm not sure how else this could proceed.  There is another problem though, where so far the only type of verb I've seen that took a complement clause was of the "type-4" conjugation pattern...and none of the ones we're looking at for this lab are. I didn't plan ahead appropriately when I was creating this verbal class...so this is a bit of an issue that I didn't have time to correct since I didn't realize it was an issue until late.
+
+I'm also having problems with the English sentence "Cats chase dogs and sleep", but not with translating from the equivalent Italian sentence.
+
+(note: I've included a file called "translations.ods" that is a spread sheet of how many translations I got, and how many of them were erroneous.)
+
+      None of my translations have only a single possibility, and this is valid because of the free word order of Georgian.  Since word order is free on a sentential constituent level, I figure I should have n! possible word order in any simple sentence.  So for "dogs chase cars", which has three constituents I correctly have 6 translations.  And similarly for "dogs chase cars and cats chase dogs" I have 6 translations for each sub-sentence, and 36 total due to the possible combinations.
+
+      "I chase you" is where I have the largest amount of spurious ambiguity occuring.  This is because I seemed to have ended up with 2 different rules allowing for singular subjects for 1st and 2nd person (-0 and nothing).  I hadn't caught this before now, and apparently my test suite itself is divided about which it should be.  This is something that I would definitely like cleaned up for the future, but for now because I don't want to break my testsuite completely I'm leaving it as it.
+
+      "Dogs eat quickly" is another where I have a large number of spurious parses. This is coming about because not only do I have the normal 6 combinations of word order, I have different possibilities about what quickly is attaching to.  Is it attaching to the V and then forming a VP, or to a VP itself?  For every possible combination where "eat" and "quickly" are next to each other, I end up with this ambiguity.  While it's annoying, it's not uncorrect. Especially if I had an overt object in this sentence, I would want the 2 different possibilities I think, so I believe it's an ambiguity I have to live with.

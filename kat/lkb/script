@@ -34,10 +34,11 @@
 ;;;
 (read-tdl-type-files-aux
 (list
-(lkb-pathname (parent-directory) "matrix.tdl")
-(lkb-pathname (parent-directory) "head-types.tdl")
-(lkb-pathname (parent-directory) "georgian.tdl")
-(lkb-pathname (parent-directory) "mtr.tdl")
+ (lkb-pathname (parent-directory) "matrix.tdl")
+ (lkb-pathname (parent-directory) "head-types.tdl")
+ (lkb-pathname (parent-directory) "georgian.tdl")
+ (lkb-pathname (parent-directory) "mtr.tdl")
+ (lkb-pathname (parent-directory) "acm.tdl")
 ))
 
 (mt:read-vpm (lkb-pathname (parent-directory) "semi.vpm") :semi)
@@ -123,3 +124,8 @@
 (if (eq (length *last-parses*) 1)
 (setf *last-parses* '("")))
 
+(mt:read-transfer-rules 
+ (list
+  (lkb-pathname (parent-directory) "acm.mtr"))
+ "A place to put your transfer rules"
+ :filter nil)
